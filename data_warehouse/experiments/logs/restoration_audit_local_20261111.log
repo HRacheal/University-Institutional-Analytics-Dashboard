@@ -1,0 +1,21 @@
+[     8s] uci_dropout_enrolment_time: catboost=PASS, logistic_regression=PASS
+[    10s] uci_outcome3_enrolment_time: catboost=PASS, logistic_regression=PASS
+[    11s] uci_dropout_end_of_year1: logistic_regression=PASS
+[    15s] uci_outcome3_end_of_year1: xgboost=PASS, logistic_regression=PASS
+[    33s] syn_dropout_2y: random_forest=PASS, logistic_regression=PASS
+[    42s] syn_next_term_gpa: random_forest=PASS, linear_regression=PASS
+[    45s] syn_next_term_academic_risk: catboost=PASS, logistic_regression=PASS
+[    47s] syn_graduation_cox: cox_ph=PASS
+[    48s] syn_dropout_cox: cox_ph=PASS
+[    52s] syn_retention_fall_to_fall_institutional: random_forest=PASS, logistic_regression=PASS
+[    56s] syn_retention_fall_to_fall_programme: xgboost=PASS, logistic_regression=PASS
+[    58s] syn_retention_spring_to_spring_institutional: logistic_regression=PASS
+[    61s] syn_retention_spring_to_spring_programme: logistic_regression=PASS
+[    63s] syn_retention_summer_to_summer_institutional: xgboost=PASS, logistic_regression=PASS
+[    64s] syn_retention_summer_to_summer_programme: xgboost=PASS, logistic_regression=PASS
+[    66s] syn_graduation_within_window: random_forest=PASS, logistic_regression=PASS
+[    67s] syn_admissions_offer: logistic_regression=PASS
+[    67s] syn_admissions_accept: xgboost=PASS, logistic_regression=PASS
+[    67s] forecasting: per-series selected method=PASS
+[    68s] syn_segmentation: kmeans_isolation_forest=PASS
+{"PASS": 32}

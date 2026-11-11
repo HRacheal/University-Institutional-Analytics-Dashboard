@@ -1,0 +1,27 @@
+[      1s] uci_dropout_end_of_year1
+    uci_dropout_end_of_year1                   baseline_majority    0.3210  (0.5 s)
+    uci_dropout_end_of_year1                   logistic_regression  0.8803  (0.4 s)
+    uci_dropout_end_of_year1                   random_forest        0.8660  (7.5 s)
+    uci_dropout_end_of_year1                   xgboost              0.8739  (3.7 s)
+    uci_dropout_end_of_year1                   lightgbm             0.8707  (3.4 s)
+    uci_dropout_end_of_year1                   catboost             0.8737  (8.3 s)
+[     30s] uci_outcome3_end_of_year1
+    uci_outcome3_end_of_year1                  baseline_majority    0.3331  (0.7 s)
+    uci_outcome3_end_of_year1                  logistic_regression  0.7515  (0.9 s)
+    uci_outcome3_end_of_year1                  random_forest        0.7527  (7.4 s)
+    uci_outcome3_end_of_year1                  xgboost              0.7689  (5.2 s)
+    uci_outcome3_end_of_year1                  lightgbm             0.7579  (8.5 s)
+    uci_outcome3_end_of_year1                  catboost             0.7616  (16.9 s)
+[     73s] syn_dropout_2y
+    syn_dropout_2y                             baseline_majority    0.0997  (2.1 s)
+    syn_dropout_2y                             logistic_regression  0.4872  (5.6 s)
+    syn_dropout_2y                             random_forest        0.5051  (41.9 s)
+    syn_dropout_2y                             xgboost              0.4926  (15.3 s)
+    syn_dropout_2y                             lightgbm             0.4923  (16.4 s)
+    syn_dropout_2y                             catboost             0.4993  (48.6 s)
+[    600s] syn_next_term_gpa
+    syn_next_term_gpa                          baseline_mean        0.6726  (3.0 s)
+    syn_next_term_gpa                          linear_regression    5336243423.6959  (4.7 s)
+    syn_next_term_gpa                          random_forest        0.4495  (694.5 s)
+    syn_next_term_gpa                          xgboost              0.4497  (63.0 s)
+    syn_next_term_gpa                          lightgbm             0.4534  (39.7 s)

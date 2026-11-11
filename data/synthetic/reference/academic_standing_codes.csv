@@ -1,0 +1,6 @@
+standing,description,data_source,verification_status,source_reference,verified_on,verified_by,source_system,generation_run_id
+GOOD,Good academic standing (synthetic rule),SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+WARNING,Academic warning (synthetic rule),SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+PROBATION,Academic probation (synthetic rule),SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+DISMISSED,Academic dismissal (synthetic rule),SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+NOT_EVALUATED,No graded courses yet in this admission,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110

@@ -1,0 +1,1864 @@
+{
+ "time": "2026-11-11T03:13:44",
+ "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging",
+ "layout": "drive",
+ "dest": "C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\data_warehouse",
+ "dry_run": false,
+ "verify_only": false,
+ "summary": {
+  "files": 230,
+  "present_verified": 222,
+  "restored_verified": 8,
+  "problems": 0
+ },
+ "items": [
+  {
+   "path": "models/synthetic/segmentation/kmeans_isolation_forest.joblib",
+   "task": "syn_segmentation",
+   "role": "model",
+   "expected_sha256": "15ee88a81df5cb9c9935c094b30a112d3b27d23432729c79879c51a3c5b66a25",
+   "dest_sha256": "15ee88a81df5cb9c9935c094b30a112d3b27d23432729c79879c51a3c5b66a25",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/segmentation/kmeans_isolation_forest.meta.json",
+   "task": "syn_segmentation",
+   "role": "model_metadata",
+   "expected_sha256": "70ad0eeda7cf841da48382b7b90c0bad4698a2592f7e10c8619e9aad97b054a9",
+   "dest_sha256": "70ad0eeda7cf841da48382b7b90c0bad4698a2592f7e10c8619e9aad97b054a9",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_accept/logistic_regression.joblib",
+   "task": "syn_admissions_accept",
+   "role": "model",
+   "expected_sha256": "83f6f04f09ff46742e10c58fb8ef4b6882ada52468a7b39a5dc9aa0ec0b8f30e",
+   "dest_sha256": "83f6f04f09ff46742e10c58fb8ef4b6882ada52468a7b39a5dc9aa0ec0b8f30e",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_accept/logistic_regression.meta.json",
+   "task": "syn_admissions_accept",
+   "role": "model_metadata",
+   "expected_sha256": "a5462a37e30aa9df467b8fb73309fad86363477fe94c98f28b834f647928dc10",
+   "dest_sha256": "a5462a37e30aa9df467b8fb73309fad86363477fe94c98f28b834f647928dc10",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_accept/xgboost.booster.json",
+   "task": "syn_admissions_accept",
+   "role": "model_portable_export",
+   "expected_sha256": "80cfd3af113f989209a9e7ed5df51d3170a3afdd8539b018d18efb8c94182a30",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_admissions_accept\\xgboost.booster.json",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_accept/xgboost.joblib",
+   "task": "syn_admissions_accept",
+   "role": "model",
+   "expected_sha256": "8977b4d9bee82f1e93b24f853a880d73c054899624b055265ba642f2cab8bf58",
+   "dest_sha256": "8977b4d9bee82f1e93b24f853a880d73c054899624b055265ba642f2cab8bf58",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_accept/xgboost.meta.json",
+   "task": "syn_admissions_accept",
+   "role": "model_metadata",
+   "expected_sha256": "dfbda531ec610822ffc2ba96a95b9dadf33b12dda4b4452b764b06986afb7109",
+   "dest_sha256": "dfbda531ec610822ffc2ba96a95b9dadf33b12dda4b4452b764b06986afb7109",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_accept/xgboost.portable.joblib",
+   "task": "syn_admissions_accept",
+   "role": "model_portable_export",
+   "expected_sha256": "72015f2d0829c330d623d97b53f87388fbbbfa65efb7f30762b8d54feb0b293f",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_admissions_accept\\xgboost.portable.joblib",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_offer/logistic_regression.joblib",
+   "task": "syn_admissions_offer",
+   "role": "model",
+   "expected_sha256": "a041aa697bb9f3fcc6485f10656c338182b9bfb9dbb5fd5f57a7ec42c5b01680",
+   "dest_sha256": "a041aa697bb9f3fcc6485f10656c338182b9bfb9dbb5fd5f57a7ec42c5b01680",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_admissions_offer/logistic_regression.meta.json",
+   "task": "syn_admissions_offer",
+   "role": "model_metadata",
+   "expected_sha256": "85455c0ba3683e26fd8d56be2a6fa338e9fe31cde0b2e57aad5fa25e3232e7db",
+   "dest_sha256": "85455c0ba3683e26fd8d56be2a6fa338e9fe31cde0b2e57aad5fa25e3232e7db",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_dropout_2y/logistic_regression.joblib",
+   "task": "syn_dropout_2y",
+   "role": "model",
+   "expected_sha256": "8afc38b84453e73c7c17286c5d68d76efa64ae19880234002282a0af3ba5ab98",
+   "dest_sha256": "8afc38b84453e73c7c17286c5d68d76efa64ae19880234002282a0af3ba5ab98",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_dropout_2y/logistic_regression.meta.json",
+   "task": "syn_dropout_2y",
+   "role": "model_metadata",
+   "expected_sha256": "b6d2d73fc08634aa64d5fe2cb479506104dda01c37f03fd13e7428c5975a9d3f",
+   "dest_sha256": "b6d2d73fc08634aa64d5fe2cb479506104dda01c37f03fd13e7428c5975a9d3f",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_dropout_2y/random_forest.joblib",
+   "task": "syn_dropout_2y",
+   "role": "model",
+   "expected_sha256": "b2747a9c59abd8a40a981945fd17800ae49759e32e00e25f8b05f40eb9133a92",
+   "dest_sha256": "b2747a9c59abd8a40a981945fd17800ae49759e32e00e25f8b05f40eb9133a92",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_dropout_2y/random_forest.meta.json",
+   "task": "syn_dropout_2y",
+   "role": "model_metadata",
+   "expected_sha256": "2496def92f61035fa4e333eaa54d3620a77bbe8c6eafd3861e220f59233c906a",
+   "dest_sha256": "2496def92f61035fa4e333eaa54d3620a77bbe8c6eafd3861e220f59233c906a",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_dropout_cox/cox_ph.joblib",
+   "task": "syn_dropout_cox",
+   "role": "model",
+   "expected_sha256": "d6a705d5c551d695543afaf9e27a3478cf335963b1d4cac3fb5b5b6572dc8d43",
+   "dest_sha256": "d6a705d5c551d695543afaf9e27a3478cf335963b1d4cac3fb5b5b6572dc8d43",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_dropout_cox/cox_ph.meta.json",
+   "task": "syn_dropout_cox",
+   "role": "model_metadata",
+   "expected_sha256": "63d10708d578b456acabacadb1f3206abed53b24df953db7184bb3207d2f259d",
+   "dest_sha256": "63d10708d578b456acabacadb1f3206abed53b24df953db7184bb3207d2f259d",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_graduation_cox/cox_ph.joblib",
+   "task": "syn_graduation_cox",
+   "role": "model",
+   "expected_sha256": "30b9e1b60c9f639e110ce53e9f93651460bfede067c219f9e85dbe505ea63a51",
+   "dest_sha256": "30b9e1b60c9f639e110ce53e9f93651460bfede067c219f9e85dbe505ea63a51",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_graduation_cox/cox_ph.meta.json",
+   "task": "syn_graduation_cox",
+   "role": "model_metadata",
+   "expected_sha256": "79494cee41b5bb666ab0f39e128612bde7b6e65b572b95bf9994c88503c516cc",
+   "dest_sha256": "79494cee41b5bb666ab0f39e128612bde7b6e65b572b95bf9994c88503c516cc",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_graduation_within_window/logistic_regression.joblib",
+   "task": "syn_graduation_within_window",
+   "role": "model",
+   "expected_sha256": "957be146d08d2ff00f80504b0e25d3efc54493e5f4a73705d70678e5739773ab",
+   "dest_sha256": "957be146d08d2ff00f80504b0e25d3efc54493e5f4a73705d70678e5739773ab",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_graduation_within_window/logistic_regression.meta.json",
+   "task": "syn_graduation_within_window",
+   "role": "model_metadata",
+   "expected_sha256": "f02e4701f62194a6abeb764c6434a1b1b72b02fc75ea292e62cb2833807fb9fa",
+   "dest_sha256": "f02e4701f62194a6abeb764c6434a1b1b72b02fc75ea292e62cb2833807fb9fa",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_graduation_within_window/random_forest.joblib",
+   "task": "syn_graduation_within_window",
+   "role": "model",
+   "expected_sha256": "777058707968a2970ebf386083aed4f742fd9f942c16e20f8f9e99eca6029edb",
+   "dest_sha256": "777058707968a2970ebf386083aed4f742fd9f942c16e20f8f9e99eca6029edb",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_graduation_within_window/random_forest.meta.json",
+   "task": "syn_graduation_within_window",
+   "role": "model_metadata",
+   "expected_sha256": "803a760d4e3aea292ec16b24cd4b5f6a2777a6d3bdb6d00f912ffa5d56692910",
+   "dest_sha256": "803a760d4e3aea292ec16b24cd4b5f6a2777a6d3bdb6d00f912ffa5d56692910",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_academic_risk/catboost.joblib",
+   "task": "syn_next_term_academic_risk",
+   "role": "model",
+   "expected_sha256": "bb576bf0c5b9fb8fa036d215dc6ed9788d1e5e0f876f97f94179fccaf672c8ba",
+   "dest_sha256": "bb576bf0c5b9fb8fa036d215dc6ed9788d1e5e0f876f97f94179fccaf672c8ba",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_academic_risk/catboost.meta.json",
+   "task": "syn_next_term_academic_risk",
+   "role": "model_metadata",
+   "expected_sha256": "175926078d9ee9d125ee3c1f5a17bbccb53d6637f4ad85372228fb1b56e19498",
+   "dest_sha256": "175926078d9ee9d125ee3c1f5a17bbccb53d6637f4ad85372228fb1b56e19498",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_academic_risk/logistic_regression.joblib",
+   "task": "syn_next_term_academic_risk",
+   "role": "model",
+   "expected_sha256": "f6c460bc9c3adfa727c214ace0f2621026875beb050be04033987e247f1b061a",
+   "dest_sha256": "f6c460bc9c3adfa727c214ace0f2621026875beb050be04033987e247f1b061a",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_academic_risk/logistic_regression.meta.json",
+   "task": "syn_next_term_academic_risk",
+   "role": "model_metadata",
+   "expected_sha256": "bc921d7fa12ebd7387a313b2a7fedc08f385d5919968a3ffdd93acbaae8c21d1",
+   "dest_sha256": "bc921d7fa12ebd7387a313b2a7fedc08f385d5919968a3ffdd93acbaae8c21d1",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_gpa/linear_regression.joblib",
+   "task": "syn_next_term_gpa",
+   "role": "model",
+   "expected_sha256": "915d133457e3b0e2f530a442f447d2963106f9dcfa25b2c0ef2dfb03d8cd54e9",
+   "dest_sha256": "915d133457e3b0e2f530a442f447d2963106f9dcfa25b2c0ef2dfb03d8cd54e9",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_gpa/linear_regression.meta.json",
+   "task": "syn_next_term_gpa",
+   "role": "model_metadata",
+   "expected_sha256": "e0ff7778473e9153770b32bbb0b04c352a59ce320c9fa116e69d01f083f56184",
+   "dest_sha256": "e0ff7778473e9153770b32bbb0b04c352a59ce320c9fa116e69d01f083f56184",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_gpa/random_forest.joblib",
+   "task": "syn_next_term_gpa",
+   "role": "model",
+   "expected_sha256": "011e14049d670f152bd3977e1ac7f7b56c095d5fe0c910c220b953509c21f411",
+   "dest_sha256": "011e14049d670f152bd3977e1ac7f7b56c095d5fe0c910c220b953509c21f411",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_next_term_gpa/random_forest.meta.json",
+   "task": "syn_next_term_gpa",
+   "role": "model_metadata",
+   "expected_sha256": "06e152ddbdfc97ca9b8e5f2a49efbc47ab2fa8c298a4a5b44c711fca7f2b00cc",
+   "dest_sha256": "06e152ddbdfc97ca9b8e5f2a49efbc47ab2fa8c298a4a5b44c711fca7f2b00cc",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_institutional/logistic_regression.joblib",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "model",
+   "expected_sha256": "5326892723cd693134b457bafc8dce25f6a49977c4628be000c4a455a2013138",
+   "dest_sha256": "5326892723cd693134b457bafc8dce25f6a49977c4628be000c4a455a2013138",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_institutional/logistic_regression.meta.json",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "model_metadata",
+   "expected_sha256": "ea58cba4eb8044ebb362dfd707205de2f769216d9872eb34b885b15a159fe7b6",
+   "dest_sha256": "ea58cba4eb8044ebb362dfd707205de2f769216d9872eb34b885b15a159fe7b6",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_institutional/random_forest.joblib",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "model",
+   "expected_sha256": "f960a3b11a01ddfec29c564e61c03ded3676dad47e88c4f0f05af4cc98982eea",
+   "dest_sha256": "f960a3b11a01ddfec29c564e61c03ded3676dad47e88c4f0f05af4cc98982eea",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_institutional/random_forest.meta.json",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "model_metadata",
+   "expected_sha256": "1486cfa32b4949bb29bb860f107c298f71f713eb50ec6119db685f2499354144",
+   "dest_sha256": "1486cfa32b4949bb29bb860f107c298f71f713eb50ec6119db685f2499354144",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_programme/logistic_regression.joblib",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "model",
+   "expected_sha256": "d8e44ca5ac6b3802c09e12e23c99fa3c5701cb9a58bdd8a12737694cb3672ab4",
+   "dest_sha256": "d8e44ca5ac6b3802c09e12e23c99fa3c5701cb9a58bdd8a12737694cb3672ab4",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_programme/logistic_regression.meta.json",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "model_metadata",
+   "expected_sha256": "0d1865ce826363c92e45796ef1e51c9fc072e59d2d56b5f3cf871b85ae0a1eb0",
+   "dest_sha256": "0d1865ce826363c92e45796ef1e51c9fc072e59d2d56b5f3cf871b85ae0a1eb0",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_programme/xgboost.booster.json",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "model_portable_export",
+   "expected_sha256": "9aa26134a036b5e1482348fb58bc92b8b6a6d3d1fd16d63bb1df27a50574f95c",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_retention_fall_to_fall_programme\\xgboost.booster.json",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_programme/xgboost.joblib",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "model",
+   "expected_sha256": "f8c2680c2b42fad439ff58676ea87d914cabe0a1265416d467ea35ceef5fd389",
+   "dest_sha256": "f8c2680c2b42fad439ff58676ea87d914cabe0a1265416d467ea35ceef5fd389",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_programme/xgboost.meta.json",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "model_metadata",
+   "expected_sha256": "3f778784596e6cd1658461502d0d2dd2fc8005c60d229f90f133191c5f5bfd8e",
+   "dest_sha256": "3f778784596e6cd1658461502d0d2dd2fc8005c60d229f90f133191c5f5bfd8e",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_fall_to_fall_programme/xgboost.portable.joblib",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "model_portable_export",
+   "expected_sha256": "81c691d0f3807ed7c2f8448c72786ee207b55f9b45a29092d21f558a9937cd36",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_retention_fall_to_fall_programme\\xgboost.portable.joblib",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_spring_to_spring_institutional/logistic_regression.joblib",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "model",
+   "expected_sha256": "0e515c546284821ef8e961da65b69020d190b5eef6809756b3e371c0963010d7",
+   "dest_sha256": "0e515c546284821ef8e961da65b69020d190b5eef6809756b3e371c0963010d7",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_spring_to_spring_institutional/logistic_regression.meta.json",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "model_metadata",
+   "expected_sha256": "a3a4f6649b950876050cf5637552456c73f77b0235802816dd3c6b0497c18f3f",
+   "dest_sha256": "a3a4f6649b950876050cf5637552456c73f77b0235802816dd3c6b0497c18f3f",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_spring_to_spring_programme/logistic_regression.joblib",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "model",
+   "expected_sha256": "4dce58de8bf3c6b3f81e60df8ab9d6aa0c3b72b653af894467db257978cd0637",
+   "dest_sha256": "4dce58de8bf3c6b3f81e60df8ab9d6aa0c3b72b653af894467db257978cd0637",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_spring_to_spring_programme/logistic_regression.meta.json",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "model_metadata",
+   "expected_sha256": "d1cca59c569610daf78160fa52b063c5ec7fd18cbe840bfae135dbe5b48a278b",
+   "dest_sha256": "d1cca59c569610daf78160fa52b063c5ec7fd18cbe840bfae135dbe5b48a278b",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_institutional/logistic_regression.joblib",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "model",
+   "expected_sha256": "3c9a558cb68fbb756af9ab8c350815338f6e67f0a8f281353714ed739168e352",
+   "dest_sha256": "3c9a558cb68fbb756af9ab8c350815338f6e67f0a8f281353714ed739168e352",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_institutional/logistic_regression.meta.json",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "model_metadata",
+   "expected_sha256": "d43b88c1df10ff39145c428c71b2447c009e0e06d11e06cde532e79f6bd8c31e",
+   "dest_sha256": "d43b88c1df10ff39145c428c71b2447c009e0e06d11e06cde532e79f6bd8c31e",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_institutional/xgboost.booster.json",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "model_portable_export",
+   "expected_sha256": "99328f715328bed2bc440844a31f08a606ab4902050e4847e9c10fd090c68669",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_retention_summer_to_summer_institutional\\xgboost.booster.json",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_institutional/xgboost.joblib",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "model",
+   "expected_sha256": "ed7a8a0d2111b2e22a9a5538d8408b172189b52e77208f99451cfe5f438acbd1",
+   "dest_sha256": "ed7a8a0d2111b2e22a9a5538d8408b172189b52e77208f99451cfe5f438acbd1",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_institutional/xgboost.meta.json",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "model_metadata",
+   "expected_sha256": "aa347b023aca38677ffa8a578980192e18c9fd741f0bf777d0c04e578847355d",
+   "dest_sha256": "aa347b023aca38677ffa8a578980192e18c9fd741f0bf777d0c04e578847355d",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_institutional/xgboost.portable.joblib",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "model_portable_export",
+   "expected_sha256": "7c577fdb533fff26aef8022b64f9cfd1c9445e763a002356820c81adc27351a3",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_retention_summer_to_summer_institutional\\xgboost.portable.joblib",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_programme/logistic_regression.joblib",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "model",
+   "expected_sha256": "aad22a09b024c7e35cd3b200da0837a40f942f8f50c30f22411a2107bd41cef0",
+   "dest_sha256": "aad22a09b024c7e35cd3b200da0837a40f942f8f50c30f22411a2107bd41cef0",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_programme/logistic_regression.meta.json",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "model_metadata",
+   "expected_sha256": "3213e40c5d80f7cb6b31299494047b994411ea1b99f68d9ce2057039ff69cbc4",
+   "dest_sha256": "3213e40c5d80f7cb6b31299494047b994411ea1b99f68d9ce2057039ff69cbc4",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_programme/xgboost.booster.json",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "model_portable_export",
+   "expected_sha256": "69633d2441c8fd5462c397e871c080658d9bd41e8cb67831a6538ae98f6b0205",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_retention_summer_to_summer_programme\\xgboost.booster.json",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_programme/xgboost.joblib",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "model",
+   "expected_sha256": "18bb872b148fc0cb7ed18a82dfcccce4b7025a2c85f1b83b8f5057709034316f",
+   "dest_sha256": "18bb872b148fc0cb7ed18a82dfcccce4b7025a2c85f1b83b8f5057709034316f",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_programme/xgboost.meta.json",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "model_metadata",
+   "expected_sha256": "30d6423ef6f21271c1ae01d245d9e6efc35cb23d7a4cd47599ccd3ebda386a50",
+   "dest_sha256": "30d6423ef6f21271c1ae01d245d9e6efc35cb23d7a4cd47599ccd3ebda386a50",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/synthetic/syn_retention_summer_to_summer_programme/xgboost.portable.joblib",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "model_portable_export",
+   "expected_sha256": "9f0c23de2850341f18dc6f748d95f48656ff71c01c9ebe2e29f07dc9ce5eb730",
+   "action": "copy",
+   "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\78780778-2115-47ce-bf23-b789579a14d2\\scratchpad\\drive_staging\\_final_restoration_and_dashboard\\portable_xgboost\\syn_retention_summer_to_summer_programme\\xgboost.portable.joblib",
+   "result": "restored_verified"
+  },
+  {
+   "path": "models/uci/uci_dropout_end_of_year1/logistic_regression.joblib",
+   "task": "uci_dropout_end_of_year1",
+   "role": "model",
+   "expected_sha256": "798aff22ad94102bd5faad20930b879b46e161ab39d42b809ba7d5b0f5391a9a",
+   "dest_sha256": "798aff22ad94102bd5faad20930b879b46e161ab39d42b809ba7d5b0f5391a9a",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_dropout_end_of_year1/logistic_regression.meta.json",
+   "task": "uci_dropout_end_of_year1",
+   "role": "model_metadata",
+   "expected_sha256": "8f8c5491edeba9e59827cb0a2d87ebe89e82c1facf027e3ba21d01887f470683",
+   "dest_sha256": "8f8c5491edeba9e59827cb0a2d87ebe89e82c1facf027e3ba21d01887f470683",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_dropout_enrolment_time/catboost.joblib",
+   "task": "uci_dropout_enrolment_time",
+   "role": "model",
+   "expected_sha256": "63c5d0001a00b4cf049327596eedf1ea92c048a8dfbef9a11dac8f83bfb356af",
+   "dest_sha256": "63c5d0001a00b4cf049327596eedf1ea92c048a8dfbef9a11dac8f83bfb356af",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_dropout_enrolment_time/catboost.meta.json",
+   "task": "uci_dropout_enrolment_time",
+   "role": "model_metadata",
+   "expected_sha256": "a18effb7b9a858ac9dffcfd76f5c58683bb639c23cf7056c846daad7b6b21f7f",
+   "dest_sha256": "a18effb7b9a858ac9dffcfd76f5c58683bb639c23cf7056c846daad7b6b21f7f",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_dropout_enrolment_time/logistic_regression.joblib",
+   "task": "uci_dropout_enrolment_time",
+   "role": "model",
+   "expected_sha256": "8fb5e316183d24caf4b38ad43517a5ec486e785b30aa019a15f05bad4ae40cbf",
+   "dest_sha256": "8fb5e316183d24caf4b38ad43517a5ec486e785b30aa019a15f05bad4ae40cbf",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_dropout_enrolment_time/logistic_regression.meta.json",
+   "task": "uci_dropout_enrolment_time",
+   "role": "model_metadata",
+   "expected_sha256": "614bb6206694db7e8991b72e16589fdbba855a1455e22343e653e6845bdd8ff7",
+   "dest_sha256": "614bb6206694db7e8991b72e16589fdbba855a1455e22343e653e6845bdd8ff7",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_end_of_year1/logistic_regression.joblib",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "model",
+   "expected_sha256": "ad991f5f20533bdf09d23d14b82ec2da49bf7b7d49c8ae1b2cafed4df3bf033f",
+   "dest_sha256": "ad991f5f20533bdf09d23d14b82ec2da49bf7b7d49c8ae1b2cafed4df3bf033f",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_end_of_year1/logistic_regression.meta.json",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "model_metadata",
+   "expected_sha256": "8c8d9bcffc0cf2865387211fce138574c408c33af3439dcb3c394fb98b16e194",
+   "dest_sha256": "8c8d9bcffc0cf2865387211fce138574c408c33af3439dcb3c394fb98b16e194",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_end_of_year1/xgboost.joblib",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "model",
+   "expected_sha256": "134dd8322a280d1313a722bf8ac1edee34b89103affcd7d63594cdf08a94ab04",
+   "dest_sha256": "134dd8322a280d1313a722bf8ac1edee34b89103affcd7d63594cdf08a94ab04",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_end_of_year1/xgboost.meta.json",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "model_metadata",
+   "expected_sha256": "0892ba0f873aa78df5d43be2923bff89d4bbfb0ad2a7f603570687194864e098",
+   "dest_sha256": "0892ba0f873aa78df5d43be2923bff89d4bbfb0ad2a7f603570687194864e098",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_enrolment_time/catboost.joblib",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "model",
+   "expected_sha256": "8b563e657fe85066f5b78fb9d95000ea0418c965b645c03e013400c7c30954f5",
+   "dest_sha256": "8b563e657fe85066f5b78fb9d95000ea0418c965b645c03e013400c7c30954f5",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_enrolment_time/catboost.meta.json",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "model_metadata",
+   "expected_sha256": "dcdd9d0fd4f6756ea7f3e727433c4332b1bf40bbf6f28000e5ff8f69eb05756a",
+   "dest_sha256": "dcdd9d0fd4f6756ea7f3e727433c4332b1bf40bbf6f28000e5ff8f69eb05756a",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_enrolment_time/logistic_regression.joblib",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "model",
+   "expected_sha256": "afb287d28b3efb5190f6aa7af813be4b464eb32db55ab46ae5e26f8247296214",
+   "dest_sha256": "afb287d28b3efb5190f6aa7af813be4b464eb32db55ab46ae5e26f8247296214",
+   "action": "present_verified"
+  },
+  {
+   "path": "models/uci/uci_outcome3_enrolment_time/logistic_regression.meta.json",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "model_metadata",
+   "expected_sha256": "00c0ac77cd55d6cb9e98d6524d21de4f16437c3245655dfdd5d9ff31b26d4059",
+   "dest_sha256": "00c0ac77cd55d6cb9e98d6524d21de4f16437c3245655dfdd5d9ff31b26d4059",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/anomaly_flagged_explanations.csv",
+   "task": "syn_segmentation",
+   "role": "segmentation_output",
+   "expected_sha256": "23aa3d85ce23273bdee49b23e0748409b9b62867368d0ad1fe4dc20aaa292df7",
+   "dest_sha256": "23aa3d85ce23273bdee49b23e0748409b9b62867368d0ad1fe4dc20aaa292df7",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/anomaly_score_distribution.png",
+   "task": "syn_segmentation",
+   "role": "figure",
+   "expected_sha256": "509cf3fd193d42a0dd85b40e4da71dc6a8fa38c8513001313079af728d45c4d6",
+   "dest_sha256": "509cf3fd193d42a0dd85b40e4da71dc6a8fa38c8513001313079af728d45c4d6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/segmentation_assignments.csv",
+   "task": "syn_segmentation",
+   "role": "segmentation_output",
+   "expected_sha256": "b30d9eee37977fb96d11404a832103b3b5bb24329a37e8a0f2e62f006b70c5c5",
+   "dest_sha256": "b30d9eee37977fb96d11404a832103b3b5bb24329a37e8a0f2e62f006b70c5c5",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/segmentation_kmeans_profiles.csv",
+   "task": "syn_segmentation",
+   "role": "segmentation_output",
+   "expected_sha256": "b5e5a689200c7c8f068486d7bd7081b1deafd746da38f151a4d53b4682a86b98",
+   "dest_sha256": "b5e5a689200c7c8f068486d7bd7081b1deafd746da38f151a4d53b4682a86b98",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/segmentation_results.json",
+   "task": "syn_segmentation",
+   "role": "evaluation",
+   "expected_sha256": "e50760e875eebbd4faec6dee576e5604c1320e6c6b23d126838615cf1995b6b6",
+   "dest_sha256": "e50760e875eebbd4faec6dee576e5604c1320e6c6b23d126838615cf1995b6b6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/segmentation_silhouette.png",
+   "task": "syn_segmentation",
+   "role": "figure",
+   "expected_sha256": "a98109150da640920bec938b23fd6bd3c0674c8d30d70dcc865de6313860016f",
+   "dest_sha256": "a98109150da640920bec938b23fd6bd3c0674c8d30d70dcc865de6313860016f",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_accept_builtin_importance_xgboost.csv",
+   "task": "syn_admissions_accept",
+   "role": "feature_importance",
+   "expected_sha256": "15e341d4f682664bc01048149c075f74a36c419cb378879361364d6adbc9cfa8",
+   "dest_sha256": "15e341d4f682664bc01048149c075f74a36c419cb378879361364d6adbc9cfa8",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_accept_coefficients_logistic_regression.csv",
+   "task": "syn_admissions_accept",
+   "role": "feature_importance",
+   "expected_sha256": "99bc4ce2040d206d912f5690d9f968dad9d88a5be7ae41d73a4353651d091ed9",
+   "dest_sha256": "99bc4ce2040d206d912f5690d9f968dad9d88a5be7ae41d73a4353651d091ed9",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_accept_shap_xgboost.csv",
+   "task": "syn_admissions_accept",
+   "role": "feature_importance",
+   "expected_sha256": "68c42e63d1618583f3e130b7cf490befc124291872f12773db78b1d06f8e6b04",
+   "dest_sha256": "68c42e63d1618583f3e130b7cf490befc124291872f12773db78b1d06f8e6b04",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_accept_shap_xgboost.png",
+   "task": "syn_admissions_accept",
+   "role": "figure",
+   "expected_sha256": "25d3318f68987d5ecf30942c18bbe65b16238b0484d42067956fda5683ea16f3",
+   "dest_sha256": "25d3318f68987d5ecf30942c18bbe65b16238b0484d42067956fda5683ea16f3",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_offer_builtin_importance_xgboost.csv",
+   "task": "syn_admissions_offer",
+   "role": "feature_importance",
+   "expected_sha256": "5581053256fae05e5743d7494a046a92a52722234a59bf0f80ba51a321768d2d",
+   "dest_sha256": "5581053256fae05e5743d7494a046a92a52722234a59bf0f80ba51a321768d2d",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_offer_coefficients_logistic_regression.csv",
+   "task": "syn_admissions_offer",
+   "role": "feature_importance",
+   "expected_sha256": "5e3b18a223742b17fde51f22016e26e61687b7ecc527b3c5bb50db119d5f57ec",
+   "dest_sha256": "5e3b18a223742b17fde51f22016e26e61687b7ecc527b3c5bb50db119d5f57ec",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_offer_shap_xgboost.csv",
+   "task": "syn_admissions_offer",
+   "role": "feature_importance",
+   "expected_sha256": "455490389a300f52c68ba3623ff7a4bbe10e63cbc71dae16006bf788679d88a0",
+   "dest_sha256": "455490389a300f52c68ba3623ff7a4bbe10e63cbc71dae16006bf788679d88a0",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_admissions_offer_shap_xgboost.png",
+   "task": "syn_admissions_offer",
+   "role": "figure",
+   "expected_sha256": "67524206a98158ff2a462d6b5d9955c617f7a677a82ef66b98d6b5758f40d7e6",
+   "dest_sha256": "67524206a98158ff2a462d6b5d9955c617f7a677a82ef66b98d6b5758f40d7e6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_dropout_2y_builtin_importance_random_forest.csv",
+   "task": "syn_dropout_2y",
+   "role": "feature_importance",
+   "expected_sha256": "49d2a66d0a7cd1d3c0c3942372113d0a075c4173ddbe6f1575153d77ab9a3c30",
+   "dest_sha256": "49d2a66d0a7cd1d3c0c3942372113d0a075c4173ddbe6f1575153d77ab9a3c30",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_dropout_2y_coefficients_logistic_regression.csv",
+   "task": "syn_dropout_2y",
+   "role": "feature_importance",
+   "expected_sha256": "9486aee29ab907e950116116deeb62fd2b8827a89a710a01b81afa39d434b163",
+   "dest_sha256": "9486aee29ab907e950116116deeb62fd2b8827a89a710a01b81afa39d434b163",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_dropout_2y_shap_random_forest.csv",
+   "task": "syn_dropout_2y",
+   "role": "feature_importance",
+   "expected_sha256": "5d2e991bd716acc6c4ddacb66008d2ee5bba555aad9e86069e6b0fcc29000aff",
+   "dest_sha256": "5d2e991bd716acc6c4ddacb66008d2ee5bba555aad9e86069e6b0fcc29000aff",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_dropout_2y_shap_random_forest.png",
+   "task": "syn_dropout_2y",
+   "role": "figure",
+   "expected_sha256": "6fb6db2f4f297cdaa1cfbad14c4bed259f80c342cf508b8de37f9c41556cbf31",
+   "dest_sha256": "6fb6db2f4f297cdaa1cfbad14c4bed259f80c342cf508b8de37f9c41556cbf31",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_graduation_within_window_builtin_importance_random_forest.csv",
+   "task": "syn_graduation_within_window",
+   "role": "feature_importance",
+   "expected_sha256": "1983f0db0ec2085db22f196a3443e23e385fcb24c9ee234b7f04a40835e9dcc6",
+   "dest_sha256": "1983f0db0ec2085db22f196a3443e23e385fcb24c9ee234b7f04a40835e9dcc6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_graduation_within_window_coefficients_logistic_regression.csv",
+   "task": "syn_graduation_within_window",
+   "role": "feature_importance",
+   "expected_sha256": "7ae641d1824ee5b2ce70ca05518d66daddb12fb05d403e4de0b5f8ded2840f8d",
+   "dest_sha256": "7ae641d1824ee5b2ce70ca05518d66daddb12fb05d403e4de0b5f8ded2840f8d",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_graduation_within_window_shap_random_forest.csv",
+   "task": "syn_graduation_within_window",
+   "role": "feature_importance",
+   "expected_sha256": "7a2d39e16fdbda771b2bddc297f9504f7ac0244a5dd6901c24d6ba5caecffdf9",
+   "dest_sha256": "7a2d39e16fdbda771b2bddc297f9504f7ac0244a5dd6901c24d6ba5caecffdf9",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_graduation_within_window_shap_random_forest.png",
+   "task": "syn_graduation_within_window",
+   "role": "figure",
+   "expected_sha256": "045525a08f73e22c1c63a1be8fe9d360988b52bce744b2635dd662b850212cbd",
+   "dest_sha256": "045525a08f73e22c1c63a1be8fe9d360988b52bce744b2635dd662b850212cbd",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_academic_risk_builtin_importance_catboost.csv",
+   "task": "syn_next_term_academic_risk",
+   "role": "feature_importance",
+   "expected_sha256": "195101d47619686cf6f9414f8e5d09025ed9f7685eb11bf43799f9976cb2fc09",
+   "dest_sha256": "195101d47619686cf6f9414f8e5d09025ed9f7685eb11bf43799f9976cb2fc09",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_academic_risk_coefficients_logistic_regression.csv",
+   "task": "syn_next_term_academic_risk",
+   "role": "feature_importance",
+   "expected_sha256": "26979dd5fa053e9da3857aa16968569399a0a3fc4048e684964aacd2b6778f66",
+   "dest_sha256": "26979dd5fa053e9da3857aa16968569399a0a3fc4048e684964aacd2b6778f66",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_academic_risk_shap_catboost.csv",
+   "task": "syn_next_term_academic_risk",
+   "role": "feature_importance",
+   "expected_sha256": "8507b709a34700a0a64f683c1eaa032f5fcab52241a88e6741094c3b72c6bdc8",
+   "dest_sha256": "8507b709a34700a0a64f683c1eaa032f5fcab52241a88e6741094c3b72c6bdc8",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_academic_risk_shap_catboost.png",
+   "task": "syn_next_term_academic_risk",
+   "role": "figure",
+   "expected_sha256": "f5858859c2a15d5b1b4e95b5fd8e7e53e75ae862e9251b060f6937b80cda8232",
+   "dest_sha256": "f5858859c2a15d5b1b4e95b5fd8e7e53e75ae862e9251b060f6937b80cda8232",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_gpa_builtin_importance_random_forest.csv",
+   "task": "syn_next_term_gpa",
+   "role": "feature_importance",
+   "expected_sha256": "75fa9cdf6d59efb753edc2c6ec5a7e65475e223a5d6ddbbc8f025dbd36299570",
+   "dest_sha256": "75fa9cdf6d59efb753edc2c6ec5a7e65475e223a5d6ddbbc8f025dbd36299570",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_gpa_coefficients_linear_regression.csv",
+   "task": "syn_next_term_gpa",
+   "role": "feature_importance",
+   "expected_sha256": "a293aca8f4f74eff257a2a4e2621bd11ed585489a5722e60cb29764fe22f3f63",
+   "dest_sha256": "a293aca8f4f74eff257a2a4e2621bd11ed585489a5722e60cb29764fe22f3f63",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_gpa_shap_random_forest.csv",
+   "task": "syn_next_term_gpa",
+   "role": "feature_importance",
+   "expected_sha256": "a9a6ba8474379e38f38e26be43560d76ceefd0be7c447c439a11459c5be30d04",
+   "dest_sha256": "a9a6ba8474379e38f38e26be43560d76ceefd0be7c447c439a11459c5be30d04",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_next_term_gpa_shap_random_forest.png",
+   "task": "syn_next_term_gpa",
+   "role": "figure",
+   "expected_sha256": "329117b3970080d8357b80fb778d930ae05143ffe36802d8dc4f36760e72024e",
+   "dest_sha256": "329117b3970080d8357b80fb778d930ae05143ffe36802d8dc4f36760e72024e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_institutional_builtin_importance_random_forest.csv",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "00dce8919d0ec7e8b998126f6a9091a45725263b7f6419463526fc2f94c2e86f",
+   "dest_sha256": "00dce8919d0ec7e8b998126f6a9091a45725263b7f6419463526fc2f94c2e86f",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_institutional_coefficients_logistic_regression.csv",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "d90e72de0328433b200199693a5ba45895143fd1e8004827d7acc9a757568f55",
+   "dest_sha256": "d90e72de0328433b200199693a5ba45895143fd1e8004827d7acc9a757568f55",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_institutional_shap_random_forest.csv",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "d2b1aab1887581c2dc505eb393c4b6e5fe65d0bf4a45a67290aac7562c26e318",
+   "dest_sha256": "d2b1aab1887581c2dc505eb393c4b6e5fe65d0bf4a45a67290aac7562c26e318",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_institutional_shap_random_forest.png",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "figure",
+   "expected_sha256": "ef52849ead387e6025894890c2e323ad43b4bbf86f08620f9c68b81b2b9c6329",
+   "dest_sha256": "ef52849ead387e6025894890c2e323ad43b4bbf86f08620f9c68b81b2b9c6329",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_programme_builtin_importance_xgboost.csv",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "feature_importance",
+   "expected_sha256": "35094499ae4562aec3cda75c37c898ee85a98ba8ed2a3adcc5778bf2011feebe",
+   "dest_sha256": "35094499ae4562aec3cda75c37c898ee85a98ba8ed2a3adcc5778bf2011feebe",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_programme_coefficients_logistic_regression.csv",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "feature_importance",
+   "expected_sha256": "41204761d845a97c67d1e1c7e9b407af266d354e00df18cb125e74c1ef3d45a3",
+   "dest_sha256": "41204761d845a97c67d1e1c7e9b407af266d354e00df18cb125e74c1ef3d45a3",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_programme_shap_xgboost.csv",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "feature_importance",
+   "expected_sha256": "49eae96a12652c6ec3a37eb601c8684c7b6e97565435051353e32f3eee847cb8",
+   "dest_sha256": "49eae96a12652c6ec3a37eb601c8684c7b6e97565435051353e32f3eee847cb8",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_fall_to_fall_programme_shap_xgboost.png",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "figure",
+   "expected_sha256": "17e75e1c7a99237313aa5e6d68ecc7aeaccd7370c92ed76d21d09b3b374efb81",
+   "dest_sha256": "17e75e1c7a99237313aa5e6d68ecc7aeaccd7370c92ed76d21d09b3b374efb81",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_institutional_builtin_importance_xgboost.csv",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "65b706fa11dd57f27b6a096c40454261c04b4d75dc117def10bce32c3bade8f5",
+   "dest_sha256": "65b706fa11dd57f27b6a096c40454261c04b4d75dc117def10bce32c3bade8f5",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_institutional_coefficients_logistic_regression.csv",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "4c605d53f8620cbcacd3e86c47b588ddc5c334eac7d7841f410a30b86933727e",
+   "dest_sha256": "4c605d53f8620cbcacd3e86c47b588ddc5c334eac7d7841f410a30b86933727e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_institutional_shap_xgboost.csv",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "161883f15a66b4ca6626e0b608af60e81ca6d7d9d5e4fe1b584eaec5f32659f9",
+   "dest_sha256": "161883f15a66b4ca6626e0b608af60e81ca6d7d9d5e4fe1b584eaec5f32659f9",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_institutional_shap_xgboost.png",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "figure",
+   "expected_sha256": "89e77d07faedc02c25cf9461909da6c6da0d02503d64acebc4637a8be0b28ab1",
+   "dest_sha256": "89e77d07faedc02c25cf9461909da6c6da0d02503d64acebc4637a8be0b28ab1",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_programme_builtin_importance_random_forest.csv",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "feature_importance",
+   "expected_sha256": "6ee61b79d9175c762f6272a2a3d8db899ca753895d6385a0a3857542615df05f",
+   "dest_sha256": "6ee61b79d9175c762f6272a2a3d8db899ca753895d6385a0a3857542615df05f",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_programme_coefficients_logistic_regression.csv",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "feature_importance",
+   "expected_sha256": "50b108470344fc4e3a005f639791c50b0f80a140d3620d829b679e518e13c89a",
+   "dest_sha256": "50b108470344fc4e3a005f639791c50b0f80a140d3620d829b679e518e13c89a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_programme_shap_random_forest.csv",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "feature_importance",
+   "expected_sha256": "b615bddb022be0b60faf8d2739c16e501c885602a91c6423a895b91bd2e92ac7",
+   "dest_sha256": "b615bddb022be0b60faf8d2739c16e501c885602a91c6423a895b91bd2e92ac7",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_spring_to_spring_programme_shap_random_forest.png",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "figure",
+   "expected_sha256": "8da040c0ea6ea3ea7684651a808fe61c14cc5ec103fc1a246a9ffe7b6abde283",
+   "dest_sha256": "8da040c0ea6ea3ea7684651a808fe61c14cc5ec103fc1a246a9ffe7b6abde283",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_institutional_builtin_importance_xgboost.csv",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "6e3be62f79539dab29db7992a3a0cf1ab738b63e8616ac24a89f9d91bc5237e8",
+   "dest_sha256": "6e3be62f79539dab29db7992a3a0cf1ab738b63e8616ac24a89f9d91bc5237e8",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_institutional_coefficients_logistic_regression.csv",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "a78e7177c43bb87e99f357065142a32b1c5bfd0ee8f7ad350c1cb4559be5a727",
+   "dest_sha256": "a78e7177c43bb87e99f357065142a32b1c5bfd0ee8f7ad350c1cb4559be5a727",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_institutional_shap_xgboost.csv",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "feature_importance",
+   "expected_sha256": "e2d2cc264bb10f318be537b46790e5224ec9104ef75c4bb7ea2a044c808fa45d",
+   "dest_sha256": "e2d2cc264bb10f318be537b46790e5224ec9104ef75c4bb7ea2a044c808fa45d",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_institutional_shap_xgboost.png",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "figure",
+   "expected_sha256": "52736799b254555abdab9dbd39c739fa4303fbf07699840ee6bf04acf1acefa6",
+   "dest_sha256": "52736799b254555abdab9dbd39c739fa4303fbf07699840ee6bf04acf1acefa6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_programme_builtin_importance_xgboost.csv",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "feature_importance",
+   "expected_sha256": "6387512e958384d6d9a63f562b30b5c446e71469c7d73027ed1bf17fb10e4fbd",
+   "dest_sha256": "6387512e958384d6d9a63f562b30b5c446e71469c7d73027ed1bf17fb10e4fbd",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_programme_coefficients_logistic_regression.csv",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "feature_importance",
+   "expected_sha256": "0bd787131eeb5d37e563f80d050da17ced508ad049b0c893e1b991356f20915e",
+   "dest_sha256": "0bd787131eeb5d37e563f80d050da17ced508ad049b0c893e1b991356f20915e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_programme_shap_xgboost.csv",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "feature_importance",
+   "expected_sha256": "9dd95e69e7a5508bb89b6aef01f6d24367fb79203ca2b5b89d7a3552d6cd5700",
+   "dest_sha256": "9dd95e69e7a5508bb89b6aef01f6d24367fb79203ca2b5b89d7a3552d6cd5700",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/synthetic/syn_retention_summer_to_summer_programme_shap_xgboost.png",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "figure",
+   "expected_sha256": "25ffa61cf2ed015fc60efe3e2a00770eb34f1c93f43e61b0eb7a2a2915850e62",
+   "dest_sha256": "25ffa61cf2ed015fc60efe3e2a00770eb34f1c93f43e61b0eb7a2a2915850e62",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_end_of_year1_builtin_importance_xgboost.csv",
+   "task": "uci_dropout_end_of_year1",
+   "role": "feature_importance",
+   "expected_sha256": "9b4d8a82033d1167837acc222a1365aca1d40f0110974e9682a6e4c14453f0dd",
+   "dest_sha256": "9b4d8a82033d1167837acc222a1365aca1d40f0110974e9682a6e4c14453f0dd",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_end_of_year1_coefficients_logistic_regression.csv",
+   "task": "uci_dropout_end_of_year1",
+   "role": "feature_importance",
+   "expected_sha256": "41f9deab55bd92b84aaf7a0be08165437db31b12e8852cd4ec3cc6173e9ca5c4",
+   "dest_sha256": "41f9deab55bd92b84aaf7a0be08165437db31b12e8852cd4ec3cc6173e9ca5c4",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_end_of_year1_shap_xgboost.csv",
+   "task": "uci_dropout_end_of_year1",
+   "role": "feature_importance",
+   "expected_sha256": "3555db6697096c917335f9216c0319a084166b8f6ba7818fa79214f8f2475671",
+   "dest_sha256": "3555db6697096c917335f9216c0319a084166b8f6ba7818fa79214f8f2475671",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_end_of_year1_shap_xgboost.png",
+   "task": "uci_dropout_end_of_year1",
+   "role": "figure",
+   "expected_sha256": "76450a72520eaaa3c8e7a5ff7f82563604d5a48b6b7370c8d078b4634839e6bc",
+   "dest_sha256": "76450a72520eaaa3c8e7a5ff7f82563604d5a48b6b7370c8d078b4634839e6bc",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_enrolment_time_builtin_importance_catboost.csv",
+   "task": "uci_dropout_enrolment_time",
+   "role": "feature_importance",
+   "expected_sha256": "40b0795a54ecbe006bc380a34542040bf80115af6583db28427bfb808dbeabd1",
+   "dest_sha256": "40b0795a54ecbe006bc380a34542040bf80115af6583db28427bfb808dbeabd1",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_enrolment_time_coefficients_logistic_regression.csv",
+   "task": "uci_dropout_enrolment_time",
+   "role": "feature_importance",
+   "expected_sha256": "0a34e1c311f01cf00d688d07f718e2b95ac63aefccf8ac558e1dc473da80651c",
+   "dest_sha256": "0a34e1c311f01cf00d688d07f718e2b95ac63aefccf8ac558e1dc473da80651c",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_enrolment_time_shap_catboost.csv",
+   "task": "uci_dropout_enrolment_time",
+   "role": "feature_importance",
+   "expected_sha256": "e59c0090131106bb7f51de9acac913d07673a63a2fdf4a62256f915f1719ec03",
+   "dest_sha256": "e59c0090131106bb7f51de9acac913d07673a63a2fdf4a62256f915f1719ec03",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_dropout_enrolment_time_shap_catboost.png",
+   "task": "uci_dropout_enrolment_time",
+   "role": "figure",
+   "expected_sha256": "f28b431ed1f72cb6131de85fe7f177e1923cb95b7b603a04014385d3bf4353b6",
+   "dest_sha256": "f28b431ed1f72cb6131de85fe7f177e1923cb95b7b603a04014385d3bf4353b6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_end_of_year1_builtin_importance_xgboost.csv",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "feature_importance",
+   "expected_sha256": "6f10b796fdf606679b1375df8593903705ccb9c29e09c3ee3fce04a9f53a9c25",
+   "dest_sha256": "6f10b796fdf606679b1375df8593903705ccb9c29e09c3ee3fce04a9f53a9c25",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_end_of_year1_coefficients_logistic_regression.csv",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "feature_importance",
+   "expected_sha256": "1c2fac49ce4f7eaa36c881504a598888b27c34ccc2efd1ace66c9af05134833e",
+   "dest_sha256": "1c2fac49ce4f7eaa36c881504a598888b27c34ccc2efd1ace66c9af05134833e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_end_of_year1_shap_xgboost.csv",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "feature_importance",
+   "expected_sha256": "37cf677f4274a3d7e4f6a836f26d25146513b25a7c09b0a9835aae37108f264e",
+   "dest_sha256": "37cf677f4274a3d7e4f6a836f26d25146513b25a7c09b0a9835aae37108f264e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_end_of_year1_shap_xgboost.png",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "figure",
+   "expected_sha256": "a1f5e990d233b68277a3be24fbb7f5835458b6c9236b599a3fa73cf02863f469",
+   "dest_sha256": "a1f5e990d233b68277a3be24fbb7f5835458b6c9236b599a3fa73cf02863f469",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_enrolment_time_builtin_importance_catboost.csv",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "feature_importance",
+   "expected_sha256": "552909baa4935cfd59dc1943052ca46c9323540abc43d829cf5aafa9c885a020",
+   "dest_sha256": "552909baa4935cfd59dc1943052ca46c9323540abc43d829cf5aafa9c885a020",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_enrolment_time_coefficients_logistic_regression.csv",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "feature_importance",
+   "expected_sha256": "51e607b4598b0f98d515da934629095d272b2d444125f4af96b47c761a5dd1d5",
+   "dest_sha256": "51e607b4598b0f98d515da934629095d272b2d444125f4af96b47c761a5dd1d5",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_enrolment_time_shap_catboost.csv",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "feature_importance",
+   "expected_sha256": "906398b217b5418d802823c0b10a88a2187657251480f49a6729fb80258fc3d4",
+   "dest_sha256": "906398b217b5418d802823c0b10a88a2187657251480f49a6729fb80258fc3d4",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/feature_analysis/uci/uci_outcome3_enrolment_time_shap_catboost.png",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "figure",
+   "expected_sha256": "cc184828bc118321756c3440b1209399339ca6f5e90126a73191a7fc984040dd",
+   "dest_sha256": "cc184828bc118321756c3440b1209399339ca6f5e90126a73191a7fc984040dd",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/admissions_funnel_forecast.png",
+   "task": "forecasting",
+   "role": "figure",
+   "expected_sha256": "26fa46edc026b0f6118805793a2b430b1f75db179d686462cac8792c9595e23a",
+   "dest_sha256": "26fa46edc026b0f6118805793a2b430b1f75db179d686462cac8792c9595e23a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/annual_series_backtest_summary.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "faba8aaf9cbcc027b5a787806e29af6c2fe37539f47557b0ac233c7fa26e862b",
+   "dest_sha256": "faba8aaf9cbcc027b5a787806e29af6c2fe37539f47557b0ac233c7fa26e862b",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/annual_series_forecasts.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "e3d1c95f5ff84cdf2580d6fa3cc123b6aa6ada7045e4b15bae338058fd881659",
+   "dest_sha256": "e3d1c95f5ff84cdf2580d6fa3cc123b6aa6ada7045e4b15bae338058fd881659",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/backtest_errors.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "4ca645821617b010e926b218ccf6251f5d1a6421cbd0096fecad348239899f78",
+   "dest_sha256": "4ca645821617b010e926b218ccf6251f5d1a6421cbd0096fecad348239899f78",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/backtest_summary_by_horizon.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "fc1b13f4881a99dc5f94b4d2976d915bbc01a6d19354b607f4423d871ed34176",
+   "dest_sha256": "fc1b13f4881a99dc5f94b4d2976d915bbc01a6d19354b607f4423d871ed34176",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/backtest_summary_by_series_method.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "b688a8a460226b921dce85c1a9ad2f70bfeda4205f6665177b9eae27cdc355b5",
+   "dest_sha256": "b688a8a460226b921dce85c1a9ad2f70bfeda4205f6665177b9eae27cdc355b5",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/backtest_summary_per_series.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "f31aadb095f58a47639d511b694817619b85e8dac4cde6ec4b54ab581a333cd8",
+   "dest_sha256": "f31aadb095f58a47639d511b694817619b85e8dac4cde6ec4b54ab581a333cd8",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/best_method_by_series_family.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "9ec01869059f1e4dcc9b9c8345192ba092292ca300f90b5a0fec6d20acc544d1",
+   "dest_sha256": "9ec01869059f1e4dcc9b9c8345192ba092292ca300f90b5a0fec6d20acc544d1",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/conversion_rate_backtest.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "034c0a0934841ec06b240c3dfdee22d4a32c1b1921b92770292ffd0df982dc49",
+   "dest_sha256": "034c0a0934841ec06b240c3dfdee22d4a32c1b1921b92770292ffd0df982dc49",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/conversion_rate_backtest_summary.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "69532f89ca30b3a56dbdd640d5e8b4fe78c25c17d8ab3abba36834c7e0509e28",
+   "dest_sha256": "69532f89ca30b3a56dbdd640d5e8b4fe78c25c17d8ab3abba36834c7e0509e28",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/conversion_rate_forecasts.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "0c6de74f2442025da42954dbdab1d2003ccd2e90356200c7d86b7d3b4ab71854",
+   "dest_sha256": "0c6de74f2442025da42954dbdab1d2003ccd2e90356200c7d86b7d3b4ab71854",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/enrolment_forecast_by_delivery_mode.png",
+   "task": "forecasting",
+   "role": "figure",
+   "expected_sha256": "bd5f1f9b612cfbc2445065d0b39fc2d61b11513dfebd028f809abf4ea07180f4",
+   "dest_sha256": "bd5f1f9b612cfbc2445065d0b39fc2d61b11513dfebd028f809abf4ea07180f4",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/enrolment_forecast_by_gender.png",
+   "task": "forecasting",
+   "role": "figure",
+   "expected_sha256": "4fe68b0aaa5f772d989588e61fabc8c0eba56307fbe0ff1aaf98f0415c94b307",
+   "dest_sha256": "4fe68b0aaa5f772d989588e61fabc8c0eba56307fbe0ff1aaf98f0415c94b307",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/enrolment_forecast_by_level.png",
+   "task": "forecasting",
+   "role": "figure",
+   "expected_sha256": "c366373076e082f98c2d045a02fded8b939250177bd7a78ed1c177bf5f874a80",
+   "dest_sha256": "c366373076e082f98c2d045a02fded8b939250177bd7a78ed1c177bf5f874a80",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/enrolment_forecast_by_school_id.png",
+   "task": "forecasting",
+   "role": "figure",
+   "expected_sha256": "28ed48ad63b4ac80afb2ea2e1265aefb49fbe97e1896366ef20f63c66a019493",
+   "dest_sha256": "28ed48ad63b4ac80afb2ea2e1265aefb49fbe97e1896366ef20f63c66a019493",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/fit_failures.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "0ab3f5781a0ae6425241310057dd026d04a9ecabd4ea34cc99ffb6288ba85355",
+   "dest_sha256": "0ab3f5781a0ae6425241310057dd026d04a9ecabd4ea34cc99ffb6288ba85355",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/forecasting_results.json",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "8de99fd4c0a4020de96909021cfd550f87b3b53d94f89abfb7d962899846df6e",
+   "dest_sha256": "8de99fd4c0a4020de96909021cfd550f87b3b53d94f89abfb7d962899846df6e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/forecasts_all_methods.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "7ff5e73894f62537247e822e76c429c8db3ca86d61468b4f638ec0fa0a8c5068",
+   "dest_sha256": "7ff5e73894f62537247e822e76c429c8db3ca86d61468b4f638ec0fa0a8c5068",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/forecasts_selected_method.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "f66f8ed660ce3b17e51a9f5d449c33180148519c72c5e5e1d5bf17aa4ae471a5",
+   "dest_sha256": "f66f8ed660ce3b17e51a9f5d449c33180148519c72c5e5e1d5bf17aa4ae471a5",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/programme_demand_scenarios.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "fccf12f6c7c44812d9cbd6727607929292731ec5db83f834b0d5a5d190702270",
+   "dest_sha256": "fccf12f6c7c44812d9cbd6727607929292731ec5db83f834b0d5a5d190702270",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/series_eligibility.csv",
+   "task": "forecasting",
+   "role": "forecast_output",
+   "expected_sha256": "0b04b497b137b7fd48b4866e694f41f1688a3c42a86847c3fa182c95d48782ab",
+   "dest_sha256": "0b04b497b137b7fd48b4866e694f41f1688a3c42a86847c3fa182c95d48782ab",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/forecasting/total_enrolment_forecast.png",
+   "task": "forecasting",
+   "role": "figure",
+   "expected_sha256": "0ea5c75b9358f449b1796a7b83560d8773a2930fa49310ecaf04060968e55421",
+   "dest_sha256": "0ea5c75b9358f449b1796a7b83560d8773a2930fa49310ecaf04060968e55421",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/run_summary.json",
+   "task": "shared",
+   "role": "evaluation",
+   "expected_sha256": "a579766e7c47e1d5984129e150bb5d278ab4f3add0d9229aa3fdc17d8eecc197",
+   "dest_sha256": "a579766e7c47e1d5984129e150bb5d278ab4f3add0d9229aa3fdc17d8eecc197",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_accept/confusion_logistic_regression.png",
+   "task": "syn_admissions_accept",
+   "role": "figure",
+   "expected_sha256": "c372942647e48cf50e25cee3132895da74b31144ca70d534fd0ea7a03f134372",
+   "dest_sha256": "c372942647e48cf50e25cee3132895da74b31144ca70d534fd0ea7a03f134372",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_accept/confusion_xgboost.png",
+   "task": "syn_admissions_accept",
+   "role": "figure",
+   "expected_sha256": "db51104872035d01171852ff78fe87b1d1bf962dc3780aaed68c729cf413def4",
+   "dest_sha256": "db51104872035d01171852ff78fe87b1d1bf962dc3780aaed68c729cf413def4",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_accept/confusion_xgboost_class0_threshold.png",
+   "task": "syn_admissions_accept",
+   "role": "figure",
+   "expected_sha256": "4ba5d0e0dcd2087e0f9a3d3073f4d27cad98c35fb70b506232ae76c2e2b65294",
+   "dest_sha256": "4ba5d0e0dcd2087e0f9a3d3073f4d27cad98c35fb70b506232ae76c2e2b65294",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_accept/results.json",
+   "task": "syn_admissions_accept",
+   "role": "evaluation",
+   "expected_sha256": "a70b501c7cb466800b251910785c0bc0e6e64a81f57f45efd7244bdf269f7e63",
+   "dest_sha256": "a70b501c7cb466800b251910785c0bc0e6e64a81f57f45efd7244bdf269f7e63",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_accept/roc_pr_calibration.png",
+   "task": "syn_admissions_accept",
+   "role": "figure",
+   "expected_sha256": "eb3cc36e6c1dfbe5a332913e01616156e96142ecb0e2c012edaaeef94d749b7a",
+   "dest_sha256": "eb3cc36e6c1dfbe5a332913e01616156e96142ecb0e2c012edaaeef94d749b7a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_offer/confusion_logistic_regression.png",
+   "task": "syn_admissions_offer",
+   "role": "figure",
+   "expected_sha256": "51deb1c3e26dd7697481b47cba0f5eaf790b6c1f9b36075401360aaceb6a69c6",
+   "dest_sha256": "51deb1c3e26dd7697481b47cba0f5eaf790b6c1f9b36075401360aaceb6a69c6",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_offer/confusion_logistic_regression_class0_threshold.png",
+   "task": "syn_admissions_offer",
+   "role": "figure",
+   "expected_sha256": "9347d1d2a9e6f5bebe914808b9b746959388ef20f2344cf278519c980410a096",
+   "dest_sha256": "9347d1d2a9e6f5bebe914808b9b746959388ef20f2344cf278519c980410a096",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_offer/results.json",
+   "task": "syn_admissions_offer",
+   "role": "evaluation",
+   "expected_sha256": "f978fb20edda76a23632a9abadd39ebb16ae7a8621f65f6adf558eafa8442334",
+   "dest_sha256": "f978fb20edda76a23632a9abadd39ebb16ae7a8621f65f6adf558eafa8442334",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_admissions_offer/roc_pr_calibration.png",
+   "task": "syn_admissions_offer",
+   "role": "figure",
+   "expected_sha256": "03bb9b9c9c4f4579834719be6f735d474a1b1b2ef81ba9124a1f299d2199c7ce",
+   "dest_sha256": "03bb9b9c9c4f4579834719be6f735d474a1b1b2ef81ba9124a1f299d2199c7ce",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_2y/confusion_logistic_regression.png",
+   "task": "syn_dropout_2y",
+   "role": "figure",
+   "expected_sha256": "7ae872694f4c9fbcb8a359b3691a80ebac5fb6d9a68ffded82db7d7064a4f5fa",
+   "dest_sha256": "7ae872694f4c9fbcb8a359b3691a80ebac5fb6d9a68ffded82db7d7064a4f5fa",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_2y/confusion_random_forest.png",
+   "task": "syn_dropout_2y",
+   "role": "figure",
+   "expected_sha256": "8763696f863077c114d3ba1e94a4e953fd3dc39f20fa363fa0af1b472eff1002",
+   "dest_sha256": "8763696f863077c114d3ba1e94a4e953fd3dc39f20fa363fa0af1b472eff1002",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_2y/results.json",
+   "task": "syn_dropout_2y",
+   "role": "evaluation",
+   "expected_sha256": "cfad1dbf12f4bf2a63f8c94b2c76802f4c33117e470b8ce3d22dd9eb11ce8203",
+   "dest_sha256": "cfad1dbf12f4bf2a63f8c94b2c76802f4c33117e470b8ce3d22dd9eb11ce8203",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_2y/roc_pr_calibration.png",
+   "task": "syn_dropout_2y",
+   "role": "figure",
+   "expected_sha256": "abdf7f7556673ddbda83e07ace9b99edee8a8cef9e29a2a75214022bb30b592c",
+   "dest_sha256": "abdf7f7556673ddbda83e07ace9b99edee8a8cef9e29a2a75214022bb30b592c",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_cox/hazard_ratios.csv",
+   "task": "syn_dropout_cox",
+   "role": "evaluation",
+   "expected_sha256": "fb8f55da8913d32db3efc8824f877d75d7a2eca2813fcafcd25c394c766a2e29",
+   "dest_sha256": "fb8f55da8913d32db3efc8824f877d75d7a2eca2813fcafcd25c394c766a2e29",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_cox/kaplan_meier_by_level.png",
+   "task": "syn_dropout_cox",
+   "role": "figure",
+   "expected_sha256": "5eef6a0121f73285b87350fd3750aa5378095c2ef151daa8d2ee0debb292836b",
+   "dest_sha256": "5eef6a0121f73285b87350fd3750aa5378095c2ef151daa8d2ee0debb292836b",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_dropout_cox/results.json",
+   "task": "syn_dropout_cox",
+   "role": "evaluation",
+   "expected_sha256": "f1cb87521116cb1a9dab2076756f7356ddb67c1108eb5429e0c61d5cdf77361e",
+   "dest_sha256": "f1cb87521116cb1a9dab2076756f7356ddb67c1108eb5429e0c61d5cdf77361e",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_cox/hazard_ratios.csv",
+   "task": "syn_graduation_cox",
+   "role": "evaluation",
+   "expected_sha256": "71328f5328458dadbcddcd7a0053790493bd6c86b9d3a0c3abfc0612013669cb",
+   "dest_sha256": "71328f5328458dadbcddcd7a0053790493bd6c86b9d3a0c3abfc0612013669cb",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_cox/kaplan_meier_by_level.png",
+   "task": "syn_graduation_cox",
+   "role": "figure",
+   "expected_sha256": "fdcc5d32e418afd9e39329b82dd807f1c9f9797629ff54335039530cffa14c87",
+   "dest_sha256": "fdcc5d32e418afd9e39329b82dd807f1c9f9797629ff54335039530cffa14c87",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_cox/results.json",
+   "task": "syn_graduation_cox",
+   "role": "evaluation",
+   "expected_sha256": "d4aef00c06c067e4648f72f302609e27760e498109985021aee43117093d29f7",
+   "dest_sha256": "d4aef00c06c067e4648f72f302609e27760e498109985021aee43117093d29f7",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_within_window/confusion_logistic_regression.png",
+   "task": "syn_graduation_within_window",
+   "role": "figure",
+   "expected_sha256": "b5749aa7aaf243c2e342ddab60e71154250d49ea11f4493667e2dd0181916f63",
+   "dest_sha256": "b5749aa7aaf243c2e342ddab60e71154250d49ea11f4493667e2dd0181916f63",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_within_window/confusion_random_forest.png",
+   "task": "syn_graduation_within_window",
+   "role": "figure",
+   "expected_sha256": "197f78613343065b6536913a573d5e3a23af937fee7bfd8737af2011e1c0571d",
+   "dest_sha256": "197f78613343065b6536913a573d5e3a23af937fee7bfd8737af2011e1c0571d",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_within_window/confusion_random_forest_class0_threshold.png",
+   "task": "syn_graduation_within_window",
+   "role": "figure",
+   "expected_sha256": "ea8280d9715478d0ead9e46968b8a0a1a9c330dfd2b98c367a599db6eb54a1c7",
+   "dest_sha256": "ea8280d9715478d0ead9e46968b8a0a1a9c330dfd2b98c367a599db6eb54a1c7",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_within_window/results.json",
+   "task": "syn_graduation_within_window",
+   "role": "evaluation",
+   "expected_sha256": "3f19c82d7b8974f840031b9399a0e7071c24f4e29980fcc2a07d0a2101601b5b",
+   "dest_sha256": "3f19c82d7b8974f840031b9399a0e7071c24f4e29980fcc2a07d0a2101601b5b",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_graduation_within_window/roc_pr_calibration.png",
+   "task": "syn_graduation_within_window",
+   "role": "figure",
+   "expected_sha256": "345e28418b9a12a0f25d6d307fd443c6955ca1c1c378a0be3f4e112fe78de1e7",
+   "dest_sha256": "345e28418b9a12a0f25d6d307fd443c6955ca1c1c378a0be3f4e112fe78de1e7",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_next_term_academic_risk/confusion_catboost.png",
+   "task": "syn_next_term_academic_risk",
+   "role": "figure",
+   "expected_sha256": "b70d99f7b539ebe334aa048910882e9bea9500dba5bc658241a8f2d9d5f23ec5",
+   "dest_sha256": "b70d99f7b539ebe334aa048910882e9bea9500dba5bc658241a8f2d9d5f23ec5",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_next_term_academic_risk/confusion_logistic_regression.png",
+   "task": "syn_next_term_academic_risk",
+   "role": "figure",
+   "expected_sha256": "b149ae2547fa43280ce5432c6d9f9dbd8b0f85e5e74742320a2432a2ceba000a",
+   "dest_sha256": "b149ae2547fa43280ce5432c6d9f9dbd8b0f85e5e74742320a2432a2ceba000a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_next_term_academic_risk/results.json",
+   "task": "syn_next_term_academic_risk",
+   "role": "evaluation",
+   "expected_sha256": "96edbb0763ecb5967bff6808e67539ce9f21885d0084390374a4cc38207c71b2",
+   "dest_sha256": "96edbb0763ecb5967bff6808e67539ce9f21885d0084390374a4cc38207c71b2",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_next_term_academic_risk/roc_pr_calibration.png",
+   "task": "syn_next_term_academic_risk",
+   "role": "figure",
+   "expected_sha256": "fa07128522508bc3d434999ad9c11e7f747306334b076ff8f45e127f3bfb2381",
+   "dest_sha256": "fa07128522508bc3d434999ad9c11e7f747306334b076ff8f45e127f3bfb2381",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_next_term_gpa/actual_vs_predicted_random_forest.png",
+   "task": "syn_next_term_gpa",
+   "role": "figure",
+   "expected_sha256": "98557047ae21894a25ed793914c2865e6f5d42314a92c172136b64b3cd1899ab",
+   "dest_sha256": "98557047ae21894a25ed793914c2865e6f5d42314a92c172136b64b3cd1899ab",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_next_term_gpa/results.json",
+   "task": "syn_next_term_gpa",
+   "role": "evaluation",
+   "expected_sha256": "ce5611b730cf9e0aa1925ec16b2e9e52802444c5fbad25a68d1df806c5aa71a4",
+   "dest_sha256": "ce5611b730cf9e0aa1925ec16b2e9e52802444c5fbad25a68d1df806c5aa71a4",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_institutional/confusion_logistic_regression.png",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "figure",
+   "expected_sha256": "e7b43e9a9af6c6da8f95987d3dd336915fa9271fa12b43836d8f5e3d45707e89",
+   "dest_sha256": "e7b43e9a9af6c6da8f95987d3dd336915fa9271fa12b43836d8f5e3d45707e89",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_institutional/confusion_random_forest.png",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "figure",
+   "expected_sha256": "3a69cb6856547f4ca86286d0c623c61553ae2fbf750c09bed4f707f0e925b62a",
+   "dest_sha256": "3a69cb6856547f4ca86286d0c623c61553ae2fbf750c09bed4f707f0e925b62a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_institutional/results.json",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "evaluation",
+   "expected_sha256": "1142ad5d7126631619605e47efb4f8b5ff1b736f7fb707de1fe090d44a51f5a2",
+   "dest_sha256": "1142ad5d7126631619605e47efb4f8b5ff1b736f7fb707de1fe090d44a51f5a2",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_institutional/roc_pr_calibration.png",
+   "task": "syn_retention_fall_to_fall_institutional",
+   "role": "figure",
+   "expected_sha256": "b2507412a4cbd05a6fdda5b92187f2736f45bcdb764ddd87b526593188db9dc8",
+   "dest_sha256": "b2507412a4cbd05a6fdda5b92187f2736f45bcdb764ddd87b526593188db9dc8",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_programme/confusion_logistic_regression.png",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "figure",
+   "expected_sha256": "02000002a081212905514bfe0b23811f80045d53155961232e338ebfcc01dadd",
+   "dest_sha256": "02000002a081212905514bfe0b23811f80045d53155961232e338ebfcc01dadd",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_programme/confusion_xgboost.png",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "figure",
+   "expected_sha256": "ae9fc6103699737b241cb611b45a79238cadd4bde2240be6c6007b5511a7a578",
+   "dest_sha256": "ae9fc6103699737b241cb611b45a79238cadd4bde2240be6c6007b5511a7a578",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_programme/results.json",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "evaluation",
+   "expected_sha256": "8498ce2c146694e0724851f248999ce54937436352bb8339562503a0a63dc573",
+   "dest_sha256": "8498ce2c146694e0724851f248999ce54937436352bb8339562503a0a63dc573",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_fall_to_fall_programme/roc_pr_calibration.png",
+   "task": "syn_retention_fall_to_fall_programme",
+   "role": "figure",
+   "expected_sha256": "c0d30dad75e83b7464d71c8a6c0bd4413de69446a587227cbdb5beefd3f49352",
+   "dest_sha256": "c0d30dad75e83b7464d71c8a6c0bd4413de69446a587227cbdb5beefd3f49352",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_institutional/confusion_logistic_regression.png",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "figure",
+   "expected_sha256": "e86eaa5cc9c57ecb7dc5a75a266aa4346b9fd8a9c3e7fcc86ade38f65446d7af",
+   "dest_sha256": "e86eaa5cc9c57ecb7dc5a75a266aa4346b9fd8a9c3e7fcc86ade38f65446d7af",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_institutional/confusion_logistic_regression_class0_threshold.png",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "figure",
+   "expected_sha256": "5eab65d17484b0bab25920421b5791984a8e002a4f7cd027b6b0c16ad474fc6a",
+   "dest_sha256": "5eab65d17484b0bab25920421b5791984a8e002a4f7cd027b6b0c16ad474fc6a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_institutional/results.json",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "evaluation",
+   "expected_sha256": "3a94cfca7fe2710f5a64755eede98090bfc6cda9e907db373012c2a4897ba49a",
+   "dest_sha256": "3a94cfca7fe2710f5a64755eede98090bfc6cda9e907db373012c2a4897ba49a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_institutional/roc_pr_calibration.png",
+   "task": "syn_retention_spring_to_spring_institutional",
+   "role": "figure",
+   "expected_sha256": "e525f0dd6568b410cd7138943183324fcadfde64d91904bdc3f70fae3d4fdb10",
+   "dest_sha256": "e525f0dd6568b410cd7138943183324fcadfde64d91904bdc3f70fae3d4fdb10",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_programme/confusion_logistic_regression.png",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "figure",
+   "expected_sha256": "9c27b027a14a42828328913382ca561d0f867cd44cbb0391c591aa6af657b42d",
+   "dest_sha256": "9c27b027a14a42828328913382ca561d0f867cd44cbb0391c591aa6af657b42d",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_programme/confusion_logistic_regression_class0_threshold.png",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "figure",
+   "expected_sha256": "45953f78c0b175bc00baf316af2d7457190f866dc8cb60a1c94a759cb2f47a00",
+   "dest_sha256": "45953f78c0b175bc00baf316af2d7457190f866dc8cb60a1c94a759cb2f47a00",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_programme/results.json",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "evaluation",
+   "expected_sha256": "f75f6caf10b6e6ca5d109a5034df24a1c689b6b8f6f7f72f993019acc73f4f52",
+   "dest_sha256": "f75f6caf10b6e6ca5d109a5034df24a1c689b6b8f6f7f72f993019acc73f4f52",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_spring_to_spring_programme/roc_pr_calibration.png",
+   "task": "syn_retention_spring_to_spring_programme",
+   "role": "figure",
+   "expected_sha256": "8e4119fa4037296867c740de47c16b0cb07dc7ddba9251c353c73dcc40a1a532",
+   "dest_sha256": "8e4119fa4037296867c740de47c16b0cb07dc7ddba9251c353c73dcc40a1a532",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_institutional/confusion_logistic_regression.png",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "figure",
+   "expected_sha256": "95b04e64c7a1ec1d24847c7603e016fdc943af7ca5faccb69fd67fcfdd205477",
+   "dest_sha256": "95b04e64c7a1ec1d24847c7603e016fdc943af7ca5faccb69fd67fcfdd205477",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_institutional/confusion_xgboost.png",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "figure",
+   "expected_sha256": "6efcce2895ddd8e3123c59083a0fcfd8b6db5db5392b15e39149d9bc397f7789",
+   "dest_sha256": "6efcce2895ddd8e3123c59083a0fcfd8b6db5db5392b15e39149d9bc397f7789",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_institutional/confusion_xgboost_class0_threshold.png",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "figure",
+   "expected_sha256": "ea4bba301b212fc8b1f4754ea2227b8261b01d9356ac26db4d8298f60ba44a8b",
+   "dest_sha256": "ea4bba301b212fc8b1f4754ea2227b8261b01d9356ac26db4d8298f60ba44a8b",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_institutional/results.json",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "evaluation",
+   "expected_sha256": "a3c2e5bc67019581dac4f180bd04dbca1cbe61c1dc02a1c89588525c9a532785",
+   "dest_sha256": "a3c2e5bc67019581dac4f180bd04dbca1cbe61c1dc02a1c89588525c9a532785",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_institutional/roc_pr_calibration.png",
+   "task": "syn_retention_summer_to_summer_institutional",
+   "role": "figure",
+   "expected_sha256": "dc595159df4d82b7f2c604f45c5f90d2aba9e70ffdd5868dc1ebc5d1639a5cdf",
+   "dest_sha256": "dc595159df4d82b7f2c604f45c5f90d2aba9e70ffdd5868dc1ebc5d1639a5cdf",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_programme/confusion_logistic_regression.png",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "figure",
+   "expected_sha256": "a112e6574bf1b7896acf87a1f35b04f51b91d580485cac2650fdf14f28dd0042",
+   "dest_sha256": "a112e6574bf1b7896acf87a1f35b04f51b91d580485cac2650fdf14f28dd0042",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_programme/confusion_xgboost.png",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "figure",
+   "expected_sha256": "68d6988bbef166b087877d01fd7bcbfa0a85e6d682542155b8be1008df48212a",
+   "dest_sha256": "68d6988bbef166b087877d01fd7bcbfa0a85e6d682542155b8be1008df48212a",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_programme/confusion_xgboost_class0_threshold.png",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "figure",
+   "expected_sha256": "fee369b7520a0e27eda36e06bef4c8a5b95124584899ffa0cddcb1eef1841d44",
+   "dest_sha256": "fee369b7520a0e27eda36e06bef4c8a5b95124584899ffa0cddcb1eef1841d44",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_programme/results.json",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "evaluation",
+   "expected_sha256": "fb81455f7dd960eef42a7f4e4896065e0acef3987655c32e6130398c7d1545ca",
+   "dest_sha256": "fb81455f7dd960eef42a7f4e4896065e0acef3987655c32e6130398c7d1545ca",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/synthetic/syn_retention_summer_to_summer_programme/roc_pr_calibration.png",
+   "task": "syn_retention_summer_to_summer_programme",
+   "role": "figure",
+   "expected_sha256": "b5bb3e1b564ca65f881a1c3636c5976a75f7e570871db42f8d7f13231bbca96b",
+   "dest_sha256": "b5bb3e1b564ca65f881a1c3636c5976a75f7e570871db42f8d7f13231bbca96b",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_end_of_year1/confusion_logistic_regression.png",
+   "task": "uci_dropout_end_of_year1",
+   "role": "figure",
+   "expected_sha256": "9342bd80da4603046b7fd19253665c843780225b864370115e0ed9d6f18d9466",
+   "dest_sha256": "9342bd80da4603046b7fd19253665c843780225b864370115e0ed9d6f18d9466",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_end_of_year1/results.json",
+   "task": "uci_dropout_end_of_year1",
+   "role": "evaluation",
+   "expected_sha256": "ea0bd9c85aa62f7395c2eeece815b3a3e45cb03cf392c717ce98580ff0c1b981",
+   "dest_sha256": "ea0bd9c85aa62f7395c2eeece815b3a3e45cb03cf392c717ce98580ff0c1b981",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_end_of_year1/roc_pr_calibration.png",
+   "task": "uci_dropout_end_of_year1",
+   "role": "figure",
+   "expected_sha256": "23839290510d2941f434c6f6265eb918b0ee5c495c34c559309c59a053400450",
+   "dest_sha256": "23839290510d2941f434c6f6265eb918b0ee5c495c34c559309c59a053400450",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_enrolment_time/confusion_catboost.png",
+   "task": "uci_dropout_enrolment_time",
+   "role": "figure",
+   "expected_sha256": "9beade881f85e4fe9b946fe007b454dbd4dcb6b55903b343015531232f46562c",
+   "dest_sha256": "9beade881f85e4fe9b946fe007b454dbd4dcb6b55903b343015531232f46562c",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_enrolment_time/confusion_logistic_regression.png",
+   "task": "uci_dropout_enrolment_time",
+   "role": "figure",
+   "expected_sha256": "f9647ed61b63099d8758694b3c9abab6db900967ea8f9b186066d953d5723bc4",
+   "dest_sha256": "f9647ed61b63099d8758694b3c9abab6db900967ea8f9b186066d953d5723bc4",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_enrolment_time/results.json",
+   "task": "uci_dropout_enrolment_time",
+   "role": "evaluation",
+   "expected_sha256": "344558be95b635432df1e1e393bbc6db283d7cdf2051f08d7738698101a0de39",
+   "dest_sha256": "344558be95b635432df1e1e393bbc6db283d7cdf2051f08d7738698101a0de39",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_dropout_enrolment_time/roc_pr_calibration.png",
+   "task": "uci_dropout_enrolment_time",
+   "role": "figure",
+   "expected_sha256": "eeaaad595755d9e7f568c34ef685015fac00bbd3ed57162b919cdb63927aac9c",
+   "dest_sha256": "eeaaad595755d9e7f568c34ef685015fac00bbd3ed57162b919cdb63927aac9c",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_outcome3_end_of_year1/confusion_xgboost.png",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "figure",
+   "expected_sha256": "b0b2fc1282b6be3ef47dce720a542b401b9611c8127422cc97fb68f73c87f8fe",
+   "dest_sha256": "b0b2fc1282b6be3ef47dce720a542b401b9611c8127422cc97fb68f73c87f8fe",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_outcome3_end_of_year1/results.json",
+   "task": "uci_outcome3_end_of_year1",
+   "role": "evaluation",
+   "expected_sha256": "2c30283c83330ce0042536c42dd544cc9032f945f4d6df0aa16c27cd2356c962",
+   "dest_sha256": "2c30283c83330ce0042536c42dd544cc9032f945f4d6df0aa16c27cd2356c962",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_outcome3_enrolment_time/confusion_catboost.png",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "figure",
+   "expected_sha256": "ceef73cefae94832268d1ee4dca944ef241fb73e1d81523aca366b8c0cffaa9d",
+   "dest_sha256": "ceef73cefae94832268d1ee4dca944ef241fb73e1d81523aca366b8c0cffaa9d",
+   "action": "present_verified"
+  },
+  {
+   "path": "reports/model_evaluation/uci/uci_outcome3_enrolment_time/results.json",
+   "task": "uci_outcome3_enrolment_time",
+   "role": "evaluation",
+   "expected_sha256": "ad044f657fd27ffb3c2f693d8620d621c613288db47debddc333bc1fc19a8a4a",
+   "dest_sha256": "ad044f657fd27ffb3c2f693d8620d621c613288db47debddc333bc1fc19a8a4a",
+   "action": "present_verified"
+  }
+ ]
+}

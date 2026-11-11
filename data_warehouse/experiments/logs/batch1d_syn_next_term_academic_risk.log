@@ -1,0 +1,18 @@
+[      2s] syn_next_term_academic_risk
+    syn_next_term_academic_risk                baseline_majority    0.0674  (4.5 s)
+    syn_next_term_academic_risk                logistic_regression  0.8249  (11.7 s)
+    syn_next_term_academic_risk                random_forest        0.8226  (62.4 s)
+    syn_next_term_academic_risk                xgboost              0.8230  (27.7 s)
+    syn_next_term_academic_risk                lightgbm             0.8211  (35.6 s)
+    syn_next_term_academic_risk                catboost             0.8279  (54.6 s)
+{
+ "uci_dropout_enrolment_time": "TRAINED",
+ "uci_outcome3_enrolment_time": "TRAINED",
+ "syn_graduation_cox": "TRAINED_WITH_PH_CAVEATS",
+ "syn_dropout_cox": "TRAINED_WITH_PH_CAVEATS",
+ "uci_dropout_end_of_year1": "TRAINED",
+ "uci_outcome3_end_of_year1": "TRAINED",
+ "syn_dropout_2y": "TRAINED",
+ "syn_next_term_gpa": "TRAINED",
+ "syn_next_term_academic_risk": "TRAINED"
+}

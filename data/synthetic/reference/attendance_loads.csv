@@ -1,0 +1,3 @@
+study_load,description,data_source,verification_status,source_reference,verified_on,verified_by,source_system,generation_run_id
+FULL_TIME,Full-time load,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+PART_TIME,Part-time load,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110

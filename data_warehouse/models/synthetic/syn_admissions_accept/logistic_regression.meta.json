@@ -1,0 +1,77 @@
+{
+  "task_id": "syn_admissions_accept",
+  "dataset": "syn_admissions_accept",
+  "target": "target_accept",
+  "prediction_point": "Offer decision date (features are those known at application).",
+  "target_definition": "target_accept = 1 if the offer was accepted (decision ADMITTED); 0 if declined (ADMITTED_DECLINED).",
+  "population": "Applications that received an offer, entry terms 2016FA-2026FA.",
+  "features_numeric": [
+    "admission_score",
+    "age_at_entry_approx",
+    "lead_days_before_term",
+    "prior_applications_by_applicant",
+    "entry_academic_year_start",
+    "prog_prev_year_applications",
+    "prog_prev_year_offer_rate",
+    "prog_prev_year_yield"
+  ],
+  "features_categorical": [
+    "programme_id",
+    "school_id",
+    "level",
+    "entry_season",
+    "application_type",
+    "gender",
+    "residency_status",
+    "nationality_iso3"
+  ],
+  "excluded_leakage_columns": {
+    "decision": "the admissions decision (defines both targets)",
+    "decision_date": "date of the decision (after the prediction point)",
+    "enrolled": "enrolment after the decision (outcome)",
+    "student_id": "exists only for applicants who enrolled (reveals the outcome)"
+  },
+  "split": {
+    "method": "Chronological by entry term: test = entry terms of academic year 2025/26 onwards (2025FA, 2026SP, 2026SU, 2026FA); train = earlier entry terms; test-period applicants removed from training.",
+    "train_rows": 6835,
+    "test_rows": 1582,
+    "train_groups": 6612,
+    "test_groups": 1582
+  },
+  "selection_rule": "highest CV cv_pr_auc",
+  "data_version": {
+    "synthetic_generation_run_id": "SYN-RUN-1.1.0-S20261110",
+    "synthetic_manifest_sha256": "ebe26585195b7d876597d85bcfa755eca7ee86f95a0e8975b85147aed93e2e7d",
+    "uci_raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "as_of_date": "2026-11-10"
+  },
+  "test_metrics": {
+    "test_accuracy": 0.5707964601769911,
+    "test_precision": 0.7303206997084548,
+    "test_recall": 0.5035175879396985,
+    "test_f1": 0.5960737656157049,
+    "test_roc_auc": 0.6307756842132297,
+    "test_pr_auc": 0.7709472520351518,
+    "test_brier": 0.23147305577273536,
+    "test_tuned_accuracy": 0.6276864728192162,
+    "test_tuned_precision": 0.6286438529784537,
+    "test_tuned_recall": 0.9969849246231156,
+    "test_tuned_f1": 0.7710843373493976
+  },
+  "zone": "SYNTHETIC",
+  "task": "syn_admissions_accept",
+  "model": "logistic_regression",
+  "deployment_status": "DEMONSTRATION_ONLY \u2014 trained on synthetic data; NOT production-ready and NOT valid for real students",
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "environment": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+  }
+}

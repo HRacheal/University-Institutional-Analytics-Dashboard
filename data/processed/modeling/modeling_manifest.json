@@ -1,0 +1,145 @@
+{
+  "data_version": {
+    "synthetic_generation_run_id": "SYN-RUN-1.1.0-S20261110",
+    "synthetic_manifest_sha256": "ebe26585195b7d876597d85bcfa755eca7ee86f95a0e8975b85147aed93e2e7d",
+    "uci_raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "as_of_date": "2026-11-10"
+  },
+  "datasets": {
+    "uci_enrolment_time": {
+      "zone": "UCI",
+      "rows": 4424,
+      "features": 22,
+      "targets": [
+        "target_3class",
+        "target_dropout"
+      ]
+    },
+    "uci_end_of_year1": {
+      "zone": "UCI",
+      "rows": 4424,
+      "features": 36,
+      "targets": [
+        "target_3class",
+        "target_dropout"
+      ]
+    },
+    "syn_student_term_panel": {
+      "zone": "SYNTHETIC",
+      "rows": 29856,
+      "features": 86
+    },
+    "syn_dropout_2y": {
+      "zone": "SYNTHETIC",
+      "rows": 19681,
+      "features": 86,
+      "targets": [
+        "target_dropout_2y"
+      ]
+    },
+    "syn_next_term_performance": {
+      "zone": "SYNTHETIC",
+      "rows": 24130,
+      "features": 86,
+      "targets": [
+        "target_next_term_gpa",
+        "target_next_term_at_risk"
+      ]
+    },
+    "syn_retention": {
+      "zone": "SYNTHETIC",
+      "rows": 23008,
+      "features": 86,
+      "targets": [
+        "target_institutional",
+        "target_programme"
+      ]
+    },
+    "syn_graduation_within_window": {
+      "zone": "SYNTHETIC",
+      "rows": 2231,
+      "features": 86,
+      "targets": [
+        "target_grad_within_window"
+      ]
+    },
+    "syn_graduation_survival": {
+      "zone": "SYNTHETIC",
+      "rows": 4703,
+      "features": 86,
+      "targets": [
+        "duration_years",
+        "event_graduated"
+      ]
+    },
+    "syn_dropout_survival": {
+      "zone": "SYNTHETIC",
+      "rows": 5052,
+      "features": 86,
+      "targets": [
+        "duration_years",
+        "event_dropout"
+      ]
+    },
+    "syn_admissions_offer": {
+      "zone": "SYNTHETIC",
+      "rows": 13280,
+      "features": 16,
+      "targets": [
+        "target_offer"
+      ]
+    },
+    "syn_admissions_accept": {
+      "zone": "SYNTHETIC",
+      "rows": 8474,
+      "features": 16,
+      "targets": [
+        "target_accept"
+      ]
+    },
+    "ts_enrolment_by_term": {
+      "zone": "SYNTHETIC",
+      "rows": 1736,
+      "features": null
+    },
+    "ts_enrolment_by_academic_year": {
+      "zone": "SYNTHETIC",
+      "rows": 11,
+      "features": null
+    },
+    "ts_admissions_by_term": {
+      "zone": "SYNTHETIC",
+      "rows": 775,
+      "features": null
+    },
+    "ts_course_demand_by_programme": {
+      "zone": "SYNTHETIC",
+      "rows": 743,
+      "features": null
+    },
+    "syn_segmentation_snapshot": {
+      "zone": "SYNTHETIC",
+      "rows": 1721,
+      "features": 16
+    }
+  },
+  "segmentation_features": [
+    "cumulative_gpa",
+    "term_gpa",
+    "progression_rate",
+    "credits_earned_per_year",
+    "cum_course_completion_rate",
+    "warning_terms_so_far",
+    "probation_terms_so_far",
+    "interruptions_so_far",
+    "summer_terms_taken",
+    "online_share_so_far",
+    "part_time_share_so_far",
+    "fin_payment_completion_pct",
+    "fin_outstanding_ratio",
+    "fin_late_payment_terms",
+    "fin_holds_so_far",
+    "years_since_admission"
+  ],
+  "seconds": 147.5
+}

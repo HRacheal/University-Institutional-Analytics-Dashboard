@@ -1,0 +1,708 @@
+{
+  "task_id": "syn_retention_fall_to_fall_programme",
+  "title": "Synthetic Fall To Fall programme retention",
+  "zone": "SYNTHETIC",
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "dataset": "syn_retention",
+  "target": "target_programme",
+  "kind": "binary",
+  "prediction_point": "End date of the base term (base-term grades posted), before the comparison term's census.",
+  "target_definition": "Uses registrar/retention_cohort_members exactly. target_institutional = enrolled in ANY programme at the census of the same season one year later; for SUMMER_TO_SUMMER, students who skipped the optional Summer but were enrolled at the next Fall census also count as retained (continuation). target_programme = the same, but only in the base-term programme. One model family per comparison type (FALL_TO_FALL, SPRING_TO_SPRING, SUMMER_TO_SUMMER).",
+  "population": "FINAL comparisons only (comparison census on/before 2026-11-10); graduates before the comparison excluded (completions); rows whose admission outcome was already recorded at the base-term end excluded (730 rows).",
+  "row_filter": {
+    "comparison_type": "FALL_TO_FALL"
+  },
+  "n_rows": 11627,
+  "n_features": 86,
+  "features_numeric": [
+    "term_sequence",
+    "study_term_number",
+    "completed_terms",
+    "credits_attempted",
+    "credits_earned",
+    "term_gpa",
+    "cumulative_gpa",
+    "cumulative_credits_earned",
+    "passed_credit_ratio",
+    "term_mean_grade_points",
+    "courses_registered",
+    "courses_passed",
+    "courses_failed",
+    "courses_withdrawn",
+    "cum_courses_registered",
+    "cum_courses_passed",
+    "cum_courses_failed",
+    "cum_courses_withdrawn",
+    "cum_credits_attempted",
+    "cum_course_completion_rate",
+    "term_course_completion_rate",
+    "credit_completion_rate_cum",
+    "warning_terms_so_far",
+    "probation_terms_so_far",
+    "poor_performance_terms_so_far",
+    "max_standing_level_so_far",
+    "prev_term_gpa",
+    "gpa_change_vs_prev",
+    "consecutive_gpa_declines",
+    "prev_cumulative_gpa",
+    "summer_terms_taken",
+    "interruptions_so_far",
+    "missed_regular_terms_so_far",
+    "prior_gap_terms",
+    "online_share_so_far",
+    "part_time_share_so_far",
+    "regular_streak",
+    "entry_academic_year_start",
+    "credits_transferred_in",
+    "scholarship_pct",
+    "admission_score",
+    "application_lead_days",
+    "decision_to_start_days",
+    "age_at_admission_approx",
+    "prior_admissions",
+    "progression_rate",
+    "years_since_admission",
+    "credits_earned_per_year",
+    "fin_total_charged",
+    "fin_total_paid",
+    "fin_outstanding_balance",
+    "fin_past_due_amount",
+    "fin_payment_completion_pct",
+    "fin_outstanding_ratio",
+    "fin_late_payment_terms",
+    "fin_holds_so_far",
+    "fin_registration_blocks_so_far",
+    "prog_headcount",
+    "prog_headcount_growth_yoy",
+    "prog_new_intake",
+    "inst_headcount",
+    "inst_headcount_growth_yoy",
+    "inst_returning_students",
+    "prog_applications_12m",
+    "prog_offers_12m",
+    "prog_acceptances_12m",
+    "prog_hist_retention_rate_2y",
+    "prog_hist_grad_rate_mature",
+    "prog_decision_acceptance_rate_12m",
+    "poor_performance_flag",
+    "withdrew_during_term",
+    "fin_active_hold",
+    "is_first_term"
+  ],
+  "features_categorical": [
+    "programme_id",
+    "school_id",
+    "level",
+    "term_season",
+    "entry_season",
+    "entry_type",
+    "application_type",
+    "delivery_mode",
+    "study_load",
+    "gender",
+    "residency_status",
+    "nationality_iso3",
+    "standing"
+  ],
+  "excluded_leakage_columns": {
+    "outcome": "final outcome of the admission (determined after the prediction point)",
+    "outcome_term_id": "term of the final outcome",
+    "outcome_recorded_date": "date the outcome was recorded",
+    "outcome_known_at_prediction": "population filter only (rows with an already-known outcome are excluded)",
+    "withdrawal_type": "type of the final withdrawal",
+    "exit_reason": "reason for the final exit",
+    "graduation_status / graduation_date / graduated_within_window": "graduation outcome fields (registrar/graduation_records)",
+    "institutionally_retained / programme_retained / outcome_category / status_at_compare / completed_before_compare / continued_next_regular_term": "retention outcome fields (registrar/retention_cohort_members)",
+    "[rule] student_status_history events after the prediction date": "future status events",
+    "[rule] term enrolments, grades, standing, charges, payments and holds dated after the prediction date": "future records",
+    "outcome_category": "retention outcome (population audit only)"
+  },
+  "leakage_checks": [
+    {
+      "check": "L1 target_not_in_features",
+      "passed": true,
+      "detail": "targets ['target_institutional', 'target_programme']; overlap []"
+    },
+    {
+      "check": "L2 excluded_not_in_features",
+      "passed": true,
+      "detail": "11 exclusions; overlap []"
+    },
+    {
+      "check": "L3 forbidden_name_patterns",
+      "passed": true,
+      "detail": "suspicious feature names []"
+    },
+    {
+      "check": "L4 zone_purity",
+      "passed": true,
+      "detail": "zone SYNTHETIC; foreign columns []"
+    },
+    {
+      "check": "L5 feature_dates_before_point",
+      "passed": true,
+      "detail": "row-level source dates not tracked; features are application-time attributes and previous-academic-year aggregates by construction"
+    },
+    {
+      "check": "L6 no_unreportable_terms",
+      "passed": true,
+      "detail": "0 rows based on in-progress/future terms"
+    },
+    {
+      "check": "L6b labels_known_by_as_of",
+      "passed": true,
+      "detail": "0 rows whose label is not yet observable at 2026-11-10"
+    },
+    {
+      "check": "L7 group_disjoint",
+      "passed": true,
+      "detail": "0 student_id values in both train and test"
+    },
+    {
+      "check": "L9 single_feature_screen",
+      "passed": true,
+      "detail": "features above 0.97: []; strongest: [('admission_score', 0.5902), ('max_standing_level_so_far', 0.5888), ('cumulative_gpa', 0.5887), ('warning_terms_so_far', 0.5866), ('study_term_number', 0.5834)]"
+    },
+    {
+      "check": "L7 group_disjoint",
+      "passed": true,
+      "detail": "0 student_id values in both train and test"
+    },
+    {
+      "check": "L8 label_before_test",
+      "passed": true,
+      "detail": "first test prediction 2023-12-20; 0 training labels known on/after it"
+    }
+  ],
+  "strongest_single_features": [
+    [
+      "admission_score",
+      0.5902
+    ],
+    [
+      "max_standing_level_so_far",
+      0.5888
+    ],
+    [
+      "cumulative_gpa",
+      0.5887
+    ],
+    [
+      "warning_terms_so_far",
+      0.5866
+    ],
+    [
+      "study_term_number",
+      0.5834
+    ],
+    [
+      "completed_terms",
+      0.5834
+    ],
+    [
+      "term_gpa",
+      0.5808
+    ],
+    [
+      "term_mean_grade_points",
+      0.5808
+    ],
+    [
+      "years_since_admission",
+      0.5802
+    ],
+    [
+      "regular_streak",
+      0.5749
+    ]
+  ],
+  "split": {
+    "method": "Per comparison type, student-grouped holdout: 25 % of students (StratifiedGroupKFold, seed 20261110) form the untouched test set; 5-fold StratifiedGroupKFold CV on training students. Robustness: out-of-time check (train students with label known before 2023-07-01; test students with prediction date on/after 2023-07-01).",
+    "train_rows": 8755,
+    "test_rows": 2872,
+    "train_groups": 3280,
+    "test_groups": 1097
+  },
+  "class_distribution": {
+    "train": {
+      "0": 1270,
+      "1": 7485
+    },
+    "test": {
+      "0": 392,
+      "1": 2480
+    }
+  },
+  "checkpoints_reused": [],
+  "models": [
+    {
+      "model": "baseline_majority",
+      "cv_folds": 5,
+      "fit_seconds": 1.3,
+      "cv_pr_auc": 0.8514629936177646,
+      "cv_pr_auc_sd": 0.004928899276596572,
+      "cv_roc_auc": 0.48907300164633727,
+      "threshold_from_cv": 0.5,
+      "test_accuracy": 0.8635097493036211,
+      "test_precision": 0.8635097493036211,
+      "test_recall": 1.0,
+      "test_f1": 0.9267563527653214,
+      "test_roc_auc": 0.5,
+      "test_pr_auc": 0.8635097493036211,
+      "test_brier": 0.11793410217704223,
+      "test_tuned_accuracy": 0.8635097493036211,
+      "test_tuned_precision": 0.8635097493036211,
+      "test_tuned_recall": 1.0,
+      "test_tuned_f1": 0.9267563527653214,
+      "test_confusion_matrix_0.5": [
+        [
+          0,
+          392
+        ],
+        [
+          0,
+          2480
+        ]
+      ],
+      "test_confusion_matrix_tuned": [
+        [
+          0,
+          392
+        ],
+        [
+          0,
+          2480
+        ]
+      ],
+      "test_classification_report_tuned": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 392.0
+        },
+        "1": {
+          "precision": 0.8635097493036211,
+          "recall": 1.0,
+          "f1-score": 0.9267563527653214,
+          "support": 2480.0
+        },
+        "accuracy": 0.8635097493036211,
+        "macro avg": {
+          "precision": 0.43175487465181056,
+          "recall": 0.5,
+          "f1-score": 0.4633781763826607,
+          "support": 2872.0
+        },
+        "weighted avg": {
+          "precision": 0.7456490871424026,
+          "recall": 0.8635097493036211,
+          "f1-score": 0.8002631458419209,
+          "support": 2872.0
+        }
+      }
+    },
+    {
+      "model": "logistic_regression",
+      "cv_folds": 5,
+      "fit_seconds": 11.1,
+      "cv_pr_auc": 0.9060096857284463,
+      "cv_pr_auc_sd": 0.006459631439847342,
+      "cv_roc_auc": 0.6568269347093136,
+      "threshold_from_cv": 0.11957248171059162,
+      "test_accuracy": 0.6817548746518106,
+      "test_precision": 0.9007164790174002,
+      "test_recall": 0.7096774193548387,
+      "test_f1": 0.7938655841226884,
+      "test_roc_auc": 0.6554332620144832,
+      "test_pr_auc": 0.9129334590766747,
+      "test_brier": 0.22191780479698162,
+      "test_tuned_accuracy": 0.8642061281337048,
+      "test_tuned_precision": 0.8703047484053863,
+      "test_tuned_recall": 0.9903225806451613,
+      "test_tuned_f1": 0.926442851754055,
+      "test_confusion_matrix_0.5": [
+        [
+          198,
+          194
+        ],
+        [
+          720,
+          1760
+        ]
+      ],
+      "test_confusion_matrix_tuned": [
+        [
+          26,
+          366
+        ],
+        [
+          24,
+          2456
+        ]
+      ],
+      "test_classification_report_tuned": {
+        "0": {
+          "precision": 0.52,
+          "recall": 0.0663265306122449,
+          "f1-score": 0.11764705882352941,
+          "support": 392.0
+        },
+        "1": {
+          "precision": 0.8703047484053863,
+          "recall": 0.9903225806451613,
+          "f1-score": 0.926442851754055,
+          "support": 2480.0
+        },
+        "accuracy": 0.8642061281337048,
+        "macro avg": {
+          "precision": 0.6951523742026932,
+          "recall": 0.5283245556287031,
+          "f1-score": 0.5220449552887922,
+          "support": 2872.0
+        },
+        "weighted avg": {
+          "precision": 0.8224915654754034,
+          "recall": 0.8642061281337048,
+          "f1-score": 0.8160501112147911,
+          "support": 2872.0
+        }
+      }
+    },
+    {
+      "model": "random_forest",
+      "cv_folds": 5,
+      "fit_seconds": 44.3,
+      "cv_pr_auc": 0.9133283969218913,
+      "cv_pr_auc_sd": 0.012335836995477835,
+      "cv_roc_auc": 0.6817504825924816,
+      "threshold_from_cv": 0.23918184735347198,
+      "test_accuracy": 0.8377437325905293,
+      "test_precision": 0.8861196319018405,
+      "test_recall": 0.9318548387096774,
+      "test_f1": 0.9084119496855346,
+      "test_roc_auc": 0.664316573403555,
+      "test_pr_auc": 0.9129086240572359,
+      "test_brier": 0.13495646616982776,
+      "test_tuned_accuracy": 0.8645543175487466,
+      "test_tuned_precision": 0.8672286617492097,
+      "test_tuned_recall": 0.9955645161290323,
+      "test_tuned_f1": 0.926975783743195,
+      "test_confusion_matrix_0.5": [
+        [
+          95,
+          297
+        ],
+        [
+          169,
+          2311
+        ]
+      ],
+      "test_confusion_matrix_tuned": [
+        [
+          14,
+          378
+        ],
+        [
+          11,
+          2469
+        ]
+      ],
+      "test_classification_report_tuned": {
+        "0": {
+          "precision": 0.56,
+          "recall": 0.03571428571428571,
+          "f1-score": 0.0671462829736211,
+          "support": 392.0
+        },
+        "1": {
+          "precision": 0.8672286617492097,
+          "recall": 0.9955645161290323,
+          "f1-score": 0.926975783743195,
+          "support": 2480.0
+        },
+        "accuracy": 0.8645543175487466,
+        "macro avg": {
+          "precision": 0.7136143308746048,
+          "recall": 0.515639400921659,
+          "f1-score": 0.49706103335840807,
+          "support": 2872.0
+        },
+        "weighted avg": {
+          "precision": 0.825294944685947,
+          "recall": 0.8645543175487466,
+          "f1-score": 0.8096174396270136,
+          "support": 2872.0
+        }
+      }
+    },
+    {
+      "model": "xgboost",
+      "cv_folds": 5,
+      "fit_seconds": 15.5,
+      "cv_pr_auc": 0.9143666164758513,
+      "cv_pr_auc_sd": 0.007777878968795674,
+      "cv_roc_auc": 0.6791734650403168,
+      "threshold_from_cv": 0.08121902495622635,
+      "test_accuracy": 0.7381615598885793,
+      "test_precision": 0.9044943820224719,
+      "test_recall": 0.7790322580645161,
+      "test_f1": 0.8370883882149047,
+      "test_roc_auc": 0.6598111421988151,
+      "test_pr_auc": 0.9135078247618409,
+      "test_brier": 0.19207447745045528,
+      "test_tuned_accuracy": 0.8666434540389972,
+      "test_tuned_precision": 0.8675078864353313,
+      "test_tuned_recall": 0.9979838709677419,
+      "test_tuned_f1": 0.9281830114382149,
+      "test_confusion_matrix_0.5": [
+        [
+          188,
+          204
+        ],
+        [
+          548,
+          1932
+        ]
+      ],
+      "test_confusion_matrix_tuned": [
+        [
+          14,
+          378
+        ],
+        [
+          5,
+          2475
+        ]
+      ],
+      "test_classification_report_tuned": {
+        "0": {
+          "precision": 0.7368421052631579,
+          "recall": 0.03571428571428571,
+          "f1-score": 0.0681265206812652,
+          "support": 392.0
+        },
+        "1": {
+          "precision": 0.8675078864353313,
+          "recall": 0.9979838709677419,
+          "f1-score": 0.9281830114382149,
+          "support": 2480.0
+        },
+        "accuracy": 0.8666434540389972,
+        "macro avg": {
+          "precision": 0.8021749958492446,
+          "recall": 0.5168490783410138,
+          "f1-score": 0.4981547660597401,
+          "support": 2872.0
+        },
+        "weighted avg": {
+          "precision": 0.8496732812057032,
+          "recall": 0.8666434540389972,
+          "f1-score": 0.810793685401751,
+          "support": 2872.0
+        }
+      }
+    }
+  ],
+  "selection_rule": "highest CV cv_pr_auc",
+  "best_model": "xgboost",
+  "best_vs_linear_baseline": {
+    "metric": "cv_pr_auc",
+    "best": 0.9143666164758513,
+    "linear_baseline": 0.9060096857284463,
+    "difference": 0.008356930747404956,
+    "cv_sd_best": 0.007777878968795674
+  },
+  "linear_top10": [
+    [
+      "standing_PROBATION",
+      -1.2817
+    ],
+    [
+      "standing_GOOD",
+      1.0099
+    ],
+    [
+      "nationality_iso3_MEX",
+      -0.9336
+    ],
+    [
+      "nationality_iso3_BRA",
+      0.7807
+    ],
+    [
+      "nationality_iso3_PHL",
+      -0.7623
+    ],
+    [
+      "entry_type_NEXT_DEGREE",
+      0.7574
+    ],
+    [
+      "application_type_NEXT_DEGREE",
+      0.7574
+    ],
+    [
+      "progression_rate",
+      -0.6975
+    ],
+    [
+      "inst_returning_students",
+      -0.5198
+    ],
+    [
+      "nationality_iso3_VNM",
+      -0.5184
+    ]
+  ],
+  "subgroups": [
+    {
+      "column": "level",
+      "value": "DOCTORATE",
+      "n": 251,
+      "positives": 223,
+      "recall": 0.9955156950672646,
+      "precision": 0.888,
+      "pr_auc": 0.9349648077077757,
+      "roc_auc": 0.6531069827033952
+    },
+    {
+      "column": "level",
+      "value": "MASTERS",
+      "n": 427,
+      "positives": 343,
+      "recall": 0.9941690962099126,
+      "precision": 0.8197115384615384,
+      "pr_auc": 0.8757743740640124,
+      "roc_auc": 0.6907538525614327
+    },
+    {
+      "column": "level",
+      "value": "UNDERGRADUATE",
+      "n": 2194,
+      "positives": 1914,
+      "recall": 0.9989550679205852,
+      "precision": 0.8742569730224051,
+      "pr_auc": 0.9146118361025466,
+      "roc_auc": 0.6452567547395134
+    },
+    {
+      "column": "is_first_term",
+      "value": 0.0,
+      "n": 1993,
+      "positives": 1747,
+      "recall": 0.9988551803091014,
+      "precision": 0.8826504805260496,
+      "pr_auc": 0.9212486388034968,
+      "roc_auc": 0.6622130388447559
+    },
+    {
+      "column": "is_first_term",
+      "value": 1.0,
+      "n": 879,
+      "positives": 733,
+      "recall": 0.9959072305593452,
+      "precision": 0.8333333333333334,
+      "pr_auc": 0.8771448206795345,
+      "roc_auc": 0.6025902184679213
+    }
+  ],
+  "out_of_time": {
+    "cutoff": "2023-07-01",
+    "model": "xgboost",
+    "train_rows": 4092,
+    "test_rows": 1200,
+    "checks": [
+      {
+        "check": "L7 group_disjoint",
+        "passed": true,
+        "detail": "0 student_id values in both train and test"
+      },
+      {
+        "check": "L8 label_before_test",
+        "passed": true,
+        "detail": "first test prediction 2023-12-20; 0 training labels known on/after it"
+      }
+    ],
+    "metrics": {
+      "n": 1200,
+      "positives": 1060,
+      "prevalence": 0.8833333333333333,
+      "precision": 0.8860971524288107,
+      "recall": 0.9981132075471698,
+      "f1": 0.9387755102040817,
+      "roc_auc": 0.6709029649595687,
+      "pr_auc": 0.9335361104963933
+    }
+  },
+  "saved_models": {
+    "xgboost": "models/synthetic/syn_retention_fall_to_fall_programme/xgboost.joblib",
+    "logistic_regression": "models/synthetic/syn_retention_fall_to_fall_programme/logistic_regression.joblib"
+  },
+  "status": "TRAINED",
+  "seconds": 81.8,
+  "shap_model": "xgboost",
+  "shap_rows": 1500,
+  "shap_top15": [
+    [
+      "standing",
+      0.23175
+    ],
+    [
+      "progression_rate",
+      0.13758
+    ],
+    [
+      "programme_id",
+      0.1096
+    ],
+    [
+      "admission_score",
+      0.10827
+    ],
+    [
+      "gender",
+      0.09933
+    ],
+    [
+      "credits_earned_per_year",
+      0.09761
+    ],
+    [
+      "years_since_admission",
+      0.09442
+    ],
+    [
+      "age_at_admission_approx",
+      0.08167
+    ],
+    [
+      "fin_total_paid",
+      0.08047
+    ],
+    [
+      "prog_hist_retention_rate_2y",
+      0.07612
+    ],
+    [
+      "gpa_change_vs_prev",
+      0.07419
+    ],
+    [
+      "prog_headcount",
+      0.07079
+    ],
+    [
+      "prev_term_gpa",
+      0.06949
+    ],
+    [
+      "prev_cumulative_gpa",
+      0.06758
+    ],
+    [
+      "fin_total_charged",
+      0.06583
+    ]
+  ]
+}

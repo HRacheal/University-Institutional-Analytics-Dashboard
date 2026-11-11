@@ -1,0 +1,67 @@
+{
+  "name": "syn_admissions_offer",
+  "zone": "SYNTHETIC",
+  "task": "classification",
+  "prediction_point": "Application submission date.",
+  "target_definition": "target_offer = 1 if the application received an offer (decision ADMITTED or ADMITTED_DECLINED).",
+  "targets": [
+    "target_offer"
+  ],
+  "features_numeric": [
+    "admission_score",
+    "age_at_entry_approx",
+    "lead_days_before_term",
+    "prior_applications_by_applicant",
+    "entry_academic_year_start",
+    "prog_prev_year_applications",
+    "prog_prev_year_offer_rate",
+    "prog_prev_year_yield"
+  ],
+  "features_categorical": [
+    "programme_id",
+    "school_id",
+    "level",
+    "entry_season",
+    "application_type",
+    "gender",
+    "residency_status",
+    "nationality_iso3"
+  ],
+  "id_columns": [
+    "application_id",
+    "applicant_id",
+    "entry_term_id",
+    "prediction_date",
+    "label_known_date"
+  ],
+  "excluded_leakage_columns": {
+    "decision": "the admissions decision (defines both targets)",
+    "decision_date": "date of the decision (after the prediction point)",
+    "enrolled": "enrolment after the decision (outcome)",
+    "student_id": "exists only for applicants who enrolled (reveals the outcome)"
+  },
+  "population": "Decided applications for entry terms 2016FA-2026FA (PENDING and 2027SP excluded).",
+  "split": "Chronological by entry term: test = entry terms of academic year 2025/26 onwards (2025FA, 2026SP, 2026SU, 2026FA); train = earlier entry terms; test-period applicants removed from training.",
+  "notes": [
+    "Unique applicants per entry term = applications per entry term (no applicant applied twice for the same term)."
+  ],
+  "rows": 13280,
+  "features": [
+    "admission_score",
+    "age_at_entry_approx",
+    "lead_days_before_term",
+    "prior_applications_by_applicant",
+    "entry_academic_year_start",
+    "prog_prev_year_applications",
+    "prog_prev_year_offer_rate",
+    "prog_prev_year_yield",
+    "programme_id",
+    "school_id",
+    "level",
+    "entry_season",
+    "application_type",
+    "gender",
+    "residency_status",
+    "nationality_iso3"
+  ]
+}

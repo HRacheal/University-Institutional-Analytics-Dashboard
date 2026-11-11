@@ -1,0 +1,298 @@
+{
+  "task_id": "syn_dropout_cox",
+  "title": "Synthetic time to dropout",
+  "zone": "SYNTHETIC",
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "dataset": "syn_dropout_survival",
+  "model": "cox_ph_statsmodels",
+  "target_definition": "duration_years = years from admission to a recorded WITHDRAWN/DISMISSED outcome (event_dropout = 1); censored at graduation, programme change or the as-of date.",
+  "prediction_point": "End date of the first completed term of each programme admission.",
+  "population": "All programme admissions with a completed first term and no outcome recorded by its end.",
+  "n_rows": 5052,
+  "events": 1190,
+  "censored": 3862,
+  "split": {
+    "method": "Student-grouped holdout: 25 % of students (StratifiedGroupKFold on the event indicator) form the test set; censoring handles immature cohorts.",
+    "train_rows": 3790,
+    "test_rows": 1262,
+    "dropped_constant_covariates": [
+      "probation_terms_so_far",
+      "prior_gap_terms"
+    ],
+    "dropped_collinear_covariates": [
+      "term_gpa"
+    ],
+    "strata": "level (separate baseline hazard per level)",
+    "train_events": 914,
+    "test_events": 276
+  },
+  "covariates": [
+    "cumulative_gpa",
+    "cum_course_completion_rate",
+    "credits_attempted",
+    "progression_rate",
+    "warning_terms_so_far",
+    "credits_transferred_in",
+    "scholarship_pct",
+    "age_at_admission_approx",
+    "fin_payment_completion_pct",
+    "fin_late_payment_terms",
+    "fin_holds_so_far",
+    "part_time_share_so_far",
+    "online_share_so_far"
+  ],
+  "covariate_note": "numeric covariates standardised on training data and clipped to +/-5 SD; HR is per 1 SD",
+  "concordance_train": 0.679827948524006,
+  "concordance_test": 0.6405572105903579,
+  "hazard_ratios": [
+    {
+      "covariate": "cumulative_gpa",
+      "coef": -0.3695978676355774,
+      "hazard_ratio_per_sd": 0.6910121531238845,
+      "ci_low": 0.6198194778525936,
+      "ci_high": 0.770382043202692,
+      "p_value": 2.6936659262747753e-11
+    },
+    {
+      "covariate": "cum_course_completion_rate",
+      "coef": -0.1358984976271013,
+      "hazard_ratio_per_sd": 0.872931232583568,
+      "ci_low": 0.8085520171103947,
+      "ci_high": 0.9424365046334763,
+      "p_value": 0.0005076246776548567
+    },
+    {
+      "covariate": "credits_attempted",
+      "coef": -0.13656845035208398,
+      "hazard_ratio_per_sd": 0.8723466057836018,
+      "ci_low": 0.7607827753060091,
+      "ci_high": 1.0002705441327568,
+      "p_value": 0.0504546158170443
+    },
+    {
+      "covariate": "progression_rate",
+      "coef": 0.22575909891463875,
+      "hazard_ratio_per_sd": 1.2532737139115053,
+      "ci_low": 1.0304821548881873,
+      "ci_high": 1.5242330927622576,
+      "p_value": 0.02378173331444516
+    },
+    {
+      "covariate": "warning_terms_so_far",
+      "coef": 0.36095962403516096,
+      "hazard_ratio_per_sd": 1.4347055320889803,
+      "ci_low": 1.3218811194194784,
+      "ci_high": 1.5571596670589327,
+      "p_value": 5.731120926169521e-18
+    },
+    {
+      "covariate": "credits_transferred_in",
+      "coef": -0.13695671656446212,
+      "hazard_ratio_per_sd": 0.8720079688159937,
+      "ci_low": 0.7373799323464691,
+      "ci_high": 1.0312158825083277,
+      "p_value": 0.10944287968160213
+    },
+    {
+      "covariate": "scholarship_pct",
+      "coef": -0.01904249239225767,
+      "hazard_ratio_per_sd": 0.9811376704702683,
+      "ci_low": 0.9144534474923208,
+      "ci_high": 1.0526846730750703,
+      "p_value": 0.5959356192430687
+    },
+    {
+      "covariate": "age_at_admission_approx",
+      "coef": -0.038607912061890196,
+      "hazard_ratio_per_sd": 0.9621278739349418,
+      "ci_low": 0.8792255797716864,
+      "ci_high": 1.0528470361871758,
+      "p_value": 0.4010254648518864
+    },
+    {
+      "covariate": "fin_payment_completion_pct",
+      "coef": 0.008125834109420504,
+      "hazard_ratio_per_sd": 1.0081589383050573,
+      "ci_low": 0.9279973224635724,
+      "ci_high": 1.0952450187961373,
+      "p_value": 0.8475653451582019
+    },
+    {
+      "covariate": "fin_late_payment_terms",
+      "coef": 0.017033798380130936,
+      "hazard_ratio_per_sd": 1.0171797007704577,
+      "ci_low": 0.8896773322371065,
+      "ci_high": 1.1629548221239088,
+      "p_value": 0.8031470652705075
+    },
+    {
+      "covariate": "fin_holds_so_far",
+      "coef": -0.03421959537050235,
+      "hazard_ratio_per_sd": 0.9663592733131897,
+      "ci_low": 0.8380902459934585,
+      "ci_high": 1.1142597704516002,
+      "p_value": 0.6376702550899365
+    },
+    {
+      "covariate": "part_time_share_so_far",
+      "coef": -0.12123232391650678,
+      "hazard_ratio_per_sd": 0.88582813662295,
+      "ci_low": 0.8061248173183884,
+      "ci_high": 0.973411896985383,
+      "p_value": 0.011730395747709496
+    },
+    {
+      "covariate": "online_share_so_far",
+      "coef": -0.038641393882112504,
+      "hazard_ratio_per_sd": 0.962095660681718,
+      "ci_low": 0.8989436776935307,
+      "ci_high": 1.0296841540479227,
+      "p_value": 0.26463282315660996
+    }
+  ],
+  "ph_check": [
+    {
+      "covariate": "cumulative_gpa",
+      "spearman_rho_with_time": -0.03628771998612541,
+      "p_value": 0.2731112905380266
+    },
+    {
+      "covariate": "cum_course_completion_rate",
+      "spearman_rho_with_time": -0.06356600444307271,
+      "p_value": 0.05472311716540074
+    },
+    {
+      "covariate": "credits_attempted",
+      "spearman_rho_with_time": -0.010194738346429016,
+      "p_value": 0.7582360730153235
+    },
+    {
+      "covariate": "progression_rate",
+      "spearman_rho_with_time": 0.09133146418208186,
+      "p_value": 0.005724284229776384
+    },
+    {
+      "covariate": "warning_terms_so_far",
+      "spearman_rho_with_time": -0.11327098613089899,
+      "p_value": 0.000601763531224491
+    },
+    {
+      "covariate": "credits_transferred_in",
+      "spearman_rho_with_time": 0.015212919809531978,
+      "p_value": 0.6460038398930239
+    },
+    {
+      "covariate": "scholarship_pct",
+      "spearman_rho_with_time": 0.003892030532205405,
+      "p_value": 0.906459902280079
+    },
+    {
+      "covariate": "age_at_admission_approx",
+      "spearman_rho_with_time": 0.0391344192635624,
+      "p_value": 0.23722061646503767
+    },
+    {
+      "covariate": "fin_payment_completion_pct",
+      "spearman_rho_with_time": 0.03167727835073392,
+      "p_value": 0.33876378675345886
+    },
+    {
+      "covariate": "fin_late_payment_terms",
+      "spearman_rho_with_time": 0.1737295621136467,
+      "p_value": 1.2548479658057898e-07
+    },
+    {
+      "covariate": "fin_holds_so_far",
+      "spearman_rho_with_time": -0.08942288975562618,
+      "p_value": 0.00682647088674732
+    },
+    {
+      "covariate": "part_time_share_so_far",
+      "spearman_rho_with_time": 0.007156953544348817,
+      "p_value": 0.8289263361301759
+    },
+    {
+      "covariate": "online_share_so_far",
+      "spearman_rho_with_time": 0.11665380394113269,
+      "p_value": 0.00040936148961440985
+    }
+  ],
+  "ph_possible_violations": [
+    "warning_terms_so_far",
+    "fin_late_payment_terms",
+    "online_share_so_far"
+  ],
+  "kaplan_meier": {
+    "DOCTORATE": {
+      "n": 400,
+      "events": 92
+    },
+    "MASTERS": {
+      "n": 1184,
+      "events": 337
+    },
+    "UNDERGRADUATE": {
+      "n": 3468,
+      "events": 761
+    }
+  },
+  "leakage_checks": [
+    {
+      "check": "L1 target_not_in_features",
+      "passed": true,
+      "detail": "targets ['duration_years', 'event_dropout']; overlap []"
+    },
+    {
+      "check": "L2 excluded_not_in_features",
+      "passed": true,
+      "detail": "10 exclusions; overlap []"
+    },
+    {
+      "check": "L3 forbidden_name_patterns",
+      "passed": true,
+      "detail": "suspicious feature names []"
+    },
+    {
+      "check": "L4 zone_purity",
+      "passed": true,
+      "detail": "zone SYNTHETIC; foreign columns []"
+    },
+    {
+      "check": "L5 feature_dates_before_point",
+      "passed": true,
+      "detail": "row-level source dates not tracked; features are application-time attributes and previous-academic-year aggregates by construction"
+    },
+    {
+      "check": "L6 no_unreportable_terms",
+      "passed": true,
+      "detail": "0 rows based on in-progress/future terms"
+    },
+    {
+      "check": "L6b labels_known_by_as_of",
+      "passed": true,
+      "detail": "0 rows whose label is not yet observable at 2026-11-10"
+    },
+    {
+      "check": "L7 group_disjoint",
+      "passed": true,
+      "detail": "0 student_id values in both train and test"
+    }
+  ],
+  "excluded_leakage_columns": {
+    "outcome": "final outcome of the admission (determined after the prediction point)",
+    "outcome_term_id": "term of the final outcome",
+    "outcome_recorded_date": "date the outcome was recorded",
+    "outcome_known_at_prediction": "population filter only (rows with an already-known outcome are excluded)",
+    "withdrawal_type": "type of the final withdrawal",
+    "exit_reason": "reason for the final exit",
+    "graduation_status / graduation_date / graduated_within_window": "graduation outcome fields (registrar/graduation_records)",
+    "institutionally_retained / programme_retained / outcome_category / status_at_compare / completed_before_compare / continued_next_regular_term": "retention outcome fields (registrar/retention_cohort_members)",
+    "[rule] student_status_history events after the prediction date": "future status events",
+    "[rule] term enrolments, grades, standing, charges, payments and holds dated after the prediction date": "future records"
+  },
+  "status": "TRAINED_WITH_PH_CAVEATS",
+  "seconds": 3.5,
+  "saved_models": {
+    "cox_ph": "models/synthetic/syn_dropout_cox/cox_ph.joblib"
+  }
+}

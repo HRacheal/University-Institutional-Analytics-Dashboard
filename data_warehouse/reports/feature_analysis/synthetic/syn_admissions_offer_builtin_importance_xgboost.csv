@@ -1,0 +1,17 @@
+,model_importance
+programme_id,0.25143328309059143
+application_type,0.2140953727066517
+nationality_iso3,0.13472158834338188
+school_id,0.06406538095325232
+prior_applications_by_applicant,0.061527594923973083
+admission_score,0.05360935628414154
+gender,0.03948887437582016
+entry_season,0.034853522665798664
+level,0.030083874240517616
+residency_status,0.024301359429955482
+prog_prev_year_applications,0.024288564920425415
+prog_prev_year_offer_rate,0.02329792734235525
+entry_academic_year_start,0.011950966902077198
+prog_prev_year_yield,0.011184235103428364
+lead_days_before_term,0.01099481713026762
+age_at_entry_approx,0.010103228501975536

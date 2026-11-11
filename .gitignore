@@ -1,0 +1,24 @@
+# Refine framework source code (reference only, ~108 MB)
+refine-main/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+.env
+.env.*
+
+# Python / backend
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Per-model training checkpoints (temporary; deleted when a task finishes)
+data_warehouse/experiments/checkpoints/
+
+# Backend runtime state: user database, sessions, audit log, logs, prediction files, one-time initial credentials
+backend/var/
+*.db
+
+# Archived superseded model artifacts (kept locally for provenance; originals also in the Drive ZIP backups)
+data_warehouse/_superseded_local/

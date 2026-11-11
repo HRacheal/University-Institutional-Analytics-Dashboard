@@ -1,0 +1,181 @@
+dimension,series_key,series,terms_observed,terms_since_first_nonzero,last_value,mean_last_3,status,reason,programme_id
+TOTAL,ALL,enrolment_headcount:TOTAL,31,31,2109.0,1481.3333333333333,ELIGIBLE,eligible,
+level,DOCTORATE,enrolment_headcount:level,31,31,159.0,120.33333333333333,ELIGIBLE,eligible,
+level,MASTERS,enrolment_headcount:level,31,31,326.0,235.0,ELIGIBLE,eligible,
+level,UNDERGRADUATE,enrolment_headcount:level,31,31,1624.0,1126.0,ELIGIBLE,eligible,
+school_id,SART,enrolment_headcount:school_id,31,31,228.0,157.0,ELIGIBLE,eligible,
+school_id,SBUS,enrolment_headcount:school_id,31,31,509.0,362.6666666666667,ELIGIBLE,eligible,
+school_id,SEDU,enrolment_headcount:school_id,31,31,368.0,260.0,ELIGIBLE,eligible,
+school_id,SENG,enrolment_headcount:school_id,31,31,604.0,426.6666666666667,ELIGIBLE,eligible,
+school_id,SHLT,enrolment_headcount:school_id,31,31,400.0,275.0,ELIGIBLE,eligible,
+programme_id,DR-CS,enrolment_headcount:programme_id,31,31,49.0,38.666666666666664,ELIGIBLE,eligible,
+programme_id,DR-DBA,enrolment_headcount:programme_id,31,31,50.0,36.333333333333336,ELIGIBLE,eligible,
+programme_id,DR-EDU,enrolment_headcount:programme_id,31,31,35.0,28.0,ELIGIBLE,eligible,
+programme_id,DR-HS,enrolment_headcount:programme_id,31,31,25.0,17.333333333333332,ELIGIBLE,eligible,
+programme_id,MA-COM,enrolment_headcount:programme_id,31,31,22.0,14.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),
+programme_id,MA-CP,enrolment_headcount:programme_id,31,31,25.0,19.666666666666668,ELIGIBLE,eligible,
+programme_id,MA-DS,enrolment_headcount:programme_id,31,31,64.0,44.333333333333336,ELIGIBLE,eligible,
+programme_id,MA-FIN,enrolment_headcount:programme_id,31,31,23.0,16.0,ELIGIBLE,eligible,
+programme_id,MA-MBA,enrolment_headcount:programme_id,31,31,63.0,49.666666666666664,ELIGIBLE,eligible,
+programme_id,MA-MED,enrolment_headcount:programme_id,31,31,33.0,24.0,ELIGIBLE,eligible,
+programme_id,MA-MPH,enrolment_headcount:programme_id,31,31,33.0,23.333333333333332,ELIGIBLE,eligible,
+programme_id,MA-NUR,enrolment_headcount:programme_id,31,31,26.0,16.333333333333332,ELIGIBLE,eligible,
+programme_id,MA-SE,enrolment_headcount:programme_id,31,31,37.0,27.333333333333332,ELIGIBLE,eligible,
+programme_id,UG-ACF,enrolment_headcount:programme_id,31,31,164.0,110.66666666666667,ELIGIBLE,eligible,
+programme_id,UG-BBA,enrolment_headcount:programme_id,31,31,209.0,150.0,ELIGIBLE,eligible,
+programme_id,UG-CE,enrolment_headcount:programme_id,31,31,108.0,71.0,ELIGIBLE,eligible,
+programme_id,UG-COM,enrolment_headcount:programme_id,31,31,132.0,90.66666666666667,ELIGIBLE,eligible,
+programme_id,UG-CS,enrolment_headcount:programme_id,31,31,214.0,151.0,ELIGIBLE,eligible,
+programme_id,UG-EDU,enrolment_headcount:programme_id,31,31,122.0,81.0,ELIGIBLE,eligible,
+programme_id,UG-ENG,enrolment_headcount:programme_id,31,31,74.0,52.0,ELIGIBLE,eligible,
+programme_id,UG-IT,enrolment_headcount:programme_id,31,31,132.0,94.33333333333333,ELIGIBLE,eligible,
+programme_id,UG-NUR,enrolment_headcount:programme_id,31,31,199.0,139.33333333333334,ELIGIBLE,eligible,
+programme_id,UG-PH,enrolment_headcount:programme_id,31,31,117.0,78.66666666666667,ELIGIBLE,eligible,
+programme_id,UG-PSY,enrolment_headcount:programme_id,31,31,153.0,107.33333333333333,ELIGIBLE,eligible,
+nationality_iso3,BRA,enrolment_headcount:nationality_iso3,31,31,14.0,9.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),
+nationality_iso3,CHN,enrolment_headcount:nationality_iso3,31,31,36.0,26.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 4),
+nationality_iso3,DEU,enrolment_headcount:nationality_iso3,31,31,13.0,9.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),
+nationality_iso3,EGY,enrolment_headcount:nationality_iso3,31,31,11.0,6.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),
+nationality_iso3,GBR,enrolment_headcount:nationality_iso3,31,31,17.0,12.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 4),
+nationality_iso3,GHA,enrolment_headcount:nationality_iso3,31,31,15.0,11.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),
+nationality_iso3,IND,enrolment_headcount:nationality_iso3,31,31,37.0,29.666666666666668,ELIGIBLE,eligible,
+nationality_iso3,KEN,enrolment_headcount:nationality_iso3,31,31,18.0,12.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),
+nationality_iso3,MEX,enrolment_headcount:nationality_iso3,31,31,5.0,3.3333333333333335,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),
+nationality_iso3,NGA,enrolment_headcount:nationality_iso3,31,31,27.0,18.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),
+nationality_iso3,PAK,enrolment_headcount:nationality_iso3,31,31,10.0,7.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),
+nationality_iso3,PHL,enrolment_headcount:nationality_iso3,31,30,9.0,8.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),
+nationality_iso3,USA,enrolment_headcount:nationality_iso3,31,30,22.0,14.666666666666666,ELIGIBLE,eligible,
+nationality_iso3,VNM,enrolment_headcount:nationality_iso3,31,31,12.0,9.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),
+nationality_iso3,ZZZ,enrolment_headcount:nationality_iso3,31,31,1863.0,1304.3333333333333,ELIGIBLE,eligible,
+gender,ANOTHER_GENDER,enrolment_headcount:gender,31,31,21.0,14.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),
+gender,FEMALE,enrolment_headcount:gender,31,31,1103.0,777.0,ELIGIBLE,eligible,
+gender,MALE,enrolment_headcount:gender,31,31,965.0,676.3333333333334,ELIGIBLE,eligible,
+gender,NOT_DISCLOSED,enrolment_headcount:gender,31,31,20.0,13.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),
+delivery_mode,FACE_TO_FACE,enrolment_headcount:delivery_mode,31,31,1546.0,1085.0,ELIGIBLE,eligible,
+delivery_mode,ONLINE,enrolment_headcount:delivery_mode,31,31,563.0,396.3333333333333,ELIGIBLE,eligible,
+study_load,FULL_TIME,enrolment_headcount:study_load,31,31,1354.0,932.6666666666666,ELIGIBLE,eligible,
+study_load,PART_TIME,enrolment_headcount:study_load,31,31,755.0,548.6666666666666,ELIGIBLE,eligible,
+programme_id,,admissions_applications,31,31,1041.0,478.0,ELIGIBLE,eligible,ALL
+programme_id,,admissions_applications,31,31,12.0,8.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-CS
+programme_id,,admissions_applications,31,31,30.0,12.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),DR-DBA
+programme_id,,admissions_applications,31,31,10.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-EDU
+programme_id,,admissions_applications,31,31,29.0,9.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-HS
+programme_id,,admissions_applications,31,31,13.0,6.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-COM
+programme_id,,admissions_applications,31,31,7.0,6.333333333333333,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-CP
+programme_id,,admissions_applications,31,31,70.0,33.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-DS
+programme_id,,admissions_applications,31,31,11.0,5.333333333333333,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-FIN
+programme_id,,admissions_applications,31,31,41.0,21.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MBA
+programme_id,,admissions_applications,31,31,17.0,10.0,ELIGIBLE,eligible,MA-MED
+programme_id,,admissions_applications,31,31,28.0,12.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),MA-MPH
+programme_id,,admissions_applications,31,31,32.0,13.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-NUR
+programme_id,,admissions_applications,31,31,30.0,10.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-SE
+programme_id,,admissions_applications,31,31,112.0,46.0,ELIGIBLE,eligible,UG-ACF
+programme_id,,admissions_applications,31,31,45.0,35.0,ELIGIBLE,eligible,UG-BBA
+programme_id,,admissions_applications,31,31,55.0,21.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-CE
+programme_id,,admissions_applications,31,31,67.0,28.666666666666668,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 4),UG-COM
+programme_id,,admissions_applications,31,31,74.0,35.666666666666664,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 4),UG-CS
+programme_id,,admissions_applications,31,31,58.0,27.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),UG-EDU
+programme_id,,admissions_applications,31,31,22.0,8.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-ENG
+programme_id,,admissions_applications,31,31,62.0,27.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-IT
+programme_id,,admissions_applications,31,31,75.0,34.666666666666664,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-NUR
+programme_id,,admissions_applications,31,31,58.0,26.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-PH
+programme_id,,admissions_applications,31,31,83.0,35.666666666666664,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-PSY
+programme_id,,admissions_offers,31,31,628.0,295.0,ELIGIBLE,eligible,ALL
+programme_id,,admissions_offers,31,31,9.0,6.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-CS
+programme_id,,admissions_offers,31,31,19.0,8.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),DR-DBA
+programme_id,,admissions_offers,31,31,8.0,3.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-EDU
+programme_id,,admissions_offers,31,31,15.0,5.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-HS
+programme_id,,admissions_offers,31,31,6.0,4.333333333333333,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-COM
+programme_id,,admissions_offers,31,31,4.0,4.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-CP
+programme_id,,admissions_offers,31,31,40.0,19.666666666666668,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-DS
+programme_id,,admissions_offers,31,31,8.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-FIN
+programme_id,,admissions_offers,31,31,22.0,13.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MBA
+programme_id,,admissions_offers,31,31,12.0,7.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),MA-MED
+programme_id,,admissions_offers,31,31,19.0,8.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MPH
+programme_id,,admissions_offers,31,31,24.0,9.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-NUR
+programme_id,,admissions_offers,31,31,18.0,6.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-SE
+programme_id,,admissions_offers,31,31,68.0,27.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),UG-ACF
+programme_id,,admissions_offers,31,31,32.0,22.666666666666668,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 4),UG-BBA
+programme_id,,admissions_offers,31,31,37.0,14.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-CE
+programme_id,,admissions_offers,31,31,36.0,15.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-COM
+programme_id,,admissions_offers,31,31,47.0,23.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 4),UG-CS
+programme_id,,admissions_offers,31,31,30.0,15.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-EDU
+programme_id,,admissions_offers,31,31,11.0,4.333333333333333,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-ENG
+programme_id,,admissions_offers,31,31,35.0,16.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-IT
+programme_id,,admissions_offers,31,31,49.0,21.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-NUR
+programme_id,,admissions_offers,31,31,33.0,15.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-PH
+programme_id,,admissions_offers,31,31,46.0,20.333333333333332,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-PSY
+programme_id,,admissions_acceptances,31,31,402.0,190.66666666666666,ELIGIBLE,eligible,ALL
+programme_id,,admissions_acceptances,31,31,6.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-CS
+programme_id,,admissions_acceptances,31,31,13.0,5.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),DR-DBA
+programme_id,,admissions_acceptances,31,31,7.0,2.6666666666666665,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-EDU
+programme_id,,admissions_acceptances,31,31,9.0,3.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-HS
+programme_id,,admissions_acceptances,31,31,5.0,3.3333333333333335,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-COM
+programme_id,,admissions_acceptances,31,31,4.0,3.6666666666666665,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-CP
+programme_id,,admissions_acceptances,31,31,21.0,10.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-DS
+programme_id,,admissions_acceptances,31,31,7.0,3.6666666666666665,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-FIN
+programme_id,,admissions_acceptances,31,31,13.0,7.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MBA
+programme_id,,admissions_acceptances,31,31,7.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),MA-MED
+programme_id,,admissions_acceptances,31,31,11.0,5.333333333333333,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MPH
+programme_id,,admissions_acceptances,31,31,14.0,5.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-NUR
+programme_id,,admissions_acceptances,31,31,10.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-SE
+programme_id,,admissions_acceptances,31,31,38.0,16.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),UG-ACF
+programme_id,,admissions_acceptances,31,31,23.0,14.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-BBA
+programme_id,,admissions_acceptances,31,31,25.0,10.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-CE
+programme_id,,admissions_acceptances,31,31,24.0,10.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-COM
+programme_id,,admissions_acceptances,31,31,30.0,15.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),UG-CS
+programme_id,,admissions_acceptances,31,31,22.0,10.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-EDU
+programme_id,,admissions_acceptances,31,31,8.0,3.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-ENG
+programme_id,,admissions_acceptances,31,31,21.0,10.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-IT
+programme_id,,admissions_acceptances,31,31,32.0,14.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-NUR
+programme_id,,admissions_acceptances,31,31,20.0,9.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-PH
+programme_id,,admissions_acceptances,31,31,32.0,14.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-PSY
+programme_id,,admissions_new_enrolments,31,31,402.0,190.66666666666666,ELIGIBLE,eligible,ALL
+programme_id,,admissions_new_enrolments,31,31,6.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-CS
+programme_id,,admissions_new_enrolments,31,31,13.0,5.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),DR-DBA
+programme_id,,admissions_new_enrolments,31,31,7.0,2.6666666666666665,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-EDU
+programme_id,,admissions_new_enrolments,31,31,9.0,3.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),DR-HS
+programme_id,,admissions_new_enrolments,31,31,5.0,3.3333333333333335,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-COM
+programme_id,,admissions_new_enrolments,31,31,4.0,3.6666666666666665,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-CP
+programme_id,,admissions_new_enrolments,31,31,21.0,10.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-DS
+programme_id,,admissions_new_enrolments,31,31,7.0,3.6666666666666665,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-FIN
+programme_id,,admissions_new_enrolments,31,31,13.0,7.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MBA
+programme_id,,admissions_new_enrolments,31,31,7.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),MA-MED
+programme_id,,admissions_new_enrolments,31,31,11.0,5.333333333333333,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),MA-MPH
+programme_id,,admissions_new_enrolments,31,31,14.0,5.666666666666667,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-NUR
+programme_id,,admissions_new_enrolments,31,31,10.0,4.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),MA-SE
+programme_id,,admissions_new_enrolments,31,31,38.0,16.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),UG-ACF
+programme_id,,admissions_new_enrolments,31,31,23.0,14.666666666666666,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-BBA
+programme_id,,admissions_new_enrolments,31,31,25.0,10.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-CE
+programme_id,,admissions_new_enrolments,31,31,24.0,10.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),UG-COM
+programme_id,,admissions_new_enrolments,31,31,30.0,15.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 3),UG-CS
+programme_id,,admissions_new_enrolments,31,31,22.0,10.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-EDU
+programme_id,,admissions_new_enrolments,31,31,8.0,3.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-ENG
+programme_id,,admissions_new_enrolments,31,31,21.0,10.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-IT
+programme_id,,admissions_new_enrolments,31,31,32.0,14.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-NUR
+programme_id,,admissions_new_enrolments,31,31,20.0,9.0,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 0),UG-PH
+programme_id,,admissions_new_enrolments,31,31,32.0,14.333333333333334,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 1),UG-PSY
+programme_id,,course_registrations,31,31,89.0,63.666666666666664,ELIGIBLE,eligible,DR-CS
+programme_id,,course_registrations,31,31,107.0,66.66666666666667,ELIGIBLE,eligible,DR-DBA
+programme_id,,course_registrations,31,31,55.0,39.333333333333336,ELIGIBLE,eligible,DR-EDU
+programme_id,,course_registrations,31,31,53.0,32.333333333333336,ELIGIBLE,eligible,DR-HS
+programme_id,,course_registrations,31,31,64.0,39.333333333333336,REQUIRES_MORE_DATA,a recent term has fewer than 5 (min of last 9 terms = 2),MA-COM
+programme_id,,course_registrations,31,31,69.0,50.333333333333336,ELIGIBLE,eligible,MA-CP
+programme_id,,course_registrations,31,31,152.0,101.0,ELIGIBLE,eligible,MA-DS
+programme_id,,course_registrations,31,31,59.0,36.0,ELIGIBLE,eligible,MA-FIN
+programme_id,,course_registrations,31,31,153.0,110.66666666666667,ELIGIBLE,eligible,MA-MBA
+programme_id,,course_registrations,31,31,90.0,61.666666666666664,ELIGIBLE,eligible,MA-MED
+programme_id,,course_registrations,31,31,72.0,48.666666666666664,ELIGIBLE,eligible,MA-MPH
+programme_id,,course_registrations,31,31,68.0,39.666666666666664,ELIGIBLE,eligible,MA-NUR
+programme_id,,course_registrations,31,31,78.0,56.666666666666664,ELIGIBLE,eligible,MA-SE
+programme_id,,course_registrations,31,31,706.0,444.6666666666667,ELIGIBLE,eligible,UG-ACF
+programme_id,,course_registrations,31,31,861.0,576.6666666666666,ELIGIBLE,eligible,UG-BBA
+programme_id,,course_registrations,31,31,426.0,268.3333333333333,ELIGIBLE,eligible,UG-CE
+programme_id,,course_registrations,31,31,543.0,349.3333333333333,ELIGIBLE,eligible,UG-COM
+programme_id,,course_registrations,31,31,877.0,582.0,ELIGIBLE,eligible,UG-CS
+programme_id,,course_registrations,31,31,515.0,322.0,ELIGIBLE,eligible,UG-EDU
+programme_id,,course_registrations,31,31,303.0,205.33333333333334,ELIGIBLE,eligible,UG-ENG
+programme_id,,course_registrations,31,31,555.0,374.6666666666667,ELIGIBLE,eligible,UG-IT
+programme_id,,course_registrations,31,31,825.0,555.0,ELIGIBLE,eligible,UG-NUR
+programme_id,,course_registrations,31,31,476.0,304.6666666666667,ELIGIBLE,eligible,UG-PH
+programme_id,,course_registrations,31,31,633.0,422.3333333333333,ELIGIBLE,eligible,UG-PSY

@@ -1,0 +1,4 @@
+rate,n,mae_pp_seasonal_naive,mae_pp_mean_last3_same_season,min_observed,max_observed
+acceptance_to_enrolment,33.0000,0.0000,0.0000,1.0000,1.0000
+application_to_offer,33.0000,2.3209,1.9593,0.6033,0.6789
+offer_to_acceptance,33.0000,2.9741,2.6711,0.6031,0.7403

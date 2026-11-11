@@ -1,0 +1,92 @@
+{
+  "task_id": "uci_outcome3_end_of_year1",
+  "dataset": "uci_end_of_year1",
+  "target": "target_3class",
+  "prediction_point": "End of the first study year: enrolment information plus 1st- and 2nd-semester curricular-unit results and fee status",
+  "target_definition": "target_3class = original UCI Target (Graduate / Dropout / Enrolled at the end of the normal course duration). target_dropout = 1 if Target == Dropout, else 0.",
+  "population": "All 4,424 UCI students",
+  "features_numeric": [
+    "application_order",
+    "previous_qualification_grade",
+    "admission_grade",
+    "age_at_enrollment",
+    "daytime_evening_attendance",
+    "displaced",
+    "educational_special_needs",
+    "gender_code",
+    "scholarship_holder",
+    "international",
+    "unemployment_rate",
+    "inflation_rate",
+    "gdp",
+    "debtor",
+    "tuition_fees_up_to_date",
+    "sem1_credited",
+    "sem1_enrolled",
+    "sem1_evaluations",
+    "sem1_approved",
+    "sem1_grade",
+    "sem1_without_evaluations",
+    "sem2_credited",
+    "sem2_enrolled",
+    "sem2_evaluations",
+    "sem2_approved",
+    "sem2_grade",
+    "sem2_without_evaluations"
+  ],
+  "features_categorical": [
+    "marital_status_code",
+    "application_mode_code",
+    "uci_course_code",
+    "previous_qualification_code",
+    "nationality_code",
+    "mother_qualification_code",
+    "father_qualification_code",
+    "mother_occupation_code",
+    "father_occupation_code"
+  ],
+  "excluded_leakage_columns": {
+    "target": "the outcome itself (Graduate / Dropout / Enrolled)",
+    "uci_students.outcome_at_normal_duration": "recoded copy of the target",
+    "uci_students.dq_flags": "derived from semester results (data-quality flag, not an input)"
+  },
+  "split": {
+    "method": "Stratified 75/25 train/test (seed 20261110; one row per student) with 5-fold stratified cross-validation on the training set",
+    "train_rows": 3318,
+    "test_rows": 1106,
+    "train_groups": 3318,
+    "test_groups": 1106
+  },
+  "selection_rule": "highest CV cv_pr_auc_macro",
+  "data_version": {
+    "synthetic_generation_run_id": "SYN-RUN-1.1.0-S20261110",
+    "synthetic_manifest_sha256": "ebe26585195b7d876597d85bcfa755eca7ee86f95a0e8975b85147aed93e2e7d",
+    "uci_raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "as_of_date": "2026-11-10"
+  },
+  "test_metrics": {
+    "test_accuracy": 0.7603978300180831,
+    "test_precision_macro": 0.7221025704183016,
+    "test_recall_macro": 0.714206878442016,
+    "test_f1_macro": 0.7138236668851947,
+    "test_f1_weighted": 0.7632303012480053,
+    "test_roc_auc_ovr_macro": 0.894815771938779,
+    "test_pr_auc_macro": 0.7798005821870708
+  },
+  "zone": "UCI",
+  "task": "uci_outcome3_end_of_year1",
+  "model": "xgboost",
+  "deployment_status": "RESEARCH_ONLY \u2014 trained on the public UCI dataset; not calibrated to this university",
+  "label": "UCI RESEARCH DATA (Realinho et al., 2021, CC BY 4.0): a public Portuguese higher-education dataset. Results describe that dataset only, not this university.",
+  "environment": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+  }
+}

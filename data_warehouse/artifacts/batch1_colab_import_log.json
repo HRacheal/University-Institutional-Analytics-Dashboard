@@ -1,0 +1,136 @@
+{
+ "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\5b5c0ee62d3258b2\\b2aae54c-0a33-41d4-ba3e-330cf73dab65\\scratchpad\\b1bundle",
+ "stamp": "20261111T121917",
+ "tasks": {
+  "uci_dropout_end_of_year1": {
+   "imported": 12,
+   "unchanged": 0,
+   "archived": 9,
+   "archived_files": [
+    "models/uci/uci_dropout_end_of_year1/logistic_regression.joblib",
+    "models/uci/uci_dropout_end_of_year1/logistic_regression.meta.json",
+    "reports/feature_analysis/uci/uci_dropout_end_of_year1_builtin_importance_xgboost.csv",
+    "reports/feature_analysis/uci/uci_dropout_end_of_year1_coefficients_logistic_regression.csv",
+    "reports/feature_analysis/uci/uci_dropout_end_of_year1_shap_xgboost.csv",
+    "reports/feature_analysis/uci/uci_dropout_end_of_year1_shap_xgboost.png",
+    "reports/model_evaluation/uci/uci_dropout_end_of_year1/confusion_logistic_regression.png",
+    "reports/model_evaluation/uci/uci_dropout_end_of_year1/results.json",
+    "reports/model_evaluation/uci/uci_dropout_end_of_year1/roc_pr_calibration.png"
+   ]
+  },
+  "uci_outcome3_end_of_year1": {
+   "imported": 10,
+   "unchanged": 0,
+   "archived": 10,
+   "archived_files": [
+    "models/uci/uci_outcome3_end_of_year1/logistic_regression.joblib",
+    "models/uci/uci_outcome3_end_of_year1/logistic_regression.meta.json",
+    "models/uci/uci_outcome3_end_of_year1/xgboost.joblib",
+    "models/uci/uci_outcome3_end_of_year1/xgboost.meta.json",
+    "reports/feature_analysis/uci/uci_outcome3_end_of_year1_builtin_importance_xgboost.csv",
+    "reports/feature_analysis/uci/uci_outcome3_end_of_year1_coefficients_logistic_regression.csv",
+    "reports/feature_analysis/uci/uci_outcome3_end_of_year1_shap_xgboost.csv",
+    "reports/feature_analysis/uci/uci_outcome3_end_of_year1_shap_xgboost.png",
+    "reports/model_evaluation/uci/uci_outcome3_end_of_year1/confusion_xgboost.png",
+    "reports/model_evaluation/uci/uci_outcome3_end_of_year1/results.json"
+   ]
+  },
+  "uci_dropout_enrolment_time": {
+   "imported": 15,
+   "unchanged": 0,
+   "archived": 12,
+   "archived_files": [
+    "models/uci/uci_dropout_enrolment_time/catboost.joblib",
+    "models/uci/uci_dropout_enrolment_time/catboost.meta.json",
+    "models/uci/uci_dropout_enrolment_time/logistic_regression.joblib",
+    "models/uci/uci_dropout_enrolment_time/logistic_regression.meta.json",
+    "reports/feature_analysis/uci/uci_dropout_enrolment_time_builtin_importance_catboost.csv",
+    "reports/feature_analysis/uci/uci_dropout_enrolment_time_coefficients_logistic_regression.csv",
+    "reports/feature_analysis/uci/uci_dropout_enrolment_time_shap_catboost.csv",
+    "reports/feature_analysis/uci/uci_dropout_enrolment_time_shap_catboost.png",
+    "reports/model_evaluation/uci/uci_dropout_enrolment_time/confusion_catboost.png",
+    "reports/model_evaluation/uci/uci_dropout_enrolment_time/confusion_logistic_regression.png",
+    "reports/model_evaluation/uci/uci_dropout_enrolment_time/results.json",
+    "reports/model_evaluation/uci/uci_dropout_enrolment_time/roc_pr_calibration.png"
+   ]
+  },
+  "uci_outcome3_enrolment_time": {
+   "imported": 10,
+   "unchanged": 0,
+   "archived": 10,
+   "archived_files": [
+    "models/uci/uci_outcome3_enrolment_time/catboost.joblib",
+    "models/uci/uci_outcome3_enrolment_time/catboost.meta.json",
+    "models/uci/uci_outcome3_enrolment_time/logistic_regression.joblib",
+    "models/uci/uci_outcome3_enrolment_time/logistic_regression.meta.json",
+    "reports/feature_analysis/uci/uci_outcome3_enrolment_time_builtin_importance_catboost.csv",
+    "reports/feature_analysis/uci/uci_outcome3_enrolment_time_coefficients_logistic_regression.csv",
+    "reports/feature_analysis/uci/uci_outcome3_enrolment_time_shap_catboost.csv",
+    "reports/feature_analysis/uci/uci_outcome3_enrolment_time_shap_catboost.png",
+    "reports/model_evaluation/uci/uci_outcome3_enrolment_time/confusion_catboost.png",
+    "reports/model_evaluation/uci/uci_outcome3_enrolment_time/results.json"
+   ]
+  },
+  "syn_dropout_2y": {
+   "imported": 15,
+   "unchanged": 0,
+   "archived": 12,
+   "archived_files": [
+    "models/synthetic/syn_dropout_2y/logistic_regression.joblib",
+    "models/synthetic/syn_dropout_2y/logistic_regression.meta.json",
+    "models/synthetic/syn_dropout_2y/random_forest.joblib",
+    "models/synthetic/syn_dropout_2y/random_forest.meta.json",
+    "reports/feature_analysis/synthetic/syn_dropout_2y_builtin_importance_random_forest.csv",
+    "reports/feature_analysis/synthetic/syn_dropout_2y_coefficients_logistic_regression.csv",
+    "reports/feature_analysis/synthetic/syn_dropout_2y_shap_random_forest.csv",
+    "reports/feature_analysis/synthetic/syn_dropout_2y_shap_random_forest.png",
+    "reports/model_evaluation/synthetic/syn_dropout_2y/confusion_logistic_regression.png",
+    "reports/model_evaluation/synthetic/syn_dropout_2y/confusion_random_forest.png",
+    "reports/model_evaluation/synthetic/syn_dropout_2y/results.json",
+    "reports/model_evaluation/synthetic/syn_dropout_2y/roc_pr_calibration.png"
+   ]
+  },
+  "syn_graduation_cox": {
+   "imported": 5,
+   "unchanged": 0,
+   "archived": 5,
+   "archived_files": [
+    "models/synthetic/syn_graduation_cox/cox_ph.joblib",
+    "models/synthetic/syn_graduation_cox/cox_ph.meta.json",
+    "reports/model_evaluation/synthetic/syn_graduation_cox/hazard_ratios.csv",
+    "reports/model_evaluation/synthetic/syn_graduation_cox/kaplan_meier_by_level.png",
+    "reports/model_evaluation/synthetic/syn_graduation_cox/results.json"
+   ]
+  },
+  "syn_dropout_cox": {
+   "imported": 5,
+   "unchanged": 0,
+   "archived": 5,
+   "archived_files": [
+    "models/synthetic/syn_dropout_cox/cox_ph.joblib",
+    "models/synthetic/syn_dropout_cox/cox_ph.meta.json",
+    "reports/model_evaluation/synthetic/syn_dropout_cox/hazard_ratios.csv",
+    "reports/model_evaluation/synthetic/syn_dropout_cox/kaplan_meier_by_level.png",
+    "reports/model_evaluation/synthetic/syn_dropout_cox/results.json"
+   ]
+  },
+  "syn_next_term_gpa": {
+   "imported": 10,
+   "unchanged": 0,
+   "archived": 10,
+   "archived_files": [
+    "models/synthetic/syn_next_term_gpa/linear_regression.joblib",
+    "models/synthetic/syn_next_term_gpa/linear_regression.meta.json",
+    "models/synthetic/syn_next_term_gpa/random_forest.joblib",
+    "models/synthetic/syn_next_term_gpa/random_forest.meta.json",
+    "reports/feature_analysis/synthetic/syn_next_term_gpa_builtin_importance_random_forest.csv",
+    "reports/feature_analysis/synthetic/syn_next_term_gpa_coefficients_linear_regression.csv",
+    "reports/feature_analysis/synthetic/syn_next_term_gpa_shap_random_forest.csv",
+    "reports/feature_analysis/synthetic/syn_next_term_gpa_shap_random_forest.png",
+    "reports/model_evaluation/synthetic/syn_next_term_gpa/actual_vs_predicted_random_forest.png",
+    "reports/model_evaluation/synthetic/syn_next_term_gpa/results.json"
+   ]
+  }
+ },
+ "manifest": "C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\data_warehouse\\artifacts\\artifact_manifest.json"
+}

@@ -1,0 +1,170 @@
+{
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "population": "Students enrolled at the Fall 2026 census; features from their latest completed term",
+  "n_students": 1721,
+  "features": [
+    "cumulative_gpa",
+    "term_gpa",
+    "progression_rate",
+    "credits_earned_per_year",
+    "cum_course_completion_rate",
+    "warning_terms_so_far",
+    "probation_terms_so_far",
+    "interruptions_so_far",
+    "summer_terms_taken",
+    "online_share_so_far",
+    "part_time_share_so_far",
+    "fin_payment_completion_pct",
+    "fin_outstanding_ratio",
+    "fin_late_payment_terms",
+    "fin_holds_so_far",
+    "years_since_admission"
+  ],
+  "silhouette_by_k": {
+    "2": 0.17295040544189016,
+    "3": 0.1783573681361009,
+    "4": 0.1902809140044799,
+    "5": 0.1266118879257958,
+    "6": 0.11978272578274773,
+    "7": 0.11596344100025535,
+    "8": 0.12760180833804585
+  },
+  "chosen_k": 4,
+  "kmeans_vs_ward_adjusted_rand": 0.5256965728683617,
+  "segment_sizes": {
+    "0": 1012,
+    "1": 541,
+    "2": 155,
+    "3": 13
+  },
+  "isolation_forest": {
+    "contamination": 0.02,
+    "flagged": 35,
+    "features_most_unusual_among_flagged_mean_abs_z": {
+      "fin_outstanding_ratio": 3.1,
+      "fin_payment_completion_pct": 3.1,
+      "probation_terms_so_far": 2.65,
+      "warning_terms_so_far": 2.18,
+      "cum_course_completion_rate": 1.69,
+      "years_since_admission": 1.56
+    }
+  },
+  "interpretation": "Segments are descriptive groupings of synthetic records; they are not student types at any real university.",
+  "data_version": {
+    "synthetic_generation_run_id": "SYN-RUN-1.1.0-S20261110",
+    "synthetic_manifest_sha256": "ebe26585195b7d876597d85bcfa755eca7ee86f95a0e8975b85147aed93e2e7d",
+    "uci_raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "as_of_date": "2026-11-10"
+  },
+  "leakage_checks": [
+    {
+      "check": "S1 no_identifiers_in_features",
+      "passed": true,
+      "detail": "overlap []"
+    },
+    {
+      "check": "S2 no_outcome_named_features",
+      "passed": true,
+      "detail": "suspicious feature names []"
+    },
+    {
+      "check": "S3 zone_purity",
+      "passed": true,
+      "detail": "foreign (UCI) columns []"
+    },
+    {
+      "check": "S4 completed_terms_only",
+      "passed": true,
+      "detail": "0 rows from in-progress/future terms ['2026FA', '2027SP', '2027SU']"
+    },
+    {
+      "check": "S5 one_row_per_student",
+      "passed": true,
+      "detail": "0 duplicated student_id values"
+    },
+    {
+      "check": "S6 numeric_features_only",
+      "passed": true,
+      "detail": "non-numeric features []"
+    }
+  ],
+  "cluster_quality": {
+    "silhouette_kmeans_chosen_k_full_data": 0.19028091400450575,
+    "silhouette_ward_chosen_k_full_data": 0.14968729423168656,
+    "davies_bouldin_kmeans": 1.5737288455770553,
+    "calinski_harabasz_kmeans": 246.80812082841544,
+    "kmeans_seed_stability_adjusted_rand": [
+      0.374503505143299,
+      0.3727505901560217,
+      0.9873474759617206,
+      0.9622829983126238,
+      0.4238915216466015
+    ],
+    "ward_segment_sizes": {
+      "0": 565,
+      "1": 1006,
+      "2": 146,
+      "3": 4
+    },
+    "silhouette_guide": "rule of thumb (Kaufman & Rousseeuw): > 0.70 strong, 0.51-0.70 reasonable, 0.26-0.50 weak, <= 0.25 no substantial structure"
+  },
+  "anomaly_diagnostics": {
+    "score_definition": "anomaly_score = -IsolationForest.score_samples (higher = more isolated); flagged when score > threshold",
+    "threshold_score": 0.5744302594879883,
+    "flagged_share": 0.02033701336432307,
+    "score_quantiles": {
+      "0.5": 0.41897275419907803,
+      "0.9": 0.511814868103337,
+      "0.95": 0.5393703599418889,
+      "0.98": 0.5744302594879881,
+      "0.99": 0.5928330970174999,
+      "1.0": 0.6610737157297855
+    },
+    "flagged_if_contamination": {
+      "0.01": 17,
+      "0.02": 34,
+      "0.05": 86
+    },
+    "seed_stability_jaccard_of_flagged_sets": [
+      0.7073170731707317,
+      0.7948717948717948,
+      0.7948717948717948,
+      0.8421052631578947,
+      0.6666666666666666
+    ],
+    "spearman_score_vs_max_abs_z": 0.8648470433156501,
+    "flagged_by_level": {
+      "DOCTORATE": {
+        "students": 125,
+        "flagged": 3
+      },
+      "MASTERS": {
+        "students": 238,
+        "flagged": 7
+      },
+      "UNDERGRADUATE": {
+        "students": 1358,
+        "flagged": 25
+      }
+    },
+    "flagged_by_kmeans_segment": {
+      "0": {
+        "students": 1012,
+        "flagged": 0
+      },
+      "1": {
+        "students": 541,
+        "flagged": 10
+      },
+      "2": {
+        "students": 155,
+        "flagged": 17
+      },
+      "3": {
+        "students": 13,
+        "flagged": 8
+      }
+    },
+    "validation_evidence": "None available: the synthetic data contain no ground-truth anomaly labels. Flags mark statistically unusual feature combinations only; they are not evidence of error, fraud or misconduct and must not be used to act on individuals."
+  }
+}

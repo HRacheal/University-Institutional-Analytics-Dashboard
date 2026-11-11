@@ -1,0 +1,16 @@
+[      3s] syn_next_term_gpa
+    syn_next_term_gpa                          baseline_mean        0.6726  (4.2 s)
+    syn_next_term_gpa                          linear_regression    0.4500  (3.8 s)
+    syn_next_term_gpa                          random_forest        0.4495  (271.8 s)
+    syn_next_term_gpa                          xgboost              0.4497  (18.8 s)
+    syn_next_term_gpa                          lightgbm             0.4534  (17.7 s)
+{
+ "uci_dropout_enrolment_time": "TRAINED",
+ "uci_outcome3_enrolment_time": "TRAINED",
+ "syn_graduation_cox": "TRAINED_WITH_PH_CAVEATS",
+ "syn_dropout_cox": "TRAINED_WITH_PH_CAVEATS",
+ "uci_dropout_end_of_year1": "TRAINED",
+ "uci_outcome3_end_of_year1": "TRAINED",
+ "syn_dropout_2y": "TRAINED",
+ "syn_next_term_gpa": "TRAINED"
+}

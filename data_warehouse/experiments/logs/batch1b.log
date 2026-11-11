@@ -1,0 +1,6 @@
+[      7s] syn_next_term_gpa
+    syn_next_term_gpa                          baseline_mean        0.6726  (9.2 s)
+    syn_next_term_gpa                          linear_regression    0.4500  (10.6 s)
+    syn_next_term_gpa                          random_forest        0.4495  (877.2 s)
+    syn_next_term_gpa                          xgboost              0.4497  (69.4 s)
+    syn_next_term_gpa                          lightgbm             0.4534  (65.5 s)

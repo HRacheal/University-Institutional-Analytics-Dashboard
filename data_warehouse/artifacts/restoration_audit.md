@@ -1,0 +1,51 @@
+# Model restoration audit
+
+- Audit time (UTC): 2026-11-11T09:19:57+00:00
+- Artifact source: local working copy C:\Users\Admin\Downloads\University-Institutional-Analytics-Dashboard\data_warehouse
+- Environment: {"python": "3.12.0", "sklearn": "1.6.1", "pandas": "2.2.3", "numpy": "2.2.6", "xgboost": "3.4.1", "lightgbm": "4.6.0", "catboost": "1.2.10", "statsmodels": "0.14.5"}
+- Registered tasks: 20; artifacts audited: 32 (candidate checkpoints included: False; forecasts regenerated: False)
+- Result: {'PASS': 31, 'FAIL_LOAD': 1}
+
+PASS = loaded from the persistent location, SHA-256 matched the manifest, preprocessing restored, valid predictions on the task's held-out test rows, and the saved test metric / saved per-row predictions reproduced within 1e-6.
+
+| Task | Model | Role | Algorithm | SHA-256 | Loaded | Preprocessing | Predicted | Reproduction (saved → reproduced) | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| uci_dropout_enrolment_time | catboost | selected | CatBoostClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.7801→0.7801; test_pr_auc 0.6505→0.6505; test_tuned_f1 0.6146→0.6146; per-row max |Δp| 5.0e-10 | **PASS** |
+| uci_dropout_enrolment_time | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.7830→0.7830; test_pr_auc 0.6350→0.6350; test_tuned_f1 0.6095→0.6095; per-row max |Δp| 5.0e-10 | **PASS** |
+| uci_outcome3_enrolment_time | catboost | selected | CatBoostClassifier | ✓ | ✓ | True | ✓ | test_f1_macro 0.5612→0.5612; test_roc_auc_ovr_macro 0.7572→0.7572 | **PASS** |
+| uci_outcome3_enrolment_time | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_f1_macro 0.5564→0.5564; test_roc_auc_ovr_macro 0.7449→0.7449 | **PASS** |
+| uci_dropout_end_of_year1 | logistic_regression | selected | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.9327→0.9327; test_pr_auc 0.8933→0.8933; test_tuned_f1 0.8081→0.8081; per-row max |Δp| 5.0e-10 | **PASS** |
+| uci_outcome3_end_of_year1 | xgboost | selected |  | ✓ | ✗ |  | ✗ |  | **FAIL_LOAD** |
+| uci_outcome3_end_of_year1 | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_f1_macro 0.7229→0.7229; test_roc_auc_ovr_macro 0.8927→0.8927 | **PASS** |
+| syn_dropout_2y | random_forest | selected | RandomForestClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.7748→0.7748; test_pr_auc 0.4881→0.4881; test_tuned_f1 0.5264→0.5264; per-row max |Δp| 5.0e-10 | **PASS** |
+| syn_dropout_2y | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.7751→0.7751; test_pr_auc 0.4777→0.4777; test_tuned_f1 0.5234→0.5234; per-row max |Δp| 5.0e-10 | **PASS** |
+| syn_next_term_gpa | random_forest | selected | RandomForestRegressor | ✓ | ✓ | True | ✓ | test_rmse 0.4506→0.4506; test_r2 0.5353→0.5353 | **PASS** |
+| syn_next_term_gpa | linear_regression | baseline (saved for comparison) | Ridge | ✓ | ✓ | True | ✓ | test_rmse 0.4506→0.4506; test_r2 0.5351→0.5351 | **PASS** |
+| syn_next_term_academic_risk | catboost | selected | CatBoostClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.9854→0.9854; test_pr_auc 0.8444→0.8444; test_tuned_f1 0.7698→0.7698 | **PASS** |
+| syn_next_term_academic_risk | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.9845→0.9845; test_pr_auc 0.8394→0.8394; test_tuned_f1 0.7736→0.7736 | **PASS** |
+| syn_graduation_cox | cox_ph | selected | statsmodels PHReg (saved as coefficients + standardisation; level strata) | ✓ | ✓ | True | ✓ | concordance_test 0.7298→0.7298 | **PASS** |
+| syn_dropout_cox | cox_ph | selected | statsmodels PHReg (saved as coefficients + standardisation; level strata) | ✓ | ✓ | True | ✓ | concordance_test 0.6406→0.6406 | **PASS** |
+| syn_retention_fall_to_fall_institutional | random_forest | selected | RandomForestClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.6569→0.6569; test_pr_auc 0.9152→0.9152; test_tuned_f1 0.9335→0.9335 | **PASS** |
+| syn_retention_fall_to_fall_institutional | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.6569→0.6569; test_pr_auc 0.9152→0.9152; test_tuned_f1 0.9335→0.9335 | **PASS** |
+| syn_retention_fall_to_fall_programme | xgboost | selected | XGBClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.6598→0.6598; test_pr_auc 0.9135→0.9135; test_tuned_f1 0.9282→0.9282 | **PASS** |
+| syn_retention_fall_to_fall_programme | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.6554→0.6554; test_pr_auc 0.9129→0.9129; test_tuned_f1 0.9264→0.9264 | **PASS** |
+| syn_retention_spring_to_spring_institutional | logistic_regression | selected | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.6733→0.6733; test_pr_auc 0.9224→0.9224; test_tuned_f1 0.9388→0.9388 | **PASS** |
+| syn_retention_spring_to_spring_programme | logistic_regression | selected | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.6774→0.6774; test_pr_auc 0.9192→0.9192; test_tuned_f1 0.9323→0.9323 | **PASS** |
+| syn_retention_summer_to_summer_institutional | xgboost | selected | XGBClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.6716→0.6716; test_pr_auc 0.9102→0.9102; test_tuned_f1 0.9208→0.9208 | **PASS** |
+| syn_retention_summer_to_summer_institutional | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.6839→0.6839; test_pr_auc 0.9047→0.9047; test_tuned_f1 0.9201→0.9201 | **PASS** |
+| syn_retention_summer_to_summer_programme | xgboost | selected | XGBClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.6817→0.6817; test_pr_auc 0.9000→0.9000; test_tuned_f1 0.9013→0.9013 | **PASS** |
+| syn_retention_summer_to_summer_programme | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.6569→0.6569; test_pr_auc 0.8912→0.8912; test_tuned_f1 0.9067→0.9067 | **PASS** |
+| syn_graduation_within_window | random_forest | selected | RandomForestClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.8244→0.8244; test_pr_auc 0.8398→0.8398; test_tuned_f1 0.8227→0.8227 | **PASS** |
+| syn_graduation_within_window | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.8221→0.8221; test_pr_auc 0.8342→0.8342; test_tuned_f1 0.8212→0.8212 | **PASS** |
+| syn_admissions_offer | logistic_regression | selected | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.7226→0.7226; test_pr_auc 0.8146→0.8146; test_tuned_f1 0.7740→0.7740 | **PASS** |
+| syn_admissions_accept | xgboost | selected | XGBClassifier | ✓ | ✓ | True | ✓ | test_roc_auc 0.6308→0.6308; test_pr_auc 0.7709→0.7709; test_tuned_f1 0.7711→0.7711 | **PASS** |
+| syn_admissions_accept | logistic_regression | baseline (saved for comparison) | LogisticRegression | ✓ | ✓ | True | ✓ | test_roc_auc 0.5306→0.5306; test_pr_auc 0.6836→0.6836; test_tuned_f1 0.7722→0.7722 | **PASS** |
+| forecasting | per-series selected method | forecast outputs (no saved model objects) | seasonal naive / ETS / ARIMA / SARIMA / XGBoost-lags, best by backtest WAPE | n/a | ✓ | n/a (methods refit on the series history) | ✓ |  | **PASS** |
+| syn_segmentation | kmeans_isolation_forest | selected | median imputer + StandardScaler -> KMeans(k=4) + IsolationForest(300 trees, 2%) | ✓ | ✓ | True | ✓ | segment_agreement_with_saved 1.0000→1.0000; anomaly_score_max_abs_diff 0.0000→0.0000; flag_agreement_with_saved 1.0000→1.0000 | **PASS** |
+
+## Errors, warnings and notes
+
+- **uci_outcome3_end_of_year1 / xgboost**: XGBoostError: input stream corrupted
+- **syn_graduation_cox / cox_ph**: supported outputs: linear predictor / relative hazard per student (baseline hazard not saved, so absolute survival curves are not available from the saved artifact); PH caveats: ['warning_terms_so_far', 'prior_gap_terms', 'credits_transferred_in', 'age_at_admission_approx', 'fin_payment_completion_pct', 'fin_late_payment_terms', 'online_share_so_far']
+- **syn_dropout_cox / cox_ph**: supported outputs: linear predictor / relative hazard per student (baseline hazard not saved, so absolute survival curves are not available from the saved artifact); PH caveats: ['warning_terms_so_far', 'fin_late_payment_terms', 'online_share_so_far']
+- **forecasting / per-series selected method**: none: statistical methods are refitted on the full history at forecast time; the forecast CSV outputs are the persisted artifacts

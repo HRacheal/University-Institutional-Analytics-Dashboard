@@ -1,0 +1,1426 @@
+{
+ "audit_utc": "2026-11-11T00:04:19+00:00",
+ "environment": {
+  "python": "3.12.0",
+  "sklearn": "1.6.1",
+  "pandas": "2.2.3",
+  "numpy": "2.2.6",
+  "xgboost": "3.4.1",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10",
+  "statsmodels": "0.14.5"
+ },
+ "artifact_source": "local working copy C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\data_warehouse",
+ "checkpoints_included": false,
+ "forecast_rerun": false,
+ "tolerances": {
+  "PASS": 1e-06,
+  "PASS_NUMERIC_DIFF_LT_1E-3": 0.001
+ },
+ "registered_tasks": 20,
+ "artifacts_audited": 32,
+ "status_counts": {
+  "PASS": 28,
+  "FAIL_LOAD": 4
+ },
+ "seconds": 27.0,
+ "records": [
+  {
+   "task": "uci_dropout_enrolment_time",
+   "model": "catboost",
+   "role": "selected",
+   "artifact": "local working copy: models/uci/uci_dropout_enrolment_time/catboost.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris"
+   ],
+   "algorithm": "CatBoostClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 104,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.7800866450366647,
+     "reproduced": 0.7800866450366647,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.6505124023846443,
+     "reproduced": 0.6505124023846443,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.6146341463414634,
+     "reproduced": 0.6146341463414634,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.4224331356274754,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.5
+  },
+  {
+   "task": "uci_dropout_enrolment_time",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/uci/uci_dropout_enrolment_time/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator LogisticRegression from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your ow",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator StandardScaler from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ri"
+   ],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 104,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.7830085707319817,
+     "reproduced": 0.7830085707319817,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.6349762710922995,
+     "reproduced": 0.6349762710922995,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.6095017381228274,
+     "reproduced": 0.6095017381228274,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.44983401333224765,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.6
+  },
+  {
+   "task": "uci_outcome3_enrolment_time",
+   "model": "catboost",
+   "role": "selected",
+   "artifact": "local working copy: models/uci/uci_outcome3_enrolment_time/catboost.joblib",
+   "kind": "multiclass",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris"
+   ],
+   "algorithm": "CatBoostClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 102,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106,
+     3
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true,
+    "rows_sum_to_1": true
+   },
+   "metrics": {
+    "test_f1_macro": {
+     "saved": 0.5611725339260697,
+     "reproduced": 0.5611725339260697,
+     "abs_diff": 0.0
+    },
+    "test_roc_auc_ovr_macro": {
+     "saved": 0.7571892875694326,
+     "reproduced": 0.7571892875694326,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.1
+  },
+  {
+   "task": "uci_outcome3_enrolment_time",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/uci/uci_outcome3_enrolment_time/logistic_regression.joblib",
+   "kind": "multiclass",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator LogisticRegression from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your ow",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator StandardScaler from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ri"
+   ],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 102,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106,
+     3
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true,
+    "rows_sum_to_1": true
+   },
+   "metrics": {
+    "test_f1_macro": {
+     "saved": 0.5564186634944669,
+     "reproduced": 0.5564186634944669,
+     "abs_diff": 0.0
+    },
+    "test_roc_auc_ovr_macro": {
+     "saved": 0.744875422331928,
+     "reproduced": 0.744875422331928,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.2
+  },
+  {
+   "task": "uci_dropout_end_of_year1",
+   "model": "logistic_regression",
+   "role": "selected",
+   "artifact": "local working copy: models/uci/uci_dropout_end_of_year1/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator LogisticRegression from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your ow",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator StandardScaler from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ri"
+   ],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 118,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.932701937323006,
+     "reproduced": 0.932701937323006,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8933057676576375,
+     "reproduced": 0.8933057676576375,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.8080808080808081,
+     "reproduced": 0.8080808080808081,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.5682939722970137,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.1
+  },
+  {
+   "task": "uci_outcome3_end_of_year1",
+   "model": "xgboost",
+   "role": "selected",
+   "artifact": "local working copy: models/uci/uci_outcome3_end_of_year1/xgboost.joblib",
+   "kind": "multiclass",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "[03:03:55] WARNING: C:\\actions-runner\\_work\\xgboost\\xgboost\\src\\gbm\\../common/error_msg.h:83: If you are loading a serialized model (like pickle in Python, RDS "
+   ],
+   "algorithm": "XGBClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 116,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106,
+     3
+    ],
+    "dtype": "float32",
+    "all_finite": true,
+    "probabilities_in_0_1": true,
+    "rows_sum_to_1": true
+   },
+   "metrics": {
+    "test_f1_macro": {
+     "saved": 0.7214151638206022,
+     "reproduced": 0.7214151638206022,
+     "abs_diff": 0.0
+    },
+    "test_roc_auc_ovr_macro": {
+     "saved": 0.8949544540159394,
+     "reproduced": 0.8949544540159394,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.3
+  },
+  {
+   "task": "uci_outcome3_end_of_year1",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/uci/uci_outcome3_end_of_year1/logistic_regression.joblib",
+   "kind": "multiclass",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator LogisticRegression from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your ow",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator StandardScaler from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ri"
+   ],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 116,
+   "output_validity": {
+    "n_rows": 1106,
+    "output_shape": [
+     1106,
+     3
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true,
+    "rows_sum_to_1": true
+   },
+   "metrics": {
+    "test_f1_macro": {
+     "saved": 0.7229431613398868,
+     "reproduced": 0.7229431613398868,
+     "abs_diff": 0.0
+    },
+    "test_roc_auc_ovr_macro": {
+     "saved": 0.8926956668338071,
+     "reproduced": 0.8926956668338071,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.5
+  },
+  {
+   "task": "syn_dropout_2y",
+   "model": "random_forest",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_dropout_2y/random_forest.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator DecisionTreeClassifier from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at you",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator RandomForestClassifier from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at you",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris"
+   ],
+   "algorithm": "RandomForestClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 163,
+   "output_validity": {
+    "n_rows": 5025,
+    "output_shape": [
+     5025
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.7747782624138193,
+     "reproduced": 0.7747782624138193,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.4880708292664148,
+     "reproduced": 0.4880708292664148,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.5264293419633226,
+     "reproduced": 0.5264293419633226,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.5010320414681516,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 2.0
+  },
+  {
+   "task": "syn_dropout_2y",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_dropout_2y/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator LogisticRegression from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your ow",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator StandardScaler from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ri"
+   ],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 163,
+   "output_validity": {
+    "n_rows": 5025,
+    "output_shape": [
+     5025
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.7752367579840468,
+     "reproduced": 0.7752367579840468,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.47791399249962346,
+     "reproduced": 0.47791399249962346,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.5240174672489083,
+     "reproduced": 0.5240174672489083,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.776646293243142,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 2.6
+  },
+  {
+   "task": "syn_next_term_gpa",
+   "model": "random_forest",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_next_term_gpa/random_forest.joblib",
+   "kind": "regression",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator DecisionTreeRegressor from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator RandomForestRegressor from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris"
+   ],
+   "algorithm": "RandomForestRegressor",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 163,
+   "output_validity": {
+    "n_rows": 6185,
+    "output_shape": [
+     6185
+    ],
+    "dtype": "float64",
+    "all_finite": true
+   },
+   "metrics": {
+    "test_rmse": {
+     "saved": 0.45056446642245845,
+     "reproduced": 0.45056446642245845,
+     "abs_diff": 0.0
+    },
+    "test_r2": {
+     "saved": 0.5352668362536047,
+     "reproduced": 0.5352668362536047,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 2.8
+  },
+  {
+   "task": "syn_next_term_gpa",
+   "model": "linear_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_next_term_gpa/linear_regression.joblib",
+   "kind": "regression",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [
+    "Trying to unpickle estimator ColumnTransformer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own",
+    "Trying to unpickle estimator MissingIndicator from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ",
+    "Trying to unpickle estimator OneHotEncoder from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator Pipeline from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. Fo",
+    "Trying to unpickle estimator Ridge from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. For m",
+    "Trying to unpickle estimator SimpleImputer from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ris",
+    "Trying to unpickle estimator StandardScaler from version 1.5.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own ri"
+   ],
+   "algorithm": "Ridge",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 163,
+   "output_validity": {
+    "n_rows": 6185,
+    "output_shape": [
+     6185
+    ],
+    "dtype": "float64",
+    "all_finite": true
+   },
+   "metrics": {
+    "test_rmse": {
+     "saved": 0.450649695353459,
+     "reproduced": 0.450649695353459,
+     "abs_diff": 0.0
+    },
+    "test_r2": {
+     "saved": 0.5350910014512738,
+     "reproduced": 0.5350910014512738,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 3.5
+  },
+  {
+   "task": "syn_next_term_academic_risk",
+   "model": "catboost",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_next_term_academic_risk/catboost.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "CatBoostClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 163,
+   "output_validity": {
+    "n_rows": 5897,
+    "output_shape": [
+     5897
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.985390222794248,
+     "reproduced": 0.985390222794248,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8443858945367725,
+     "reproduced": 0.8443858945367725,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.7697756788665879,
+     "reproduced": 0.7697756788665879,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.7855118149518581,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 2.9
+  },
+  {
+   "task": "syn_next_term_academic_risk",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_next_term_academic_risk/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 163,
+   "output_validity": {
+    "n_rows": 5897,
+    "output_shape": [
+     5897
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.9845146162494822,
+     "reproduced": 0.9845146162494822,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8393544524298541,
+     "reproduced": 0.8393544524298541,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.773561811505508,
+     "reproduced": 0.773561811505508,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.8844259274025378,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 3.6
+  },
+  {
+   "task": "syn_graduation_cox",
+   "model": "cox_ph",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_graduation_cox/cox_ph.joblib",
+   "kind": "survival",
+   "algorithm": "statsmodels PHReg (saved as coefficients + standardisation; level strata)",
+   "errors": [],
+   "sha256_verified": true,
+   "preprocessing_restored": true,
+   "output_validity": {
+    "n_rows": 1178,
+    "all_finite": true,
+    "output": "linear predictor / relative hazard"
+   },
+   "metrics": {
+    "concordance_test": {
+     "saved": 0.7298302230952715,
+     "reproduced": 0.7298302230952715,
+     "abs_diff": 0.0
+    }
+   },
+   "supported_outputs": "linear predictor / relative hazard per student (baseline hazard not saved, so absolute survival curves are not available from the saved artifact)",
+   "ph_caveats": [
+    "warning_terms_so_far",
+    "prior_gap_terms",
+    "credits_transferred_in",
+    "age_at_admission_approx",
+    "fin_payment_completion_pct",
+    "fin_late_payment_terms",
+    "online_share_so_far"
+   ],
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS"
+  },
+  {
+   "task": "syn_dropout_cox",
+   "model": "cox_ph",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_dropout_cox/cox_ph.joblib",
+   "kind": "survival",
+   "algorithm": "statsmodels PHReg (saved as coefficients + standardisation; level strata)",
+   "errors": [],
+   "sha256_verified": true,
+   "preprocessing_restored": true,
+   "output_validity": {
+    "n_rows": 1262,
+    "all_finite": true,
+    "output": "linear predictor / relative hazard"
+   },
+   "metrics": {
+    "concordance_test": {
+     "saved": 0.6405572105903579,
+     "reproduced": 0.6405572105903579,
+     "abs_diff": 0.0
+    }
+   },
+   "supported_outputs": "linear predictor / relative hazard per student (baseline hazard not saved, so absolute survival curves are not available from the saved artifact)",
+   "ph_caveats": [
+    "warning_terms_so_far",
+    "fin_late_payment_terms",
+    "online_share_so_far"
+   ],
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS"
+  },
+  {
+   "task": "syn_retention_fall_to_fall_institutional",
+   "model": "random_forest",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_retention_fall_to_fall_institutional/random_forest.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "RandomForestClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 161,
+   "output_validity": {
+    "n_rows": 2842,
+    "output_shape": [
+     2842
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.656909418998396,
+     "reproduced": 0.656909418998396,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.9151914280713123,
+     "reproduced": 0.9151914280713123,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.9334853667806917,
+     "reproduced": 0.9334853667806917,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.30678328191717313,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 2.7
+  },
+  {
+   "task": "syn_retention_fall_to_fall_institutional",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_retention_fall_to_fall_institutional/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 161,
+   "output_validity": {
+    "n_rows": 2842,
+    "output_shape": [
+     2842
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.6568704330778827,
+     "reproduced": 0.6568704330778827,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.9151532974143808,
+     "reproduced": 0.9151532974143808,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.9335096335474121,
+     "reproduced": 0.9335096335474121,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.07522673330287923,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 3.1
+  },
+  {
+   "task": "syn_retention_fall_to_fall_programme",
+   "model": "xgboost",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_retention_fall_to_fall_programme/xgboost.joblib",
+   "kind": "binary",
+   "errors": [
+    "XGBoostError: input stream corrupted"
+   ],
+   "sha256_verified": true,
+   "traceback_tail": [
+    "  File \"C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\.venv\\Lib\\site-packages\\xgboost\\_c_api.py\", line 190, in _check_call",
+    "    raise XGBoostError(py_str(_LIB.XGBGetLastError()))",
+    "xgboost._c_api.XGBoostError: input stream corrupted"
+   ],
+   "load_succeeded": false,
+   "prediction_succeeded": false,
+   "final_status": "FAIL_LOAD",
+   "seconds": 1.5
+  },
+  {
+   "task": "syn_retention_fall_to_fall_programme",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_retention_fall_to_fall_programme/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 161,
+   "output_validity": {
+    "n_rows": 2872,
+    "output_shape": [
+     2872
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.6554332620144832,
+     "reproduced": 0.6554332620144832,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.9129334590766747,
+     "reproduced": 0.9129334590766747,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.926442851754055,
+     "reproduced": 0.926442851754055,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.11957248171059162,
+    "supplementary_class0_p_class0": null
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.9
+  },
+  {
+   "task": "syn_retention_spring_to_spring_institutional",
+   "model": "logistic_regression",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_retention_spring_to_spring_institutional/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 161,
+   "output_validity": {
+    "n_rows": 2427,
+    "output_shape": [
+     2427
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.6732917802882743,
+     "reproduced": 0.6732917802882743,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.9224122931740895,
+     "reproduced": 0.9224122931740895,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.938821412505623,
+     "reproduced": 0.938821412505623,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.1294884267391004,
+    "supplementary_class0_p_class0": 0.6787940310546625
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.4
+  },
+  {
+   "task": "syn_retention_spring_to_spring_programme",
+   "model": "logistic_regression",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_retention_spring_to_spring_programme/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 161,
+   "output_validity": {
+    "n_rows": 2426,
+    "output_shape": [
+     2426
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.6773699382055443,
+     "reproduced": 0.6773699382055443,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.9191662167379928,
+     "reproduced": 0.9191662167379928,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.93234100135318,
+     "reproduced": 0.93234100135318,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.11515967023087816,
+    "supplementary_class0_p_class0": 0.6128094501914094
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.3
+  },
+  {
+   "task": "syn_retention_summer_to_summer_institutional",
+   "model": "xgboost",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_retention_summer_to_summer_institutional/xgboost.joblib",
+   "kind": "binary",
+   "errors": [
+    "XGBoostError: input stream corrupted"
+   ],
+   "sha256_verified": true,
+   "traceback_tail": [
+    "  File \"C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\.venv\\Lib\\site-packages\\xgboost\\_c_api.py\", line 190, in _check_call",
+    "    raise XGBoostError(py_str(_LIB.XGBGetLastError()))",
+    "xgboost._c_api.XGBoostError: input stream corrupted"
+   ],
+   "load_succeeded": false,
+   "prediction_succeeded": false,
+   "final_status": "FAIL_LOAD",
+   "seconds": 0.7
+  },
+  {
+   "task": "syn_retention_summer_to_summer_institutional",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_retention_summer_to_summer_institutional/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 147,
+   "output_validity": {
+    "n_rows": 490,
+    "output_shape": [
+     490
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.683855421686747,
+     "reproduced": 0.683855421686747,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.9047390423427148,
+     "reproduced": 0.9047390423427148,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.9200913242009132,
+     "reproduced": 0.9200913242009132,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.09975537394103086,
+    "supplementary_class0_p_class0": 0.7674538316341718
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.9
+  },
+  {
+   "task": "syn_retention_summer_to_summer_programme",
+   "model": "xgboost",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_retention_summer_to_summer_programme/xgboost.joblib",
+   "kind": "binary",
+   "errors": [
+    "XGBoostError: input stream corrupted"
+   ],
+   "sha256_verified": true,
+   "traceback_tail": [
+    "  File \"C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\.venv\\Lib\\site-packages\\xgboost\\_c_api.py\", line 190, in _check_call",
+    "    raise XGBoostError(py_str(_LIB.XGBGetLastError()))",
+    "xgboost._c_api.XGBoostError: input stream corrupted"
+   ],
+   "load_succeeded": false,
+   "prediction_succeeded": false,
+   "final_status": "FAIL_LOAD",
+   "seconds": 0.8
+  },
+  {
+   "task": "syn_retention_summer_to_summer_programme",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_retention_summer_to_summer_programme/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 148,
+   "output_validity": {
+    "n_rows": 465,
+    "output_shape": [
+     465
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.6569251543209877,
+     "reproduced": 0.6569251543209877,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8911820135052021,
+     "reproduced": 0.8911820135052021,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.9066985645933014,
+     "reproduced": 0.9066985645933014,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.07782781038004057,
+    "supplementary_class0_p_class0": 0.6810515087870173
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.1
+  },
+  {
+   "task": "syn_graduation_within_window",
+   "model": "random_forest",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_graduation_within_window/random_forest.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "RandomForestClassifier",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 150,
+   "output_validity": {
+    "n_rows": 554,
+    "output_shape": [
+     554
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.82440868373065,
+     "reproduced": 0.82440868373065,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8398194977893463,
+     "reproduced": 0.8398194977893463,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.8226950354609929,
+     "reproduced": 0.8226950354609929,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.37443408579804965,
+    "supplementary_class0_p_class0": 0.5061957369002503
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.9
+  },
+  {
+   "task": "syn_graduation_within_window",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_graduation_within_window/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 150,
+   "output_validity": {
+    "n_rows": 554,
+    "output_shape": [
+     554
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.8220660464001917,
+     "reproduced": 0.8220660464001917,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8342383020626102,
+     "reproduced": 0.8342383020626102,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.821173104434907,
+     "reproduced": 0.821173104434907,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.351528576967453,
+    "supplementary_class0_p_class0": 0.44756769527448004
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 1.1
+  },
+  {
+   "task": "syn_admissions_offer",
+   "model": "logistic_regression",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_admissions_offer/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 70,
+   "output_validity": {
+    "n_rows": 2524,
+    "output_shape": [
+     2524
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.7226239461457318,
+     "reproduced": 0.7226239461457318,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.8146422773358948,
+     "reproduced": 0.8146422773358948,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.7739854877721043,
+     "reproduced": 0.7739854877721043,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.275611370849137,
+    "supplementary_class0_p_class0": 0.44508151745245705
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.2
+  },
+  {
+   "task": "syn_admissions_accept",
+   "model": "xgboost",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/syn_admissions_accept/xgboost.joblib",
+   "kind": "binary",
+   "errors": [
+    "XGBoostError: input stream corrupted"
+   ],
+   "sha256_verified": true,
+   "traceback_tail": [
+    "  File \"C:\\Users\\Admin\\Downloads\\University-Institutional-Analytics-Dashboard\\.venv\\Lib\\site-packages\\xgboost\\_c_api.py\", line 190, in _check_call",
+    "    raise XGBoostError(py_str(_LIB.XGBGetLastError()))",
+    "xgboost._c_api.XGBoostError: input stream corrupted"
+   ],
+   "load_succeeded": false,
+   "prediction_succeeded": false,
+   "final_status": "FAIL_LOAD",
+   "seconds": 0.1
+  },
+  {
+   "task": "syn_admissions_accept",
+   "model": "logistic_regression",
+   "role": "baseline (saved for comparison)",
+   "artifact": "local working copy: models/synthetic/syn_admissions_accept/logistic_regression.joblib",
+   "kind": "binary",
+   "errors": [],
+   "sha256_verified": true,
+   "version_warnings": [],
+   "algorithm": "LogisticRegression",
+   "preprocessing_restored": true,
+   "n_model_input_columns": 70,
+   "output_validity": {
+    "n_rows": 1582,
+    "output_shape": [
+     1582
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "probabilities_in_0_1": true
+   },
+   "metrics": {
+    "test_roc_auc": {
+     "saved": 0.5305830686653026,
+     "reproduced": 0.5305830686653026,
+     "abs_diff": 0.0
+    },
+    "test_pr_auc": {
+     "saved": 0.6836392708944303,
+     "reproduced": 0.6836392708944303,
+     "abs_diff": 0.0
+    },
+    "test_tuned_f1": {
+     "saved": 0.7722157547535895,
+     "reproduced": 0.7722157547535895,
+     "abs_diff": 0.0
+    }
+   },
+   "single_row_with_missing_values": "ok",
+   "thresholds_applied": {
+    "original_p_class1": 0.24581598132402713,
+    "supplementary_class0_p_class0": 0.2693004280459367
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS",
+   "seconds": 0.2
+  },
+  {
+   "task": "forecasting",
+   "model": "per-series selected method",
+   "role": "forecast outputs (no saved model objects)",
+   "artifact": "local working copy: reports/forecasting/forecasts_selected_method.csv",
+   "kind": "forecasting",
+   "algorithm": "seasonal naive / ETS / ARIMA / SARIMA / XGBoost-lags, best by backtest WAPE",
+   "errors": [],
+   "preprocessing_restored": "n/a (methods refit on the series history)",
+   "saved_model_objects": "none: statistical methods are refitted on the full history at forecast time; the forecast CSV outputs are the persisted artifacts",
+   "output_validity": {
+    "selected_forecasts": 213,
+    "finite": true,
+    "non_negative": true,
+    "interval_rows": 213,
+    "interval_ordered": true
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS"
+  },
+  {
+   "task": "syn_segmentation",
+   "model": "kmeans_isolation_forest",
+   "role": "selected",
+   "artifact": "local working copy: models/synthetic/segmentation/kmeans_isolation_forest.joblib",
+   "kind": "segmentation",
+   "algorithm": "median imputer + StandardScaler -> KMeans(k=4) + IsolationForest(300 trees, 2%)",
+   "errors": [],
+   "sha256_verified": true,
+   "preprocessing_restored": true,
+   "output_validity": {
+    "n_rows": 1721,
+    "segments": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "scores_finite": true
+   },
+   "metrics": {
+    "segment_agreement_with_saved": {
+     "saved": 1.0,
+     "reproduced": 1.0,
+     "abs_diff": 0.0
+    },
+    "anomaly_score_max_abs_diff": {
+     "saved": 0.0,
+     "reproduced": 4.999014636236643e-05,
+     "abs_diff": 4.999014636236643e-05
+    },
+    "flag_agreement_with_saved": {
+     "saved": 1.0,
+     "reproduced": 1.0,
+     "abs_diff": 0.0
+    }
+   },
+   "load_succeeded": true,
+   "prediction_succeeded": true,
+   "final_status": "PASS"
+  }
+ ]
+}

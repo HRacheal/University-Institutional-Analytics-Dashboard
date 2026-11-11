@@ -1,0 +1,80 @@
+category,code,label,data_source
+course,33,Biofuel Production Technologies,UCI
+course,171,Animation and Multimedia Design,UCI
+course,8014,Social Service (evening attendance),UCI
+course,9003,Agronomy,UCI
+course,9070,Communication Design,UCI
+course,9085,Veterinary Nursing,UCI
+course,9119,Informatics Engineering,UCI
+course,9130,Equinculture,UCI
+course,9147,Management,UCI
+course,9238,Social Service,UCI
+course,9254,Tourism,UCI
+course,9500,Nursing,UCI
+course,9556,Oral Hygiene,UCI
+course,9670,Advertising and Marketing Management,UCI
+course,9773,Journalism and Communication,UCI
+course,9853,Basic Education,UCI
+course,9991,Management (evening attendance),UCI
+nationality,1,Portuguese,UCI
+nationality,2,German,UCI
+nationality,6,Spanish,UCI
+nationality,11,Italian,UCI
+nationality,13,Dutch,UCI
+nationality,14,English,UCI
+nationality,17,Lithuanian,UCI
+nationality,21,Angolan,UCI
+nationality,22,Cape Verdean,UCI
+nationality,24,Guinean,UCI
+nationality,25,Mozambican,UCI
+nationality,26,Santomean,UCI
+nationality,32,Turkish,UCI
+nationality,41,Brazilian,UCI
+nationality,62,Romanian,UCI
+nationality,100,Moldova (Republic of),UCI
+nationality,101,Mexican,UCI
+nationality,103,Ukrainian,UCI
+nationality,105,Russian,UCI
+nationality,108,Cuban,UCI
+nationality,109,Colombian,UCI
+marital_status,1,Single,UCI
+marital_status,2,Married,UCI
+marital_status,3,Widower,UCI
+marital_status,4,Divorced,UCI
+marital_status,5,Facto union,UCI
+marital_status,6,Legally separated,UCI
+application_mode,1,1st phase - general contingent,UCI
+application_mode,2,Ordinance No. 612/93,UCI
+application_mode,5,1st phase - special contingent (Azores Island),UCI
+application_mode,7,Holders of other higher courses,UCI
+application_mode,10,Ordinance No. 854-B/99,UCI
+application_mode,15,International student (bachelor),UCI
+application_mode,16,1st phase - special contingent (Madeira Island),UCI
+application_mode,17,2nd phase - general contingent,UCI
+application_mode,18,3rd phase - general contingent,UCI
+application_mode,26,"Ordinance No. 533-A/99, item b2 (Different Plan)",UCI
+application_mode,27,"Ordinance No. 533-A/99, item b3 (Other Institution)",UCI
+application_mode,39,Over 23 years old,UCI
+application_mode,42,Transfer,UCI
+application_mode,43,Change of course,UCI
+application_mode,44,Technological specialization diploma holders,UCI
+application_mode,51,Change of institution/course,UCI
+application_mode,53,Short cycle diploma holders,UCI
+application_mode,57,Change of institution/course (International),UCI
+previous_qualification,1,Secondary education,UCI
+previous_qualification,2,Higher education - bachelor's degree,UCI
+previous_qualification,3,Higher education - degree,UCI
+previous_qualification,4,Higher education - master's,UCI
+previous_qualification,5,Higher education - doctorate,UCI
+previous_qualification,6,Frequency of higher education,UCI
+previous_qualification,9,12th year of schooling - not completed,UCI
+previous_qualification,10,11th year of schooling - not completed,UCI
+previous_qualification,12,Other - 11th year of schooling,UCI
+previous_qualification,14,10th year of schooling,UCI
+previous_qualification,15,10th year of schooling - not completed,UCI
+previous_qualification,19,Basic education 3rd cycle (9th/10th/11th year) or equivalent,UCI
+previous_qualification,38,Basic education 2nd cycle (6th/7th/8th year) or equivalent,UCI
+previous_qualification,39,Technological specialization course,UCI
+previous_qualification,40,Higher education - degree (1st cycle),UCI
+previous_qualification,42,Professional higher technical course,UCI
+previous_qualification,43,Higher education - master (2nd cycle),UCI

@@ -1,0 +1,6 @@
+school_id,school_code,name,display_name,is_placeholder,data_source,verification_status,source_reference,verified_on,verified_by,source_system,generation_run_id
+SBUS,SBUS,School of Business and Management,School of Business and Management [synthetic placeholder],True,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+SENG,SENG,School of Engineering and Computing,School of Engineering and Computing [synthetic placeholder],True,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+SHLT,SHLT,School of Health Sciences,School of Health Sciences [synthetic placeholder],True,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+SEDU,SEDU,School of Education and Social Sciences,School of Education and Social Sciences [synthetic placeholder],True,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110
+SART,SART,"School of Arts, Humanities and Media","School of Arts, Humanities and Media [synthetic placeholder]",True,SYNTHETIC,PLACEHOLDER,,,,REFERENCE_PLACEHOLDER,SYN-RUN-1.1.0-S20261110

@@ -1,0 +1,452 @@
+{
+  "task_id": "syn_next_term_gpa",
+  "title": "Synthetic next-term GPA",
+  "zone": "SYNTHETIC",
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "dataset": "syn_next_term_performance",
+  "target": "target_next_term_gpa",
+  "kind": "regression",
+  "prediction_point": "End date of a completed term; predicts the student's NEXT completed and graded term in the same admission.",
+  "target_definition": "target_next_term_gpa = credit-weighted GPA of the next completed term (demonstration 4-point scale). target_next_term_at_risk = 1 if the standing after that term is WARNING, PROBATION or DISMISSED under the configured synthetic standing rule (not an official policy).",
+  "population": "Completed term enrolments followed by another graded term in the same admission; outcome not yet recorded.",
+  "row_filter": null,
+  "n_rows": 24130,
+  "n_features": 86,
+  "features_numeric": [
+    "term_sequence",
+    "study_term_number",
+    "completed_terms",
+    "credits_attempted",
+    "credits_earned",
+    "term_gpa",
+    "cumulative_gpa",
+    "cumulative_credits_earned",
+    "passed_credit_ratio",
+    "term_mean_grade_points",
+    "courses_registered",
+    "courses_passed",
+    "courses_failed",
+    "courses_withdrawn",
+    "cum_courses_registered",
+    "cum_courses_passed",
+    "cum_courses_failed",
+    "cum_courses_withdrawn",
+    "cum_credits_attempted",
+    "cum_course_completion_rate",
+    "term_course_completion_rate",
+    "credit_completion_rate_cum",
+    "warning_terms_so_far",
+    "probation_terms_so_far",
+    "poor_performance_terms_so_far",
+    "max_standing_level_so_far",
+    "prev_term_gpa",
+    "gpa_change_vs_prev",
+    "consecutive_gpa_declines",
+    "prev_cumulative_gpa",
+    "summer_terms_taken",
+    "interruptions_so_far",
+    "missed_regular_terms_so_far",
+    "prior_gap_terms",
+    "online_share_so_far",
+    "part_time_share_so_far",
+    "regular_streak",
+    "entry_academic_year_start",
+    "credits_transferred_in",
+    "scholarship_pct",
+    "admission_score",
+    "application_lead_days",
+    "decision_to_start_days",
+    "age_at_admission_approx",
+    "prior_admissions",
+    "progression_rate",
+    "years_since_admission",
+    "credits_earned_per_year",
+    "fin_total_charged",
+    "fin_total_paid",
+    "fin_outstanding_balance",
+    "fin_past_due_amount",
+    "fin_payment_completion_pct",
+    "fin_outstanding_ratio",
+    "fin_late_payment_terms",
+    "fin_holds_so_far",
+    "fin_registration_blocks_so_far",
+    "prog_headcount",
+    "prog_headcount_growth_yoy",
+    "prog_new_intake",
+    "inst_headcount",
+    "inst_headcount_growth_yoy",
+    "inst_returning_students",
+    "prog_applications_12m",
+    "prog_offers_12m",
+    "prog_acceptances_12m",
+    "prog_hist_retention_rate_2y",
+    "prog_hist_grad_rate_mature",
+    "prog_decision_acceptance_rate_12m",
+    "poor_performance_flag",
+    "withdrew_during_term",
+    "fin_active_hold",
+    "is_first_term"
+  ],
+  "features_categorical": [
+    "programme_id",
+    "school_id",
+    "level",
+    "term_season",
+    "entry_season",
+    "entry_type",
+    "application_type",
+    "delivery_mode",
+    "study_load",
+    "gender",
+    "residency_status",
+    "nationality_iso3",
+    "standing"
+  ],
+  "excluded_leakage_columns": {
+    "outcome": "final outcome of the admission (determined after the prediction point)",
+    "outcome_term_id": "term of the final outcome",
+    "outcome_recorded_date": "date the outcome was recorded",
+    "outcome_known_at_prediction": "population filter only (rows with an already-known outcome are excluded)",
+    "withdrawal_type": "type of the final withdrawal",
+    "exit_reason": "reason for the final exit",
+    "graduation_status / graduation_date / graduated_within_window": "graduation outcome fields (registrar/graduation_records)",
+    "institutionally_retained / programme_retained / outcome_category / status_at_compare / completed_before_compare / continued_next_regular_term": "retention outcome fields (registrar/retention_cohort_members)",
+    "[rule] student_status_history events after the prediction date": "future status events",
+    "[rule] term enrolments, grades, standing, charges, payments and holds dated after the prediction date": "future records",
+    "next_term_standing": "standing after the target term (defines the risk label)",
+    "[rule] next term grades / credits / gap length": "information from the target term itself"
+  },
+  "leakage_checks": [
+    {
+      "check": "L1 target_not_in_features",
+      "passed": true,
+      "detail": "targets ['target_next_term_gpa', 'target_next_term_at_risk']; overlap []"
+    },
+    {
+      "check": "L2 excluded_not_in_features",
+      "passed": true,
+      "detail": "12 exclusions; overlap []"
+    },
+    {
+      "check": "L3 forbidden_name_patterns",
+      "passed": true,
+      "detail": "suspicious feature names []"
+    },
+    {
+      "check": "L4 zone_purity",
+      "passed": true,
+      "detail": "zone SYNTHETIC; foreign columns []"
+    },
+    {
+      "check": "L5 feature_dates_before_point",
+      "passed": true,
+      "detail": "row-level source dates not tracked; features are application-time attributes and previous-academic-year aggregates by construction"
+    },
+    {
+      "check": "L6 no_unreportable_terms",
+      "passed": true,
+      "detail": "0 rows based on in-progress/future terms"
+    },
+    {
+      "check": "L6b labels_known_by_as_of",
+      "passed": true,
+      "detail": "0 rows whose label is not yet observable at 2026-11-10"
+    },
+    {
+      "check": "L7 group_disjoint",
+      "passed": true,
+      "detail": "0 student_id values in both train and test"
+    },
+    {
+      "check": "L9 single_feature_screen",
+      "passed": true,
+      "detail": "features above 0.97: []; strongest: [('cumulative_gpa', 0.7208), ('prev_cumulative_gpa', 0.7069), ('term_gpa', 0.6391), ('term_mean_grade_points', 0.6391), ('prev_term_gpa', 0.6261)]"
+    },
+    {
+      "check": "L7 group_disjoint",
+      "passed": true,
+      "detail": "0 student_id values in both train and test"
+    },
+    {
+      "check": "L8 label_before_test",
+      "passed": true,
+      "detail": "first test prediction 2023-08-10; 0 training labels known on/after it"
+    }
+  ],
+  "strongest_single_features": [
+    [
+      "cumulative_gpa",
+      0.7208
+    ],
+    [
+      "prev_cumulative_gpa",
+      0.7069
+    ],
+    [
+      "term_gpa",
+      0.6391
+    ],
+    [
+      "term_mean_grade_points",
+      0.6391
+    ],
+    [
+      "prev_term_gpa",
+      0.6261
+    ],
+    [
+      "admission_score",
+      0.5804
+    ],
+    [
+      "poor_performance_terms_so_far",
+      0.3336
+    ],
+    [
+      "max_standing_level_so_far",
+      0.2708
+    ],
+    [
+      "warning_terms_so_far",
+      0.2677
+    ],
+    [
+      "poor_performance_flag",
+      0.2547
+    ]
+  ],
+  "split": {
+    "method": "Student-grouped holdout: 25 % of students (StratifiedGroupKFold, seed 20261110) form the untouched test set; 5-fold StratifiedGroupKFold CV on training students. Robustness: out-of-time check (train students with label known before 2023-07-01; test students with prediction date on/after 2023-07-01).",
+    "train_rows": 17945,
+    "test_rows": 6185,
+    "train_groups": 3172,
+    "test_groups": 1065
+  },
+  "target_summary": {
+    "train_mean": 3.018072109222625,
+    "train_sd": 0.6724167246921608,
+    "test_mean": 3.023223088116411
+  },
+  "checkpoints_reused": [],
+  "models": [
+    {
+      "model": "baseline_mean",
+      "cv_folds": 5,
+      "fit_seconds": 3.5,
+      "cv_rmse": 0.6726128536339349,
+      "cv_rmse_sd": 0.016155111427150766,
+      "cv_mae": 0.554339476454525,
+      "cv_r2": -0.000639201859667704,
+      "test_mae": 0.5447171717767822,
+      "test_rmse": 0.6609495247462592,
+      "test_r2": -6.0739236620754866e-05
+    },
+    {
+      "model": "linear_regression",
+      "cv_folds": 5,
+      "fit_seconds": 4.2,
+      "cv_rmse": 0.4500157788720961,
+      "cv_rmse_sd": 0.006108016701175457,
+      "cv_mae": 0.3529829911498496,
+      "cv_r2": 0.5520777132577572,
+      "test_mae": 0.356630102163951,
+      "test_rmse": 0.45064969535345967,
+      "test_r2": 0.5350910014512724
+    },
+    {
+      "model": "random_forest",
+      "cv_folds": 5,
+      "fit_seconds": 384.0,
+      "cv_rmse": 0.4494926187962417,
+      "cv_rmse_sd": 0.006416388858035744,
+      "cv_mae": 0.3537251577057958,
+      "cv_r2": 0.5531185605208782,
+      "test_mae": 0.357412267158574,
+      "test_rmse": 0.45056446642245845,
+      "test_r2": 0.5352668362536047
+    },
+    {
+      "model": "xgboost",
+      "cv_folds": 5,
+      "fit_seconds": 20.1,
+      "cv_rmse": 0.44956946272151804,
+      "cv_rmse_sd": 0.0062561800022930035,
+      "cv_mae": 0.3533754560218518,
+      "cv_r2": 0.5529657524085778,
+      "test_mae": 0.3548479134055888,
+      "test_rmse": 0.4494258805578003,
+      "test_r2": 0.5376126494646944
+    },
+    {
+      "model": "lightgbm",
+      "cv_folds": 5,
+      "fit_seconds": 27.3,
+      "cv_rmse": 0.4534161156326485,
+      "cv_rmse_sd": 0.00509208767896866,
+      "cv_mae": 0.35589573428219645,
+      "cv_r2": 0.5452831032010723,
+      "test_mae": 0.3584162430051863,
+      "test_rmse": 0.4538005769982105,
+      "test_r2": 0.5285671123072568
+    }
+  ],
+  "selection_rule": "lowest CV cv_rmse",
+  "best_model": "random_forest",
+  "best_vs_linear_baseline": {
+    "metric": "cv_rmse",
+    "best": 0.4494926187962417,
+    "linear_baseline": 0.4500157788720961,
+    "difference": -0.0005231600758544008,
+    "cv_sd_best": 0.006416388858035744
+  },
+  "persistence_baseline": {
+    "column": "term_gpa",
+    "rows_with_value": 6035,
+    "n": 6035,
+    "mae": 0.44131371996686003,
+    "rmse": 0.5708216281901122,
+    "r2": 0.25526587732278216,
+    "best_model_on_same_rows": {
+      "n": 6035,
+      "mae": 0.357164357718032,
+      "rmse": 0.4502710801645936,
+      "r2": 0.536608011145645
+    }
+  },
+  "linear_top10": [
+    [
+      "cumulative_gpa",
+      0.2716
+    ],
+    [
+      "cum_credits_attempted",
+      0.1884
+    ],
+    [
+      "credit_completion_rate_cum",
+      0.1814
+    ],
+    [
+      "cum_course_completion_rate",
+      -0.1808
+    ],
+    [
+      "admission_score",
+      0.1513
+    ],
+    [
+      "level_UNDERGRADUATE",
+      -0.1237
+    ],
+    [
+      "cumulative_credits_earned",
+      -0.109
+    ],
+    [
+      "credits_attempted",
+      0.0914
+    ],
+    [
+      "credits_earned",
+      -0.0895
+    ],
+    [
+      "nationality_iso3_PAK",
+      -0.0823
+    ]
+  ],
+  "out_of_time": {
+    "cutoff": "2023-07-01",
+    "model": "random_forest",
+    "train_rows": 9968,
+    "test_rows": 2388,
+    "checks": [
+      {
+        "check": "L7 group_disjoint",
+        "passed": true,
+        "detail": "0 student_id values in both train and test"
+      },
+      {
+        "check": "L8 label_before_test",
+        "passed": true,
+        "detail": "first test prediction 2023-08-10; 0 training labels known on/after it"
+      }
+    ],
+    "metrics": {
+      "n": 2388,
+      "mae": 0.3546652634944539,
+      "rmse": 0.446625403718766,
+      "r2": 0.5255174145530239
+    }
+  },
+  "saved_models": {
+    "random_forest": "models/synthetic/syn_next_term_gpa/random_forest.joblib",
+    "linear_regression": "models/synthetic/syn_next_term_gpa/linear_regression.joblib"
+  },
+  "status": "TRAINED",
+  "seconds": 634.0,
+  "shap_model": "random_forest",
+  "shap_rows": 300,
+  "shap_top15": [
+    [
+      "cumulative_gpa",
+      0.22829
+    ],
+    [
+      "admission_score",
+      0.08597
+    ],
+    [
+      "term_gpa",
+      0.05054
+    ],
+    [
+      "prev_cumulative_gpa",
+      0.0427
+    ],
+    [
+      "term_mean_grade_points",
+      0.03756
+    ],
+    [
+      "level",
+      0.02615
+    ],
+    [
+      "prev_term_gpa",
+      0.00595
+    ],
+    [
+      "progression_rate",
+      0.00563
+    ],
+    [
+      "prog_applications_12m",
+      0.0055
+    ],
+    [
+      "prog_offers_12m",
+      0.00515
+    ],
+    [
+      "age_at_admission_approx",
+      0.00396
+    ],
+    [
+      "credits_earned_per_year",
+      0.00395
+    ],
+    [
+      "prog_headcount",
+      0.00358
+    ],
+    [
+      "prog_acceptances_12m",
+      0.00334
+    ],
+    [
+      "programme_id",
+      0.00325
+    ]
+  ]
+}

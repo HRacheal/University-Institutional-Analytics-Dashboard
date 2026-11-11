@@ -1,0 +1,13 @@
+{
+  "data_source": "UCI",
+  "note": "UCI reference zone. No dates, terms or university links are created for UCI students.",
+  "source_file": "data/raw/data.csv",
+  "source_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+  "tables": {
+    "code_lookups": 79,
+    "uci_course_categories": 17,
+    "uci_semester_results": 8848,
+    "uci_source_records": 4424,
+    "uci_students": 4424
+  }
+}

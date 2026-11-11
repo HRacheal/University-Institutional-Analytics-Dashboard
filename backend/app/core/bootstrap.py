@@ -1,0 +1,53 @@
+"""First-run setup: system roles, bootstrap administrator, optional demo management user, default integrations.
+
+No password is hard-coded. Unless UIAD_BOOTSTRAP_ADMIN_PASSWORD is set, random initial passwords are generated and
+written once to backend/var/initial_credentials.txt (git-ignored); both accounts must change their password at first login.
+"""
+from __future__ import annotations
+
+import secrets
+import string
+
+from sqlalchemy import insert, select, update
+
+from . import db
+from .config import get_settings
+from .security import SYSTEM_ROLES, hash_password
+
+
+def _random_password() -> str:
+    alphabet = string.ascii_letters + string.digits
+    while True:
+        p = "".join(secrets.choice(alphabet) for _ in range(14))
+        if any(c.islower() for c in p) and any(c.isupper() for c in p) and any(c.isdigit() for c in p):
+            return p
+
+
+def bootstrap() -> dict:
+    s = get_settings()
+    db.init_db()
+    for role, (desc, perms) in SYSTEM_ROLES.items():
+        if db.fetch_one(select(db.roles).where(db.roles.c.role == role)):
+            db.execute(update(db.roles).where(db.roles.c.role == role).values(permissions=perms, description=desc, is_system=True))
+        else:
+            db.execute(insert(db.roles).values(role=role, description=desc, permissions=perms, is_system=True))
+    created = {}
+    if not db.fetch_one(select(db.users.c.id).where(db.users.c.role == "ADMIN")):
+        pw = s.bootstrap_admin_password or _random_password()
+        db.execute(insert(db.users).values(username=s.bootstrap_admin_user, full_name="System Administrator", email="", password_hash=hash_password(pw),
+                                           role="ADMIN", is_active=True, must_change_password=True, failed_logins=0, created_at=db.now()))
+        created[s.bootstrap_admin_user] = ("ADMIN", None if s.bootstrap_admin_password else pw)
+        if s.seed_demo_users and not db.fetch_one(select(db.users.c.id).where(db.users.c.username == "manager")):
+            mp = _random_password()
+            db.execute(insert(db.users).values(username="manager", full_name="Demo Management User", email="", password_hash=hash_password(mp),
+                                               role="MANAGEMENT", is_active=True, must_change_password=True, failed_logins=0, created_at=db.now()))
+            created["manager"] = ("MANAGEMENT", mp)
+    if created and any(v[1] for v in created.values()):
+        f = s.var_dir / "initial_credentials.txt"
+        lines = ["# Initial credentials (generated once). Each account must change its password at first login.",
+                 "# Delete this file after the first login."]
+        lines += [f"{u}\t{r}\t{p}" for u, (r, p) in created.items() if p]
+        f.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    from ..integrations.registry import seed_integrations
+    seed_integrations()
+    return {"created_users": sorted(created)}

@@ -1,0 +1,101 @@
+{
+  "task_id": "syn_dropout_cox",
+  "dataset": "syn_dropout_survival",
+  "target_definition": "duration_years = years from admission to a recorded WITHDRAWN/DISMISSED outcome (event_dropout = 1); censored at graduation, programme change or the as-of date.",
+  "prediction_point": "End date of the first completed term of each programme admission.",
+  "population": "All programme admissions with a completed first term and no outcome recorded by its end.",
+  "covariates": [
+    "cumulative_gpa",
+    "cum_course_completion_rate",
+    "credits_attempted",
+    "progression_rate",
+    "warning_terms_so_far",
+    "credits_transferred_in",
+    "scholarship_pct",
+    "age_at_admission_approx",
+    "fin_payment_completion_pct",
+    "fin_late_payment_terms",
+    "fin_holds_so_far",
+    "part_time_share_so_far",
+    "online_share_so_far"
+  ],
+  "split": {
+    "method": "Student-grouped holdout: 25 % of students (StratifiedGroupKFold on the event indicator) form the test set; censoring handles immature cohorts.",
+    "train_rows": 3790,
+    "test_rows": 1262,
+    "dropped_constant_covariates": [
+      "probation_terms_so_far",
+      "prior_gap_terms"
+    ],
+    "dropped_collinear_covariates": [
+      "term_gpa"
+    ],
+    "strata": "level (separate baseline hazard per level)",
+    "train_events": 914,
+    "test_events": 276
+  },
+  "standardisation_means": {
+    "cumulative_gpa": 2.9745857910287405,
+    "term_gpa": 2.9745857910287405,
+    "cum_course_completion_rate": 0.9405364986807389,
+    "credits_attempted": 11.213192612137203,
+    "progression_rate": 0.13911828891820582,
+    "warning_terms_so_far": 0.15408970976253297,
+    "probation_terms_so_far": 0.0,
+    "prior_gap_terms": 0.0,
+    "credits_transferred_in": 1.5656992084432717,
+    "scholarship_pct": 20.949868073878626,
+    "age_at_admission_approx": 23.81424802110818,
+    "fin_payment_completion_pct": 0.9792202535620053,
+    "fin_late_payment_terms": 0.2620052770448549,
+    "fin_holds_so_far": 0.18865435356200527,
+    "part_time_share_so_far": 0.22849604221635883,
+    "online_share_so_far": 0.15883905013192612
+  },
+  "standardisation_sds": {
+    "cumulative_gpa": 0.7089361081603974,
+    "term_gpa": 0.7089361081603974,
+    "cum_course_completion_rate": 0.17594105594826065,
+    "credits_attempted": 4.545182118253911,
+    "progression_rate": 0.09427279319971968,
+    "warning_terms_so_far": 0.361082362194361,
+    "probation_terms_so_far": 1.0,
+    "prior_gap_terms": 1.0,
+    "credits_transferred_in": 7.050493542789285,
+    "scholarship_pct": 32.639575735278434,
+    "age_at_admission_approx": 6.475673271119746,
+    "fin_payment_completion_pct": 0.10265338055017317,
+    "fin_late_payment_terms": 0.5568330216142044,
+    "fin_holds_so_far": 0.46693582815803275,
+    "part_time_share_so_far": 0.4199191904817753,
+    "online_share_so_far": 0.3655741630338601
+  },
+  "levels": [
+    "DOCTORATE",
+    "MASTERS",
+    "UNDERGRADUATE"
+  ],
+  "concordance_test": 0.6405572105903579,
+  "data_version": {
+    "synthetic_generation_run_id": "SYN-RUN-1.1.0-S20261110",
+    "synthetic_manifest_sha256": "ebe26585195b7d876597d85bcfa755eca7ee86f95a0e8975b85147aed93e2e7d",
+    "uci_raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "as_of_date": "2026-11-10"
+  },
+  "zone": "SYNTHETIC",
+  "task": "syn_dropout_cox",
+  "model": "cox_ph",
+  "deployment_status": "DEMONSTRATION_ONLY \u2014 trained on synthetic data; NOT production-ready and NOT valid for real students",
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "environment": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+  }
+}

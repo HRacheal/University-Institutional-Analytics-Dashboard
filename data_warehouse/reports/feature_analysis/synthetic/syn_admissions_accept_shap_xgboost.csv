@@ -1,0 +1,17 @@
+,mean_abs_shap
+admission_score,0.47674456238746643
+prior_applications_by_applicant,0.13899391889572144
+lead_days_before_term,0.0978047177195549
+programme_id,0.08300067708478309
+prog_prev_year_applications,0.07831044687191024
+age_at_entry_approx,0.06792078912258148
+prog_prev_year_offer_rate,0.06298808008432388
+gender,0.05292671686038375
+school_id,0.05198377650231123
+prog_prev_year_yield,0.0485178679227829
+nationality_iso3,0.04333443735959008
+entry_season,0.04042368708178401
+entry_academic_year_start,0.03394732251763344
+application_type,0.03028188133612275
+residency_status,0.014837967464700341
+level,0.013054128270596266

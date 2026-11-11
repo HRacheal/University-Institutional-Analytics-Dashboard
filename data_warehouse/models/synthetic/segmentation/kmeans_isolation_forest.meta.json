@@ -1,0 +1,20 @@
+{
+  "chosen_k": 4,
+  "silhouette": 0.1902809140044799,
+  "zone": "SYNTHETIC",
+  "task": "segmentation",
+  "model": "kmeans_isolation_forest",
+  "deployment_status": "DEMONSTRATION_ONLY \u2014 trained on synthetic data; NOT production-ready and NOT valid for real students",
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "environment": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+  }
+}

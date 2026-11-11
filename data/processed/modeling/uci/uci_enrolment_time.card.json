@@ -1,0 +1,90 @@
+{
+  "name": "uci_enrolment_time",
+  "zone": "UCI",
+  "task": "classification",
+  "prediction_point": "At enrolment: information known when the student enrols (application, prior education, demographics, parents, macro-economic context)",
+  "target_definition": "target_3class = original UCI Target (Graduate / Dropout / Enrolled at the end of the normal course duration). target_dropout = 1 if Target == Dropout, else 0.",
+  "targets": [
+    "target_3class",
+    "target_dropout"
+  ],
+  "features_numeric": [
+    "application_order",
+    "previous_qualification_grade",
+    "admission_grade",
+    "age_at_enrollment",
+    "daytime_evening_attendance",
+    "displaced",
+    "educational_special_needs",
+    "gender_code",
+    "scholarship_holder",
+    "international",
+    "unemployment_rate",
+    "inflation_rate",
+    "gdp"
+  ],
+  "features_categorical": [
+    "marital_status_code",
+    "application_mode_code",
+    "uci_course_code",
+    "previous_qualification_code",
+    "nationality_code",
+    "mother_qualification_code",
+    "father_qualification_code",
+    "mother_occupation_code",
+    "father_occupation_code"
+  ],
+  "id_columns": [
+    "uci_row_number"
+  ],
+  "excluded_leakage_columns": {
+    "target": "the outcome itself (Graduate / Dropout / Enrolled)",
+    "uci_students.outcome_at_normal_duration": "recoded copy of the target",
+    "uci_students.dq_flags": "derived from semester results (data-quality flag, not an input)",
+    "debtor": "not available at enrolment (measured during/after the first year)",
+    "tuition_fees_up_to_date": "not available at enrolment (measured during/after the first year)",
+    "sem1_credited": "not available at enrolment (measured during/after the first year)",
+    "sem1_enrolled": "not available at enrolment (measured during/after the first year)",
+    "sem1_evaluations": "not available at enrolment (measured during/after the first year)",
+    "sem1_approved": "not available at enrolment (measured during/after the first year)",
+    "sem1_grade": "not available at enrolment (measured during/after the first year)",
+    "sem1_without_evaluations": "not available at enrolment (measured during/after the first year)",
+    "sem2_credited": "not available at enrolment (measured during/after the first year)",
+    "sem2_enrolled": "not available at enrolment (measured during/after the first year)",
+    "sem2_evaluations": "not available at enrolment (measured during/after the first year)",
+    "sem2_approved": "not available at enrolment (measured during/after the first year)",
+    "sem2_grade": "not available at enrolment (measured during/after the first year)",
+    "sem2_without_evaluations": "not available at enrolment (measured during/after the first year)"
+  },
+  "population": "All 4,424 UCI students",
+  "split": "Stratified 75/25 train/test (seed 20261110; one row per student) with 5-fold stratified cross-validation on the training set",
+  "notes": [
+    "Debtor and tuition-fees-up-to-date are excluded because the UCI documentation does not state when they were measured.",
+    "Scholarship holder is kept as an enrolment attribute (documented with the enrolment variables)."
+  ],
+  "rows": 4424,
+  "features": [
+    "application_order",
+    "previous_qualification_grade",
+    "admission_grade",
+    "age_at_enrollment",
+    "daytime_evening_attendance",
+    "displaced",
+    "educational_special_needs",
+    "gender_code",
+    "scholarship_holder",
+    "international",
+    "unemployment_rate",
+    "inflation_rate",
+    "gdp",
+    "marital_status_code",
+    "application_mode_code",
+    "uci_course_code",
+    "previous_qualification_code",
+    "nationality_code",
+    "mother_qualification_code",
+    "father_qualification_code",
+    "mother_occupation_code",
+    "father_occupation_code"
+  ]
+}

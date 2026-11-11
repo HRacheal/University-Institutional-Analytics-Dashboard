@@ -1,0 +1,1066 @@
+label,series,key,method,horizon,forecast,pi80_low,pi80_high,interval_type,target_term,target_term_note
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,seasonal_naive,1,1912.00,1971.55,2074.16,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,seasonal_naive,2,423.00,436.05,459.20,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,seasonal_naive,3,2109.00,2167.96,2265.04,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,ets,1,1960.35,1863.29,2062.47,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,ets,2,424.26,402.69,446.99,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,ets,3,2185.63,2069.70,2308.04,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,arima,1,908.86,212.52,3876.12,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,arima,2,1413.04,282.98,7039.90,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,arima,3,1121.25,160.39,7802.64,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,sarima,1,2000.95,1858.65,2154.14,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,sarima,2,444.38,405.07,487.50,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,sarima,3,2201.89,1976.60,2452.84,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,xgboost_lags,1,2014.71,1944.75,2089.57,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,xgboost_lags,2,446.88,431.39,462.77,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:TOTAL,ALL,xgboost_lags,3,2178.13,2099.21,2222.38,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,seasonal_naive,1,131.00,120.32,149.50,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,seasonal_naive,2,71.00,64.71,80.98,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,seasonal_naive,3,159.00,147.43,177.77,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,ets,1,129.17,114.38,145.87,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,ets,2,66.56,58.88,75.22,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,ets,3,145.64,128.98,164.45,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,arima,1,107.15,53.36,214.17,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,arima,2,130.06,59.56,282.63,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,arima,3,118.27,46.13,300.87,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,sarima,1,138.27,116.92,163.49,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,sarima,2,76.17,59.86,96.85,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,sarima,3,166.63,124.22,223.41,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,xgboost_lags,1,135.66,113.49,148.98,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,xgboost_lags,2,66.21,55.31,72.10,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,DOCTORATE,xgboost_lags,3,173.00,141.90,189.25,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,seasonal_naive,1,279.00,256.34,318.23,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,seasonal_naive,2,100.00,91.18,114.00,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,seasonal_naive,3,326.00,302.35,364.36,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,ets,1,274.28,247.56,303.88,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,ets,2,88.75,80.04,98.40,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,ets,3,307.57,277.61,340.74,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,arima,1,176.74,58.91,526.36,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,arima,2,242.88,71.95,814.28,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,arima,3,205.96,47.21,887.37,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,sarima,1,306.31,266.81,351.64,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,sarima,2,108.80,91.23,129.73,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,sarima,3,358.02,291.55,439.60,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,xgboost_lags,1,291.58,244.12,320.10,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,xgboost_lags,2,91.85,76.80,99.99,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,MASTERS,xgboost_lags,3,327.44,268.73,358.13,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,seasonal_naive,1,1502.00,1380.37,1712.60,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,seasonal_naive,2,252.00,229.91,287.07,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,seasonal_naive,3,1624.00,1506.46,1814.61,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,ets,1,1550.90,1468.44,1638.00,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,ets,2,247.18,233.59,261.57,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,ets,3,1649.90,1556.86,1748.50,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,arima,1,611.69,109.08,3409.17,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,arima,2,1020.89,151.71,6837.25,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,arima,3,780.43,77.63,7765.46,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,sarima,1,1573.27,1456.46,1699.44,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,sarima,2,263.64,239.53,290.18,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,sarima,3,1701.92,1523.05,1901.79,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,xgboost_lags,1,1580.67,1324.05,1734.84,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,xgboost_lags,2,272.49,228.15,296.46,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:level,UNDERGRADUATE,xgboost_lags,3,1715.45,1408.64,1875.83,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,seasonal_naive,1,208.00,201.72,238.87,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,seasonal_naive,2,35.00,33.80,40.66,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,seasonal_naive,3,228.00,221.12,257.20,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,ets,1,194.30,168.59,223.90,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,ets,2,32.66,28.23,37.76,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,ets,3,217.05,188.35,250.10,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,arima,1,85.07,17.49,399.54,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,arima,2,143.42,25.39,789.37,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,arima,3,108.83,13.07,856.29,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,sarima,1,224.35,184.98,272.05,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,sarima,2,37.42,29.85,46.85,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,sarima,3,251.75,197.06,321.55,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,xgboost_lags,1,224.75,205.65,247.32,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,xgboost_lags,2,34.78,30.67,38.35,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SART,xgboost_lags,3,250.33,227.74,270.63,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,seasonal_naive,1,461.00,447.12,529.25,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,seasonal_naive,2,118.00,114.05,136.71,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,seasonal_naive,3,509.00,493.68,574.04,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,ets,1,479.06,433.17,529.80,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,ets,2,121.62,109.83,134.66,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,ets,3,521.88,471.18,578.02,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,arima,1,238.24,57.48,977.62,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,arima,2,353.67,73.34,1690.99,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,arima,3,287.99,42.81,1905.19,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,sarima,1,500.03,445.63,561.06,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,sarima,2,127.01,111.41,144.77,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,sarima,3,540.28,467.97,623.74,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,xgboost_lags,1,484.93,443.83,533.53,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,xgboost_lags,2,113.90,100.71,125.37,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SBUS,xgboost_lags,3,540.61,491.91,584.33,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,seasonal_naive,1,339.00,328.79,389.22,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,seasonal_naive,2,73.00,70.54,84.63,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,seasonal_naive,3,368.00,356.91,415.05,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,ets,1,336.94,311.20,364.81,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,ets,2,73.20,67.54,79.31,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,ets,3,365.00,337.12,395.18,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,arima,1,157.33,37.06,657.63,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,arima,2,246.21,50.06,1195.80,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,arima,3,194.51,28.07,1313.93,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,sarima,1,348.38,297.55,407.86,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,sarima,2,76.12,62.01,93.40,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,sarima,3,379.99,299.08,482.71,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,xgboost_lags,1,359.45,328.95,395.49,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,xgboost_lags,2,74.10,65.49,81.60,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SEDU,xgboost_lags,3,398.84,362.89,431.12,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,seasonal_naive,1,549.00,532.48,630.25,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,seasonal_naive,2,127.00,122.75,147.12,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,seasonal_naive,3,604.00,585.82,681.15,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,ets,1,530.40,497.52,565.45,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,ets,2,116.63,109.35,124.39,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,ets,3,580.81,544.81,619.19,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,arima,1,268.20,63.67,1119.69,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,arima,2,409.61,83.47,1994.85,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,arima,3,328.49,47.82,2222.69,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,sarima,1,565.95,505.23,633.96,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,sarima,2,126.95,109.09,147.70,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,sarima,3,628.42,524.81,752.46,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,xgboost_lags,1,577.29,528.37,635.12,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,xgboost_lags,2,124.76,110.33,137.31,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SENG,xgboost_lags,3,639.84,582.22,691.57,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,seasonal_naive,1,355.00,344.30,407.59,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,seasonal_naive,2,70.00,67.64,81.16,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,seasonal_naive,3,400.00,387.95,451.14,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,ets,1,351.07,325.82,378.26,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,ets,2,71.34,66.15,76.93,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,ets,3,385.23,357.53,415.06,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,arima,1,159.58,35.18,711.67,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,arima,2,259.49,49.15,1351.95,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,arima,3,200.71,26.53,1476.86,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,sarima,1,375.32,338.85,415.70,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,sarima,2,72.55,64.04,82.17,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,sarima,3,419.52,364.29,483.09,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,xgboost_lags,1,372.92,341.29,410.31,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,xgboost_lags,2,79.83,70.55,87.89,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:school_id,SHLT,xgboost_lags,3,420.47,382.57,454.49,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,seasonal_naive,1,45.00,37.33,59.98,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,seasonal_naive,2,22.00,17.69,30.31,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,seasonal_naive,3,49.00,40.67,62.84,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,ets,1,40.53,33.49,49.01,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,ets,2,21.64,17.80,26.26,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,ets,3,47.80,39.53,57.75,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,arima,1,36.29,16.85,76.88,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,arima,2,40.66,16.50,98.18,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,arima,3,38.95,13.20,111.39,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,sarima,1,42.59,33.52,54.03,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,sarima,2,21.19,15.19,29.42,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,sarima,3,47.65,32.26,70.16,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,xgboost_lags,1,46.71,36.82,57.95,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,xgboost_lags,2,17.77,13.45,22.99,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-CS,xgboost_lags,3,51.93,38.76,60.77,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,seasonal_naive,1,35.00,29.00,46.73,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,seasonal_naive,2,24.00,19.32,33.03,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,seasonal_naive,3,50.00,41.50,64.12,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,ets,1,41.78,34.26,50.91,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,ets,2,24.08,19.24,30.09,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,ets,3,47.13,37.09,59.81,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,arima,1,34.62,18.67,63.50,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,arima,2,41.67,20.99,81.81,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,arima,3,37.96,16.53,85.59,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,sarima,1,45.69,36.52,57.10,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,sarima,2,27.91,21.32,36.45,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,sarima,3,57.58,42.69,77.56,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,xgboost_lags,1,40.95,32.25,50.84,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,xgboost_lags,2,23.35,17.75,30.13,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-DBA,xgboost_lags,3,54.03,40.34,63.23,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,seasonal_naive,1,33.00,27.33,44.08,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,seasonal_naive,2,16.00,12.82,22.14,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,seasonal_naive,3,35.00,29.00,44.97,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,ets,1,35.19,28.29,43.72,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,ets,2,15.52,12.37,19.41,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,ets,3,37.86,30.45,47.02,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,arima,1,23.58,9.97,54.04,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,arima,2,28.84,11.15,72.28,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,arima,3,26.04,8.15,78.85,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,sarima,1,31.55,22.44,44.20,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,sarima,2,16.48,10.53,25.49,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,sarima,3,34.20,20.61,56.34,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,xgboost_lags,1,32.99,25.95,41.01,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,xgboost_lags,2,13.78,10.38,17.89,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-EDU,xgboost_lags,3,35.83,26.66,41.98,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,seasonal_naive,1,18.00,14.83,24.19,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,seasonal_naive,2,9.00,7.13,12.61,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,seasonal_naive,3,25.00,20.67,32.20,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,ets,1,20.33,15.95,25.85,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,ets,2,10.21,7.67,13.49,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,ets,3,22.81,16.97,30.54,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,arima,1,14.88,6.97,30.64,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,arima,2,19.48,8.52,43.04,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,arima,3,16.96,6.13,44.25,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,sarima,1,20.74,15.22,28.12,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,sarima,2,9.83,6.47,14.69,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,sarima,3,25.63,16.22,40.17,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,xgboost_lags,1,20.06,15.69,25.02,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,xgboost_lags,2,7.12,5.25,9.38,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,DR-HS,xgboost_lags,3,25.95,19.24,30.45,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,seasonal_naive,1,25.00,20.67,33.47,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,seasonal_naive,2,9.00,7.13,12.61,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,seasonal_naive,3,25.00,20.67,32.20,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,ets,1,25.41,20.10,32.06,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,ets,2,8.59,6.66,11.00,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,ets,3,27.18,21.52,34.28,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,arima,1,15.01,4.88,42.60,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,arima,2,19.48,5.70,61.56,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,arima,3,17.07,3.70,68.44,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,sarima,1,27.58,20.01,37.89,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,sarima,2,9.72,6.68,13.96,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,sarima,3,31.47,21.71,45.43,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,xgboost_lags,1,25.30,19.85,31.50,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,xgboost_lags,2,7.01,5.17,9.24,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-CP,xgboost_lags,3,25.96,19.25,30.46,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,seasonal_naive,1,49.00,40.67,65.29,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,seasonal_naive,2,20.00,16.07,27.59,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,seasonal_naive,3,64.00,53.17,81.99,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,ets,1,55.43,43.50,70.56,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,ets,2,18.21,13.61,24.27,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,ets,3,62.59,45.83,85.33,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,arima,1,35.93,11.49,108.21,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,arima,2,48.00,13.58,163.69,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,arima,3,41.53,8.88,182.09,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,sarima,1,60.17,43.72,82.69,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,sarima,2,21.45,14.11,32.38,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,sarima,3,72.44,45.14,115.90,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,xgboost_lags,1,59.69,47.11,74.00,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,xgboost_lags,2,18.08,13.69,23.39,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-DS,xgboost_lags,3,70.15,52.45,82.05,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,seasonal_naive,1,19.00,15.67,25.51,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,seasonal_naive,2,6.00,4.69,8.53,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,seasonal_naive,3,23.00,19.00,29.64,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,ets,1,18.23,15.14,21.92,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,ets,2,6.49,5.26,7.96,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,ets,3,19.68,16.17,23.91,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,arima,1,11.63,4.04,30.67,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,arima,2,16.65,5.37,47.90,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,arima,3,13.83,3.33,49.76,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,sarima,1,17.90,13.44,23.75,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,sarima,2,6.01,4.18,8.50,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,sarima,3,21.55,15.15,30.50,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,xgboost_lags,1,20.45,16.00,25.51,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,xgboost_lags,2,5.94,4.34,7.87,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-FIN,xgboost_lags,3,23.68,17.54,27.80,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,seasonal_naive,1,67.00,55.67,89.15,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,seasonal_naive,2,19.00,15.26,26.23,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,seasonal_naive,3,63.00,52.33,80.72,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,ets,1,60.71,48.39,76.10,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,ets,2,18.17,14.34,22.95,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,ets,3,65.55,52.26,82.15,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,arima,1,33.96,10.19,108.23,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,arima,2,46.87,12.53,168.40,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,arima,3,39.66,7.84,185.95,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,sarima,1,64.56,47.02,88.50,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,sarima,2,20.40,13.81,29.93,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,sarima,3,76.99,50.38,117.40,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,xgboost_lags,1,69.06,54.53,85.57,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,xgboost_lags,2,16.37,12.37,21.20,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MBA,xgboost_lags,3,67.51,50.46,78.96,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,seasonal_naive,1,31.00,25.67,41.42,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,seasonal_naive,2,8.00,6.32,11.25,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,seasonal_naive,3,33.00,27.33,42.41,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,ets,1,29.15,22.21,38.18,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,ets,2,9.72,7.06,13.27,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,ets,3,33.68,24.49,46.18,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,arima,1,15.95,4.90,47.65,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,arima,2,23.41,6.59,77.49,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,arima,3,19.16,3.92,81.67,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,sarima,1,28.62,20.47,39.87,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,sarima,2,8.45,5.47,12.78,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,sarima,3,33.87,21.77,52.39,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,xgboost_lags,1,30.65,24.09,38.11,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,xgboost_lags,2,9.16,6.82,11.99,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MED,xgboost_lags,3,34.76,25.86,40.74,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,seasonal_naive,1,25.00,20.67,33.47,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,seasonal_naive,2,12.00,9.57,16.70,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,seasonal_naive,3,33.00,27.33,42.41,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,ets,1,31.65,25.10,39.85,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,ets,2,9.79,7.63,12.50,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,ets,3,34.65,27.50,43.60,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,arima,1,19.90,5.97,61.66,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,arima,2,25.74,6.86,89.99,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,arima,3,22.60,4.39,102.25,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,sarima,1,31.46,22.51,43.82,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,sarima,2,10.91,7.36,15.97,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,sarima,3,36.31,24.43,53.73,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,xgboost_lags,1,29.45,23.14,36.62,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,xgboost_lags,2,12.42,9.33,16.16,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-MPH,xgboost_lags,3,34.49,25.66,40.42,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,seasonal_naive,1,16.00,13.17,21.54,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,seasonal_naive,2,7.00,5.50,9.89,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,seasonal_naive,3,26.00,21.50,33.47,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,ets,1,18.91,14.19,25.08,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,ets,2,6.16,4.47,8.38,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,ets,3,22.99,17.31,30.44,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,arima,1,13.26,3.79,41.50,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,arima,2,18.93,4.95,65.77,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,arima,3,15.73,2.88,71.04,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,sarima,1,20.12,13.70,29.35,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,sarima,2,8.99,5.53,14.27,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,sarima,3,27.14,16.44,44.40,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,xgboost_lags,1,24.40,19.14,30.39,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,xgboost_lags,2,9.18,6.84,12.02,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-NUR,xgboost_lags,3,32.01,23.79,37.52,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,seasonal_naive,1,32.00,26.50,42.75,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,seasonal_naive,2,13.00,10.38,18.06,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,seasonal_naive,3,37.00,30.67,47.52,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,ets,1,32.43,22.79,45.98,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,ets,2,10.89,7.14,16.35,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,ets,3,39.18,25.58,59.72,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,arima,1,22.48,6.77,69.93,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,arima,2,28.61,7.53,101.85,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,arima,3,25.48,4.93,117.21,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,sarima,1,37.50,24.85,56.33,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,sarima,2,11.89,6.93,19.94,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,sarima,3,45.42,25.54,80.20,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,xgboost_lags,1,32.21,25.32,40.03,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,xgboost_lags,2,11.71,8.78,15.24,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,MA-SE,xgboost_lags,3,38.65,28.78,45.27,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,seasonal_naive,1,137.00,114.00,181.95,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,seasonal_naive,2,31.00,25.01,42.56,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,seasonal_naive,3,164.00,136.50,209.68,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,ets,1,140.60,118.03,167.46,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,ets,2,31.51,26.32,37.70,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,ets,3,163.71,137.29,195.17,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,arima,1,69.62,11.35,402.68,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,arima,2,108.55,14.81,758.09,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,arima,3,86.28,7.44,901.73,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,sarima,1,152.56,123.12,188.99,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,sarima,2,34.78,27.41,44.04,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,sarima,3,181.27,141.42,232.26,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,xgboost_lags,1,154.62,122.36,191.30,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,xgboost_lags,2,26.41,20.10,34.04,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ACF,xgboost_lags,3,178.20,133.62,208.16,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,seasonal_naive,1,203.00,169.00,269.45,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,seasonal_naive,2,38.00,30.70,52.09,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,seasonal_naive,3,209.00,174.00,267.14,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,ets,1,197.42,164.55,236.80,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,ets,2,30.78,25.47,37.15,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,ets,3,218.57,181.35,263.39,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,arima,1,86.74,14.40,498.95,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,arima,2,136.94,18.99,950.66,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,arima,3,108.10,9.60,1121.85,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,sarima,1,231.64,183.62,292.16,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,sarima,2,36.86,28.25,47.99,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,sarima,3,248.70,187.34,330.04,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,xgboost_lags,1,208.23,164.86,257.55,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,xgboost_lags,2,32.87,25.07,42.29,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-BBA,xgboost_lags,3,219.47,164.62,256.33,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,seasonal_naive,1,94.00,78.17,124.94,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,seasonal_naive,2,11.00,8.75,15.34,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,seasonal_naive,3,108.00,89.83,138.18,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,ets,1,96.07,79.09,116.66,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,ets,2,17.50,14.26,21.42,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,ets,3,104.96,86.42,127.43,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,arima,1,32.10,5.88,158.15,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,arima,2,62.01,10.19,353.89,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,arima,3,43.50,4.49,359.87,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,sarima,1,89.30,65.09,122.38,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,sarima,2,14.29,9.71,20.81,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,sarima,3,100.76,67.61,149.93,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,xgboost_lags,1,100.69,79.61,124.66,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,xgboost_lags,2,17.13,12.96,22.18,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CE,xgboost_lags,3,115.50,86.51,134.97,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,seasonal_naive,1,120.00,99.83,159.41,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,seasonal_naive,2,20.00,16.07,27.59,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,seasonal_naive,3,132.00,109.83,168.82,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,ets,1,125.57,103.32,152.57,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,ets,2,18.56,15.07,22.80,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,ets,3,133.11,108.89,162.66,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,arima,1,49.36,9.39,242.99,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,arima,2,82.94,13.64,480.21,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,arima,3,63.15,6.78,528.17,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,sarima,1,143.50,113.22,181.80,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,sarima,2,22.70,17.34,29.62,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,sarima,3,160.64,121.65,212.03,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,xgboost_lags,1,124.63,98.59,154.24,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,xgboost_lags,2,17.96,13.60,23.24,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-COM,xgboost_lags,3,138.98,104.16,162.38,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,seasonal_naive,1,204.00,169.83,270.78,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,seasonal_naive,2,35.00,28.26,48.01,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,seasonal_naive,3,214.00,178.17,273.52,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,ets,1,208.34,187.66,231.29,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,ets,2,31.44,28.23,34.99,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,ets,3,220.14,198.29,244.38,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,arima,1,83.48,13.86,479.29,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,arima,2,136.66,19.07,943.32,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,arima,3,105.65,9.42,1090.58,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,sarima,1,213.21,180.62,251.65,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,sarima,2,35.78,29.64,43.15,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,sarima,3,228.86,187.43,279.40,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,xgboost_lags,1,209.72,166.05,259.39,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,xgboost_lags,2,30.16,22.98,38.82,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-CS,xgboost_lags,3,224.72,168.57,262.46,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,seasonal_naive,1,104.00,86.50,138.20,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,seasonal_naive,2,17.00,13.63,23.50,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,seasonal_naive,3,122.00,101.50,156.05,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,ets,1,105.24,83.73,132.23,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,ets,2,16.74,13.15,21.24,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,ets,3,116.92,93.04,146.87,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,arima,1,43.45,7.10,242.92,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,arima,2,75.20,10.61,499.13,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,arima,3,56.27,4.89,555.99,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,sarima,1,117.42,94.80,145.40,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,sarima,2,19.05,14.07,25.67,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,sarima,3,137.96,97.56,194.92,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,xgboost_lags,1,109.08,86.26,135.03,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,xgboost_lags,2,17.31,13.10,22.41,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-EDU,xgboost_lags,3,128.49,96.27,150.13,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,seasonal_naive,1,73.00,60.67,97.10,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,seasonal_naive,2,9.00,7.13,12.61,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,seasonal_naive,3,74.00,61.50,94.76,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,ets,1,76.84,59.90,98.50,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,ets,2,12.61,9.64,16.39,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,ets,3,85.31,66.52,109.31,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,arima,1,25.01,3.90,137.16,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,arima,2,44.38,6.15,287.10,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,arima,3,32.87,2.63,315.03,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,sarima,1,68.26,53.77,86.60,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,sarima,2,10.44,7.76,13.94,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,sarima,3,73.89,54.74,99.61,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,xgboost_lags,1,78.28,61.84,96.96,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,xgboost_lags,2,11.81,8.86,15.37,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-ENG,xgboost_lags,3,81.20,60.75,94.95,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,seasonal_naive,1,125.00,104.00,166.04,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,seasonal_naive,2,26.00,20.95,35.76,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,seasonal_naive,3,132.00,109.83,168.82,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,ets,1,122.60,97.20,154.57,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,ets,2,21.80,17.11,27.70,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,ets,3,133.68,106.00,168.52,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,arima,1,57.08,10.50,292.25,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,arima,2,88.33,13.82,537.44,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,arima,3,70.43,7.17,623.73,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,sarima,1,139.73,114.62,170.30,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,sarima,2,25.56,20.58,31.68,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,sarima,3,152.43,122.38,189.81,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,xgboost_lags,1,129.58,102.51,160.36,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,xgboost_lags,2,20.35,15.44,26.29,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-IT,xgboost_lags,3,140.35,105.18,163.98,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,seasonal_naive,1,190.00,158.17,252.22,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,seasonal_naive,2,29.00,23.38,39.84,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,seasonal_naive,3,199.00,165.67,254.37,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,ets,1,193.69,160.79,233.27,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,ets,2,27.67,22.82,33.50,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,ets,3,211.84,175.87,255.11,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,arima,1,73.42,11.26,450.96,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,arima,2,123.57,15.86,919.48,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,arima,3,94.25,7.51,1064.84,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,sarima,1,196.13,157.10,244.80,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,sarima,2,29.38,22.76,37.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,sarima,3,206.02,157.31,269.71,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,xgboost_lags,1,193.95,153.54,239.90,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,xgboost_lags,2,30.55,23.29,39.33,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-NUR,xgboost_lags,3,208.98,156.74,244.08,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,seasonal_naive,1,106.00,88.17,140.85,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,seasonal_naive,2,13.00,10.38,18.06,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,seasonal_naive,3,117.00,97.33,149.67,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,ets,1,108.71,80.41,146.84,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,ets,2,15.17,11.00,20.79,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,ets,3,118.11,87.39,159.51,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,arima,1,37.08,5.12,235.86,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,arima,2,68.39,8.21,521.66,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,arima,3,49.47,3.39,578.90,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,sarima,1,111.69,80.18,155.44,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,sarima,2,16.33,11.09,23.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,sarima,3,134.61,90.86,199.21,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,xgboost_lags,1,110.94,87.73,137.32,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,xgboost_lags,2,20.19,15.31,26.09,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PH,xgboost_lags,3,123.01,92.16,143.74,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,seasonal_naive,1,146.00,121.50,193.88,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,seasonal_naive,2,23.00,18.51,31.67,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,seasonal_naive,3,153.00,127.33,195.63,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,ets,1,137.57,116.80,162.00,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,ets,2,20.95,17.66,24.82,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,ets,3,145.70,123.71,171.56,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,arima,1,57.10,9.32,325.98,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,arima,2,95.87,13.30,655.25,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,arima,3,73.09,6.34,746.39,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,sarima,1,154.67,117.75,203.06,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,sarima,2,23.87,17.15,33.06,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,sarima,3,167.78,117.56,239.27,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,xgboost_lags,1,150.74,119.29,186.50,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,xgboost_lags,2,22.10,16.78,28.52,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:programme_id,UG-PSY,xgboost_lags,3,161.22,120.86,188.33,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,seasonal_naive,1,37.00,29.09,48.27,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,seasonal_naive,2,15.00,11.51,19.41,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,seasonal_naive,3,37.00,29.60,46.13,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,ets,1,50.19,38.91,64.64,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,ets,2,11.53,8.77,15.07,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,ets,3,55.00,42.67,70.82,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,arima,1,23.55,5.22,95.89,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,arima,2,29.61,5.62,140.62,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,arima,3,26.38,3.32,172.41,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,sarima,1,42.68,31.94,56.91,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,sarima,2,13.29,9.67,18.15,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,sarima,3,43.68,32.00,59.48,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,xgboost_lags,1,39.05,27.96,42.50,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,xgboost_lags,2,12.74,8.16,15.33,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,IND,xgboost_lags,3,39.22,29.09,47.61,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,seasonal_naive,1,17.00,13.25,22.34,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,seasonal_naive,2,5.00,3.69,6.65,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,seasonal_naive,3,22.00,17.52,27.53,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,ets,1,17.68,12.36,25.10,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,ets,2,5.66,3.77,8.31,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,ets,3,21.03,14.76,29.78,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,arima,1,10.56,2.99,32.53,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,arima,2,15.44,4.03,52.76,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,arima,3,12.73,2.29,56.30,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,sarima,1,18.79,13.00,26.98,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,sarima,2,6.11,3.97,9.16,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,sarima,3,22.75,15.42,33.36,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,xgboost_lags,1,19.39,13.75,21.15,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,xgboost_lags,2,3.72,2.14,4.61,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,USA,xgboost_lags,3,24.33,17.95,29.62,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,seasonal_naive,1,1686.00,1334.83,2186.46,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,seasonal_naive,2,364.00,284.43,464.55,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,seasonal_naive,3,1863.00,1499.80,2310.82,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,ets,1,1724.46,1619.52,1836.20,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,ets,2,363.73,341.07,387.89,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,ets,3,1925.73,1801.47,2058.56,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,arima,1,791.85,180.47,3463.03,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,arima,2,1240.15,241.47,6352.20,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,arima,3,980.26,135.48,7054.08,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,sarima,1,1770.07,1604.40,1952.84,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,sarima,2,381.92,338.20,431.27,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,sarima,3,1956.96,1700.26,2252.40,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,xgboost_lags,1,1743.48,1260.75,1893.81,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,xgboost_lags,2,370.20,246.34,440.24,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:nationality_iso3,ZZZ,xgboost_lags,3,1976.40,1478.45,2388.96,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,seasonal_naive,1,1009.00,1024.50,1124.58,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,seasonal_naive,2,219.00,222.18,244.87,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,seasonal_naive,3,1103.00,1119.97,1218.93,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,ets,1,980.37,925.47,1038.52,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,ets,2,215.63,203.51,228.46,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,ets,3,1071.33,1011.34,1134.87,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,arima,1,471.14,112.65,1960.49,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,arima,2,737.46,151.76,3568.88,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,arima,3,582.49,85.91,3916.56,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,sarima,1,1034.53,948.66,1128.16,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,sarima,2,223.30,201.40,247.56,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,sarima,3,1127.25,1003.03,1266.83,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,xgboost_lags,1,1053.67,964.57,1118.67,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,xgboost_lags,2,223.86,203.07,230.15,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,FEMALE,xgboost_lags,3,1144.36,1068.25,1178.22,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,seasonal_naive,1,866.00,879.30,965.21,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,seasonal_naive,2,198.00,200.87,221.40,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,seasonal_naive,3,965.00,979.85,1066.44,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,ets,1,893.02,821.49,970.78,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,ets,2,186.01,169.66,203.93,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,ets,3,972.59,880.89,1073.82,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,arima,1,422.90,95.98,1851.89,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,arima,2,650.27,125.93,3340.50,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,arima,3,519.63,71.27,3749.77,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,sarima,1,925.91,807.80,1061.27,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,sarima,2,198.91,165.91,238.44,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,sarima,3,1037.13,835.70,1287.05,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,xgboost_lags,1,929.48,850.87,986.83,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,xgboost_lags,2,196.72,178.44,202.25,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:gender,MALE,xgboost_lags,3,1011.13,943.88,1041.06,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,seasonal_naive,1,1397.00,1434.51,1582.32,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,seasonal_naive,2,312.00,320.34,353.28,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,seasonal_naive,3,1546.00,1579.58,1711.48,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,ets,1,1394.21,1312.75,1480.72,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,ets,2,303.82,284.98,323.89,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,ets,3,1541.51,1441.27,1648.72,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,arima,1,668.56,157.82,2821.78,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,arima,2,1037.50,210.04,5109.29,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,arima,3,824.10,119.37,5655.01,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,sarima,1,1449.63,1340.05,1568.15,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,sarima,2,323.72,292.81,357.88,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,sarima,3,1605.22,1426.94,1805.75,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,xgboost_lags,1,1480.84,1374.29,1551.19,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,xgboost_lags,2,334.31,308.39,347.12,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,FACE_TO_FACE,xgboost_lags,3,1627.12,1518.42,1710.11,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,seasonal_naive,1,515.00,528.85,583.40,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,seasonal_naive,2,111.00,113.98,125.77,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,seasonal_naive,3,563.00,575.24,623.33,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,ets,1,512.00,459.33,570.69,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,ets,2,104.50,93.67,116.57,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,ets,3,527.38,473.13,587.83,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,arima,1,240.33,54.36,1050.92,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,arima,2,375.88,72.86,1922.14,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,arima,3,297.22,40.63,2135.57,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,sarima,1,554.40,472.14,650.97,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,sarima,2,114.64,93.76,140.12,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,sarima,3,603.75,478.74,761.33,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,xgboost_lags,1,539.37,500.51,565.02,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,xgboost_lags,2,110.28,101.68,114.53,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:delivery_mode,ONLINE,xgboost_lags,3,593.60,553.90,623.91,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,seasonal_naive,1,1184.00,1207.86,1304.33,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,seasonal_naive,2,260.00,264.61,286.29,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,seasonal_naive,3,1354.00,1391.40,1484.87,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,ets,1,1196.78,1127.36,1270.48,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,ets,2,257.61,241.43,274.87,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,ets,3,1339.87,1250.27,1435.89,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,arima,1,570.16,132.10,2449.93,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,arima,2,897.55,178.10,4507.01,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,arima,3,707.48,99.95,4971.02,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,sarima,1,1227.89,1128.93,1335.52,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,sarima,2,268.17,239.62,300.11,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,sarima,3,1409.34,1231.85,1612.38,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,xgboost_lags,1,1240.41,1182.10,1327.35,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,xgboost_lags,2,277.49,264.38,300.38,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,FULL_TIME,xgboost_lags,3,1418.81,1319.83,1462.03,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,seasonal_naive,1,728.00,742.68,802.03,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,seasonal_naive,2,163.00,165.90,179.52,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,seasonal_naive,3,755.00,775.87,828.02,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,ets,1,710.30,641.66,786.27,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,ets,2,149.74,135.19,165.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,ets,3,732.57,661.78,810.92,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,arima,1,338.29,79.49,1429.16,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,arima,2,515.41,103.97,2539.41,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,arima,3,413.34,59.46,2838.40,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,sarima,1,768.25,666.52,885.47,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,sarima,2,175.14,147.26,208.25,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,sarima,3,794.71,651.69,969.08,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,xgboost_lags,1,768.24,732.12,822.12,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,xgboost_lags,2,168.54,160.56,182.47,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,enrolment_headcount:study_load,PART_TIME,xgboost_lags,3,792.00,736.72,816.14,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,seasonal_naive,1,279.00,179.41,608.83,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,seasonal_naive,2,114.00,76.02,256.47,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,seasonal_naive,3,1041.00,728.40,2237.32,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,ets,1,302.08,266.51,342.39,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,ets,2,121.17,106.83,137.41,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,ets,3,1076.04,949.63,1219.26,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,arima,1,354.08,61.41,2019.19,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,arima,2,599.76,84.23,4233.76,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,arima,3,463.67,43.39,4863.22,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,sarima,1,297.48,254.44,347.77,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,sarima,2,129.38,110.49,151.46,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,sarima,3,1102.23,941.66,1290.15,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,xgboost_lags,1,299.56,187.14,685.55,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,xgboost_lags,2,118.04,81.90,268.02,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,ALL,xgboost_lags,3,1096.96,789.46,2495.97,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,seasonal_naive,1,7.00,4.15,16.42,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,seasonal_naive,2,6.00,3.69,14.67,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,seasonal_naive,3,17.00,11.60,37.67,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,ets,1,9.84,4.43,20.64,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,ets,2,4.59,1.80,10.15,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,ets,3,31.34,15.20,63.57,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,arima,1,10.38,1.12,60.18,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,arima,2,13.22,1.14,93.25,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,arima,3,11.76,0.31,122.98,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,sarima,1,7.80,2.77,19.52,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,sarima,2,6.19,2.06,15.90,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,sarima,3,23.36,9.29,56.70,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,xgboost_lags,1,7.76,4.48,19.01,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,xgboost_lags,2,5.43,3.48,13.54,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,MA-MED,xgboost_lags,3,17.42,12.26,40.88,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,seasonal_naive,1,13.00,8.02,29.49,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,seasonal_naive,2,13.00,8.38,30.34,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,seasonal_naive,3,112.00,78.10,241.74,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,ets,1,25.20,12.51,49.79,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,ets,2,9.82,4.57,20.04,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,ets,3,116.83,59.30,229.23,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,arima,1,37.84,4.03,298.86,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,arima,2,66.06,5.90,651.15,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,arima,3,49.72,2.27,786.98,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,sarima,1,14.35,6.88,28.88,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,sarima,2,13.60,6.47,27.57,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,sarima,3,99.85,50.32,197.17,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,xgboost_lags,1,21.40,13.02,50.16,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,xgboost_lags,2,21.65,14.77,50.18,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-ACF,xgboost_lags,3,86.71,62.15,198.47,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,seasonal_naive,1,29.00,18.33,64.34,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,seasonal_naive,2,31.00,20.43,70.64,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,seasonal_naive,3,45.00,31.20,97.81,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,ets,1,29.53,14.44,59.36,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,ets,2,7.52,3.31,15.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,ets,3,92.61,46.35,184.05,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,arima,1,37.27,3.74,308.21,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,arima,2,41.01,3.09,430.54,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,arima,3,39.07,1.42,662.90,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,sarima,1,31.26,12.42,76.53,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,sarima,2,8.04,2.76,20.72,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,sarima,3,97.50,39.98,235.74,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,xgboost_lags,1,25.81,15.78,60.24,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,xgboost_lags,2,28.86,19.79,66.48,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_applications,UG-BBA,xgboost_lags,3,53.58,38.30,123.13,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,seasonal_naive,1,180.00,159.10,218.13,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,seasonal_naive,2,77.00,67.85,94.02,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,seasonal_naive,3,628.00,551.25,770.61,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,ets,1,193.55,166.02,225.63,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,ets,2,78.29,67.07,91.37,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,ets,3,674.66,579.02,786.06,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,arima,1,226.53,39.84,1266.68,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,arima,2,372.39,53.18,2572.46,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,arima,3,292.34,27.80,2986.68,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,sarima,1,184.95,152.62,224.07,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,sarima,2,82.24,67.25,100.53,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,sarima,3,664.30,540.51,816.40,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,xgboost_lags,1,174.91,150.98,234.63,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,xgboost_lags,2,92.95,79.37,121.05,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_offers,ALL,xgboost_lags,3,610.78,540.76,719.25,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,seasonal_naive,1,113.00,103.35,137.76,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,seasonal_naive,2,57.00,51.94,70.08,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,seasonal_naive,3,402.00,366.50,493.25,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,ets,1,122.09,105.24,141.61,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,ets,2,57.24,49.27,66.48,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,ets,3,417.95,360.61,484.39,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,arima,1,156.91,29.43,818.39,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,arima,2,247.35,37.92,1583.73,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,arima,3,198.54,20.51,1849.68,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,sarima,1,120.05,101.02,142.63,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,sarima,2,59.33,49.57,70.97,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,sarima,3,420.00,350.04,503.91,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,xgboost_lags,1,122.48,99.67,148.58,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,xgboost_lags,2,58.07,46.14,67.76,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_acceptances,ALL,xgboost_lags,3,407.68,332.98,484.63,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,seasonal_naive,1,113.00,103.35,137.76,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,seasonal_naive,2,57.00,51.94,70.08,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,seasonal_naive,3,402.00,366.50,493.25,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,ets,1,122.09,105.24,141.61,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,ets,2,57.24,49.27,66.48,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,ets,3,417.95,360.61,484.39,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,arima,1,156.91,29.43,818.39,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,arima,2,247.35,37.92,1583.73,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,arima,3,198.54,20.51,1849.68,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,sarima,1,120.05,101.02,142.63,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,sarima,2,59.33,49.57,70.97,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,sarima,3,420.00,350.04,503.91,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,xgboost_lags,1,122.48,99.67,148.58,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,xgboost_lags,2,58.07,46.14,67.76,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,admissions_new_enrolments,ALL,xgboost_lags,3,407.68,332.98,484.63,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,seasonal_naive,1,80.00,62.09,111.50,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,seasonal_naive,2,22.00,16.53,31.36,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,seasonal_naive,3,89.00,69.18,122.02,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,ets,1,74.39,58.34,94.78,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,ets,2,20.79,16.15,26.69,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,ets,3,95.25,74.76,121.28,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,arima,1,45.77,11.42,175.06,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,arima,2,63.03,13.37,284.31,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,arima,3,54.07,8.15,330.52,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,sarima,1,70.95,55.60,90.46,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,sarima,2,19.55,13.97,27.20,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,sarima,3,79.84,54.41,116.94,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,xgboost_lags,1,76.60,57.96,99.18,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,xgboost_lags,2,18.57,13.64,25.00,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-CS,xgboost_lags,3,88.74,63.30,112.07,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,seasonal_naive,1,69.00,53.52,96.22,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,seasonal_naive,2,24.00,18.06,34.18,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,seasonal_naive,3,107.00,83.22,146.62,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,ets,1,82.98,67.12,102.52,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,ets,2,25.51,19.99,32.47,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,ets,3,105.24,81.33,136.11,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,arima,1,48.51,14.04,162.00,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,arima,2,74.03,19.14,278.47,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,arima,3,59.12,11.25,294.01,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,sarima,1,87.43,71.88,106.31,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,sarima,2,27.83,21.70,35.63,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,sarima,3,119.44,90.24,157.99,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,xgboost_lags,1,81.24,61.48,105.17,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,xgboost_lags,2,21.65,15.95,29.09,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-DBA,xgboost_lags,3,120.61,86.14,152.24,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,seasonal_naive,1,47.00,36.39,65.67,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,seasonal_naive,2,16.00,11.96,22.92,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,seasonal_naive,3,55.00,42.67,75.54,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,ets,1,51.79,37.94,70.56,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,ets,2,17.13,12.37,23.57,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,ets,3,59.74,43.81,81.35,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,arima,1,28.72,6.37,118.81,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,arima,2,40.62,7.93,193.05,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,arima,3,33.80,4.41,222.95,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,sarima,1,43.17,28.91,64.24,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,sarima,2,14.89,9.21,23.72,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,sarima,3,49.84,30.19,81.88,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,xgboost_lags,1,48.36,36.50,62.72,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,xgboost_lags,2,14.15,10.34,19.13,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-EDU,xgboost_lags,3,55.48,39.47,70.17,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,seasonal_naive,1,35.00,27.04,49.00,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,seasonal_naive,2,9.00,6.62,13.07,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,seasonal_naive,3,53.00,41.11,72.81,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,ets,1,39.26,29.43,52.28,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,ets,2,10.60,7.47,14.89,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,ets,3,47.04,33.02,66.85,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,arima,1,20.78,5.25,74.82,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,arima,2,34.51,7.99,139.32,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,arima,3,26.29,4.17,143.02,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,sarima,1,43.55,31.25,60.54,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,sarima,2,12.27,7.76,19.09,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,sarima,3,55.13,33.39,90.62,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,xgboost_lags,1,42.21,31.83,54.78,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,xgboost_lags,2,11.47,8.33,15.56,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,DR-HS,xgboost_lags,3,55.45,39.45,70.13,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,seasonal_naive,1,68.00,52.74,94.83,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,seasonal_naive,2,14.00,10.43,20.11,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,seasonal_naive,3,69.00,53.58,94.68,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,ets,1,62.66,49.29,79.60,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,ets,2,13.41,10.38,17.24,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,ets,3,67.70,53.27,85.98,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,arima,1,30.67,6.62,130.67,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,arima,2,46.64,8.78,231.16,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,arima,3,37.61,4.71,259.92,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,sarima,1,71.95,53.45,96.73,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,sarima,2,15.93,11.29,22.32,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,sarima,3,81.00,57.04,114.86,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,xgboost_lags,1,66.47,50.26,86.10,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,xgboost_lags,2,13.06,9.52,17.67,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-CP,xgboost_lags,3,69.30,49.37,87.58,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,seasonal_naive,1,119.00,92.47,165.67,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,seasonal_naive,2,32.00,24.15,45.44,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,seasonal_naive,3,152.00,118.31,208.13,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,ets,1,134.22,98.75,182.31,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,ets,2,26.17,18.14,37.55,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,ets,3,154.53,104.24,228.86,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,arima,1,68.80,13.50,334.90,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,arima,2,103.29,17.15,598.28,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,arima,3,83.92,9.31,698.53,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,sarima,1,141.63,96.28,208.12,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,sarima,2,32.01,19.40,52.41,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,sarima,3,176.05,99.84,309.85,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,xgboost_lags,1,141.25,107.08,182.64,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,xgboost_lags,2,29.15,21.56,39.04,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-DS,xgboost_lags,3,169.67,121.30,214.05,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,seasonal_naive,1,42.00,32.49,58.72,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,seasonal_naive,2,7.00,5.10,10.26,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,seasonal_naive,3,59.00,45.79,81.01,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,ets,1,39.75,31.00,50.90,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,ets,2,6.72,5.05,8.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,ets,3,57.29,44.66,73.42,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,arima,1,19.30,4.07,80.30,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,arima,2,35.36,6.88,166.70,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,arima,3,25.57,3.18,168.07,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,sarima,1,46.44,36.39,59.20,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,sarima,2,5.05,3.74,6.70,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,sarima,3,54.28,42.21,69.72,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,xgboost_lags,1,46.16,34.83,59.88,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,xgboost_lags,2,10.35,7.49,14.08,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-FIN,xgboost_lags,3,60.47,43.05,76.45,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,seasonal_naive,1,151.00,117.39,210.11,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,seasonal_naive,2,28.00,21.11,39.81,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,seasonal_naive,3,153.00,119.09,209.49,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,ets,1,141.29,103.11,193.45,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,ets,2,24.43,17.61,33.75,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,ets,3,152.25,111.13,208.43,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,arima,1,62.70,11.23,330.92,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,arima,2,100.59,15.38,628.99,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,arima,3,78.38,7.74,719.58,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,sarima,1,161.59,105.79,246.54,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,sarima,2,29.50,18.24,47.34,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,sarima,3,191.45,116.00,315.54,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,xgboost_lags,1,155.66,118.02,201.23,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,xgboost_lags,2,23.86,17.60,32.03,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MBA,xgboost_lags,3,163.03,116.54,205.70,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,seasonal_naive,1,83.00,64.43,115.67,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,seasonal_naive,2,12.00,8.91,17.29,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,seasonal_naive,3,90.00,69.96,123.38,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,ets,1,88.30,66.90,116.44,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,ets,2,18.25,13.63,24.31,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,ets,3,102.62,77.79,135.28,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,arima,1,30.98,6.11,142.88,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,arima,2,55.10,9.70,293.18,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,arima,3,40.47,4.58,307.20,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,sarima,1,78.24,53.61,113.98,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,sarima,2,15.06,9.59,23.36,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,sarima,3,97.92,61.64,155.22,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,xgboost_lags,1,78.26,59.22,101.32,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,xgboost_lags,2,13.91,10.16,18.81,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MED,xgboost_lags,3,88.04,62.80,111.20,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,seasonal_naive,1,55.00,42.62,76.78,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,seasonal_naive,2,19.00,14.25,27.14,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,seasonal_naive,3,72.00,55.92,98.78,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,ets,1,83.36,63.87,108.72,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,ets,2,15.18,11.44,20.05,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,ets,3,91.04,69.77,118.70,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,arima,1,36.74,6.68,184.46,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,arima,2,51.82,7.97,310.11,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,arima,3,43.51,4.25,376.48,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,sarima,1,71.61,49.59,103.21,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,sarima,2,16.76,11.21,24.83,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,sarima,3,80.77,54.51,119.47,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,xgboost_lags,1,56.70,42.83,73.48,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,xgboost_lags,2,16.96,12.44,22.86,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-MPH,xgboost_lags,3,72.80,51.88,91.99,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,seasonal_naive,1,39.00,30.16,54.56,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,seasonal_naive,2,12.00,8.91,17.29,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,seasonal_naive,3,68.00,52.80,93.31,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,ets,1,47.78,33.76,67.47,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,ets,2,9.37,6.39,13.56,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,ets,3,57.54,40.71,81.17,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,arima,1,27.59,4.98,135.70,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,arima,2,44.52,7.07,255.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,arima,3,34.61,3.40,287.33,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,sarima,1,53.01,33.54,83.47,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,sarima,2,14.80,8.38,25.63,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,sarima,3,73.61,40.49,133.19,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,xgboost_lags,1,52.85,39.91,68.52,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,xgboost_lags,2,13.93,10.17,18.83,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-NUR,xgboost_lags,3,71.82,51.18,90.76,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,seasonal_naive,1,72.00,55.86,100.39,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,seasonal_naive,2,20.00,15.01,28.55,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,seasonal_naive,3,78.00,60.60,106.98,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,ets,1,72.89,49.53,107.04,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,ets,2,14.49,9.28,22.33,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,ets,3,86.29,55.38,134.16,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,arima,1,40.32,7.61,197.20,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,arima,2,55.73,8.75,329.00,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,arima,3,47.58,4.85,402.70,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,sarima,1,84.46,52.57,135.34,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,sarima,2,15.97,8.71,28.66,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,sarima,3,97.38,51.07,184.88,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,xgboost_lags,1,69.39,52.48,89.87,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,xgboost_lags,2,16.56,12.14,22.33,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,MA-SE,xgboost_lags,3,78.09,55.68,98.66,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,seasonal_naive,1,585.00,455.43,812.89,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,seasonal_naive,2,43.00,32.54,60.92,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,seasonal_naive,3,706.00,550.30,965.36,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,ets,1,611.87,499.98,748.75,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,ets,2,45.86,37.28,56.36,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,ets,3,717.90,585.52,880.15,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,arima,1,164.72,9.70,2566.07,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,arima,2,352.62,15.97,7366.75,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,arima,3,237.00,5.08,9317.59,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,sarima,1,641.76,502.38,819.75,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,sarima,2,49.02,37.43,64.11,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,sarima,3,770.14,580.94,1020.84,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,xgboost_lags,1,644.78,489.63,832.66,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,xgboost_lags,2,38.82,28.79,51.89,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ACF,xgboost_lags,3,743.88,532.77,937.60,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,seasonal_naive,1,811.00,631.46,1126.78,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,seasonal_naive,2,58.00,43.97,82.02,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,seasonal_naive,3,861.00,671.17,1177.22,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,ets,1,776.94,636.61,948.14,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,ets,2,43.17,35.15,52.97,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,ets,3,875.30,714.28,1072.57,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,arima,1,211.84,13.55,3112.59,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,arima,2,440.45,21.55,8640.43,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,arima,3,300.74,7.31,10950.86,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,sarima,1,928.88,718.25,1201.21,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,sarima,2,54.19,39.70,73.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,sarima,3,1027.25,726.61,1452.09,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,xgboost_lags,1,835.00,634.15,1078.22,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,xgboost_lags,2,49.70,36.94,66.35,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-BBA,xgboost_lags,3,906.68,649.43,1142.74,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,seasonal_naive,1,361.00,280.96,501.78,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,seasonal_naive,2,18.00,13.48,25.74,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,seasonal_naive,3,426.00,331.96,582.64,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,ets,1,389.05,321.08,471.37,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,ets,2,25.31,20.73,30.87,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,ets,3,426.11,351.67,516.24,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,arima,1,79.87,5.57,994.92,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,arima,2,195.85,11.34,3138.44,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,arima,3,121.35,3.29,3488.45,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,sarima,1,362.29,266.01,493.30,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,sarima,2,23.53,16.13,34.14,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,sarima,3,422.08,281.46,632.69,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,xgboost_lags,1,392.01,297.59,506.35,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,xgboost_lags,2,23.19,17.10,31.13,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CE,xgboost_lags,3,459.02,328.64,578.66,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,seasonal_naive,1,474.00,368.97,658.72,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,seasonal_naive,2,31.00,23.39,44.03,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,seasonal_naive,3,543.00,423.20,742.56,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,ets,1,491.25,398.09,606.15,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,ets,2,27.93,22.34,34.84,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,ets,3,545.29,437.88,678.98,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,arima,1,121.52,8.74,1540.38,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,arima,2,267.43,15.29,4422.21,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,arima,3,176.67,5.01,5248.48,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,sarima,1,557.15,425.84,728.86,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,sarima,2,33.43,24.61,45.28,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,sarima,3,652.99,473.29,900.78,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,xgboost_lags,1,491.54,373.21,634.84,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,xgboost_lags,2,26.82,19.82,35.96,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-COM,xgboost_lags,3,574.69,411.53,724.41,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,seasonal_naive,1,812.00,632.24,1128.17,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,seasonal_naive,2,57.00,43.21,80.62,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,seasonal_naive,3,877.00,683.64,1199.08,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,ets,1,855.42,741.32,987.06,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,ets,2,46.73,40.37,54.07,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,ets,3,919.46,796.82,1060.94,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,arima,1,211.52,13.55,3102.99,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,arima,2,444.71,21.82,8703.28,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,arima,3,301.78,7.36,10960.18,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,sarima,1,889.30,711.48,1111.51,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,sarima,2,55.94,43.58,71.72,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,sarima,3,978.68,750.88,1275.51,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,xgboost_lags,1,835.21,634.30,1078.49,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,xgboost_lags,2,49.96,37.13,66.70,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-CS,xgboost_lags,3,931.18,666.98,1173.62,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,seasonal_naive,1,424.00,330.03,589.28,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,seasonal_naive,2,27.00,20.34,38.40,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,seasonal_naive,3,515.00,401.37,704.29,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,ets,1,441.26,331.44,587.36,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,ets,2,24.58,18.23,33.03,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,ets,3,496.14,372.69,660.37,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,arima,1,109.41,6.65,1593.13,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,arima,2,248.66,12.05,4774.10,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,arima,3,161.12,3.58,5743.02,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,sarima,1,495.62,398.95,615.67,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,sarima,2,29.58,21.78,40.05,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,sarima,3,603.77,422.74,862.13,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,xgboost_lags,1,482.72,366.50,623.45,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,xgboost_lags,2,25.71,18.99,34.48,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-EDU,xgboost_lags,3,552.14,395.37,696.00,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,seasonal_naive,1,298.00,231.89,414.28,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,seasonal_naive,2,15.00,11.20,21.51,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,seasonal_naive,3,303.00,236.05,414.52,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,ets,1,314.27,247.95,398.26,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,ets,2,17.99,13.99,23.05,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,ets,3,360.78,284.68,457.16,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,arima,1,63.94,3.60,915.34,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,arima,2,144.86,6.78,2733.93,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,arima,3,94.44,1.77,3291.91,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,sarima,1,292.05,213.45,399.46,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,sarima,2,16.67,11.66,23.66,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,sarima,3,310.27,217.74,441.94,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,xgboost_lags,1,307.69,233.52,397.49,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,xgboost_lags,2,18.62,13.68,25.07,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-ENG,xgboost_lags,3,325.48,232.95,410.39,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,seasonal_naive,1,527.00,410.25,732.33,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,seasonal_naive,2,42.00,31.78,59.51,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,seasonal_naive,3,555.00,432.56,758.96,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,ets,1,525.38,397.70,693.96,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,ets,2,31.37,23.52,41.74,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,ets,3,581.74,440.39,768.36,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,arima,1,146.19,9.60,2042.83,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,arima,2,292.48,14.84,5435.74,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,arima,3,204.10,5.05,6955.65,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,sarima,1,593.69,479.06,735.70,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,sarima,2,38.43,30.34,48.62,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,sarima,3,666.92,522.09,851.84,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,xgboost_lags,1,545.35,414.08,704.29,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,xgboost_lags,2,31.02,22.96,41.53,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-IT,xgboost_lags,3,590.78,423.06,744.68,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,seasonal_naive,1,794.00,618.22,1103.17,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,seasonal_naive,2,46.00,34.83,65.14,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,seasonal_naive,3,825.00,643.10,1128.01,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,ets,1,797.37,602.47,1055.22,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,ets,2,41.05,30.79,54.64,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,ets,3,879.53,664.57,1163.91,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,arima,1,183.82,10.84,2883.88,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,arima,2,403.00,18.22,8489.18,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,arima,3,267.53,5.79,10622.05,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,sarima,1,817.00,619.86,1076.72,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,sarima,2,46.89,34.23,64.08,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,sarima,3,861.64,616.00,1205.08,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,xgboost_lags,1,813.86,618.09,1050.93,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,xgboost_lags,2,45.74,33.97,61.09,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-NUR,xgboost_lags,3,875.97,627.42,1104.05,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,seasonal_naive,1,420.00,326.91,583.72,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,seasonal_naive,2,18.00,13.48,25.74,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,seasonal_naive,3,476.00,370.95,650.98,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,ets,1,458.87,341.60,616.28,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,ets,2,20.72,15.18,28.16,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,ets,3,490.61,365.24,658.89,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,arima,1,84.70,4.02,1461.87,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,arima,2,212.83,8.33,4899.42,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,arima,3,130.39,1.97,5803.16,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,sarima,1,457.97,328.79,637.76,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,sarima,2,21.55,14.69,31.40,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,sarima,3,539.33,364.13,798.62,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,xgboost_lags,1,442.85,336.21,571.98,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,xgboost_lags,2,27.50,20.33,36.86,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PH,xgboost_lags,3,503.72,360.67,634.99,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,seasonal_naive,1,596.00,464.00,828.17,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,seasonal_naive,2,38.00,28.73,53.88,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,seasonal_naive,3,633.00,493.38,865.58,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,ets,1,573.36,487.45,674.36,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,ets,2,30.19,25.52,35.67,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,ets,3,614.34,522.31,722.56,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,arima,1,146.05,8.86,2192.68,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,arima,2,315.25,14.85,6307.19,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,arima,3,210.72,4.69,7869.97,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,sarima,1,654.91,502.56,853.36,model-based,2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,sarima,2,36.67,26.64,50.35,model-based,2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,sarima,3,715.67,504.32,1015.42,model-based,2027FA,beyond the configured calendar (ends 2027SU)
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,xgboost_lags,1,619.38,470.32,799.86,empirical (backtest errors),2027SP,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,xgboost_lags,2,33.34,24.70,44.62,empirical (backtest errors),2027SU,
+SYNTHETIC DEMONSTRATION DATA — NOT REAL UNIVERSITY PREDICTIONS.,course_registrations,UG-PSY,xgboost_lags,3,670.96,480.51,845.72,empirical (backtest errors),2027FA,beyond the configured calendar (ends 2027SU)

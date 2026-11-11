@@ -1,0 +1,366 @@
+{
+  "label": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT REAL UNIVERSITY PREDICTIONS.",
+  "data_version": {
+    "synthetic_generation_run_id": "SYN-RUN-1.1.0-S20261110",
+    "synthetic_manifest_sha256": "ebe26585195b7d876597d85bcfa755eca7ee86f95a0e8975b85147aed93e2e7d",
+    "uci_raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "as_of_date": "2026-11-10"
+  },
+  "settings": {
+    "terms_per_year": 3,
+    "horizon_terms": 3,
+    "min_terms_since_first_nonzero": 18,
+    "min_recent_value": 5,
+    "first_backtest_origin_index": 18,
+    "interval": "80 %",
+    "prophet": "not used (see module docstring)"
+  },
+  "enrolment_terms": [
+    "2016FA",
+    "2017SP",
+    "2017SU",
+    "2017FA",
+    "2018SP",
+    "2018SU",
+    "2018FA",
+    "2019SP",
+    "2019SU",
+    "2019FA",
+    "2020SP",
+    "2020SU",
+    "2020FA",
+    "2021SP",
+    "2021SU",
+    "2021FA",
+    "2022SP",
+    "2022SU",
+    "2022FA",
+    "2023SP",
+    "2023SU",
+    "2023FA",
+    "2024SP",
+    "2024SU",
+    "2024FA",
+    "2025SP",
+    "2025SU",
+    "2025FA",
+    "2026SP",
+    "2026SU",
+    "2026FA"
+  ],
+  "n_term_observations": 31,
+  "fit_failures": {
+    "count": 0,
+    "file": "fit_failures.csv",
+    "by_method": {},
+    "by_series_method": {},
+    "distinct_errors": {},
+    "methods_excluded_from_selection": [],
+    "examples": []
+  },
+  "validation": {
+    "selected_forecasts": 213,
+    "selected_non_finite": 0,
+    "selected_negative": 0,
+    "selected_interval_non_finite": 0,
+    "all_methods_forecasts": 1065,
+    "all_methods_non_finite_by_method": {
+      "arima": 0,
+      "ets": 0,
+      "sarima": 0,
+      "seasonal_naive": 0,
+      "xgboost_lags": 0
+    },
+    "backtest_non_finite_by_method": {
+      "arima": 0,
+      "ets": 0,
+      "sarima": 0,
+      "seasonal_naive": 0,
+      "xgboost_lags": 0
+    },
+    "note": "non-finite values exist only for methods that failed to fit; such methods are never selected"
+  },
+  "eligibility_counts": {
+    "admissions_acceptances": {
+      "ELIGIBLE": 1,
+      "REQUIRES_MORE_DATA": 24
+    },
+    "admissions_applications": {
+      "ELIGIBLE": 4,
+      "REQUIRES_MORE_DATA": 21
+    },
+    "admissions_new_enrolments": {
+      "ELIGIBLE": 1,
+      "REQUIRES_MORE_DATA": 24
+    },
+    "admissions_offers": {
+      "ELIGIBLE": 1,
+      "REQUIRES_MORE_DATA": 24
+    },
+    "course_registrations": {
+      "ELIGIBLE": 23,
+      "REQUIRES_MORE_DATA": 1
+    },
+    "enrolment_headcount:TOTAL": {
+      "ELIGIBLE": 1,
+      "REQUIRES_MORE_DATA": 0
+    },
+    "enrolment_headcount:delivery_mode": {
+      "ELIGIBLE": 2,
+      "REQUIRES_MORE_DATA": 0
+    },
+    "enrolment_headcount:gender": {
+      "ELIGIBLE": 2,
+      "REQUIRES_MORE_DATA": 2
+    },
+    "enrolment_headcount:level": {
+      "ELIGIBLE": 3,
+      "REQUIRES_MORE_DATA": 0
+    },
+    "enrolment_headcount:nationality_iso3": {
+      "ELIGIBLE": 3,
+      "REQUIRES_MORE_DATA": 12
+    },
+    "enrolment_headcount:programme_id": {
+      "ELIGIBLE": 23,
+      "REQUIRES_MORE_DATA": 1
+    },
+    "enrolment_headcount:school_id": {
+      "ELIGIBLE": 5,
+      "REQUIRES_MORE_DATA": 0
+    },
+    "enrolment_headcount:study_load": {
+      "ELIGIBLE": 2,
+      "REQUIRES_MORE_DATA": 0
+    }
+  },
+  "best_method_by_series": [
+    {
+      "series": "admissions_acceptances",
+      "best_method": "seasonal_naive",
+      "best_wape": 0.08427672955974842,
+      "seasonal_naive_wape": 0.08427672955974842,
+      "improvement_vs_seasonal_naive_pct_points": 0.0
+    },
+    {
+      "series": "admissions_applications",
+      "best_method": "ets",
+      "best_wape": 0.12889717865363118,
+      "seasonal_naive_wape": 0.13129496402877697,
+      "improvement_vs_seasonal_naive_pct_points": 0.2397785375145789
+    },
+    {
+      "series": "admissions_new_enrolments",
+      "best_method": "seasonal_naive",
+      "best_wape": 0.08427672955974842,
+      "seasonal_naive_wape": 0.08427672955974842,
+      "improvement_vs_seasonal_naive_pct_points": 0.0
+    },
+    {
+      "series": "admissions_offers",
+      "best_method": "ets",
+      "best_wape": 0.0968288763669844,
+      "seasonal_naive_wape": 0.10186372152647667,
+      "improvement_vs_seasonal_naive_pct_points": 0.5034845159492276
+    },
+    {
+      "series": "course_registrations",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.09398344783692836,
+      "seasonal_naive_wape": 0.09781734057533696,
+      "improvement_vs_seasonal_naive_pct_points": 0.38338927384086036
+    },
+    {
+      "series": "enrolment_headcount:TOTAL",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.0218230395205904,
+      "seasonal_naive_wape": 0.04863406994953889,
+      "improvement_vs_seasonal_naive_pct_points": 2.681103042894849
+    },
+    {
+      "series": "enrolment_headcount:delivery_mode",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.029810829637972002,
+      "seasonal_naive_wape": 0.050330607273360015,
+      "improvement_vs_seasonal_naive_pct_points": 2.0519777635388015
+    },
+    {
+      "series": "enrolment_headcount:gender",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.03760968777946609,
+      "seasonal_naive_wape": 0.05021616228799468,
+      "improvement_vs_seasonal_naive_pct_points": 1.2606474508528587
+    },
+    {
+      "series": "enrolment_headcount:level",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.04535212149702368,
+      "seasonal_naive_wape": 0.06294588480946581,
+      "improvement_vs_seasonal_naive_pct_points": 1.7593763312442126
+    },
+    {
+      "series": "enrolment_headcount:nationality_iso3",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.035749623061265765,
+      "seasonal_naive_wape": 0.05284252212706062,
+      "improvement_vs_seasonal_naive_pct_points": 1.7092899065794858
+    },
+    {
+      "series": "enrolment_headcount:programme_id",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.09530049541600434,
+      "seasonal_naive_wape": 0.0966942873427156,
+      "improvement_vs_seasonal_naive_pct_points": 0.13937919267112547
+    },
+    {
+      "series": "enrolment_headcount:school_id",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.05183693770114894,
+      "seasonal_naive_wape": 0.056116234557160256,
+      "improvement_vs_seasonal_naive_pct_points": 0.4279296856011319
+    },
+    {
+      "series": "enrolment_headcount:study_load",
+      "best_method": "xgboost_lags",
+      "best_wape": 0.029945402713322064,
+      "seasonal_naive_wape": 0.04941708717591787,
+      "improvement_vs_seasonal_naive_pct_points": 1.9471684462595804
+    }
+  ],
+  "annual_observations": {
+    "academic_year_unduplicated_headcount": 10,
+    "term_headcount_fall_only": 11,
+    "term_headcount_spring_only": 10,
+    "term_headcount_summer_only": 10
+  },
+  "annual_summary": [
+    {
+      "series": "academic_year_unduplicated_headcount",
+      "method": "drift",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 136.62976190476195,
+      "wape": 0.06506953775676244
+    },
+    {
+      "series": "academic_year_unduplicated_headcount",
+      "method": "holt_damped",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 39.534095004534095,
+      "wape": 0.018828000954653694
+    },
+    {
+      "series": "academic_year_unduplicated_headcount",
+      "method": "naive",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 112.5,
+      "wape": 0.05357780688177164
+    },
+    {
+      "series": "term_headcount_fall_only",
+      "method": "drift",
+      "n_forecasts": 5.0,
+      "n_failed": 0.0,
+      "mae": 125.38992063492064,
+      "wape": 0.06493522560068392
+    },
+    {
+      "series": "term_headcount_fall_only",
+      "method": "holt_damped",
+      "n_forecasts": 5.0,
+      "n_failed": 0.0,
+      "mae": 83.94041286338688,
+      "wape": 0.04346991862422935
+    },
+    {
+      "series": "term_headcount_fall_only",
+      "method": "naive",
+      "n_forecasts": 5.0,
+      "n_failed": 0.0,
+      "mae": 98.8,
+      "wape": 0.05116519937856033
+    },
+    {
+      "series": "term_headcount_spring_only",
+      "method": "drift",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 115.54136904761901,
+      "wape": 0.06487443517553004
+    },
+    {
+      "series": "term_headcount_spring_only",
+      "method": "holt_damped",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 23.19208297569719,
+      "wape": 0.013021944399605384
+    },
+    {
+      "series": "term_headcount_spring_only",
+      "method": "naive",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 94.0,
+      "wape": 0.052779337450870295
+    },
+    {
+      "series": "term_headcount_summer_only",
+      "method": "drift",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 20.009523809523813,
+      "wape": 0.05283042589973284
+    },
+    {
+      "series": "term_headcount_summer_only",
+      "method": "holt_damped",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 23.87096355489996,
+      "wape": 0.06302564634957085
+    },
+    {
+      "series": "term_headcount_summer_only",
+      "method": "naive",
+      "n_forecasts": 4.0,
+      "n_failed": 0.0,
+      "mae": 24.0,
+      "wape": 0.06336633663366337
+    }
+  ],
+  "conversion_rate_summary": [
+    {
+      "rate": "acceptance_to_enrolment",
+      "n": 33.0,
+      "mae_pp_seasonal_naive": 0.0,
+      "mae_pp_mean_last3_same_season": 0.0,
+      "min_observed": 1.0,
+      "max_observed": 1.0
+    },
+    {
+      "rate": "application_to_offer",
+      "n": 33.0,
+      "mae_pp_seasonal_naive": 2.3208545454545457,
+      "mae_pp_mean_last3_same_season": 1.9592666666666696,
+      "min_observed": 0.603266,
+      "max_observed": 0.678899
+    },
+    {
+      "rate": "offer_to_acceptance",
+      "n": 33.0,
+      "mae_pp_seasonal_naive": 2.974066666666667,
+      "mae_pp_mean_last3_same_season": 2.6711060606060633,
+      "min_observed": 0.603147,
+      "max_observed": 0.74026
+    }
+  ],
+  "next_terms": [
+    "2027SP",
+    "2027SU",
+    "2027FA"
+  ],
+  "seconds": 206.2
+}

@@ -1,0 +1,644 @@
+zone,file,column,type,required,description,allowed_values
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,term_id,id,True,"Term code, e.g. 2025FA",
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,term_sequence,int,True,Strict chronological order,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,season,str,True,Season,FALL|SPRING|SUMMER
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,calendar_year,int,True,Calendar year of the term,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,academic_year,str,True,"Academic year, e.g. 2025/26 (Fall Y + Spring/Summer Y+1)",
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,start_date,date,True,First day,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,census_date,date,True,Census (enrolment snapshot) date,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,end_date,date,True,Last day,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,term_status,str,True,Relative to as-of date,COMPLETED|IN_PROGRESS|FUTURE
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,reporting_status,str,True,What may be reported for the term,COMPLETED_TERM|CENSUS_SNAPSHOT_ONLY|FUTURE_NOT_REPORTABLE
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,census_passed,bool,True,Census date on/before the as-of date,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,grades_final_available,bool,True,Final grades/outcomes exist (completed term only),
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,is_regular_term,bool,True,Fall or Spring,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,accepts_admissions,bool,True,New students may start,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,has_enrolment_data,bool,True,Term within the simulated enrolment period,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,in_completed_reporting,bool,True,Included in completed-term historical reporting,
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/academic_terms.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/academic_years.csv,academic_year,id,True,Academic year,
+SYNTHETIC,data/synthetic/reference/academic_years.csv,start_date,date,True,Start of its first term,
+SYNTHETIC,data/synthetic/reference/academic_years.csv,end_date,date,True,End of its last term,
+SYNTHETIC,data/synthetic/reference/academic_years.csv,terms,str,True,Terms in the year,
+SYNTHETIC,data/synthetic/reference/academic_years.csv,year_status,str,True,Relative to as-of date,COMPLETED|IN_PROGRESS|FUTURE
+SYNTHETIC,data/synthetic/reference/academic_years.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/academic_years.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/academic_years.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_years.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_years.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_years.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/academic_years.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/schools.csv,school_id,id,True,School key,
+SYNTHETIC,data/synthetic/reference/schools.csv,school_code,str,True,School code,
+SYNTHETIC,data/synthetic/reference/schools.csv,name,str,True,Placeholder school name,
+SYNTHETIC,data/synthetic/reference/schools.csv,display_name,str,True,Name with [synthetic placeholder] label,
+SYNTHETIC,data/synthetic/reference/schools.csv,is_placeholder,bool,True,True until verified,
+SYNTHETIC,data/synthetic/reference/schools.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/schools.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/schools.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/schools.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/schools.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/schools.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/schools.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/programmes.csv,programme_id,id,True,Programme key,
+SYNTHETIC,data/synthetic/reference/programmes.csv,programme_code,str,True,Programme code,
+SYNTHETIC,data/synthetic/reference/programmes.csv,name,str,True,Placeholder programme name,
+SYNTHETIC,data/synthetic/reference/programmes.csv,display_name,str,True,Name with [synthetic placeholder] label,
+SYNTHETIC,data/synthetic/reference/programmes.csv,is_placeholder,bool,True,True until verified,
+SYNTHETIC,data/synthetic/reference/programmes.csv,school_id,id,True,FK schools,
+SYNTHETIC,data/synthetic/reference/programmes.csv,level,str,True,Academic level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/reference/programmes.csv,delivery_modes_offered,str,True,Pipe-separated delivery modes,
+SYNTHETIC,data/synthetic/reference/programmes.csv,credits_required,int,True,Credits to graduate,
+SYNTHETIC,data/synthetic/reference/programmes.csv,normal_duration_years_override,float,False,Optional override,
+SYNTHETIC,data/synthetic/reference/programmes.csv,graduation_window_years_override,float,False,Optional override,
+SYNTHETIC,data/synthetic/reference/programmes.csv,intake_weight,float,True,Relative intake popularity (generator),
+SYNTHETIC,data/synthetic/reference/programmes.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/programmes.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/programmes.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/programmes.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/programmes.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/programmes.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/programmes.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/courses.csv,course_id,id,True,Course key,
+SYNTHETIC,data/synthetic/reference/courses.csv,programme_id,id,True,FK programmes,
+SYNTHETIC,data/synthetic/reference/courses.csv,course_code,str,True,Course code,
+SYNTHETIC,data/synthetic/reference/courses.csv,title,str,True,Generic placeholder title,
+SYNTHETIC,data/synthetic/reference/courses.csv,credits,int,True,Credits (0 = variable research credit),
+SYNTHETIC,data/synthetic/reference/courses.csv,year_level,int,True,Curriculum year (9 = research),
+SYNTHETIC,data/synthetic/reference/courses.csv,course_type,str,True,Type,COURSEWORK|RESEARCH
+SYNTHETIC,data/synthetic/reference/courses.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/courses.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/courses.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/courses.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/courses.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/courses.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/courses.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,grading_scheme_id,id,True,Scheme key,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,name,str,True,Scheme name,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,display_label,str,True,Label used on dashboards,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,scale_min,float,True,Minimum,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,scale_max,float,True,Maximum,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,letter_points,str,True,JSON letter -> grade points,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,non_gpa_grades,str,True,Grades excluded from GPA,
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/grading_schemes.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,rule_set_id,id,True,Rule set key,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,name,str,True,Name,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,version,str,True,Version,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,applies_to,str,True,Population,INSTITUTIONAL|UCI
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,is_official_policy,bool,True,Always False for placeholders,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,standing_rules,str,True,Academic standing rule text,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,withdrawal_rule_id,id,True,Withdrawal rule key,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,withdrawal_rule_status,str,True,Status of the withdrawal rule,SYNTHETIC_BUSINESS_RULE|VERIFIED_POLICY
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,withdrawal_rule,str,True,Withdrawal rule text,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,poor_performance_rule,str,True,Poor-performance flag rule,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,max_consecutive_missed_terms,int,True,Missed regular terms tolerated before withdrawal,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,summer_counts_as_expected_term,bool,True,Whether a missed Summer is a gap,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,summer_admission_enabled,bool,True,Summer admissions allowed,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,gpa_rule,str,True,GPA calculation rule,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,conferral_rule,str,True,Graduation date rule,
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/rule_sets.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,rule_set_id,id,True,FK rule_sets,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/reference/level_rules.csv,normal_duration_years,float,True,Normal programme length (placeholder),
+SYNTHETIC,data/synthetic/reference/level_rules.csv,graduation_window_years,int,True,"Graduation reporting window (UG 6, MA 4, DR 6)",
+SYNTHETIC,data/synthetic/reference/level_rules.csv,min_years_to_graduate,float,True,Earliest graduation after admission,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,credits_required,int,True,Default credits,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,pass_points,float,True,Minimum grade points earning credit,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,good_standing_min_gpa,float,True,Standing threshold,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,graduation_min_gpa,float,True,Minimum cumulative GPA to graduate,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,window_basis,str,True,Basis of the window,PROJECT_CONFIGURED_REPORTING_ASSUMPTION|VERIFIED_POLICY
+SYNTHETIC,data/synthetic/reference/level_rules.csv,note,str,True,Explanation,
+SYNTHETIC,data/synthetic/reference/level_rules.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/level_rules.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/level_rules.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/level_rules.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/level_rules.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/level_rules.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/level_rules.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,academic_year,id,True,FK academic_years,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,tuition_per_credit,float,True,Tuition per credit,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,registration_fee,float,True,Per term,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,technology_fee,float,True,Per term,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,online_fee_per_credit,float,True,Online surcharge per credit,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,currency_code,str,True,Placeholder currency,
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/fee_schedules.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/nationalities.csv,nationality_iso3,id,True,ISO 3166-1 alpha-3 (ZZZ = home country not configured),
+SYNTHETIC,data/synthetic/reference/nationalities.csv,label,str,True,Country label,
+SYNTHETIC,data/synthetic/reference/nationalities.csv,residency_status,str,True,Implied residency,DOMESTIC|INTERNATIONAL
+SYNTHETIC,data/synthetic/reference/nationalities.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/nationalities.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/nationalities.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/nationalities.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/nationalities.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/nationalities.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/nationalities.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,gender,id,True,Gender category,FEMALE|MALE|ANOTHER_GENDER|NOT_DISCLOSED
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/gender_categories.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,delivery_mode,id,True,Delivery mode,FACE_TO_FACE|ONLINE
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/delivery_modes.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,study_load,id,True,Attendance load,FULL_TIME|PART_TIME
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/attendance_loads.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,standing,id,True,Standing,GOOD|WARNING|PROBATION|DISMISSED|NOT_EVALUATED
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/academic_standing_codes.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,status_code,id,True,Status event,ADMITTED|STOPPED_OUT|RETURNED|WITHDRAWN|DISMISSED|CHANGED_PROGRAMME|GRADUATED
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/student_status_codes.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/roles.csv,role_code,id,True,Role,
+SYNTHETIC,data/synthetic/reference/roles.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/roles.csv,module_access,str,True,Modules,
+SYNTHETIC,data/synthetic/reference/roles.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/roles.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/roles.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/roles.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/roles.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/roles.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/roles.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/reference/servers.csv,server_id,id,True,Server,
+SYNTHETIC,data/synthetic/reference/servers.csv,description,str,True,Description,
+SYNTHETIC,data/synthetic/reference/servers.csv,system,str,True,System,
+SYNTHETIC,data/synthetic/reference/servers.csv,environment,str,True,Environment,
+SYNTHETIC,data/synthetic/reference/servers.csv,data_source,str,True,SYNTHETIC (placeholder) or EXTERNAL_REFERENCE (verified),SYNTHETIC|EXTERNAL_REFERENCE
+SYNTHETIC,data/synthetic/reference/servers.csv,verification_status,str,True,PLACEHOLDER or VERIFIED,PLACEHOLDER|VERIFIED
+SYNTHETIC,data/synthetic/reference/servers.csv,source_reference,str,False,Document/URL proving the value (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/servers.csv,verified_on,date,False,Verification date (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/servers.csv,verified_by,str,False,Who verified it (required when VERIFIED),
+SYNTHETIC,data/synthetic/reference/servers.csv,source_system,str,True,Always REFERENCE_PLACEHOLDER for generated reference rows,REFERENCE_PLACEHOLDER
+SYNTHETIC,data/synthetic/reference/servers.csv,generation_run_id,id,True,Generation run that produced the row,
+SYNTHETIC,data/synthetic/admissions/applicants.csv,applicant_id,id,True,Applicant key,
+SYNTHETIC,data/synthetic/admissions/applicants.csv,gender,str,True,Gender,FEMALE|MALE|ANOTHER_GENDER|NOT_DISCLOSED
+SYNTHETIC,data/synthetic/admissions/applicants.csv,nationality_iso3,id,True,FK nationalities,
+SYNTHETIC,data/synthetic/admissions/applicants.csv,residency_status,str,True,Residency,DOMESTIC|INTERNATIONAL
+SYNTHETIC,data/synthetic/admissions/applicants.csv,birth_year,int,True,Birth year only,
+SYNTHETIC,data/synthetic/admissions/applicants.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/admissions/applicants.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/admissions/applicants.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/admissions/applications.csv,application_id,id,True,Application key,
+SYNTHETIC,data/synthetic/admissions/applications.csv,applicant_id,id,True,FK applicants,
+SYNTHETIC,data/synthetic/admissions/applications.csv,student_id,id,False,FK students when the applicant enrolled,
+SYNTHETIC,data/synthetic/admissions/applications.csv,programme_id,id,True,FK programmes,
+SYNTHETIC,data/synthetic/admissions/applications.csv,school_id,id,True,FK schools,
+SYNTHETIC,data/synthetic/admissions/applications.csv,level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/admissions/applications.csv,entry_term_id,id,True,FK academic_terms,
+SYNTHETIC,data/synthetic/admissions/applications.csv,application_type,str,True,Type,NEW|NEXT_DEGREE|READMISSION
+SYNTHETIC,data/synthetic/admissions/applications.csv,submitted_date,date,True,Submitted,
+SYNTHETIC,data/synthetic/admissions/applications.csv,decision,str,True,Decision,ADMITTED|REJECTED|ADMITTED_DECLINED|WITHDRAWN_BY_APPLICANT|WAITLISTED_NOT_OFFERED|PENDING
+SYNTHETIC,data/synthetic/admissions/applications.csv,decision_date,date,False,Decided (empty when PENDING),
+SYNTHETIC,data/synthetic/admissions/applications.csv,admission_score,float,True,0-100 synthetic score,
+SYNTHETIC,data/synthetic/admissions/applications.csv,enrolled,bool,True,Became a term enrolment,
+SYNTHETIC,data/synthetic/admissions/applications.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/admissions/applications.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/admissions/applications.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/students.csv,student_id,id,True,Student key SYN-nnnnnn,
+SYNTHETIC,data/synthetic/registrar/students.csv,applicant_id,id,True,FK applicants,
+SYNTHETIC,data/synthetic/registrar/students.csv,gender,str,True,Gender,FEMALE|MALE|ANOTHER_GENDER|NOT_DISCLOSED
+SYNTHETIC,data/synthetic/registrar/students.csv,nationality_iso3,id,True,FK nationalities,
+SYNTHETIC,data/synthetic/registrar/students.csv,residency_status,str,True,Residency,DOMESTIC|INTERNATIONAL
+SYNTHETIC,data/synthetic/registrar/students.csv,birth_year,int,True,Birth year only,
+SYNTHETIC,data/synthetic/registrar/students.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/students.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/students.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,student_programme_id,id,True,Admission-to-programme key,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,programme_id,id,True,FK programmes,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,school_id,id,True,FK schools,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,entry_term_id,id,True,Original admission term,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,admission_date,date,True,Original admission date (= entry term start),
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,entry_type,str,True,How admitted,FIRST_ADMISSION|PROGRAMME_CHANGE|NEXT_DEGREE|READMISSION
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,previous_student_programme_id,id,False,Earlier admission for change/next degree/readmission,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,application_id,id,False,FK applications (empty for internal programme change),
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,credits_transferred_in,int,True,Credits carried in,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,scholarship_pct,int,True,Scholarship percentage,0|25|50|100
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,outcome,str,True,Outcome as of the as-of date,ACTIVE|GRADUATED|CHANGED_PROGRAMME|WITHDRAWN|DISMISSED
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,outcome_term_id,id,False,Outcome term (empty if ACTIVE),
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,outcome_date,date,False,Outcome date = end of outcome term,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,outcome_recorded_date,date,False,Date the outcome was recorded,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,withdrawal_type,str,False,FORMAL or UNOFFICIAL,FORMAL|UNOFFICIAL
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,exit_reason,str,False,Exit reason,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,rule_set_id,id,True,FK rule_sets,
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/student_programmes.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,term_enrolment_id,id,True,Term enrolment key,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,student_programme_id,id,True,FK student_programmes,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,programme_id,id,True,FK programmes,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,school_id,id,True,FK schools,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,term_id,id,True,FK academic_terms,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,academic_year,id,True,FK academic_years,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,term_sequence,int,True,Term order,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,study_term_number,int,True,nth enrolled term in this admission,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,delivery_mode,str,True,Delivery mode this term,FACE_TO_FACE|ONLINE
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,study_load,str,True,Attendance load this term,FULL_TIME|PART_TIME
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,credits_attempted,int,True,Credits registered,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,credits_earned,int,False,Credits passed (completed terms),
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,gpa_credits,int,False,Graded credits (completed terms),
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,term_gpa,float,False,Semester GPA from course grades,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,cumulative_gpa,float,False,Cumulative GPA of this admission,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,cumulative_credits_earned,int,False,Incl. transferred credits,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,passed_credit_ratio,float,False,Passed share of graded credits,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,poor_performance_flag,bool,False,Synthetic poor-performance rule,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,grades_final,bool,True,Term completed and graded,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,withdrew_during_term,bool,True,Withdrew after census,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,prior_gap_terms,int,True,Regular terms missed before this enrolment,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,grading_scheme_id,id,True,FK grading_schemes,
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/term_enrolments.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,course_enrolment_id,id,True,Course registration key,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,term_enrolment_id,id,True,FK term_enrolments,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,student_programme_id,id,True,FK student_programmes,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,term_id,id,True,FK academic_terms,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,course_id,id,True,FK courses,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,credits,int,True,Credits,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,delivery_mode,str,True,Delivery mode,FACE_TO_FACE|ONLINE
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,attempt_number,int,True,Attempt of this course,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,grade_letter,str,True,"Letter, W or IP",A|A-|B+|B|B-|C+|C|C-|D+|D|F|W|IP
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,grade_points,float,False,Grade points (graded only),
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,grade_status,str,True,Status,FINAL|WITHDRAWN|IN_PROGRESS
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,counts_in_gpa,bool,True,Included in GPA,
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,credits_earned,int,False,Credits earned (completed terms),
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/course_enrolments.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,standing_id,id,True,Standing key,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,term_enrolment_id,id,True,FK term_enrolments,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,student_programme_id,id,True,FK student_programmes,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,term_id,id,True,FK academic_terms,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,rule_set_id,id,True,FK rule_sets,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,standing,str,True,Standing after the term (synthetic rule),GOOD|WARNING|PROBATION|DISMISSED|NOT_EVALUATED
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,reason_code,str,True,Rule branch,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,cumulative_gpa,float,False,CGPA used,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,term_gpa,float,False,Term GPA used,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,min_gpa,float,True,Threshold used,
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/academic_standing.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,cohort_id,id,True,Cohort key,
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,cohort_type,str,True,Type,INSTITUTIONAL|LEVEL_ENTRY
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,entry_term_id,id,True,FK academic_terms,
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,level,str,False,Level for LEVEL_ENTRY,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,size_at_census,int,True,Frozen size,
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,frozen_at,date,True,Census date,
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/cohorts.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,cohort_id,id,True,FK cohorts,
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,student_programme_id,id,True,Entry admission,
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,level_at_entry,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,programme_at_entry,id,True,FK programmes,
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,delivery_mode_at_entry,str,True,Mode,FACE_TO_FACE|ONLINE
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,study_load_at_entry,str,True,Load,FULL_TIME|PART_TIME
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/cohort_members.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,status_event_id,id,True,Event key,
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,student_programme_id,id,True,FK student_programmes,
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,status_code,str,True,Event,ADMITTED|STOPPED_OUT|RETURNED|WITHDRAWN|DISMISSED|CHANGED_PROGRAMME|GRADUATED
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,term_id,id,True,Term of the event,
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,event_date,date,True,Event date,
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,status_after,str,True,Status after the event,ACTIVE|ON_GAP|WITHDRAWN|DISMISSED|CHANGED_PROGRAMME|GRADUATED
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,rule_reference,str,False,Rule or note,
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/student_status_history.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,retention_record_id,id,True,Record key,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,comparison_id,id,True,Comparison,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,comparison_type,str,True,Type,FIRST_YEAR_COHORT|FALL_TO_FALL|SPRING_TO_SPRING|SUMMER_TO_SUMMER
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_term_id,id,True,Base term,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_census_date,date,True,Base census,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,compare_term_id,id,False,Comparison term,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,compare_census_date,date,False,Comparison census,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_programme_id,id,True,Programme in base term / at entry,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_school_id,id,True,School,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_delivery_mode,str,True,Mode,FACE_TO_FACE|ONLINE
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,base_study_load,str,True,Load,FULL_TIME|PART_TIME
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,is_final,bool,True,Comparison census passed,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,reporting_label,str,True,FINAL / FINAL_CENSUS_SNAPSHOT / INCOMPLETE,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,status_at_compare,str,False,Status at comparison census,ENROLLED|COMPLETED|ON_GAP|LEFT
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,compare_programme_id,id,False,Programme in comparison term,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,compare_level,str,False,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,outcome_category,str,False,Outcome,RETAINED_SAME_PROGRAMME|RETAINED_PROGRAMME_TRANSFER|RETAINED_NEXT_LEVEL|COMPLETED_NOT_ENROLLED|CONTINUING_SKIPPED_OPTIONAL_SUMMER|STOPPED_OUT|LEFT
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,institutionally_retained,bool,False,Enrolled in any programme,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,programme_retained,bool,False,Enrolled in same programme,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,completed_before_compare,bool,False,"Graduated, not enrolled (excluded from retained)",
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,next_regular_term_id,id,False,Summer comparisons: next regular (Fall) term after the comparison summer,
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,continued_next_regular_term,bool,False,"Summer comparisons: enrolled at that Fall census (optional Summer skipped, not a stop-out)",
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/retention_cohort_members.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduation_record_id,id,True,Record key,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,cohort_id,id,True,FK cohorts (LEVEL_ENTRY),
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,level,str,True,Level,UNDERGRADUATE|MASTERS|DOCTORATE
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,entry_term_id,id,True,Original admission term,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,admission_date,date,True,Original admission date,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,programme_at_entry,id,True,FK programmes,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,school_at_entry,id,True,FK schools,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,window_years,int,True,Reporting window,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,window_end_date,date,True,Window end,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,window_basis,str,True,Basis,PROJECT_CONFIGURED_REPORTING_ASSUMPTION|VERIFIED_POLICY
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,cohort_mature,bool,True,Full observation window completed,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduation_status,str,True,Status,GRADUATED_WITHIN_WINDOW|GRADUATED_AFTER_WINDOW|ENROLLED_NOT_GRADUATED|STOPPED_OUT_NOT_GRADUATED|LEFT_NOT_GRADUATED
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduated_programme_id,id,False,Programme graduated from,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduation_term_id,id,False,Graduation term,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduation_date,date,False,Graduation date,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,time_to_degree_years,float,False,Calendar years admission -> graduation,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,enrolled_terms_to_degree,int,False,Enrolled terms,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,gap_terms_to_degree,int,False,Missed regular terms,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduated_within_window,bool,False,Known when mature or graduated,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,graduation_eligible_by_rules,bool,True,"Credits, minimum years and GPA met at latest completed term",
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,counts_in_final_rate,bool,True,Included in final graduation rates,
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/registrar/graduation_records.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/finance/charges.csv,charge_id,id,True,Charge key,
+SYNTHETIC,data/synthetic/finance/charges.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/finance/charges.csv,student_programme_id,id,True,FK student_programmes,
+SYNTHETIC,data/synthetic/finance/charges.csv,term_id,id,True,FK academic_terms,
+SYNTHETIC,data/synthetic/finance/charges.csv,charge_type,str,True,Type,TUITION|REGISTRATION_FEE|TECHNOLOGY_FEE|ONLINE_LEARNING_FEE|SCHOLARSHIP
+SYNTHETIC,data/synthetic/finance/charges.csv,amount,float,True,Amount (scholarship negative),
+SYNTHETIC,data/synthetic/finance/charges.csv,charge_date,date,True,Posted,
+SYNTHETIC,data/synthetic/finance/charges.csv,due_date,date,True,Due,
+SYNTHETIC,data/synthetic/finance/charges.csv,currency_code,str,True,Placeholder currency,
+SYNTHETIC,data/synthetic/finance/charges.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/finance/charges.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/finance/charges.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/finance/payments.csv,payment_id,id,True,Payment key,
+SYNTHETIC,data/synthetic/finance/payments.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/finance/payments.csv,term_id,id,False,Term paid for (empty for hold resolution),
+SYNTHETIC,data/synthetic/finance/payments.csv,payment_date,date,True,Date,
+SYNTHETIC,data/synthetic/finance/payments.csv,amount,float,True,Positive amount,
+SYNTHETIC,data/synthetic/finance/payments.csv,method,str,True,Method,CARD|BANK_TRANSFER|SPONSOR
+SYNTHETIC,data/synthetic/finance/payments.csv,payment_type,str,True,Type,SCHEDULED|HOLD_RESOLUTION
+SYNTHETIC,data/synthetic/finance/payments.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/finance/payments.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/finance/payments.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,hold_id,id,True,Hold key,
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,hold_type,str,True,Type,PAST_DUE_BALANCE
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,placed_date,date,True,Placed,
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,released_date,date,False,Released (empty if active),
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,past_due_at_placement,float,True,Past-due amount,
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,status_as_of,str,True,Status,ACTIVE|RELEASED
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,blocks_registration,bool,True,Blocks registration,
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/finance/financial_holds.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,block_id,id,True,Block key,
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,student_programme_id,id,True,FK student_programmes,
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,term_id,id,True,Blocked term,
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,registration_date,date,True,Registration attempt,
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,reason,str,True,Reason,ACTIVE_FINANCIAL_HOLD
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/finance/registration_blocks.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/finance/account_balances.csv,student_id,id,True,FK students,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,as_of_date,date,True,Snapshot date,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,total_charged,float,True,Sum of charges,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,total_paid,float,True,Sum of payments,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,outstanding_balance,float,True,Charged - paid,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,past_due_balance,float,True,Overdue amount,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,has_active_hold,bool,True,Active hold,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,currency_code,str,True,Placeholder currency,
+SYNTHETIC,data/synthetic/finance/account_balances.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/finance/account_balances.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/finance/account_balances.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/it/user_accounts.csv,account_id,id,True,Account key,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,username,str,True,Username,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,account_type,str,True,Type,STUDENT|STAFF
+SYNTHETIC,data/synthetic/it/user_accounts.csv,person_id,id,True,student_id or staff_id,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,role_code,id,True,FK roles,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,department,str,False,Staff department,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,created_date,date,True,Created,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,status_as_of,str,True,Status,ACTIVE|DISABLED
+SYNTHETIC,data/synthetic/it/user_accounts.csv,mfa_enabled,bool,True,MFA,
+SYNTHETIC,data/synthetic/it/user_accounts.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/it/user_accounts.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/it/user_accounts.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/it/account_status_events.csv,event_id,id,True,Event key,
+SYNTHETIC,data/synthetic/it/account_status_events.csv,account_id,id,True,FK user_accounts,
+SYNTHETIC,data/synthetic/it/account_status_events.csv,event,str,True,Event,ACTIVATED|DISABLED|REACTIVATED
+SYNTHETIC,data/synthetic/it/account_status_events.csv,event_date,date,True,Date,
+SYNTHETIC,data/synthetic/it/account_status_events.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/it/account_status_events.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/it/account_status_events.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/it/staff.csv,staff_id,id,True,Staff key,
+SYNTHETIC,data/synthetic/it/staff.csv,department,str,True,Department,
+SYNTHETIC,data/synthetic/it/staff.csv,role_code,id,True,FK roles,
+SYNTHETIC,data/synthetic/it/staff.csv,hire_date,date,True,Hired,
+SYNTHETIC,data/synthetic/it/staff.csv,end_date,date,False,Left,
+SYNTHETIC,data/synthetic/it/staff.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/it/staff.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/it/staff.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/it/login_events.csv,login_id,id,True,Login key,
+SYNTHETIC,data/synthetic/it/login_events.csv,account_id,id,True,FK user_accounts,
+SYNTHETIC,data/synthetic/it/login_events.csv,event_time,datetime,True,Timestamp,
+SYNTHETIC,data/synthetic/it/login_events.csv,system,str,True,Target system,
+SYNTHETIC,data/synthetic/it/login_events.csv,server_id,id,True,FK servers,
+SYNTHETIC,data/synthetic/it/login_events.csv,auth_server_id,id,True,Authentication server,
+SYNTHETIC,data/synthetic/it/login_events.csv,success,bool,True,Succeeded,
+SYNTHETIC,data/synthetic/it/login_events.csv,failure_reason,str,False,Reason,ACCOUNT_DISABLED|SERVICE_UNAVAILABLE|WRONG_PASSWORD
+SYNTHETIC,data/synthetic/it/login_events.csv,channel,str,True,Channel,WEB|MOBILE
+SYNTHETIC,data/synthetic/it/login_events.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/it/login_events.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/it/login_events.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,server_id,id,True,FK servers,
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,status_date,date,True,Day,
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,status,str,True,Status,OPERATIONAL|DEGRADED|OUTAGE
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,uptime_pct,float,True,Uptime %,
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,downtime_minutes,float,True,Downtime,
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,cpu_avg_pct,float,True,CPU,
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,memory_avg_pct,float,True,Memory,
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/it/server_status_daily.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/it/incidents.csv,incident_id,id,True,Incident key,
+SYNTHETIC,data/synthetic/it/incidents.csv,server_id,id,True,FK servers,
+SYNTHETIC,data/synthetic/it/incidents.csv,severity,str,True,Severity,MINOR|MAJOR
+SYNTHETIC,data/synthetic/it/incidents.csv,started_at,datetime,True,Start,
+SYNTHETIC,data/synthetic/it/incidents.csv,resolved_at,datetime,True,End,
+SYNTHETIC,data/synthetic/it/incidents.csv,downtime_minutes,float,True,Minutes,
+SYNTHETIC,data/synthetic/it/incidents.csv,description,str,True,Text,
+SYNTHETIC,data/synthetic/it/incidents.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/it/incidents.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/it/incidents.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,run_id,id,True,Run key,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,extracted_system,str,True,Source system extracted,ADMISSIONS|REGISTRAR|FINANCE|IT
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,run_date,date,True,Night of run,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,started_at,datetime,True,Start,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,status,str,True,Status,SUCCESS|FAILED
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,extract_from_date,date,True,From,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,extract_to_date,date,True,To,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,rows_extracted,int,True,Changed rows,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,failure_reason,str,False,Reason,
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+SYNTHETIC,data/synthetic/data_warehouse/sync_runs.csv,generation_run_id,id,True,Generation run that produced the row (data_warehouse/generation_runs),
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,generation_run_id,id,True,Run key,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,generator_version,str,True,Version,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,random_seed,int,True,Seed,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,config_sha256,str,True,Config fingerprint,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,as_of_date,date,True,As-of date,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,first_term,id,True,First term,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,last_admission_term,id,True,Last admission term,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,target_students,int,True,Students,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,label,str,True,Synthetic label,
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,data_source,str,True,Always SYNTHETIC,SYNTHETIC
+SYNTHETIC,data/synthetic/data_warehouse/generation_runs.csv,source_system,str,True,Departmental source system label,REFERENCE_PLACEHOLDER|ADMISSIONS|REGISTRAR|FINANCE|IT|DATA_WAREHOUSE
+UCI,data/processed/uci/uci_students.csv,uci_student_id,id,True,UCI-nnnnnn (row number in the original file),
+UCI,data/processed/uci/uci_students.csv,uci_row_number,int,True,Row in data/raw/data.csv,
+UCI,data/processed/uci/uci_students.csv,data_source,str,True,Always UCI,UCI
+UCI,data/processed/uci/uci_students.csv,gender,str,True,UCI Gender 1/0,MALE|FEMALE
+UCI,data/processed/uci/uci_students.csv,nationality_code,int,True,UCI Nacionality code,
+UCI,data/processed/uci/uci_students.csv,nationality_label,str,True,Label,
+UCI,data/processed/uci/uci_students.csv,is_international,bool,True,UCI International,
+UCI,data/processed/uci/uci_students.csv,marital_status_code,int,True,UCI code,
+UCI,data/processed/uci/uci_students.csv,marital_status_label,str,True,Label,
+UCI,data/processed/uci/uci_students.csv,age_at_enrollment,int,True,UCI Age at enrollment,
+UCI,data/processed/uci/uci_students.csv,uci_course_code,int,True,UCI course category (not a university programme),
+UCI,data/processed/uci/uci_students.csv,uci_course_label,str,True,Label,
+UCI,data/processed/uci/uci_students.csv,attendance_schedule,str,True,UCI daytime/evening,DAYTIME|EVENING
+UCI,data/processed/uci/uci_students.csv,application_mode_code,int,True,UCI code,
+UCI,data/processed/uci/uci_students.csv,application_mode_label,str,True,Label or UNKNOWN,
+UCI,data/processed/uci/uci_students.csv,application_order,int,True,UCI,
+UCI,data/processed/uci/uci_students.csv,previous_qualification_code,int,True,UCI code,
+UCI,data/processed/uci/uci_students.csv,previous_qualification_label,str,True,Label or UNKNOWN,
+UCI,data/processed/uci/uci_students.csv,previous_qualification_grade,float,True,UCI 0-200,
+UCI,data/processed/uci/uci_students.csv,admission_grade,float,True,UCI 0-200,
+UCI,data/processed/uci/uci_students.csv,scholarship_holder,bool,True,UCI,
+UCI,data/processed/uci/uci_students.csv,debtor,bool,True,UCI,
+UCI,data/processed/uci/uci_students.csv,tuition_fees_up_to_date,bool,True,UCI,
+UCI,data/processed/uci/uci_students.csv,displaced,bool,True,UCI,
+UCI,data/processed/uci/uci_students.csv,educational_special_needs,bool,True,UCI,
+UCI,data/processed/uci/uci_students.csv,outcome_at_normal_duration,str,True,UCI Target,GRADUATED|DROPPED_OUT|STILL_ENROLLED
+UCI,data/processed/uci/uci_students.csv,dq_flags,str,False,Data-quality flags,
+UCI,data/processed/uci/uci_semester_results.csv,uci_student_id,id,True,FK uci_students,
+UCI,data/processed/uci/uci_semester_results.csv,data_source,str,True,UCI,UCI
+UCI,data/processed/uci/uci_semester_results.csv,study_semester,int,True,Relative semester of year 1 (not a calendar term),1|2
+UCI,data/processed/uci/uci_semester_results.csv,units_credited,int,True,UCI,
+UCI,data/processed/uci/uci_semester_results.csv,units_enrolled,int,True,UCI,
+UCI,data/processed/uci/uci_semester_results.csv,units_evaluated,int,True,UCI,
+UCI,data/processed/uci/uci_semester_results.csv,units_approved,int,True,UCI,
+UCI,data/processed/uci/uci_semester_results.csv,units_without_evaluation,int,True,UCI,
+UCI,data/processed/uci/uci_semester_results.csv,uci_grade_raw,float,True,UCI 0-20 grade as published,
+UCI,data/processed/uci/uci_semester_results.csv,uci_mean_grade_passed_units_0_20,float,False,Mean grade of passed units (NOT an official GPA),
+UCI,data/processed/uci/uci_semester_results.csv,pass_rate,float,False,approved / enrolled,
+UCI,data/processed/uci/uci_semester_results.csv,evaluation_status,str,True,Status,EVALUATED|NO_UNITS_PASSED|NOT_EVALUATED
+UCI,data/processed/uci/uci_semester_results.csv,dq_flags,str,False,Flags,
+UCI,data/processed/uci/uci_course_categories.csv,uci_course_code,id,True,UCI code,
+UCI,data/processed/uci/uci_course_categories.csv,label,str,True,UCI label,
+UCI,data/processed/uci/uci_course_categories.csv,attendance_schedule,str,True,Schedule,DAYTIME|EVENING|MIXED
+UCI,data/processed/uci/uci_course_categories.csv,student_count,int,True,Students,
+UCI,data/processed/uci/uci_course_categories.csv,data_source,str,True,UCI,UCI
+UCI,data/processed/uci/uci_course_categories.csv,note,str,True,Not a university programme,
+UCI,data/processed/uci/code_lookups.csv,category,str,True,Code list,
+UCI,data/processed/uci/code_lookups.csv,code,int,True,UCI code,
+UCI,data/processed/uci/code_lookups.csv,label,str,True,UCI documentation label,
+UCI,data/processed/uci/code_lookups.csv,data_source,str,True,UCI,UCI
+UCI,data/processed/uci/uci_source_records.csv,uci_row_number,int,True,Row in data/raw/data.csv,
+UCI,data/processed/uci/uci_source_records.csv,data_source,str,True,UCI,UCI
+UCI,data/processed/uci/uci_source_records.csv,marital_status_code,int,True,Original UCI column 'Marital status' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,application_mode_code,int,True,Original UCI column 'Application mode' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,application_order,int,True,Original UCI column 'Application order' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,uci_course_code,int,True,Original UCI column 'Course' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,daytime_evening_attendance,int,True,Original UCI column 'Daytime/evening attendance' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,previous_qualification_code,int,True,Original UCI column 'Previous qualification' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,previous_qualification_grade,float,True,Original UCI column 'Previous qualification (grade)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,nationality_code,int,True,Original UCI column 'Nacionality' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,mother_qualification_code,int,True,Original UCI column 'Mother's qualification' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,father_qualification_code,int,True,Original UCI column 'Father's qualification' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,mother_occupation_code,int,True,Original UCI column 'Mother's occupation' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,father_occupation_code,int,True,Original UCI column 'Father's occupation' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,admission_grade,float,True,Original UCI column 'Admission grade' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,displaced,int,True,Original UCI column 'Displaced' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,educational_special_needs,int,True,Original UCI column 'Educational special needs' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,debtor,int,True,Original UCI column 'Debtor' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,tuition_fees_up_to_date,int,True,Original UCI column 'Tuition fees up to date' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,gender_code,int,True,Original UCI column 'Gender' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,scholarship_holder,int,True,Original UCI column 'Scholarship holder' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,age_at_enrollment,int,True,Original UCI column 'Age at enrollment' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,international,int,True,Original UCI column 'International' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem1_credited,int,True,Original UCI column 'Curricular units 1st sem (credited)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem1_enrolled,int,True,Original UCI column 'Curricular units 1st sem (enrolled)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem1_evaluations,int,True,Original UCI column 'Curricular units 1st sem (evaluations)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem1_approved,int,True,Original UCI column 'Curricular units 1st sem (approved)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem1_grade,float,True,Original UCI column 'Curricular units 1st sem (grade)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem1_without_evaluations,int,True,Original UCI column 'Curricular units 1st sem (without evaluations)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem2_credited,int,True,Original UCI column 'Curricular units 2nd sem (credited)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem2_enrolled,int,True,Original UCI column 'Curricular units 2nd sem (enrolled)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem2_evaluations,int,True,Original UCI column 'Curricular units 2nd sem (evaluations)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem2_approved,int,True,Original UCI column 'Curricular units 2nd sem (approved)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem2_grade,float,True,Original UCI column 'Curricular units 2nd sem (grade)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,sem2_without_evaluations,int,True,Original UCI column 'Curricular units 2nd sem (without evaluations)' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,unemployment_rate,float,True,Original UCI column 'Unemployment rate' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,inflation_rate,float,True,Original UCI column 'Inflation rate' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,gdp,float,True,Original UCI column 'GDP' (value unchanged),
+UCI,data/processed/uci/uci_source_records.csv,target,str,True,Original UCI column 'Target' (value unchanged),

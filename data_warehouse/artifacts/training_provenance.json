@@ -1,0 +1,428 @@
+{
+ "created_utc": "2026-11-11T09:23:28+00:00",
+ "rule": "All model training runs in the single project Google Colab notebook; the local Windows machine is used only for dashboard development, tests and inference.",
+ "tasks": {
+  "uci_dropout_enrolment_time": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/uci_dropout_enrolment_time/",
+   "drive_set_files": 18,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:44:25\u20132026-11-11T08:45:10 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "uci_outcome3_enrolment_time": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/uci_outcome3_enrolment_time/",
+   "drive_set_files": 13,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:45:11\u20132026-11-11T08:46:31 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "uci_dropout_end_of_year1": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/uci_dropout_end_of_year1/",
+   "drive_set_files": 15,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:41:58\u20132026-11-11T08:42:48 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "uci_outcome3_end_of_year1": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/uci_outcome3_end_of_year1/",
+   "drive_set_files": 13,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:42:50\u20132026-11-11T08:44:25 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "syn_dropout_2y": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_dropout_2y/",
+   "drive_set_files": 18,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:46:32\u20132026-11-11T08:56:42 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "syn_next_term_gpa": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_next_term_gpa/",
+   "drive_set_files": 13,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:57:05\u20132026-11-11T09:07:46 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "syn_next_term_academic_risk": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_next_term_academic_risk/",
+   "drive_set_files": 20,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab notebook cells 2026-11-10 21:00-21:15 UTC (original Batch 1 Colab run); Drive set syn_next_term_academic_risk/"
+  },
+  "syn_graduation_cox": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_graduation_cox/",
+   "drive_set_files": 8,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:56:44\u20132026-11-11T08:56:54 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "syn_dropout_cox": {
+   "batch": 1,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_dropout_cox/",
+   "drive_set_files": 8,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Colab retrain 2026-11-11T08:56:55\u20132026-11-11T08:57:05 UTC on runtime 3f3d8a315058 (Linux-6.6.159+-x86_64-with-glibc2.39); driver checks ['drive_backup_sha_verified', 'exit_code_0', 'leakage_all_pass', 'restore_and_predict', 'run_summary_trained', 'status_trained']; tooling + logs in _batch1_colab_retrain_tooling/",
+   "previously": "trained on the local Windows machine on 2026-11-10 (Python 3.12.0, sklearn 1.5.0, xgboost 2.1.3); those files are archived in data_warehouse/_superseded_local/ and were never uploaded to Drive as task sets",
+   "checks": {
+    "exit_code_0": true,
+    "status_trained": true,
+    "leakage_all_pass": true,
+    "run_summary_trained": true,
+    "restore_and_predict": true,
+    "drive_backup_sha_verified": true
+   }
+  },
+  "syn_retention_fall_to_fall_institutional": {
+   "batch": 2,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_retention_fall_to_fall_institutional/",
+   "drive_set_files": 19,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 2 Colab driver; Drive set syn_retention_fall_to_fall_institutional/"
+  },
+  "syn_retention_fall_to_fall_programme": {
+   "batch": 2,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_retention_fall_to_fall_programme/",
+   "drive_set_files": 19,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 2 Colab driver; Drive set syn_retention_fall_to_fall_programme/"
+  },
+  "syn_retention_spring_to_spring_institutional": {
+   "batch": 2,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_retention_spring_to_spring_institutional/",
+   "drive_set_files": 19,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 2 Colab driver; Drive set syn_retention_spring_to_spring_institutional/"
+  },
+  "syn_retention_spring_to_spring_programme": {
+   "batch": 2,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_retention_spring_to_spring_programme/",
+   "drive_set_files": 19,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 2 Colab driver; Drive set syn_retention_spring_to_spring_programme/"
+  },
+  "syn_retention_summer_to_summer_institutional": {
+   "batch": 2,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_retention_summer_to_summer_institutional/",
+   "drive_set_files": 22,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 2 Colab driver; Drive set syn_retention_summer_to_summer_institutional/"
+  },
+  "syn_retention_summer_to_summer_programme": {
+   "batch": 2,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_retention_summer_to_summer_programme/",
+   "drive_set_files": 22,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 2 Colab driver; Drive set syn_retention_summer_to_summer_programme/"
+  },
+  "syn_graduation_within_window": {
+   "batch": 3,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_graduation_within_window/",
+   "drive_set_files": 22,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 3 Colab driver; Drive set syn_graduation_within_window/"
+  },
+  "syn_admissions_offer": {
+   "batch": 3,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_admissions_offer/",
+   "drive_set_files": 19,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 3 Colab driver; Drive set syn_admissions_offer/"
+  },
+  "syn_admissions_accept": {
+   "batch": 3,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_admissions_accept/",
+   "drive_set_files": 22,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 3 Colab driver; Drive set syn_admissions_accept/"
+  },
+  "forecasting": {
+   "batch": 4,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/forecasting/",
+   "drive_set_files": 25,
+   "library_versions_recorded": null,
+   "evidence": "Batch 4 Colab cell; Drive set forecasting/"
+  },
+  "syn_segmentation": {
+   "batch": 5,
+   "environment": "Google Colab",
+   "drive_backup_set": "MyDrive/analytics_project_outputs/syn_segmentation/",
+   "drive_set_files": 11,
+   "library_versions_recorded": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "statsmodels": "0.15.0",
+    "seed": 20261110
+   },
+   "evidence": "Batch 5 Colab cell; Drive set syn_segmentation/"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+html, body, #root { margin: 0; min-height: 100%; }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.tabular { font-variant-numeric: tabular-nums; }
+.grid-2 { align-items: start; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 12px; margin-bottom: 12px; }
+.grid-3 { align-items: start; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 12px; margin-bottom: 12px; }
+.figure-img { width: 100%; height: auto; border-radius: 6px; background: #fff; }
+@media (max-width: 600px) {
+  .ant-layout-content { padding: 12px !important; }
+}
+@media (forced-colors: active) {
+  .recharts-line-curve { stroke: CanvasText !important; }
+}

@@ -1,0 +1,188 @@
+{
+  "as_of_date": "2026-11-10",
+  "calendar_end_term": "2027SU",
+  "config_file": "synthetic_config.toml",
+  "config_sha256": "46bb9281200314549b2f8ccd6d29c38bc96249402f4157dfb3e926e28d343007",
+  "data_source": "SYNTHETIC",
+  "files": {
+    "admissions/applicants.csv": {
+      "rows": 13320,
+      "sha256": "57a4425a651d56ecf9be434df5c359cfe7fcb1a3b6fa6d5cd0715e1e887c9f50"
+    },
+    "admissions/applications.csv": {
+      "rows": 13600,
+      "sha256": "2902811b7a018280205aab920f033441a57b809d934d59515a2b51b166e7dace"
+    },
+    "data_warehouse/generation_runs.csv": {
+      "rows": 1,
+      "sha256": "00a6aab11752f49355958c126b5c8cc3be9ab796257a124e5e9b4c2a3dace2e2"
+    },
+    "data_warehouse/sync_runs.csv": {
+      "rows": 720,
+      "sha256": "b06e536c156659192810ced956a551902d57f4ff0cf3170f373002c2f6a181e7"
+    },
+    "finance/account_balances.csv": {
+      "rows": 5000,
+      "sha256": "93a8cfabce36e3e8b67892d804243e9327da89f4b1fa387870de9dcf82a7e33f"
+    },
+    "finance/charges.csv": {
+      "rows": 116157,
+      "sha256": "a36be8a68cf76c7a7510b948deb8d24643a9285ca70d88b9e2ccf2fb63954004"
+    },
+    "finance/financial_holds.csv": {
+      "rows": 4111,
+      "sha256": "1ec9ff202293250e5349c6f5f18cad7c6c480dedf31e24dcdc8f2e76e77cc7dd"
+    },
+    "finance/payments.csv": {
+      "rows": 60239,
+      "sha256": "a51670faccf3438345ec1b8014fe142a59f26d87c8f45c24ff14b01246d156c9"
+    },
+    "finance/registration_blocks.csv": {
+      "rows": 609,
+      "sha256": "8bd2470632d1ccea2fb26b1d6d0cdbd552aa1c359da087589ecf10f06193359c"
+    },
+    "it/account_status_events.csv": {
+      "rows": 8315,
+      "sha256": "e0d59d20a06a61933a41491f7460ebe27a5bc9766e2f66997cd2945c1ad6f8ff"
+    },
+    "it/incidents.csv": {
+      "rows": 76,
+      "sha256": "f5df5f3e28995a2b5abd88df41f03082198cecb28e815280b8c0ae5b1fc8f9b4"
+    },
+    "it/login_events.csv": {
+      "rows": 134387,
+      "sha256": "e991e317ab476baaf4b372521c3976d2f905a42b821c5c82a6596b337e65319d"
+    },
+    "it/server_status_daily.csv": {
+      "rows": 1800,
+      "sha256": "49560b0d918f0ae6306d2f8d592ea24f5106459c67cfe1043965217ca5f6b320"
+    },
+    "it/staff.csv": {
+      "rows": 140,
+      "sha256": "ee1092401520523fe21cf0b62eb3c40d453531d9a81000f44730cabf6287b4bd"
+    },
+    "it/user_accounts.csv": {
+      "rows": 5140,
+      "sha256": "7f8f94a6b7692c9253fad4299135f9d639fdc9e61a5d0ac693f55e73462af7db"
+    },
+    "reference/academic_standing_codes.csv": {
+      "rows": 5,
+      "sha256": "2c8fd6c58efa3562e4576448a0fb58e44ca14099cb09300383f7243761dc9f1b"
+    },
+    "reference/academic_terms.csv": {
+      "rows": 33,
+      "sha256": "4aa760eff26f829668c300f6e8486d4c7a658c1c51aef0977128684dbeb9a83e"
+    },
+    "reference/academic_years.csv": {
+      "rows": 11,
+      "sha256": "0e391549127e3b10104989f37214a215157a12b4edbb98b7a8c1b70660c1a78b"
+    },
+    "reference/attendance_loads.csv": {
+      "rows": 2,
+      "sha256": "b09ae057ef7e97fe69f229355254618cbf76dd3dd0363dc119bd40b9e6213c39"
+    },
+    "reference/courses.csv": {
+      "rows": 654,
+      "sha256": "db4c777b909a15becf8c40c545fd5414f5ef9e6c18fe05cd7baa15692048fd76"
+    },
+    "reference/delivery_modes.csv": {
+      "rows": 2,
+      "sha256": "c4933e71458881380d7106e63c5f279f95435d9ea2229f0ccbe05c394583fdd6"
+    },
+    "reference/fee_schedules.csv": {
+      "rows": 33,
+      "sha256": "4b0114d2ced9195fea5c84800ab5b36d303db89665cfb0c444c196b83f86033e"
+    },
+    "reference/gender_categories.csv": {
+      "rows": 4,
+      "sha256": "fa9450ed10f07b478a9a6600c3507ca6dd5cc148f25b6dab1b22c71233dbd910"
+    },
+    "reference/grading_schemes.csv": {
+      "rows": 1,
+      "sha256": "b0a51f20c054bc86feba8392f7d197197a73ddfb6b3171a184ffe32d0075009b"
+    },
+    "reference/level_rules.csv": {
+      "rows": 3,
+      "sha256": "8715664e0ccb911517b32d9cb71bbfa39f488d741b92b78b1cd4454a21761614"
+    },
+    "reference/nationalities.csv": {
+      "rows": 15,
+      "sha256": "429e5cbc96fab9d3da1b6ae4dda474f13ef74cad3cee7d5dfd363f332982dac0"
+    },
+    "reference/programmes.csv": {
+      "rows": 24,
+      "sha256": "d4f504530e8ff24a22a15ed9bdbf8e14f173a318eef703e8d970d1adc701e7d7"
+    },
+    "reference/roles.csv": {
+      "rows": 9,
+      "sha256": "c6d8f92668336e6281b12ec0fe867d76cf0f11ad468fcbefbc570577f9b4d590"
+    },
+    "reference/rule_sets.csv": {
+      "rows": 1,
+      "sha256": "df7013067eb1f76222206fa8d3d48c79565d02253ac64eada970a16a790f950f"
+    },
+    "reference/schools.csv": {
+      "rows": 5,
+      "sha256": "16138b156d7f8c3af2f5b6f552b88059091fc086b31f14786a4903eff2b09304"
+    },
+    "reference/servers.csv": {
+      "rows": 10,
+      "sha256": "6199335890871de2306140079a9fbed62454b750a771f725af43391a15329cca"
+    },
+    "reference/student_status_codes.csv": {
+      "rows": 7,
+      "sha256": "c572725c419cae14869b287433e7bdd62f0afaa804be4df3d06fb820e25f7ff7"
+    },
+    "registrar/academic_standing.csv": {
+      "rows": 29856,
+      "sha256": "6205a0a49159fb7ce7f3ad6a60073f257fe655bc20469152ff55baf5a5d6ced7"
+    },
+    "registrar/cohort_members.csv": {
+      "rows": 10154,
+      "sha256": "91e724fa5568124af27ed7596d624be4c02b53f5f0105d13fd41a5065205c901"
+    },
+    "registrar/cohorts.csv": {
+      "rows": 124,
+      "sha256": "3da06e2b2b438dee861b4e61ea80e58b869e4a909863ac8157b155266622e88c"
+    },
+    "registrar/course_enrolments.csv": {
+      "rows": 112408,
+      "sha256": "06f6d9d744a5e4c8059f08dfe23db2d7243d1853935044c85e080ae3aeef5e9e"
+    },
+    "registrar/graduation_records.csv": {
+      "rows": 5154,
+      "sha256": "688bc035e6abe9c82498e78d505a64ffcb129a5f65d006a7071aa843dc94bccb"
+    },
+    "registrar/retention_cohort_members.csv": {
+      "rows": 36965,
+      "sha256": "2471dd41848a795049dc1f79b4eb9848bc17f1f0600c097cbb0cf2521ea58909"
+    },
+    "registrar/student_programmes.csv": {
+      "rows": 5556,
+      "sha256": "0400cb4c1f85bd700b6d647a649057a218c864e37928a736f2eb37f8a362d436"
+    },
+    "registrar/student_status_history.csv": {
+      "rows": 11007,
+      "sha256": "555d4a8a4a3061033a080fb656d09a9794fdd0dfaa2ea58fd0d41b75811649b6"
+    },
+    "registrar/students.csv": {
+      "rows": 5000,
+      "sha256": "ef40223a4a76c8dd9536893018a57dd1c53cf8fea40e6e45b453b0834c91da20"
+    },
+    "registrar/term_enrolments.csv": {
+      "rows": 31965,
+      "sha256": "4870e5fb52ec1a2917f7eaeac56bade30a22e1d4c56abff621f1970e5fe83f4c"
+    },
+    "schema/data_dictionary.csv": {
+      "rows": 643,
+      "sha256": "6e9f50df3867dff4a1b77b5c6807d45f207c69844bf046e566eeb1e155ebedc5"
+    }
+  },
+  "first_term": "2016FA",
+  "generation_run_id": "SYN-RUN-1.1.0-S20261110",
+  "generator_version": "1.1.0",
+  "label": "SYNTHETIC DEMONSTRATION DATA - NOT REAL UNIVERSITY RECORDS",
+  "last_admission_term": "2026FA",
+  "overrides": {},
+  "random_seed": 20261110
+}

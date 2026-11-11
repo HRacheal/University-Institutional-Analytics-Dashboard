@@ -1,0 +1,3508 @@
+{
+  "checks": [
+    {
+      "category": "Schema",
+      "check": "reference/academic_terms: required fields present",
+      "detail": "33 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_terms: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_terms: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_years: required fields present",
+      "detail": "11 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_years: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_years: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/schools: required fields present",
+      "detail": "5 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/schools: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/schools: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/programmes: required fields present",
+      "detail": "24 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/programmes: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/programmes: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/courses: required fields present",
+      "detail": "654 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/courses: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/courses: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/grading_schemes: required fields present",
+      "detail": "1 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/grading_schemes: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/grading_schemes: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/rule_sets: required fields present",
+      "detail": "1 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/rule_sets: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/rule_sets: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/level_rules: required fields present",
+      "detail": "3 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/level_rules: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/level_rules: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/fee_schedules: required fields present",
+      "detail": "33 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/fee_schedules: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/fee_schedules: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/nationalities: required fields present",
+      "detail": "15 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/nationalities: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/nationalities: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/gender_categories: required fields present",
+      "detail": "4 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/gender_categories: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/gender_categories: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/delivery_modes: required fields present",
+      "detail": "2 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/delivery_modes: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/delivery_modes: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/attendance_loads: required fields present",
+      "detail": "2 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/attendance_loads: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/attendance_loads: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_standing_codes: required fields present",
+      "detail": "5 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_standing_codes: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/academic_standing_codes: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/student_status_codes: required fields present",
+      "detail": "7 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/student_status_codes: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/student_status_codes: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/roles: required fields present",
+      "detail": "9 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/roles: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/roles: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/servers: required fields present",
+      "detail": "10 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/servers: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "reference/servers: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "admissions/applicants: required fields present",
+      "detail": "13320 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "admissions/applicants: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "admissions/applicants: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "admissions/applications: required fields present",
+      "detail": "13600 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "admissions/applications: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "admissions/applications: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/students: required fields present",
+      "detail": "5000 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/students: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/students: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/student_programmes: required fields present",
+      "detail": "5556 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/student_programmes: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/student_programmes: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/term_enrolments: required fields present",
+      "detail": "31965 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/term_enrolments: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/term_enrolments: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/course_enrolments: required fields present",
+      "detail": "112408 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/course_enrolments: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/course_enrolments: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/academic_standing: required fields present",
+      "detail": "29856 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/academic_standing: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/academic_standing: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/cohorts: required fields present",
+      "detail": "124 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/cohorts: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/cohorts: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/cohort_members: required fields present",
+      "detail": "10154 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/cohort_members: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/cohort_members: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/student_status_history: required fields present",
+      "detail": "11007 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/student_status_history: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/student_status_history: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/retention_cohort_members: required fields present",
+      "detail": "36965 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/retention_cohort_members: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/retention_cohort_members: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/graduation_records: required fields present",
+      "detail": "5154 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/graduation_records: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "registrar/graduation_records: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/charges: required fields present",
+      "detail": "116157 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/charges: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/charges: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/payments: required fields present",
+      "detail": "60239 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/payments: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/payments: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/financial_holds: required fields present",
+      "detail": "4111 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/financial_holds: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/financial_holds: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/registration_blocks: required fields present",
+      "detail": "609 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/registration_blocks: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/registration_blocks: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/account_balances: required fields present",
+      "detail": "5000 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/account_balances: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "finance/account_balances: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/user_accounts: required fields present",
+      "detail": "5140 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/user_accounts: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/user_accounts: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/account_status_events: required fields present",
+      "detail": "8315 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/account_status_events: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/account_status_events: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/staff: required fields present",
+      "detail": "140 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/staff: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/staff: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/login_events: required fields present",
+      "detail": "134387 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/login_events: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/login_events: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/server_status_daily: required fields present",
+      "detail": "1800 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/server_status_daily: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/server_status_daily: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/incidents: required fields present",
+      "detail": "76 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/incidents: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "it/incidents: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "data_warehouse/sync_runs: required fields present",
+      "detail": "720 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "data_warehouse/sync_runs: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "data_warehouse/sync_runs: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "data_warehouse/generation_runs: required fields present",
+      "detail": "1 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "data_warehouse/generation_runs: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "data_warehouse/generation_runs: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "every synthetic file has a documented schema",
+      "detail": "42 files",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_students: required fields present",
+      "detail": "4424 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_students: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_students: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_semester_results: required fields present",
+      "detail": "8848 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_semester_results: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_semester_results: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_course_categories: required fields present",
+      "detail": "17 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_course_categories: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_course_categories: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/code_lookups: required fields present",
+      "detail": "79 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/code_lookups: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/code_lookups: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_source_records: required fields present",
+      "detail": "4424 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_source_records: values parse as documented types (dates, numbers, booleans)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema (UCI)",
+      "check": "uci/uci_source_records: values within allowed domains",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Schema",
+      "check": "every UCI file has a documented schema",
+      "detail": "[]",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "admissions/applicants.applicant_id unique and not null",
+      "detail": "13320 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "admissions/applications.application_id unique and not null",
+      "detail": "13600 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/students.student_id unique and not null",
+      "detail": "5000 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/student_programmes.student_programme_id unique and not null",
+      "detail": "5556 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/term_enrolments.term_enrolment_id unique and not null",
+      "detail": "31965 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/course_enrolments.course_enrolment_id unique and not null",
+      "detail": "112408 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/academic_standing.standing_id unique and not null",
+      "detail": "29856 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/cohorts.cohort_id unique and not null",
+      "detail": "124 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/cohort_members.cohort_id+student_id unique and not null",
+      "detail": "10154 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/student_status_history.status_event_id unique and not null",
+      "detail": "11007 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/retention_cohort_members.retention_record_id unique and not null",
+      "detail": "36965 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "registrar/graduation_records.graduation_record_id unique and not null",
+      "detail": "5154 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "finance/charges.charge_id unique and not null",
+      "detail": "116157 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "finance/payments.payment_id unique and not null",
+      "detail": "60239 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "finance/financial_holds.hold_id unique and not null",
+      "detail": "4111 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "finance/registration_blocks.block_id unique and not null",
+      "detail": "609 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "finance/account_balances.student_id unique and not null",
+      "detail": "5000 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "it/user_accounts.account_id unique and not null",
+      "detail": "5140 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "it/account_status_events.event_id unique and not null",
+      "detail": "8315 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "it/staff.staff_id unique and not null",
+      "detail": "140 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "it/login_events.login_id unique and not null",
+      "detail": "134387 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "it/incidents.incident_id unique and not null",
+      "detail": "76 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "it/server_status_daily.server_id+status_date unique and not null",
+      "detail": "1800 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "data_warehouse/sync_runs.run_id unique and not null",
+      "detail": "720 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "data_warehouse/generation_runs.generation_run_id unique and not null",
+      "detail": "1 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/programmes.programme_id unique and not null",
+      "detail": "24 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/courses.course_id unique and not null",
+      "detail": "654 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/academic_terms.term_id unique and not null",
+      "detail": "33 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/academic_years.academic_year unique and not null",
+      "detail": "11 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/schools.school_id unique and not null",
+      "detail": "5 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/nationalities.nationality_iso3 unique and not null",
+      "detail": "15 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/gender_categories.gender unique and not null",
+      "detail": "4 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/delivery_modes.delivery_mode unique and not null",
+      "detail": "2 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/attendance_loads.study_load unique and not null",
+      "detail": "2 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/academic_standing_codes.standing unique and not null",
+      "detail": "5 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/student_status_codes.status_code unique and not null",
+      "detail": "7 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/level_rules.level unique and not null",
+      "detail": "3 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/fee_schedules.academic_year+level unique and not null",
+      "detail": "33 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/roles.role_code unique and not null",
+      "detail": "9 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/servers.server_id unique and not null",
+      "detail": "10 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/grading_schemes.grading_scheme_id unique and not null",
+      "detail": "1 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "reference/rule_sets.rule_set_id unique and not null",
+      "detail": "1 rows",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Identifiers",
+      "check": "student_id format SYN-nnnnnn",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applications.applicant_id -> admissions/applicants.applicant_id",
+      "detail": "13600 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applications.student_id -> registrar/students.student_id",
+      "detail": "5280 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applications.programme_id -> reference/programmes.programme_id",
+      "detail": "13600 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applications.school_id -> reference/schools.school_id",
+      "detail": "13600 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applications.entry_term_id -> reference/academic_terms.term_id",
+      "detail": "13600 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applicants.nationality_iso3 -> reference/nationalities.nationality_iso3",
+      "detail": "13320 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "admissions/applicants.gender -> reference/gender_categories.gender",
+      "detail": "13320 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/students.applicant_id -> admissions/applicants.applicant_id",
+      "detail": "5000 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/students.nationality_iso3 -> reference/nationalities.nationality_iso3",
+      "detail": "5000 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/students.gender -> reference/gender_categories.gender",
+      "detail": "5000 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.student_id -> registrar/students.student_id",
+      "detail": "5556 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.programme_id -> reference/programmes.programme_id",
+      "detail": "5556 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.school_id -> reference/schools.school_id",
+      "detail": "5556 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.entry_term_id -> reference/academic_terms.term_id",
+      "detail": "5556 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.outcome_term_id -> reference/academic_terms.term_id",
+      "detail": "3287 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.previous_student_programme_id -> registrar/student_programmes.student_programme_id",
+      "detail": "556 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.application_id -> admissions/applications.application_id",
+      "detail": "5280 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_programmes.rule_set_id -> reference/rule_sets.rule_set_id",
+      "detail": "5556 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.student_programme_id -> registrar/student_programmes.student_programme_id",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.student_id -> registrar/students.student_id",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.programme_id -> reference/programmes.programme_id",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.school_id -> reference/schools.school_id",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.term_id -> reference/academic_terms.term_id",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.academic_year -> reference/academic_years.academic_year",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.delivery_mode -> reference/delivery_modes.delivery_mode",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.study_load -> reference/attendance_loads.study_load",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/term_enrolments.grading_scheme_id -> reference/grading_schemes.grading_scheme_id",
+      "detail": "31965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/course_enrolments.term_enrolment_id -> registrar/term_enrolments.term_enrolment_id",
+      "detail": "112408 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/course_enrolments.course_id -> reference/courses.course_id",
+      "detail": "112408 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/course_enrolments.delivery_mode -> reference/delivery_modes.delivery_mode",
+      "detail": "112408 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/academic_standing.term_enrolment_id -> registrar/term_enrolments.term_enrolment_id",
+      "detail": "29856 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/academic_standing.standing -> reference/academic_standing_codes.standing",
+      "detail": "29856 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/cohort_members.cohort_id -> registrar/cohorts.cohort_id",
+      "detail": "10154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/cohort_members.student_programme_id -> registrar/student_programmes.student_programme_id",
+      "detail": "10154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/cohort_members.programme_at_entry -> reference/programmes.programme_id",
+      "detail": "10154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_status_history.student_programme_id -> registrar/student_programmes.student_programme_id",
+      "detail": "11007 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_status_history.term_id -> reference/academic_terms.term_id",
+      "detail": "11007 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/student_status_history.status_code -> reference/student_status_codes.status_code",
+      "detail": "11007 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/retention_cohort_members.student_id -> registrar/students.student_id",
+      "detail": "36965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/retention_cohort_members.base_programme_id -> reference/programmes.programme_id",
+      "detail": "36965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/retention_cohort_members.base_school_id -> reference/schools.school_id",
+      "detail": "36965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/retention_cohort_members.base_term_id -> reference/academic_terms.term_id",
+      "detail": "36965 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/retention_cohort_members.compare_term_id -> reference/academic_terms.term_id",
+      "detail": "34468 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/retention_cohort_members.compare_programme_id -> reference/programmes.programme_id",
+      "detail": "22736 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/graduation_records.cohort_id -> registrar/cohorts.cohort_id",
+      "detail": "5154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/graduation_records.student_id -> registrar/students.student_id",
+      "detail": "5154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/graduation_records.programme_at_entry -> reference/programmes.programme_id",
+      "detail": "5154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/graduation_records.school_at_entry -> reference/schools.school_id",
+      "detail": "5154 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/graduation_records.graduated_programme_id -> reference/programmes.programme_id",
+      "detail": "1821 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "registrar/graduation_records.graduation_term_id -> reference/academic_terms.term_id",
+      "detail": "1821 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "reference/programmes.school_id -> reference/schools.school_id",
+      "detail": "24 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "reference/courses.programme_id -> reference/programmes.programme_id",
+      "detail": "654 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "reference/fee_schedules.academic_year -> reference/academic_years.academic_year",
+      "detail": "33 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "reference/academic_terms.academic_year -> reference/academic_years.academic_year",
+      "detail": "33 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/charges.student_id -> registrar/students.student_id",
+      "detail": "116157 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/charges.student_programme_id -> registrar/student_programmes.student_programme_id",
+      "detail": "116157 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/charges.term_id -> reference/academic_terms.term_id",
+      "detail": "116157 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/payments.student_id -> registrar/students.student_id",
+      "detail": "60239 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/payments.term_id -> reference/academic_terms.term_id",
+      "detail": "59399 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/financial_holds.student_id -> registrar/students.student_id",
+      "detail": "4111 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/registration_blocks.student_programme_id -> registrar/student_programmes.student_programme_id",
+      "detail": "609 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/registration_blocks.term_id -> reference/academic_terms.term_id",
+      "detail": "609 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "finance/account_balances.student_id -> registrar/students.student_id",
+      "detail": "5000 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/user_accounts.role_code -> reference/roles.role_code",
+      "detail": "5140 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/staff.role_code -> reference/roles.role_code",
+      "detail": "140 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/login_events.account_id -> it/user_accounts.account_id",
+      "detail": "134387 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/login_events.server_id -> reference/servers.server_id",
+      "detail": "134387 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/account_status_events.account_id -> it/user_accounts.account_id",
+      "detail": "8315 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/server_status_daily.server_id -> reference/servers.server_id",
+      "detail": "1800 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "it/incidents.server_id -> reference/servers.server_id",
+      "detail": "76 non-null links",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Relationships",
+      "check": "every row's generation_run_id -> data_warehouse/generation_runs",
+      "detail": "['SYN-RUN-1.1.0-S20261110']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "term enrolment student/programme/level equal its admission record",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "term_enrolments: school = school of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "student_programmes: school = school of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "applications: school = school of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "retention_cohort_members: school = school of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "graduation_records: school = school of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "term_enrolments: level = level of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "student_programmes: level = level of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "applications: level = level of its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "term enrolment academic year and sequence equal the calendar",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "delivery mode of every term enrolment is offered by its programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "course enrolments use their term's delivery mode and their programme's courses",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "registrar/students: residency status consistent with nationality",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "admissions/applicants: residency status consistent with nationality",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "student demographics equal their applicant record",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Consistency",
+      "check": "graduation records belong to LEVEL_ENTRY cohort members with the same entry programme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "admissions/applicants: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "admissions/applicants: source_system = ADMISSIONS",
+      "detail": "['ADMISSIONS']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "admissions/applications: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "admissions/applications: source_system = ADMISSIONS",
+      "detail": "['ADMISSIONS']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "data_warehouse/generation_runs: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "data_warehouse/generation_runs: source_system = DATA_WAREHOUSE",
+      "detail": "['DATA_WAREHOUSE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "data_warehouse/sync_runs: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "data_warehouse/sync_runs: source_system = DATA_WAREHOUSE",
+      "detail": "['DATA_WAREHOUSE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "finance/account_balances: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "finance/account_balances: source_system = FINANCE",
+      "detail": "['FINANCE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "finance/charges: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "finance/charges: source_system = FINANCE",
+      "detail": "['FINANCE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "finance/financial_holds: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "finance/financial_holds: source_system = FINANCE",
+      "detail": "['FINANCE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "finance/payments: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "finance/payments: source_system = FINANCE",
+      "detail": "['FINANCE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "finance/registration_blocks: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "finance/registration_blocks: source_system = FINANCE",
+      "detail": "['FINANCE']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "it/account_status_events: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "it/account_status_events: source_system = IT",
+      "detail": "['IT']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "it/incidents: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "it/incidents: source_system = IT",
+      "detail": "['IT']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "it/login_events: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "it/login_events: source_system = IT",
+      "detail": "['IT']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "it/server_status_daily: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "it/server_status_daily: source_system = IT",
+      "detail": "['IT']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "it/staff: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "it/staff: source_system = IT",
+      "detail": "['IT']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "it/user_accounts: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "it/user_accounts: source_system = IT",
+      "detail": "['IT']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/academic_standing_codes: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/academic_standing_codes: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/academic_standing_codes: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/academic_terms: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/academic_terms: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/academic_terms: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/academic_years: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/academic_years: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/academic_years: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/attendance_loads: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/attendance_loads: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/attendance_loads: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/courses: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/courses: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/courses: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/delivery_modes: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/delivery_modes: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/delivery_modes: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/fee_schedules: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/fee_schedules: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/fee_schedules: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/gender_categories: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/gender_categories: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/gender_categories: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/grading_schemes: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/grading_schemes: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/grading_schemes: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/level_rules: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/level_rules: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/level_rules: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/nationalities: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/nationalities: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/nationalities: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/programmes: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/programmes: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/programmes: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/roles: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/roles: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/roles: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/rule_sets: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/rule_sets: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/rule_sets: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/schools: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/schools: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/schools: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/servers: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/servers: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/servers: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/student_status_codes: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "reference/student_status_codes: source_system = REFERENCE_PLACEHOLDER",
+      "detail": "['REFERENCE_PLACEHOLDER']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/student_status_codes: verification_status = PLACEHOLDER",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/academic_standing: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/academic_standing: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/cohort_members: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/cohort_members: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/cohorts: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/cohorts: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/course_enrolments: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/course_enrolments: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/graduation_records: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/graduation_records: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/retention_cohort_members: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/retention_cohort_members: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/student_programmes: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/student_programmes: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/student_status_history: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/student_status_history: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/students: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/students: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "registrar/term_enrolments: data_source = SYNTHETIC",
+      "detail": "['SYNTHETIC']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "registrar/term_enrolments: source_system = REGISTRAR",
+      "detail": "['REGISTRAR']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "generation_run_id on every row equals the manifest run",
+      "detail": "SYN-RUN-1.1.0-S20261110",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Source labels",
+      "check": "generation run records version, seed and config fingerprint of the manifest",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/schools: labelled as synthetic placeholders (not verified names)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "reference/programmes: labelled as synthetic placeholders (not verified names)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "no UCI identifiers inside synthetic files",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "original UCI file unchanged (SHA-256)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "UCI students: 4,424 rows, data_source = UCI",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "UCI outcome counts 2209/1421/794 preserved",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "180 UCI records flagged NOT_EVALUATED_BOTH_SEMESTERS",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "UCI tables contain no invented dates/terms/programmes/schools/modes/GPA",
+      "detail": "[]",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "no synthetic identifiers inside UCI tables",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data separation",
+      "check": "no synthetic file mixes UCI rows (no combined population or totals)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Calendar",
+      "check": "term dates ordered (start < census < end) and terms do not overlap",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Calendar",
+      "check": "term_status consistent with the as-of date (COMPLETED iff end <= as-of; FUTURE iff start > as-of)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Calendar",
+      "check": "reporting_status / grades_final_available / census_passed consistent with the as-of date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Calendar",
+      "check": "academic_year labels follow Fall Y + Spring/Summer Y+1",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Calendar",
+      "check": "academic years span their terms and carry a status consistent with the as-of date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Future terms",
+      "check": "grades_final = True exactly for completed terms (no future/in-progress term marked completed)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Future terms",
+      "check": "final course grades exist only in completed terms",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "no enrolment before admission (every enrolment term starts on/after its admission date)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "admission_date = start of entry term",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "admitted application (submitted <= decided < admission, same programme/term) for every non-internal admission",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "first enrolment of each admission is in its entry term (cohort census)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "every admission has at least one term enrolment",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "study_term_number counts enrolled terms 1..n within each admission",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "exactly one FIRST_ADMISSION per student, and it is the earliest",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "programme changes / next degrees / readmissions link to a matching earlier outcome",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Transfers",
+      "check": "programme transfers valid: same level, different programme, next regular term, credits <= earned",
+      "detail": "276 transfers",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "no enrolment after graduation/withdrawal/dismissal/change in the same admission (outcome term = last enrolled term)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "no simultaneous enrolment in two programmes (one enrolment per student per term)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "a student's programme admissions never overlap",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "at most one ACTIVE programme per student",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "graduations valid: term-end date, completed term, not after as-of, credits, minimum duration, GPA",
+      "detail": "1821 graduations checked",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "outcome dates = end of outcome term, recorded on/after it, never after the as-of date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Timeline",
+      "check": "outcome fields present exactly when an outcome exists (withdrawal type only for withdrawals)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Progression",
+      "check": "prior_gap_terms recomputes from the enrolment history",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Progression",
+      "check": "no gap inside one admission exceeds the configured limit (3 regular terms)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Progression",
+      "check": "missed-term withdrawal rule (> 3 regular terms -> UNOFFICIAL withdrawal at next census) recomputes",
+      "detail": "withdrawal dates consistent",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Future terms",
+      "check": "no enrolments, grades, charges, standing, admissions, cohorts, events or graduations in FUTURE terms",
+      "detail": "['2027SP', '2027SU']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Future terms",
+      "check": "future-term applications are not enrolled and are decided on/before the as-of date (or PENDING)",
+      "detail": "320 applications for ['2027SP']",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Future terms",
+      "check": "in-progress term (census snapshot only): no final grades, GPA, standing, performance flags or graduations",
+      "detail": "2109 in-progress enrolments",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Future terms",
+      "check": "no recorded event after the as-of date",
+      "detail": "latest event 2026-11-10 23:55:46",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Status history",
+      "check": "status history recomputes from admissions and enrolments (admission event never overwritten)",
+      "detail": "11007 events for 5556 admissions",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "grade points match the grading scheme",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "course credits earned follow the pass mark",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "semester GPA and cumulative GPA recompute from course grades",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "term and cumulative credits earned recompute from course grades (incl. transferred credits)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "academic standing (good / warning / probation / dismissed) recomputes, carried forward when ungraded",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "exactly one standing row per completed term enrolment; none for incomplete terms",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "poor-performance flag and pass ratio recompute with the configured rule",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "GPA & standing",
+      "check": "DISMISSED outcome <=> DISMISSED standing",
+      "detail": "383 dismissals",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Cohorts",
+      "check": "every student is in exactly one INSTITUTIONAL cohort",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Cohorts",
+      "check": "INSTITUTIONAL cohort = first admission term",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Cohorts",
+      "check": "exactly one LEVEL_ENTRY membership per student per level (first admission at that level)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Cohorts",
+      "check": "frozen entry attributes equal the census-term enrolment",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Cohorts",
+      "check": "size_at_census equals member count",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "every charge belongs to an actual term enrolment",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "every term enrolment is billed tuition",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "charge amounts: positive fees, negative scholarships",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "financial holds recompute from charges and payments",
+      "detail": "4111 holds",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "hold status_as_of consistent with release date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "no registration while a financial hold is active",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "every registration block coincides with an active hold",
+      "detail": "609 blocks",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "blocked students are not enrolled in the blocked term",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "account balances = charges - payments",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "past-due balances recompute at the as-of date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "has_active_hold flag equals the recomputed active holds",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Finance",
+      "check": "payments are positive and validly dated on/before the as-of date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "IT",
+      "check": "successful logins only while the account is active",
+      "detail": "128480 successful logins",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "IT",
+      "check": "student account created before the first term starts",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "IT",
+      "check": "one account per student",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "IT",
+      "check": "server status uptime and downtime agree",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "IT",
+      "check": "one incident per non-operational server day",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Data warehouse",
+      "check": "sync runs fail exactly on ETL/database outage days",
+      "detail": "8 failed runs",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "retention membership = every INSTITUTIONAL cohort member + every base-term enrolment (no more, no less)",
+      "detail": "36965 expected, 36965 found",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "retention outcomes recompute independently (retained same programme / transfer / completed / stopped out / left)",
+      "detail": "31991 final member outcomes",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "retention rates recompute: retained / (cohort - completed); programme retention; completions separate",
+      "detail": "56 final comparisons",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "retained + completed + continuing (optional summer) + stopped out + left = denominator (100 %)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "optional Summer: students enrolled the following Fall are never classified as stopped out or left",
+      "detail": "1366 continuing summer non-enrollees",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "programme retained <= institutionally retained; retained excludes graduates",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "filtered groups (level, school, programme, mode, load) add up to the whole comparison",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "incomplete comparisons publish no rate",
+      "detail": "6 incomplete comparisons",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "first-year Fall 2025 -> Fall 2026 cohort retention is FINAL_CENSUS_SNAPSHOT (Fall 2026 census passed, term in progress)",
+      "detail": "[{'denominator': 411, 'institutional_retention_rate': 0.8516, 'programme_retention_rate': 0.8297}]",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "Spring 2026 -> Spring 2027 and Summer 2026 -> Summer 2027 are INCOMPLETE (future terms)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "no FINAL retention is measured in a future term",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Retention",
+      "check": "multi-year cohort retention: enrolled + completed + on gap + left = cohort size",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "one graduation record per LEVEL_ENTRY cohort member",
+      "detail": "5154 members, 5154 records",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "graduation records recompute independently (window, maturity, status, dates, time-to-degree)",
+      "detail": "5154 records",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "final graduation rates recompute (UG 6 y, Master's 4 y, Doctorate 6 y; mature cohorts only)",
+      "detail": "{'UNDERGRADUATE': '694/1355 = 51.2%', 'MASTERS': '472/738 = 64.0%', 'DOCTORATE': '121/173 = 69.9%'}",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "immature cohorts publish no final graduation rate",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "configured windows are UG 6, Master's 4, Doctorate 6 years (project-configured reporting assumptions)",
+      "detail": "{'UNDERGRADUATE': 6, 'MASTERS': 4, 'DOCTORATE': 6}",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "graduates are kept separate from enrolled students (no enrolment in a graduated admission after graduation)",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Graduation",
+      "check": "time-to-degree summary covers every graduation record with a graduation date",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Enrolment",
+      "check": "enrolment by term x school x programme x level x mode x load x gender x residency x nationality sums to headcount",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Enrolment",
+      "check": "the in-progress term is labelled CENSUS_SNAPSHOT_ONLY in enrolment outputs",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Enrolment",
+      "check": "academic-year unduplicated headcount recomputes",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Performance",
+      "check": "performance outputs use completed terms only",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Performance",
+      "check": "credit-weighted term GPA by term and level recomputes from course grades",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "category": "Performance",
+      "check": "standing counts add up to completed enrolments",
+      "detail": "",
+      "status": "PASS",
+      "violations": 0
+    }
+  ],
+  "failed": 0,
+  "passed": 473,
+  "summary": {
+    "admissions_by_entry_type": {
+      "FIRST_ADMISSION": 5000,
+      "NEXT_DEGREE": 154,
+      "PROGRAMME_CHANGE": 276,
+      "READMISSION": 126
+    },
+    "fall_to_fall_2025FA_to_2026FA": {
+      "completed": 331.0,
+      "denominator": 2046,
+      "eligible_to_return": 1715.0,
+      "institutional_retention_rate": 0.8816,
+      "institutionally_retained": 1512.0,
+      "left": 89.0,
+      "programme_retained": 1452.0,
+      "programme_retention_rate": 0.8466,
+      "reporting_label": "FINAL_CENSUS_SNAPSHOT",
+      "stopped_out": 114.0
+    },
+    "final_cohort_entry_range": {
+      "DOCTORATE": [
+        "2016FA",
+        "2020SU"
+      ],
+      "MASTERS": [
+        "2016FA",
+        "2022SU"
+      ],
+      "UNDERGRADUATE": [
+        "2016FA",
+        "2020SU"
+      ]
+    },
+    "final_graduation_rates": {
+      "DOCTORATE": {
+        "denominator": 173,
+        "graduated_within_window": 121,
+        "rate": 0.6994,
+        "window_years": 6
+      },
+      "MASTERS": {
+        "denominator": 738,
+        "graduated_within_window": 472,
+        "rate": 0.6396,
+        "window_years": 4
+      },
+      "UNDERGRADUATE": {
+        "denominator": 1355,
+        "graduated_within_window": 694,
+        "rate": 0.5122,
+        "window_years": 6
+      }
+    },
+    "first_year_retention_2025FA_to_2026FA": {
+      "completed": 0.0,
+      "denominator": 411,
+      "eligible_to_return": 411.0,
+      "institutional_retention_rate": 0.8516,
+      "institutionally_retained": 350.0,
+      "left": 28.0,
+      "programme_retained": 341.0,
+      "programme_retention_rate": 0.8297,
+      "reporting_label": "FINAL_CENSUS_SNAPSHOT",
+      "stopped_out": 33.0
+    },
+    "headcount_by_term_first_last": {
+      "2016FA": 298,
+      "2025FA": 2046,
+      "2026FA": 2109
+    },
+    "outcomes_by_level": {
+      "DOCTORATE": {
+        "ACTIVE": 168,
+        "DISMISSED": 45,
+        "GRADUATED": 175,
+        "WITHDRAWN": 47
+      },
+      "MASTERS": {
+        "ACTIVE": 347,
+        "DISMISSED": 168,
+        "GRADUATED": 600,
+        "WITHDRAWN": 169
+      },
+      "UNDERGRADUATE": {
+        "ACTIVE": 1754,
+        "CHANGED_PROGRAMME": 276,
+        "DISMISSED": 170,
+        "GRADUATED": 1046,
+        "WITHDRAWN": 591
+      }
+    },
+    "rows": {
+      "admissions/applicants": 13320,
+      "admissions/applications": 13600,
+      "data_warehouse/generation_runs": 1,
+      "data_warehouse/sync_runs": 720,
+      "finance/account_balances": 5000,
+      "finance/charges": 116157,
+      "finance/financial_holds": 4111,
+      "finance/payments": 60239,
+      "finance/registration_blocks": 609,
+      "it/account_status_events": 8315,
+      "it/incidents": 76,
+      "it/login_events": 134387,
+      "it/server_status_daily": 1800,
+      "it/staff": 140,
+      "it/user_accounts": 5140,
+      "reference/academic_standing_codes": 5,
+      "reference/academic_terms": 33,
+      "reference/academic_years": 11,
+      "reference/attendance_loads": 2,
+      "reference/courses": 654,
+      "reference/delivery_modes": 2,
+      "reference/fee_schedules": 33,
+      "reference/gender_categories": 4,
+      "reference/grading_schemes": 1,
+      "reference/level_rules": 3,
+      "reference/nationalities": 15,
+      "reference/programmes": 24,
+      "reference/roles": 9,
+      "reference/rule_sets": 1,
+      "reference/schools": 5,
+      "reference/servers": 10,
+      "reference/student_status_codes": 7,
+      "registrar/academic_standing": 29856,
+      "registrar/cohort_members": 10154,
+      "registrar/cohorts": 124,
+      "registrar/course_enrolments": 112408,
+      "registrar/graduation_records": 5154,
+      "registrar/retention_cohort_members": 36965,
+      "registrar/student_programmes": 5556,
+      "registrar/student_status_history": 11007,
+      "registrar/students": 5000,
+      "registrar/term_enrolments": 31965
+    },
+    "spring_to_spring_2025SP_to_2026SP": {
+      "completed": 327.0,
+      "denominator": 1807,
+      "eligible_to_return": 1480.0,
+      "institutional_retention_rate": 0.8797,
+      "institutionally_retained": 1302.0,
+      "left": 87.0,
+      "programme_retained": 1259.0,
+      "programme_retention_rate": 0.8507,
+      "reporting_label": "FINAL",
+      "stopped_out": 91.0
+    },
+    "students": 5000,
+    "summer_to_summer_2025SU_to_2026SU": {
+      "completed": 111.0,
+      "denominator": 381,
+      "eligible_to_return": 270.0,
+      "institutional_retention_rate": 0.2815,
+      "institutionally_retained": 76.0,
+      "left": 23.0,
+      "programme_retained": 75.0,
+      "programme_retention_rate": 0.2778,
+      "reporting_label": "FINAL",
+      "stopped_out": 20.0
+    },
+    "time_to_degree": {
+      "DOCTORATE": {
+        "graduates": 175,
+        "mean_gap_terms": 0.36,
+        "mean_years": 3.74,
+        "median_enrolled_terms": 9.0,
+        "median_years": 3.316
+      },
+      "MASTERS": {
+        "graduates": 600,
+        "mean_gap_terms": 0.21,
+        "mean_years": 2.425,
+        "median_enrolled_terms": 5.0,
+        "median_years": 2.3
+      },
+      "UNDERGRADUATE": {
+        "graduates": 1046,
+        "mean_gap_terms": 0.363,
+        "mean_years": 4.908,
+        "median_enrolled_terms": 10.0,
+        "median_years": 4.315
+      }
+    },
+    "uci_rows": {
+      "code_lookups": 79,
+      "uci_course_categories": 17,
+      "uci_semester_results": 8848,
+      "uci_source_records": 4424,
+      "uci_students": 4424
+    }
+  }
+}

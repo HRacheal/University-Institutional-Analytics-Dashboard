@@ -1,0 +1,14 @@
+series,best_method,best_wape,seasonal_naive_wape,improvement_vs_seasonal_naive_pct_points
+admissions_acceptances,seasonal_naive,0.0843,0.0843,0.0000
+admissions_applications,ets,0.1289,0.1313,0.2398
+admissions_new_enrolments,seasonal_naive,0.0843,0.0843,0.0000
+admissions_offers,ets,0.0968,0.1019,0.5035
+course_registrations,xgboost_lags,0.0940,0.0978,0.3834
+enrolment_headcount:TOTAL,xgboost_lags,0.0218,0.0486,2.6811
+enrolment_headcount:delivery_mode,xgboost_lags,0.0298,0.0503,2.0520
+enrolment_headcount:gender,xgboost_lags,0.0376,0.0502,1.2606
+enrolment_headcount:level,xgboost_lags,0.0454,0.0629,1.7594
+enrolment_headcount:nationality_iso3,xgboost_lags,0.0357,0.0528,1.7093
+enrolment_headcount:programme_id,xgboost_lags,0.0953,0.0967,0.1394
+enrolment_headcount:school_id,xgboost_lags,0.0518,0.0561,0.4279
+enrolment_headcount:study_load,xgboost_lags,0.0299,0.0494,1.9472

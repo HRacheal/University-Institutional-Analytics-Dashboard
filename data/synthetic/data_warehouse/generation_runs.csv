@@ -1,0 +1,2 @@
+generation_run_id,generator_version,random_seed,config_sha256,as_of_date,first_term,last_admission_term,target_students,label,data_source,source_system
+SYN-RUN-1.1.0-S20261110,1.1.0,20261110,46bb9281200314549b2f8ccd6d29c38bc96249402f4157dfb3e926e28d343007,2026-11-10,2016FA,2026FA,5000,SYNTHETIC DEMONSTRATION DATA - NOT REAL UNIVERSITY RECORDS,SYNTHETIC,DATA_WAREHOUSE

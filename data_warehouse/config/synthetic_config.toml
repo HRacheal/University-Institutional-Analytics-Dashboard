@@ -1,0 +1,172 @@
+# =====================================================================================
+# Synthetic institutional data: generation assumptions
+# -------------------------------------------------------------------------------------
+# EVERY value in this file is a DEMONSTRATION PLACEHOLDER, not an official university
+# rule. Replace values with verified information (and mark them EXTERNAL_REFERENCE)
+# when it becomes available. Changing any value and re-running regenerates all data.
+# =====================================================================================
+
+[meta]
+generator_version = "1.1.0"
+random_seed = 20261110
+as_of_date = "2026-11-10"          # "today" for the dataset; nothing after this date is recorded
+first_term = "2016FA"
+last_admission_term = "2026FA"     # last term with intake and enrolments
+calendar_end_term = "2027SU"       # Spring/Summer 2027 exist in the calendar as FUTURE terms only
+target_students = 5000             # distinct synthetic people admitted 2016FA-2026FA
+currency_code = "USD"              # placeholder currency for demonstration amounts
+id_prefix = "SYN"
+
+[calendar]                          # month-day, applied to every year (PLACEHOLDER)
+fall   = { start = "09-01", census = "09-15", end = "12-20" }
+spring = { start = "01-15", census = "01-29", end = "05-10" }
+summer = { start = "05-25", census = "06-05", end = "08-10" }
+summer_admission_enabled = true
+
+[intake]
+season_weights = { FALL = 0.72, SPRING = 0.20, SUMMER = 0.08 }
+level_weights  = { UNDERGRADUATE = 0.70, MASTERS = 0.22, DOCTORATE = 0.08 }
+yearly_growth = 0.02
+
+[admissions]
+non_enrolling_applications_per_new_student = 1.6
+non_enrolling_decision_weights = { REJECTED = 0.45, ADMITTED_DECLINED = 0.40, WITHDRAWN_BY_APPLICANT = 0.10, WAITLISTED_NOT_OFFERED = 0.05 }
+future_term_applications = 320      # applications for Spring 2027 (future intake pipeline)
+next_degree_probability = { UNDERGRADUATE = 0.12, MASTERS = 0.06 }   # graduate applies to next level
+
+[academic]
+# ---- Missed-term withdrawal rule: a CONFIGURABLE SYNTHETIC BUSINESS RULE (not official university policy) ----
+# A student who stops enrolling is ON_GAP (stopped out) while the number of consecutive missed regular
+# (Fall/Spring) terms is <= max_consecutive_missed_terms. When the next regular term is also missed, an
+# UNOFFICIAL withdrawal is recorded at that term's census date. The withdrawal only sets the outcome fields of
+# that admission record; the admission fields, term enrolments and application are never changed, and every
+# change is also written as an event in registrar/student_status_history.csv. Summer is optional and never
+# counts as a missed term (summer_counts_as_expected_term = false).
+withdrawal_rule_id = "SYN-WD-MISSED-TERMS"
+withdrawal_rule_status = "SYNTHETIC_BUSINESS_RULE"
+max_consecutive_missed_terms = 3    # regular (Fall/Spring) terms missed before withdrawal is recorded
+summer_counts_as_expected_term = false
+programme_change_probability = 0.025   # per completed UG term, first 4 regular terms only
+programme_change_credit_transfer = [0.5, 0.8]
+readmission_probability = { WITHDRAWN = 0.12, DISMISSED = 0.15 }
+withdrawal_during_term_probability = 0.02
+course_withdrawal_probability = 0.03
+online_grade_adjustment = -0.05
+conferral = "TERM_END"              # graduation date = last day of the graduation term (placeholder)
+
+# Grading scheme (PLACEHOLDER demonstration 0-4 scale; not the UCI 0-20 scale)
+[grading]
+name = "Demonstration 4-point letter scale"
+display_label = "Demo GPA (placeholder scale)"
+letters = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"]
+points  = [4.0, 3.7, 3.3, 3.0, 2.7, 2.3, 2.0, 1.7, 1.3, 1.0, 0.0]
+f_below = 0.70                      # continuous score below this becomes F
+
+# Per-level rules (PLACEHOLDER). graduation_window_years are PROJECT-CONFIGURED REPORTING WINDOWS requested
+# for this dashboard (UG 6, Master's/Graduate 4, Doctorate 6). They are not verified university policy.
+# All three levels use the same cohort-maturity rule (see [reporting]).
+[levels.UNDERGRADUATE]
+normal_duration_years = 4
+graduation_window_years = 6
+min_years_to_graduate = 3
+credits_required = 120
+course_credits = 3
+courses_full_time = [4, 5, 5, 5, 6]
+courses_part_time = [2, 2, 3]
+courses_summer = [1, 2]
+full_time_share = 0.85
+online_share = [0.10, 0.28]         # share choosing online, 2016 -> 2026 (linear trend)
+summer_take_probability = 0.15
+grade_base = 2.85
+pass_points = 1.0                   # minimum grade points that earn credit
+good_standing_min_gpa = 2.0
+graduation_min_gpa = 2.0
+leave_probability = { first_year = 0.060, second_year = 0.040, later = 0.022 }
+return_probability = 0.40
+entry_age = [17, 25]
+
+[levels.MASTERS]
+normal_duration_years = 2
+graduation_window_years = 4
+min_years_to_graduate = 1
+credits_required = 36
+course_credits = 3
+courses_full_time = [3, 3, 4]
+courses_part_time = [1, 2, 2]
+courses_summer = [1, 2]
+full_time_share = 0.55
+online_share = [0.20, 0.45]
+summer_take_probability = 0.35
+grade_base = 3.48
+pass_points = 2.0
+good_standing_min_gpa = 3.0
+graduation_min_gpa = 3.0
+leave_probability = { first_year = 0.045, second_year = 0.035, later = 0.035 }
+return_probability = 0.40
+entry_age = [21, 40]
+
+[levels.DOCTORATE]
+normal_duration_years = 4
+graduation_window_years = 6         # PROJECT-CONFIGURED REPORTING ASSUMPTION (requested for the dashboard; not verified policy)
+min_years_to_graduate = 3
+credits_required = 60
+course_credits = 3
+coursework_credits = 24             # then research credits each term
+courses_full_time = [3]
+courses_part_time = [2]
+courses_summer = [1]
+research_credits_full_time = 9
+research_credits_part_time = 6
+research_credits_summer = 3
+full_time_share = 0.80
+online_share = [0.05, 0.12]
+summer_take_probability = 0.55
+grade_base = 3.62
+pass_points = 2.0
+good_standing_min_gpa = 3.0
+graduation_min_gpa = 3.0
+leave_probability = { first_year = 0.035, second_year = 0.030, later = 0.030 }
+return_probability = 0.45
+entry_age = [23, 45]
+
+[reporting]
+# Term reporting status relative to as_of_date:
+#   COMPLETED_TERM        end_date <= as_of: final grades, GPA, standing and graduations are reportable
+#   CENSUS_SNAPSHOT_ONLY  census_date <= as_of < end_date: headcount/retention at census only (no grades/outcomes)
+#   FUTURE_NOT_REPORTABLE census_date > as_of: nothing is reported
+# Graduation-rate maturity: a cohort is final only if (entry-term start + window) <= as_of AND every term ending
+# on or before that date is a COMPLETED_TERM. Retention is final only if the comparison term's census has passed.
+retention_cohort_years = 3                      # multi-year institutional cohort retention (k = 1..3)
+first_year_retention_levels = ["UNDERGRADUATE", "MASTERS", "DOCTORATE"]   # reported overall and by level
+# Poor academic performance flag (SYNTHETIC RULE): a completed term with graded courses where the term GPA is
+# below the level's good-standing minimum OR the share of graded credits passed is below the ratio below.
+poor_performance_pass_ratio_below = 0.5
+
+[demographics]
+gender_weights = { FEMALE = 0.53, MALE = 0.45, ANOTHER_GENDER = 0.01, NOT_DISCLOSED = 0.01 }
+home_country_iso3 = "ZZZ"           # ISO user-assigned code = "home country not configured"
+international_share = { UNDERGRADUATE = 0.08, MASTERS = 0.22, DOCTORATE = 0.30 }
+international_countries = { IND = 0.18, NGA = 0.12, CHN = 0.12, USA = 0.07, GBR = 0.06, BRA = 0.06, KEN = 0.06, PAK = 0.06, DEU = 0.05, VNM = 0.05, GHA = 0.05, PHL = 0.04, MEX = 0.04, EGY = 0.04 }
+
+[finance]
+tuition_per_credit_2016 = { UNDERGRADUATE = 300.0, MASTERS = 550.0, DOCTORATE = 600.0 }
+annual_fee_increase = 0.03
+registration_fee = 150.0
+technology_fee = 120.0
+online_fee_per_credit = 25.0
+due_days_after_census = 14
+hold_check_days_after_due = 30
+hold_threshold = 100.0
+scholarship_pct_weights = { "0" = 0.65, "25" = 0.15, "50" = 0.12, "100" = 0.08 }
+doctorate_full_funding_probability = 0.60
+payer_behaviour_weights = { ON_TIME = 0.88, LATE = 0.08, PARTIAL = 0.04 }  # shifted by each student's risk
+partial_remainder_paid_probability = 0.60
+hold_resolution_probability = 0.70  # chance a held student pays before the next term starts
+
+[it]
+login_window_days = 180             # login logs kept for the last 180 days (placeholder retention)
+student_account_grace_days = { GRADUATED = 180, OTHER = 90 }
+staff_by_department = { ADMISSIONS = 12, REGISTRAR = 15, FINANCE = 14, IT = 12, ADMIN = 4, MANAGEMENT = 8, DATA_WAREHOUSE = 5, FACULTY = 70 }
+daily_login_rate = { IN_SESSION = 0.45, ONLINE_IN_SESSION = 0.75, BETWEEN_TERMS = 0.08, STAFF_WEEKDAY = 0.90 }
+failed_login_share = 0.03
+server_daily_probabilities = { DEGRADED = 0.03, OUTAGE = 0.006 }
