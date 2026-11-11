@@ -14,7 +14,7 @@ See [`docs/COMPLETION_REPORT.md`](docs/COMPLETION_REPORT.md) for what was verifi
 ### Quick start (dashboard)
 ```powershell
 python -m venv .venv; .venv\Scripts\python -m pip install -r requirements.txt
-cd frontend; npm install; npm run build; cd ..ackend
+cd frontend; npm install; npm run build; cd ..\backend
 ..\.venv\Scripts\python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 Open http://127.0.0.1:8000.
@@ -29,6 +29,7 @@ Open http://127.0.0.1:8000.
 | [`docs/TECHNICAL_DOCUMENTATION.md`](docs/TECHNICAL_DOCUMENTATION.md) | Installation, API, usage, restore, reproduce, backup |
 | [`docs/PRESENTATION.md`](docs/PRESENTATION.md) | Slides, diagrams and demonstration script |
 | [`backend/README.md`](backend/README.md) | Configuration, roles and backend tests |
+| [`docs/DEPLOYMENT_RENDER.md`](docs/DEPLOYMENT_RENDER.md) | Deploying online on Render (Docker), production settings and security |
 
 > **Model training runs only in the project's Google Colab notebook**, never on the local machine.
 > The local machine is for dashboard development, tests and inference.

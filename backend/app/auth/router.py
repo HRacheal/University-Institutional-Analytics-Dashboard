@@ -10,6 +10,7 @@ from sqlalchemy import insert, select, update
 from ..core import db
 from ..core.config import get_settings
 from ..core.deps import COOKIE, current_user
+from ..core.ratelimit import client_ip, login_limiter
 from ..core.security import (PASSWORD_RULE, audit, hash_password, new_token, password_problems, session_expiry,
                              verify_password)
 
@@ -33,11 +34,18 @@ def _public(u: dict) -> dict:
 @router.post("/login")
 def login(body: LoginIn, request: Request, response: Response):
     s = get_settings()
-    ip = request.client.host if request.client else None
+    ip = client_ip(request)
+    limiter = login_limiter()
+    wait = limiter.retry_after(ip)
+    if wait:
+        audit("login", username=body.username[:80], outcome="RATE_LIMITED", ip=ip)
+        raise HTTPException(429, "too many failed sign-in attempts from this address; try again later",
+                            headers={"Retry-After": str(wait)})
     u = db.fetch_one(select(db.users).where(db.users.c.username == body.username.strip()))
     generic = HTTPException(401, "invalid username or password")
     if not u or not u["is_active"]:
         verify_password(body.password, "scrypt$16384$8$1$AAAAAAAAAAAAAAAAAAAAAA==$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=")  # timing
+        limiter.record_failure(ip)
         audit("login", username=body.username[:80], outcome="FAILED", detail={"reason": "unknown or inactive user"}, ip=ip)
         raise generic
     if u["locked_until"] and db.aware(u["locked_until"]) > db.now():
@@ -49,6 +57,7 @@ def login(body: LoginIn, request: Request, response: Response):
         if fails >= s.max_failed_logins:
             vals.update(locked_until=db.now() + timedelta(minutes=s.lockout_minutes), failed_logins=0)
         db.execute(update(db.users).where(db.users.c.id == u["id"]).values(**vals))
+        limiter.record_failure(ip)
         audit("login", username=u["username"], outcome="FAILED", detail={"reason": "wrong password", "failed_count": fails}, ip=ip)
         raise generic
     tok, th = new_token()
@@ -57,7 +66,7 @@ def login(body: LoginIn, request: Request, response: Response):
                                           user_agent=(request.headers.get("user-agent") or "")[:300], revoked=False))
     db.execute(update(db.users).where(db.users.c.id == u["id"]).values(failed_logins=0, locked_until=None, last_login=db.now()))
     audit("login", username=u["username"], outcome="OK", ip=ip)
-    response.set_cookie(COOKIE, tok, httponly=True, samesite="strict", secure=s.env == "production", max_age=int(s.session_hours * 3600))
+    response.set_cookie(COOKIE, tok, httponly=True, samesite="strict", secure=s.is_production, max_age=int(s.session_hours * 3600))
     perms = (db.fetch_one(select(db.roles.c.permissions).where(db.roles.c.role == u["role"])) or {}).get("permissions", [])
     return {"token": tok, "expires_in_hours": s.session_hours,
             "user": {"username": u["username"], "full_name": u["full_name"], "email": u["email"], "role": u["role"],
@@ -68,7 +77,7 @@ def login(body: LoginIn, request: Request, response: Response):
 def logout(response: Response, user: dict = Depends(current_user)):
     db.execute(update(db.sessions).where(db.sessions.c.token_hash == user["token_hash"]).values(revoked=True))
     audit("logout", user, ip=user["ip"])
-    response.delete_cookie(COOKIE)
+    response.delete_cookie(COOKIE, httponly=True, samesite="strict", secure=get_settings().is_production)
     return {"ok": True}
 
 

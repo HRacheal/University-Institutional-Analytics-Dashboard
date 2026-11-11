@@ -1,0 +1,33 @@
+# Render Blueprint for the University Institutional Analytics Dashboard.
+# One Docker web service: the image builds the React frontend and serves it from FastAPI (see Dockerfile).
+# Full instructions: docs/DEPLOYMENT_RENDER.md
+services:
+  - type: web
+    name: uiad-dashboard
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    # All 20 models loaded use about 0.9 GB of RAM, so Starter (512 MB) is too small; Standard has 2 GB.
+    # A persistent disk also requires a paid instance type.
+    plan: standard
+    numInstances: 1          # one instance: SQLite on the disk, in-memory login rate limiter
+    healthCheckPath: /api/health
+    autoDeploy: false        # deploy manually from the Render dashboard
+    disk:
+      name: uiad-data
+      mountPath: /var/data   # database, prediction result files, CSV imports, log
+      sizeGB: 1
+    envVars:
+      - key: UIAD_ENV
+        value: production
+      - key: UIAD_VAR_DIR
+        value: /var/data
+      - key: UIAD_SEED_DEMO_USERS
+        value: "0"
+      # Render sits behind Cloudflare, which sets these headers to the real client address (used for login rate limiting).
+      - key: UIAD_CLIENT_IP_HEADERS
+        value: True-Client-IP,CF-Connecting-IP
+      # First administrator's initial password: Render asks for it when the Blueprint is created. Store it in a
+      # password manager; it must be changed at first sign-in and can be deleted from Render afterwards.
+      - key: UIAD_BOOTSTRAP_ADMIN_PASSWORD
+        sync: false

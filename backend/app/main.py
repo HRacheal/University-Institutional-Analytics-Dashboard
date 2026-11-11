@@ -21,6 +21,11 @@ from .core.config import get_settings
 
 log = logging.getLogger("uiad")
 
+# The built frontend has no inline scripts; Ant Design injects <style> elements, hence 'unsafe-inline' for styles only.
+CSP = ("default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; "
+       "font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; "
+       "frame-ancestors 'none'")
+
 
 def _configure_logging():
     s = get_settings()
@@ -47,7 +52,8 @@ async def lifespan(app: FastAPI):
 def create_app() -> FastAPI:
     s = get_settings()
     app = FastAPI(title="University Institutional Analytics Dashboard API", version="1.0.0", lifespan=lifespan,
-                  docs_url="/api/docs", openapi_url="/api/openapi.json", redoc_url=None)
+                  docs_url="/api/docs" if s.api_docs else None, openapi_url="/api/openapi.json" if s.api_docs else None,
+                  redoc_url=None)
     app.add_middleware(CORSMiddleware, allow_origins=list(s.cors_origins), allow_credentials=True,
                        allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE"], allow_headers=["Authorization", "Content-Type"])
 
@@ -65,6 +71,14 @@ def create_app() -> FastAPI:
         resp.headers["X-Request-ID"] = rid
         resp.headers["X-Content-Type-Options"] = "nosniff"
         resp.headers["Referrer-Policy"] = "same-origin"
+        resp.headers["X-Frame-Options"] = "DENY"
+        resp.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
+        if not request.url.path.startswith("/api/docs"):        # Swagger UI loads its own CDN assets
+            resp.headers["Content-Security-Policy"] = CSP
+        if request.url.path.startswith("/api/"):
+            resp.headers.setdefault("Cache-Control", "no-store")
+        if s.is_production:
+            resp.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
         return resp
 
     from .ml.service import ArtifactError, InputValidationError

@@ -160,7 +160,7 @@ npm run typecheck; npm test; npm run build
 - **Backups:** the database and prediction files are in `backend/var/`; copy that folder.
 - **Model artifacts:** use `python -m pipelines.model_registry.restore --source <Drive outputs>` to restore from Drive with SHA-256 verification. Mismatching local files are archived to `_superseded_local/`, never overwritten silently.
 - **Restoration audit:** `python -m pipelines.model_registry.audit` (inference only).
-- **Production:** run uvicorn behind an HTTPS reverse proxy with `UIAD_ENV=production` and PostgreSQL via `UIAD_DATABASE_URL`.
+- **Production:** deploy the Docker image (`Dockerfile`, `render.yaml`) behind HTTPS with `UIAD_ENV=production` and persistent storage for `UIAD_VAR_DIR` (SQLite) or PostgreSQL via `UIAD_DATABASE_URL`. Step-by-step: [`DEPLOYMENT_RENDER.md`](DEPLOYMENT_RENDER.md).
 
 ## 8. Installation and environment setup
 ```powershell

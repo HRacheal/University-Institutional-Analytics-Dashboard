@@ -33,16 +33,19 @@ cd backend
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `UIAD_ENV` | `development` | `production` makes the session cookie Secure (requires HTTPS) |
-| `UIAD_DATABASE_URL` | SQLite in `var/` | e.g. `postgresql+psycopg://user@host/db`; the password comes from the environment, never from files |
-| `UIAD_VAR_DIR` | `backend/var` | Database, log (`uiad.log`), prediction result files, initial credentials |
+| `UIAD_ENV` | `development` | `production`: Secure session cookie and HSTS (requires HTTPS), API docs hidden, no demo account, no credentials file, first administrator password required (see `docs/DEPLOYMENT_RENDER.md`) |
+| `UIAD_DATABASE_URL` | SQLite in `var/` | e.g. `postgresql+psycopg://user:pass@host/db`; `postgres://` / `postgresql://` URLs (as Render provides) are converted automatically. Set only in the environment, never in files |
+| `UIAD_VAR_DIR` | `backend/var` | Database (SQLite), log (`uiad.log`), prediction result files, CSV imports, initial credentials (development only). Must be persistent storage when hosted |
 | `UIAD_DW_ROOT` / `UIAD_DATA_ROOT` | project folders | Location of the data warehouse (models, reports) and the data |
 | `UIAD_SESSION_HOURS` / `UIAD_SESSION_IDLE_MINUTES` | 8 / 60 | Absolute and idle session lifetime |
 | `UIAD_MAX_FAILED_LOGINS` / `UIAD_LOCKOUT_MINUTES` | 5 / 15 | Account lockout (HTTP 423) |
-| `UIAD_BOOTSTRAP_ADMIN_USER` / `UIAD_BOOTSTRAP_ADMIN_PASSWORD` | `admin` / random | Initial administrator. The password, if given, must still be changed at first sign-in |
-| `UIAD_SEED_DEMO_USERS` | `1` | Create the `manager` demo account |
+| `UIAD_BOOTSTRAP_ADMIN_USER` / `UIAD_BOOTSTRAP_ADMIN_PASSWORD` | `admin` / random | Initial administrator; must change the password at first sign-in. In production the password is **required** (when no administrator exists yet) and must meet the password rule; it is ignored once an administrator exists |
+| `UIAD_SEED_DEMO_USERS` | `1` | Create the `manager` demo account (never in production) |
 | `UIAD_MAX_UPLOAD_MB` / `UIAD_MAX_BATCH_ROWS` | 20 / 20000 | CSV upload limits |
-| `UIAD_CORS_ORIGINS` | `http://localhost:5173,…` | Allowed origins for the development frontend |
+| `UIAD_CORS_ORIGINS` | `http://localhost:5173,…` | Allowed origins for the development frontend (not needed when FastAPI serves the built frontend) |
+| `UIAD_API_DOCS` | `1`, production `0` | Interactive API docs at `/api/docs` |
+| `UIAD_LOGIN_RATE_LIMIT` / `UIAD_LOGIN_RATE_WINDOW_MINUTES` | 20 / 15 | Failed sign-ins per client address before HTTP 429 (in addition to the account lockout) |
+| `UIAD_CLIENT_IP_HEADERS` | empty | Trusted edge-proxy headers giving the real client address, e.g. `True-Client-IP,CF-Connecting-IP` on Render. Leave empty unless behind such a proxy |
 
 Departmental REST connectors read their API token from the environment variable **named** in the integration's
 configuration (for example `UIAD_ADMISSIONS_API_TOKEN`). Tokens are never stored in the database or shown in the UI.

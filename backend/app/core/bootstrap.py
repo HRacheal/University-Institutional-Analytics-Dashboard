@@ -2,6 +2,10 @@
 
 No password is hard-coded. Unless UIAD_BOOTSTRAP_ADMIN_PASSWORD is set, random initial passwords are generated and
 written once to backend/var/initial_credentials.txt (git-ignored); both accounts must change their password at first login.
+
+Production (UIAD_ENV=production): no credentials file is ever written and no demo account is created. If no administrator
+exists yet, UIAD_BOOTSTRAP_ADMIN_PASSWORD must be set (as a hosting secret) and meet the password rule, otherwise startup
+fails with an explanatory error. Once an administrator exists, the variable is ignored and can be removed.
 """
 from __future__ import annotations
 
@@ -12,7 +16,11 @@ from sqlalchemy import insert, select, update
 
 from . import db
 from .config import get_settings
-from .security import SYSTEM_ROLES, hash_password
+from .security import PASSWORD_RULE, SYSTEM_ROLES, hash_password, password_problems
+
+
+class BootstrapError(RuntimeError):
+    """Raised at startup when production cannot create its first administrator safely."""
 
 
 def _random_password() -> str:
@@ -33,6 +41,14 @@ def bootstrap() -> dict:
             db.execute(insert(db.roles).values(role=role, description=desc, permissions=perms, is_system=True))
     created = {}
     if not db.fetch_one(select(db.users.c.id).where(db.users.c.role == "ADMIN")):
+        if s.is_production:
+            if not s.bootstrap_admin_password:
+                raise BootstrapError("No administrator exists yet. In production set UIAD_BOOTSTRAP_ADMIN_PASSWORD as a secret "
+                                     "environment variable for the first start (no credentials file is written in production).")
+            probs = password_problems(s.bootstrap_admin_password, s.bootstrap_admin_user)
+            if probs:
+                raise BootstrapError(f"UIAD_BOOTSTRAP_ADMIN_PASSWORD is too weak: it must be {PASSWORD_RULE} "
+                                     f"({'; '.join(probs)}).")
         pw = s.bootstrap_admin_password or _random_password()
         db.execute(insert(db.users).values(username=s.bootstrap_admin_user, full_name="System Administrator", email="", password_hash=hash_password(pw),
                                            role="ADMIN", is_active=True, must_change_password=True, failed_logins=0, created_at=db.now()))
@@ -42,7 +58,7 @@ def bootstrap() -> dict:
             db.execute(insert(db.users).values(username="manager", full_name="Demo Management User", email="", password_hash=hash_password(mp),
                                                role="MANAGEMENT", is_active=True, must_change_password=True, failed_logins=0, created_at=db.now()))
             created["manager"] = ("MANAGEMENT", mp)
-    if created and any(v[1] for v in created.values()):
+    if created and any(v[1] for v in created.values()) and not s.is_production:
         f = s.var_dir / "initial_credentials.txt"
         lines = ["# Initial credentials (generated once). Each account must change its password at first login.",
                  "# Delete this file after the first login."]

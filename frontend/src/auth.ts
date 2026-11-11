@@ -39,7 +39,8 @@ export const authProvider: AuthProvider = {
       return { success: true, redirectTo: m?.must_change_password ? "/change-password" : "/" };
     } catch (e) {
       const err = e as ApiError;
-      return { success: false, error: { name: err.status === 423 ? "Account locked" : "Login failed", message: err.message } };
+      const name = err.status === 423 ? "Account locked" : err.status === 429 ? "Too many attempts" : "Login failed";
+      return { success: false, error: { name, message: err.message } };
     }
   },
   logout: async () => {

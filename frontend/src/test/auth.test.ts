@@ -16,6 +16,13 @@ describe("authProvider", () => {
     expect(r.success).toBe(false);
     expect(r.error?.name).toBe("Account locked");
   });
+  it("reports sign-in rate limiting", async () => {
+    mockFetch({ "/api/auth/login": [429, { detail: "too many failed sign-in attempts from this address; try again later" }] });
+    const r = await authProvider.login({ username: "mgr", password: "x" });
+    expect(r.success).toBe(false);
+    expect(r.error?.name).toBe("Too many attempts");
+    expect(r.error?.message).toMatch(/too many failed sign-in attempts/);
+  });
   it("check() is unauthenticated without a session", async () => {
     mockFetch({ "/api/auth/me": [401, { detail: "not authenticated" }] });
     expect(await authProvider.check()).toMatchObject({ authenticated: false, redirectTo: "/login" });
