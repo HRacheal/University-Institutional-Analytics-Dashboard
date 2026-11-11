@@ -9,7 +9,7 @@ An institutional analytics platform covering **Admissions, Registrar, Finance, I
 - **Models:** 20 model tasks trained in **Google Colab** and backed up on Google Drive.
 - **Application:** FastAPI backend and Refine dashboard working.
 
-See [`docs/COMPLETION_REPORT.md`](docs/COMPLETION_REPORT.md) for what was verified and what is pending.
+See [`docs/COMPLETION_REPORT.md`](docs/COMPLETION_REPORT.md) for what was verified.
 
 ### Quick start (dashboard)
 ```powershell

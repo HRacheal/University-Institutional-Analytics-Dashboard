@@ -1,7 +1,7 @@
 import { Authenticated, CanAccess, Refine, useGetIdentity, useLogout } from "@refinedev/core";
 import { ErrorComponent, ThemedLayout, ThemedSider, ThemedTitle, useNotificationProvider } from "@refinedev/antd";
 import routerProvider, { CatchAllNavigate, DocumentTitleHandler } from "@refinedev/react-router";
-import { App as AntApp, Button, ConfigProvider, Dropdown, Layout, Space, Switch, Tag, theme as antTheme, Typography } from "antd";
+import { App as AntApp, Button, ConfigProvider, Dropdown, Layout, Result, Space, Switch, Tag, theme as antTheme, Typography } from "antd";
 import {
   AlertOutlined, AppstoreOutlined, AuditOutlined, BarChartOutlined, BookOutlined, ClusterOutlined, DashboardOutlined,
   ExperimentOutlined, FileTextOutlined, FundOutlined, HistoryOutlined, LineChartOutlined, LogoutOutlined, ReadOutlined,
@@ -75,9 +75,15 @@ const Title = ({ collapsed }: { collapsed: boolean }) => (
   <ThemedTitle collapsed={collapsed} text="Institutional Analytics" icon={<AppstoreOutlined />} />
 );
 
+const NoAccess = () => (
+  <Result status="403" title="No access"
+    subTitle="Your role does not include permission for this page. Ask an administrator if you need access."
+    extra={<Button type="primary" href="/">Back to overview</Button>} />
+);
+
 function Guard({ resource, children }: { resource: string; children: React.ReactNode }) {
   return (
-    <CanAccess resource={resource} action="list" fallback={<ErrorComponent />}>
+    <CanAccess resource={resource} action="list" fallback={<NoAccess />}>
       <Suspense fallback={<Loading />}>{children}</Suspense>
     </CanAccess>
   );

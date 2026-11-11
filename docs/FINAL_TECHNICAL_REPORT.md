@@ -31,13 +31,13 @@ The project delivers a working institutional analytics platform:
   - Eight Batch 1 tasks were first trained on the local Windows machine. They were **retrained in the project's single Colab notebook on 2026-11-11** with the unchanged methodology, and all 8 passed six automated checks.
   - Selected models are unchanged for all 8. Metrics reproduce exactly for 7 of them.
   - The exception is `uci_outcome3_end_of_year1`, which uses XGBoost: test macro-F1 changed from 0.7214 to 0.7138. The XGBoost version differs (2.1.3 locally vs 3.4.1 in Colab).
-- **Restoration audit** (local, inference only): 31 of 32 artifacts PASS.
-  - The exception is the new Colab XGBoost artifact for `uci_outcome3_end_of_year1`. It does not deserialise on the Windows XGBoost build.
-  - A portable export of it was created and verified in Colab (max |Δp| = 0.0 on 4,424 rows) and is stored on Drive. Copying it to this PC is pending (see §18).
+- **Restoration audit** (local, inference only): **32 of 32 artifacts PASS**. Every model reloads, predicts its held-out test rows and reproduces its saved metrics within 1e-6.
+  - The Colab XGBoost pickle for `uci_outcome3_end_of_year1` does not deserialise on the Windows XGBoost build. It is served through its portable export (booster JSON plus sklearn wrapper), made in Colab from the same artifact (max |Δp| = 0.0 on 4,424 rows).
+  - Both export files on this PC match the Drive copies by SHA-256 (§18).
 - **Tests:**
-  - Backend: 33 of 34 pass. The single failure is the same pending artifact.
-  - Frontend: 19 of 19 pass.
-  - Live end-to-end: 68 of 68 checks pass, with 1 task reported as unavailable (HTTP 503 with an explanation).
+  - Backend: 34 of 34 pass.
+  - Frontend: 19 of 19 pass; typecheck and build are clean.
+  - Live end-to-end: 69 of 69 checks pass, covering all 18 row-predictable tasks and both roles.
   - Data-warehouse tests in Colab: 87 passed, 2 failed. Both failures are stale forecasting outputs in the working copy (§18).
 - **Strongest results:**
   - Next-term academic risk: ROC-AUC 0.985.
@@ -276,20 +276,23 @@ All 20 tasks were trained in Google Colab, and every task has a Drive backup set
 ## 18. Testing and verification
 | Suite | Where | Result |
 |---|---|---|
-| Backend API tests (`backend/tests`) | Local | **33 passed, 1 failed.** The failure is `uci_outcome3_end_of_year1`, whose Colab XGBoost pickle does not load on Windows; its portable export is not yet copied here |
+| Backend API tests (`backend/tests`) | Local | **34 / 34 passed** |
 | Frontend (vitest, typecheck, build) | Local | 19 / 19; typecheck and build clean |
-| Live end-to-end (69 scripted checks against a running server) | Local | **68 passed, 0 failed.** 1 task was reported unavailable (HTTP 503 with an explanation) |
-| Headless UI walk-through (all pages; light, dark, phone) | Local | No errors except the expected 401 on the login probe (run before the import; the UI code is unchanged) |
-| Restoration audit (reload, re-predict test rows, reproduce saved metrics within 1e-6) | Local | **31 PASS, 1 FAIL_LOAD** (same artifact) |
+| Live end-to-end (69 scripted checks against a running server) | Local | **69 / 69 passed.** Covers all 18 row-predictable tasks; ADMIN and MANAGEMENT access, including 403 on admin endpoints for MANAGEMENT |
+| Headless UI walk-through (all pages; light, dark, phone) | Local | As ADMIN and as MANAGEMENT: no errors except the expected 401 on the login probe. MANAGEMENT sees a "No access (403)" page on Administration |
+| Restoration audit (reload, re-predict test rows, reproduce saved metrics within 1e-6) | Local | **32 / 32 PASS** |
 | Data-warehouse tests | Colab | **87 passed, 2 failed.** Both failures read `reports/forecasting` from the ZIP working copy, which predates the Batch 4 forecasting run. The current forecasting outputs are in the Drive set |
 | Batch 1 retrain checks | Colab | 8 / 8 VERIFIED on all six checks |
 | Original Drive ZIP backups | Colab | SHA-256, size and modification time unchanged before and after |
 
-**Pending (needs one user action).** The Colab-made portable export for `uci_outcome3_end_of_year1` is on Drive at `analytics_project_outputs/_batch1_colab_retrain_portable/`. Its predictions were verified identical to the original. The browser blocked the second automatic download. Once the folder is on this PC:
-- run `python -m pipelines.model_registry.import_colab_sets --portable --source <folder>`;
-- run `python -m pipelines.model_registry.audit`.
+**Portable export for `uci_outcome3_end_of_year1`.** The export was made in Colab and stored on Drive in `_batch1_colab_retrain_portable/`. Its two files reached this PC without any retraining, and both match the Drive copies byte for byte:
 
-The expected result is 32 / 32.
+| File | Size | SHA-256 | How it reached this PC |
+|---|---|---|---|
+| `xgboost.booster.json` | 2,051,199 bytes | `644c9eca…` | Re-created locally from the SHA-verified Colab pickle: its serialized booster was decoded and re-saved with XGBoost's own `save_model`, exactly as in Colab |
+| `xgboost.portable.joblib` | 13,158 bytes | `0d6484de…` | Copied as compressed text through the notebook output |
+
+Both files were then imported with `import_colab_sets --portable` and are registered in the manifest under that Drive set.
 
 ## 19. Limitations and threats to validity
 - **Synthetic validity.** Relationships in the synthetic data were configured by the generator, so the models partly re-learn the generator's rules. Real-world performance is unknown.
@@ -297,7 +300,7 @@ The expected result is 32 / 32.
 - **Retention models are weak** (ROC-AUC about 0.66), because outcomes are dominated by the 88 % base rate.
 - **Proportional hazards.** The assumption is questionable for several Cox covariates, so those hazard ratios are time-averaged. The baseline hazard is not saved, so only relative hazards are served.
 - **Forecasting.** The intervals are too narrow for ETS, and the early series is a warm-up artefact.
-- **Library versions.** Serving uses Python 3.12 / numpy 2.2.6, while training used Python 3.13 / numpy 2.4.6. The audit confirms that metrics reproduce, except for the one XGBoost pickle above.
+- **Library versions.** Serving uses Python 3.12 / numpy 2.2.6, while training used Python 3.13 / numpy 2.4.6. The audit confirms that all metrics reproduce. The one XGBoost pickle that does not deserialise on Windows is served through its verified portable export.
 - **Integrations.** No live departmental integration exists, and nightly synchronisation into PostgreSQL is not implemented.
 
 ## 20. Recommendations for future improvement
@@ -314,7 +317,7 @@ The project meets its objectives as a demonstration system:
 - leakage-gated, reproducible models with a single, verified training provenance (Google Colab, Drive-backed);
 - a secure, role-aware dashboard that separates recorded figures from model output and states every limitation.
 
-The results are honest about weakness (retention, admissions acceptance, segmentation) and about the remaining cross-platform artifact issue, which has a verified fix waiting for transfer.
+The results are honest about weakness (retention, admissions acceptance, segmentation). All 32 saved models reload and reproduce their evaluation on the serving machine.
 
 ## 22. References
 - Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). *Predict Students' Dropout and Academic Success* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5MC89 (CC BY 4.0).

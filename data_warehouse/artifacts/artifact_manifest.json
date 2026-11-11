@@ -26,7 +26,8 @@
   "uci_dropout_end_of_year1": 15,
   "uci_dropout_enrolment_time": 18,
   "uci_outcome3_end_of_year1": 13,
-  "uci_outcome3_enrolment_time": 13
+  "uci_outcome3_enrolment_time": 13,
+  "_batch1_colab_retrain_portable": 2
  },
  "registered_tasks": 20,
  "label": "Models trained on SYNTHETIC demonstration data or the public UCI dataset; not validated for decisions about real students.",
@@ -551,7 +552,11 @@
     "xgboost": {
      "path": "models/uci/uci_outcome3_end_of_year1/xgboost.joblib",
      "meta": "models/uci/uci_outcome3_end_of_year1/xgboost.meta.json",
-     "thresholds": {}
+     "thresholds": {},
+     "portable_export": {
+      "booster_json": "models/uci/uci_outcome3_end_of_year1/xgboost.booster.json",
+      "sklearn_wrapper": "models/uci/uci_outcome3_end_of_year1/xgboost.portable.joblib"
+     }
     },
     "logistic_regression": {
      "path": "models/uci/uci_outcome3_end_of_year1/logistic_regression.joblib",
@@ -4344,6 +4349,19 @@
    "persistent_location": "MyDrive/analytics_project_outputs/uci_outcome3_end_of_year1/models/uci/uci_outcome3_end_of_year1/logistic_regression.meta.json",
    "working_copy_matches_backup": true
   },
+  "models/uci/uci_outcome3_end_of_year1/xgboost.booster.json": {
+   "role": "model_portable_export",
+   "task": "uci_outcome3_end_of_year1",
+   "required_for_dashboard": true,
+   "sha256": "644c9eca63a22bac350563f7602576ed4cd414d9b90f0838eafc2cb295e33ed7",
+   "bytes": 2051199,
+   "drive_backup_set": "_batch1_colab_retrain_portable",
+   "drive_path": "_batch1_colab_retrain_portable/portable_xgboost/uci_outcome3_end_of_year1/xgboost.booster.json",
+   "persistent_location": "MyDrive/analytics_project_outputs/_batch1_colab_retrain_portable/portable_xgboost/uci_outcome3_end_of_year1/xgboost.booster.json",
+   "working_copy_matches_backup": true,
+   "derived_from": "models/uci/uci_outcome3_end_of_year1/xgboost.joblib",
+   "reason": "the original pickle's internal XGBoost serialisation does not load on the Windows XGBoost build"
+  },
   "models/uci/uci_outcome3_end_of_year1/xgboost.joblib": {
    "role": "model",
    "task": "uci_outcome3_end_of_year1",
@@ -4365,6 +4383,19 @@
    "drive_path": "uci_outcome3_end_of_year1/models/uci/uci_outcome3_end_of_year1/xgboost.meta.json",
    "persistent_location": "MyDrive/analytics_project_outputs/uci_outcome3_end_of_year1/models/uci/uci_outcome3_end_of_year1/xgboost.meta.json",
    "working_copy_matches_backup": true
+  },
+  "models/uci/uci_outcome3_end_of_year1/xgboost.portable.joblib": {
+   "role": "model_portable_export",
+   "task": "uci_outcome3_end_of_year1",
+   "required_for_dashboard": true,
+   "sha256": "0d6484ded5c775d1658829cc1047d88619eba7e43b7ada1fe3b5ca90b230a1ea",
+   "bytes": 13158,
+   "drive_backup_set": "_batch1_colab_retrain_portable",
+   "drive_path": "_batch1_colab_retrain_portable/portable_xgboost/uci_outcome3_end_of_year1/xgboost.portable.joblib",
+   "persistent_location": "MyDrive/analytics_project_outputs/_batch1_colab_retrain_portable/portable_xgboost/uci_outcome3_end_of_year1/xgboost.portable.joblib",
+   "working_copy_matches_backup": true,
+   "derived_from": "models/uci/uci_outcome3_end_of_year1/xgboost.joblib",
+   "reason": "the original pickle's internal XGBoost serialisation does not load on the Windows XGBoost build"
   },
   "models/uci/uci_outcome3_enrolment_time/catboost.joblib": {
    "role": "model",

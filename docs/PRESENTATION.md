@@ -103,7 +103,7 @@ flowchart TD
 - **Cox models.** Some covariates violate the proportional-hazards assumption. The models give relative hazards only.
 - **Forecasts.** ETS intervals are too narrow, and the series starts with a warm-up artefact.
 - **Integrations.** No live departmental APIs are connected yet.
-- **One artifact pending.** The Colab XGBoost model for `uci_outcome3_end_of_year1` needs its verified portable export copied to the PC. Until then the dashboard answers 503 for that task and explains why.
+- **Cross-platform serialisation.** One Colab XGBoost pickle does not load on Windows. It is served through its verified portable export, which gives identical predictions.
 
 ---
 
@@ -115,10 +115,10 @@ flowchart TD
 
   | Check | Result |
   |---|---|
-  | Restoration audit | 31 / 32 PASS |
-  | Backend tests | 33 / 34 |
+  | Restoration audit | 32 / 32 PASS |
+  | Backend tests | 34 / 34 |
   | Frontend tests | 19 / 19 |
-  | Live end-to-end | 68 / 68, with 1 task unavailable as above |
+  | Live end-to-end | 69 / 69, both roles |
   | Data-warehouse tests in Colab | 87 pass, 2 fail on stale forecasting outputs in the working copy |
 
 - **Backups.** The original Drive ZIP backups were verified unchanged, by SHA-256.

@@ -430,7 +430,7 @@ Mean 80 % interval coverage by method across families: arima 0.914 · ets 0.704 
 
 ## 6. Restoration audit (local inference, no training)
 
-Audit 2026-11-11T09:19:57+00:00 on {'python': '3.12.0', 'sklearn': '1.6.1', 'pandas': '2.2.3', 'numpy': '2.2.6', 'xgboost': '3.4.1', 'lightgbm': '4.6.0', 'catboost': '1.2.10', 'statsmodels': '0.14.5'}: **{'PASS': 31, 'FAIL_LOAD': 1}** over 32 artifacts.
+Audit 2026-11-11T09:41:41+00:00 on {'python': '3.12.0', 'sklearn': '1.6.1', 'pandas': '2.2.3', 'numpy': '2.2.6', 'xgboost': '3.4.1', 'lightgbm': '4.6.0', 'catboost': '1.2.10', 'statsmodels': '0.14.5'}: **{'PASS': 32}** over 32 artifacts.
 
 | Task | Model | Role | Loaded via | Status | Error |
 |---|---|---|---|---|---|
@@ -439,7 +439,7 @@ Audit 2026-11-11T09:19:57+00:00 on {'python': '3.12.0', 'sklearn': '1.6.1', 'pan
 | `uci_outcome3_enrolment_time` | catboost | selected | original_pickle | **PASS** |  |
 | `uci_outcome3_enrolment_time` | logistic_regression | baseline (saved for comparison) | original_pickle | **PASS** |  |
 | `uci_dropout_end_of_year1` | logistic_regression | selected | original_pickle | **PASS** |  |
-| `uci_outcome3_end_of_year1` | xgboost | selected | — | **FAIL_LOAD** | XGBoostError: input stream corrupted |
+| `uci_outcome3_end_of_year1` | xgboost | selected | portable_xgboost_json | **PASS** |  |
 | `uci_outcome3_end_of_year1` | logistic_regression | baseline (saved for comparison) | original_pickle | **PASS** |  |
 | `syn_dropout_2y` | random_forest | selected | original_pickle | **PASS** |  |
 | `syn_dropout_2y` | logistic_regression | baseline (saved for comparison) | original_pickle | **PASS** |  |
