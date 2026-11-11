@@ -28,7 +28,7 @@ def env(tmp_path, monkeypatch):
     def apply(**kw):
         base = {"UIAD_ENV": "production", "UIAD_VAR_DIR": str(tmp_path / "var"), "UIAD_SEED_DEMO_USERS": "1"}
         base.update(kw)
-        for k in ("UIAD_BOOTSTRAP_ADMIN_PASSWORD", "UIAD_DATABASE_URL", "UIAD_API_DOCS", "UIAD_LOGIN_RATE_LIMIT", "UIAD_CLIENT_IP_HEADERS"):
+        for k in ("UIAD_BOOTSTRAP_ADMIN_PASSWORD", "UIAD_DATABASE_URL", "UIAD_API_DOCS", "UIAD_LOGIN_RATE_LIMIT", "UIAD_CLIENT_IP_HEADERS", "UIAD_IMPORT_ACCOUNTS_FILE"):
             monkeypatch.delenv(k, raising=False)
         for k, v in base.items():
             monkeypatch.setenv(k, v)
@@ -164,3 +164,123 @@ def test_client_ip_headers_ignored_when_not_configured(env):
         for i in range(2):
             assert c.post("/api/auth/login", json=bad, headers={"True-Client-IP": f"203.0.113.{i}"}).status_code == 401
         assert c.post("/api/auth/login", json=bad, headers={"True-Client-IP": "203.0.113.99"}).status_code == 429
+
+
+# ------------------------------------------------------------------------------------------- account migration
+def _make_source_db(tmp_path):
+    """A 'local' installation with an ADMIN and a MANAGEMENT account whose passwords were already changed."""
+    import sqlite3
+    from datetime import datetime, timezone
+    from app.core import db
+    from app.core.security import SYSTEM_ROLES, hash_password
+    src = tmp_path / "local.db"
+    from sqlalchemy import create_engine, insert
+    eng = create_engine(f"sqlite:///{src}")
+    db.metadata.create_all(eng)
+    now = datetime.now(timezone.utc)
+    with eng.begin() as c:
+        for role, (desc, perms) in SYSTEM_ROLES.items():
+            c.execute(insert(db.roles).values(role=role, description=desc, permissions=perms, is_system=True))
+        c.execute(insert(db.users).values(username="admin", full_name="Local Admin", email="", password_hash=hash_password(NEW), role="ADMIN",
+                                          is_active=True, must_change_password=False, failed_logins=0, created_at=now, last_login=now))
+        c.execute(insert(db.users).values(username="manager", full_name="Local Manager", email="", password_hash=hash_password(MGR), role="MANAGEMENT",
+                                          department="REGISTRAR", is_active=True, must_change_password=False, failed_logins=2, created_at=now))
+    eng.dispose()
+    return src
+
+
+def _export(src, out):
+    from app.core.accounts import main
+    assert main(["export", "--db", str(src), "--out", str(out)]) == 0
+
+
+def test_account_export_is_read_only_and_never_prints_hashes(tmp_path, capsys):
+    import hashlib, json
+    src = _make_source_db(tmp_path)
+    before = hashlib.sha256(src.read_bytes()).hexdigest()
+    _export(src, tmp_path / "accounts.json")
+    assert hashlib.sha256(src.read_bytes()).hexdigest() == before                    # source database untouched
+    printed = capsys.readouterr().out
+    data = json.loads((tmp_path / "accounts.json").read_text())
+    assert [u["username"] for u in data["users"]] == ["admin", "manager"]
+    assert all(u["password_hash"] not in printed and "scrypt$" not in printed for u in data["users"])
+
+
+def test_migrated_accounts_sign_in_without_bootstrap_password(env, tmp_path, caplog):
+    import logging
+    src = _make_source_db(tmp_path)
+    acc = tmp_path / "accounts.json"
+    _export(src, acc)
+    caplog.set_level(logging.INFO)
+    var = env(UIAD_IMPORT_ACCOUNTS_FILE=str(acc))                     # production, NO bootstrap password
+    with _client() as c:
+        from sqlalchemy import select
+        from app.core import db
+        users = db.fetch_all(select(db.users).order_by(db.users.c.username))
+        assert [(u["username"], u["role"], u["is_active"], u["must_change_password"]) for u in users] == \
+            [("admin", "ADMIN", True, False), ("manager", "MANAGEMENT", True, False)]
+        assert users[1]["department"] == "REGISTRAR" and users[1]["failed_logins"] == 0
+        assert not (var / "initial_credentials.txt").exists()
+        # same credentials work; no forced password change because it was already done locally
+        a = {"Authorization": f"Bearer {c.post('/api/auth/login', json={'username': 'admin', 'password': NEW}).json()['token']}"}
+        m = {"Authorization": f"Bearer {c.post('/api/auth/login', json={'username': 'manager', 'password': MGR}).json()['token']}"}
+        assert c.get("/api/admin/users", headers=a).status_code == 200
+        assert c.get("/api/analytics/overview", headers=m).status_code == 200
+        for path in ("/api/admin/users", "/api/admin/audit", "/api/admin/settings"):
+            assert c.get(path, headers=m).status_code == 403
+        assert "predictions:run" in c.get("/api/auth/me", headers=m).json()["permissions"]
+        audit = db.fetch_all(select(db.audit_log).where(db.audit_log.c.action == "account_import"))
+        assert len(audit) == 1 and "scrypt$" not in str(audit)
+    assert "scrypt$" not in caplog.text and "created=['admin', 'manager']" in caplog.text
+
+    # restart with the file still configured: no duplicates; a password changed online is never overwritten
+    env(UIAD_IMPORT_ACCOUNTS_FILE=str(acc))
+    with _client() as c:
+        a = {"Authorization": f"Bearer {c.post('/api/auth/login', json={'username': 'admin', 'password': NEW}).json()['token']}"}
+        assert c.post("/api/auth/change-password", headers=a, json={"current_password": NEW, "new_password": "Online-Changed-77"}).status_code == 200
+        assert len(db.fetch_all(select(db.users))) == 2
+    env(UIAD_IMPORT_ACCOUNTS_FILE=str(acc))
+    with _client() as c:
+        assert len(db.fetch_all(select(db.users))) == 2
+        assert c.post("/api/auth/login", json={"username": "admin", "password": "Online-Changed-77"}).status_code == 200
+        assert c.post("/api/auth/login", json={"username": "admin", "password": NEW}).status_code == 401
+
+    # secret file removed afterwards: starts normally
+    env(UIAD_IMPORT_ACCOUNTS_FILE=str(tmp_path / "gone.json"))
+    with _client() as c:
+        assert c.get("/api/health").status_code == 200
+
+
+def test_import_rejects_malformed_file_and_unknown_role(env, tmp_path):
+    import json
+    from app.core.accounts import AccountImportError
+    src = _make_source_db(tmp_path)
+    acc = tmp_path / "accounts.json"
+    _export(src, acc)
+    data = json.loads(acc.read_text())
+    data["users"][1]["role"] = "SUPERUSER"
+    bad = tmp_path / "bad_role.json"; bad.write_text(json.dumps(data))
+    env(UIAD_IMPORT_ACCOUNTS_FILE=str(bad))
+    with pytest.raises(AccountImportError, match="SUPERUSER"):
+        with _client():
+            pass
+    from sqlalchemy import select
+    from app.core import db
+    assert db.fetch_all(select(db.users)) == []                       # all-or-nothing: admin was not half-imported
+    data["users"][1]["role"] = "MANAGEMENT"; data["users"][1]["password_hash"] = "plaintext"
+    bad.write_text(json.dumps(data))
+    env(UIAD_IMPORT_ACCOUNTS_FILE=str(bad))
+    with pytest.raises(AccountImportError, match="hash format"):
+        with _client():
+            pass
+
+
+def test_export_refuses_unignored_path_in_repository(tmp_path):
+    import shutil, subprocess
+    if not shutil.which("git") or subprocess.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=BACKEND,
+                                                 capture_output=True).returncode != 0:
+        pytest.skip("not running inside a git checkout (e.g. the Docker image): nothing could be committed")
+    from app.core.accounts import main
+    src = _make_source_db(tmp_path)
+    assert main(["export", "--db", str(src), "--out", str(BACKEND / "app" / "accounts_leak.json")]) == 2
+    assert not (BACKEND / "app" / "accounts_leak.json").exists()

@@ -36,6 +36,10 @@ def _configure_logging():
     fh.setFormatter(fmt)
     root = logging.getLogger()
     root.addHandler(fh)
+    if s.is_production:                         # hosting platforms (Render) collect stdout/stderr in their log viewer
+        sh = logging.StreamHandler()
+        sh.setFormatter(fmt)
+        root.addHandler(sh)
     root.setLevel(logging.INFO)
 
 

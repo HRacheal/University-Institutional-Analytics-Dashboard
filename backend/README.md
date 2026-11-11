@@ -43,6 +43,7 @@ cd backend
 | `UIAD_SEED_DEMO_USERS` | `1` | Create the `manager` demo account (never in production) |
 | `UIAD_MAX_UPLOAD_MB` / `UIAD_MAX_BATCH_ROWS` | 20 / 20000 | CSV upload limits |
 | `UIAD_CORS_ORIGINS` | `http://localhost:5173,…` | Allowed origins for the development frontend (not needed when FastAPI serves the built frontend) |
+| `UIAD_IMPORT_ACCOUNTS_FILE` | empty | Accounts exported with `python -m app.core.accounts export`, imported at startup when their usernames are new (see `docs/DEPLOYMENT_RENDER.md` §3a) |
 | `UIAD_API_DOCS` | `1`, production `0` | Interactive API docs at `/api/docs` |
 | `UIAD_LOGIN_RATE_LIMIT` / `UIAD_LOGIN_RATE_WINDOW_MINUTES` | 20 / 15 | Failed sign-ins per client address before HTTP 429 (in addition to the account lockout) |
 | `UIAD_CLIENT_IP_HEADERS` | empty | Trusted edge-proxy headers giving the real client address, e.g. `True-Client-IP,CF-Connecting-IP` on Render. Leave empty unless behind such a proxy |

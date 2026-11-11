@@ -3,8 +3,11 @@
 No password is hard-coded. Unless UIAD_BOOTSTRAP_ADMIN_PASSWORD is set, random initial passwords are generated and
 written once to backend/var/initial_credentials.txt (git-ignored); both accounts must change their password at first login.
 
+Accounts exported from another installation are imported first (UIAD_IMPORT_ACCOUNTS_FILE, see accounts.py), so a
+migrated administrator satisfies the check below and no new administrator is created.
+
 Production (UIAD_ENV=production): no credentials file is ever written and no demo account is created. If no administrator
-exists yet, UIAD_BOOTSTRAP_ADMIN_PASSWORD must be set (as a hosting secret) and meet the password rule, otherwise startup
+exists yet (none imported either), UIAD_BOOTSTRAP_ADMIN_PASSWORD must be set (as a hosting secret) and meet the password rule, otherwise startup
 fails with an explanatory error. Once an administrator exists, the variable is ignored and can be removed.
 """
 from __future__ import annotations
@@ -39,12 +42,17 @@ def bootstrap() -> dict:
             db.execute(update(db.roles).where(db.roles.c.role == role).values(permissions=perms, description=desc, is_system=True))
         else:
             db.execute(insert(db.roles).values(role=role, description=desc, permissions=perms, is_system=True))
+    from .accounts import import_from_settings
+    import_from_settings()                      # migrated accounts first, so an imported administrator counts below
     created = {}
     if not db.fetch_one(select(db.users.c.id).where(db.users.c.role == "ADMIN")):
         if s.is_production:
             if not s.bootstrap_admin_password:
-                raise BootstrapError("No administrator exists yet. In production set UIAD_BOOTSTRAP_ADMIN_PASSWORD as a secret "
-                                     "environment variable for the first start (no credentials file is written in production).")
+                raise BootstrapError("No administrator exists yet. Either import existing accounts (UIAD_IMPORT_ACCOUNTS_FILE "
+                                     "pointing to a file from `python -m app.core.accounts export`; currently "
+                                     f"{'not set' if not s.import_accounts_file else 'set, but the file is missing or has no ADMIN account'}) "
+                                     "or set UIAD_BOOTSTRAP_ADMIN_PASSWORD as a secret environment variable for the first start "
+                                     "(no credentials file is written in production).")
             probs = password_problems(s.bootstrap_admin_password, s.bootstrap_admin_user)
             if probs:
                 raise BootstrapError(f"UIAD_BOOTSTRAP_ADMIN_PASSWORD is too weak: it must be {PASSWORD_RULE} "

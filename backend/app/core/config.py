@@ -53,6 +53,9 @@ class Settings:
     # Headers set by a trusted edge proxy that carry the real client IP, first present wins (e.g. on Render, which sits
     # behind Cloudflare: "True-Client-IP,CF-Connecting-IP"). Leave empty when not behind such a proxy: clients could
     # otherwise forge them. X-Forwarded-For is deliberately not used here because its leftmost entry is client-supplied.
+    # Accounts exported with `python -m app.core.accounts export`, imported at startup if their usernames are new
+    # (on Render: a Secret File at /etc/secrets/uiad_accounts.json). A missing file is skipped.
+    import_accounts_file: str = field(default_factory=lambda: _env("IMPORT_ACCOUNTS_FILE", "") or "")
     client_ip_headers: list[str] = field(default_factory=lambda: [h.strip() for h in (_env("CLIENT_IP_HEADERS", "") or "").split(",") if h.strip()])
 
     @property

@@ -27,7 +27,10 @@ services:
       # Render sits behind Cloudflare, which sets these headers to the real client address (used for login rate limiting).
       - key: UIAD_CLIENT_IP_HEADERS
         value: True-Client-IP,CF-Connecting-IP
-      # First administrator's initial password: Render asks for it when the Blueprint is created. Store it in a
-      # password manager; it must be changed at first sign-in and can be deleted from Render afterwards.
-      - key: UIAD_BOOTSTRAP_ADMIN_PASSWORD
-        sync: false
+      # Existing accounts migrated from the local database (same usernames, passwords, roles, status).
+      # Add the file in Render: Environment -> Secret Files -> filename "uiad_accounts.json", contents of
+      # backend/var/render_accounts.json produced by `python -m app.core.accounts export`. Imported once at startup
+      # (new usernames only, never duplicated or overwritten); delete the Secret File after the first successful deploy.
+      # Because an administrator is imported, UIAD_BOOTSTRAP_ADMIN_PASSWORD is NOT needed (see docs/DEPLOYMENT_RENDER.md).
+      - key: UIAD_IMPORT_ACCOUNTS_FILE
+        value: /etc/secrets/uiad_accounts.json
